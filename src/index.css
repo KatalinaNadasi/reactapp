@@ -1,0 +1,220 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'lato' !important;
+  background-color: mistyrose;
+}
+
+/***********
+RESET CODE
+************/
+
+article, aside, details, figcaption,  figure,  footer, header, hgroup, menu, nav, section {
+	display : block ;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/     v2.0 | 20110126    License: none (public domain) */  html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video { 	margin: 0; 	padding: 0; 	border: 0; 	font-size: 100%; 	font: inherit; 	vertical-align: baseline; } /* HTML5 display-role reset for older browsers */ article, aside, details, figcaption, figure,  footer, header, hgroup, menu, nav, section { 	display: block; } body { 	line-height: 1; } ol, ul { 	list-style: none; } blockquote, q { 	quotes: none; } blockquote:before, blockquote:after, q:before, q:after { 	content: ''; 	content: none; } table { 	border-collapse: collapse; 	border-spacing: 0; }
+
+.grouping :before,
+.grouping :after {
+content :  " ";
+display : table;
+}
+
+.grouping :after {
+clear :both;
+}
+
+img, iframe, video, object {
+max-width : 100%;
+}
+
+strong, b {
+font-weight : bold;
+}
+
+/***********
+GENERAL
+************/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+h1 {
+	font-family: 'lato', sans-serif;
+  font-size: 10rem;
+}
+
+a:focus, a:hover, a:active {
+  color: white;
+  text-decoration: none;
+}
+
+.Wrapper {
+  max-width: 1150px;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.FloatLeft {
+  float: left;
+}
+
+.FloatRight {
+  float: right;
+}
+
+.Clear {
+  clear: both;
+}
+
+.Bold {
+  font-weight: bold;
+}
+
+.Hidden,
+.Hide {
+  display: none;
+}
+
+.Relative {
+  position: relative;
+}
+
+.Absolute {
+  position: absolute;
+}
+
+.Block {
+  display: block;
+}
+
+.Inline {
+  display: inline;
+}
+
+.Bars {
+  float: right;
+  padding-right: 16px;
+  padding-top: 10px;
+  -webkit-animation : crazyMenu 1s ease;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-fill-mode: backwards;
+  animation : crazyMenu 1s ease;
+  animation-delay: 2s;
+  animation-fill-mode: backwards;
+}
+@-webkit-keyframes crazyMenu {
+  0% {-webkit-transform: translate(90%, 70%); opacity: 0;}
+  33% {-webkit-transform: translate(40%, 20%) rotate(90deg);}
+  66% {-webkit-transform: translate(10%, 50%);}
+  100% {-webkit-transform: translate(0%) rotate(0deg); opacity: 1;}
+}
+@keyframes crazyMenu {
+  0% {transform: translate(90%, 70%); opacity: 0;}
+  33% {transform: translate(40%, 20%) rotate(90deg);}
+  66% {transform: translate(10%, 50%);}
+  100% {transform: translate(0%) rotate(0deg); opacity: 1;}
+}
+
+/*.button {
+  padding: 15px;
+  border: 1px solid;
+  border-radius: 2px;
+  display: block;
+  text-align: center;
+  transition: .6s all ease;
+  height: 50px;
+}
+
+.button-sm {
+  width: 70px;
+}
+
+.button-lg {
+  width: 170px;
+}*/
+
+
+/***********
+NAVBAR
+************/
+
+nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.Navbar {
+  width: 100%;
+  height: 48px;
+  background-color: none;
+}
+
+.Navbar > li {
+  float: right;
+}
+
+.Submenu ul {
+  position: absolute;
+  top: 41px;
+  right: 19px;
+  display: none;
+  z-index: 5;
+}
+
+.Submenu:hover ul {
+	color: white;
+  display: block;
+  -webkit-animation: slideDown .5s ease;
+  animation: slideDown .5s ease;
+}
+@-webkit-keyframes slideDown {
+  0% { -webkit-transform: translateY(-100%);opacity: 0;}
+  90% {-webkit-transform: translateY(10%);opacity: 0.1;}
+  100% {-webkit-transform: translateY(0%);opacity: 1;}
+}
+@keyframes slideDown {
+  0% { transform: translateY(-100%);opacity: 0;}
+  90% {transform: translateY(10%);opacity: 0.1;}
+  100% {transform: translateY(0%);opacity: 1;}
+}
+
+.Submenu a {
+  display: block;
+  position: relative;
+  z-index: 10;
+	color: #FE4365;
+	text-decoration: none;
+}
+
+.Submenu a:hover, .Submenu a:active, .Submenu li:hover, .Submenu li:active {
+	color: white !important;
+}
+
+.Submenu li {
+  margin: 10px 4px;;
+  padding: 13px;
+}
+
+li .Submenu {
+  list-style-type: none !important;
+}
+
+.Submenu li:hover {
+  background-color: black;
+  border: solid 1px white;
+}
