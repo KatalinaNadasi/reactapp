@@ -4,11 +4,15 @@ import React, { Component } from 'react';
 import './App.css';
 // import './assets/css/fonts.css';
 import Menu from './components/Menu';
+import Header from './components/Header';
 
 class App extends Component {
   render() {
     return (
-      <Menu />
+      <div>
+        <Menu />
+        <Header />
+      </div>
     );
   }
 }

@@ -5,10 +5,10 @@ class Menu extends React.Component {
   render() {
     return (
       <nav>
-        <div className="Navbar">
+        <div className="navbar">
           <ul>
-            <li className="Submenu">
-              <img src={require('../img/bars.png')} className="Bars" alt="menu" />
+            <li className="submenu">
+              <img src={require('../img/bars.png')} className="bars" alt="menu" />
               <ul>
                 <li><a href="#">Work</a></li>
                 <li><a href="#">Skills</a></li>
