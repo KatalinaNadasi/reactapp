@@ -1,44 +1,62 @@
 import React from 'react';
 import '../index.css';
+import styled, {keyframes} from 'styled-components';
+import Wrapper from '../components/Wrapper';
+// import TransitionGroup from 'react-addons-transition-group';
+
+const slide = keyframes`
+	from { transform: translateY(0px);}
+	to { transform: translateY(-285px);}
+`;
+const Circle = styled.div`
+  margin-bottom: 250px;
+  animation: ${slide} 5s forwards;
+`;
 
 export default class Header extends React.Component {
+
   render(){
+
     return(
-      <div className="wrapper">
-        <div className="circle">
+      <Wrapper>
+        <Circle>
           <div className="circle-top">
             <h1>Katal<span>i</span>na</h1>
             <h1>Na<span>d</span>asi</h1>
+            <div className="header-subtitle">
+              <p>Développeur Front-End</p>
+            </div>
           </div>
           <div className="circle-bottom">
             <div id="bubble-wrap1">
               <svg height="200" width="200">
                 <ellipse className="bubble-pink" cx="100" cy="100" rx="90" ry="90" />
               </svg>
-              <p>Javascript</p>
+              <p>Animations</p>
             </div>
             <div id="bubble-wrap2">
               <svg height="160" width="160">
                 <ellipse className="bubble-black" cx="80" cy="80" rx="70" ry="70" />
               </svg>
-              <p>HTML5</p>
+              <p>HTML5 / CSS3</p>
             </div>
             <div id="bubble-wrap3">
               <svg height="140" width="140">
                 <ellipse className="bubble-pink" cx="70" cy="70" rx="60" ry="60" />
               </svg>
-              <p>CSS3</p>
+              <p>Responsive</p>
             </div>
             <div id="bubble-wrap4">
               <svg height="200" width="200">
                 <ellipse className="bubble-black" cx="100" cy="100" rx="100" ry="100" />
               </svg>
-              <p>SVG</p>
+              <p>React</p>
             </div>
             <div id="bubble-wrap5">
               <svg height="80" width="80">
                 <ellipse className="bubble-black" cx="40" cy="40" rx="40" ry="40" />
               </svg>
+              <p>SVG animations</p>
             </div>
             <div id="bubble-wrap6">
               <svg height="100" width="100">
@@ -50,6 +68,7 @@ export default class Header extends React.Component {
               <svg height="40" width="40">
                 <ellipse className="bubble-black" cx="20" cy="20" rx="20" ry="20" />
               </svg>
+              <p>Gradients</p>
             </div>
             <div id="bubble-wrap8">
               <svg height="40" width="40">
@@ -60,6 +79,7 @@ export default class Header extends React.Component {
               <svg height="40" width="40">
                 <ellipse className="bubble-pink" cx="20" cy="20" rx="20" ry="20" />
               </svg>
+              <p>Bootstrap</p>
             </div>
             <div id="bubble-wrap10">
               <svg height="40" width="40">
@@ -70,7 +90,7 @@ export default class Header extends React.Component {
               <svg height="200" width="200">
                 <ellipse className="bubble-black" cx="100" cy="100" rx="100" ry="100" />
               </svg>
-              <p>Webpack</p>
+              <p>Javascript / JQUERY</p>
             </div>
             <div id="bubble-wrap12">
               <svg height="20" width="20">
@@ -91,7 +111,7 @@ export default class Header extends React.Component {
               <svg height="120" width="120">
                 <ellipse className="bubble-black" cx="60" cy="60" rx="60" ry="60" />
               </svg>
-              <p>blabla</p>
+              <p>Webpack</p>
             </div>
             <div id="bubble-wrap16">
               <svg height="20" width="20">
@@ -114,13 +134,8 @@ export default class Header extends React.Component {
               </svg>
             </div>
           </div>
-        </div>
-      </div>
+        </Circle>
+      </Wrapper>
     )
   }
 }
-
-// const b1 = document.getElementById('bubble1');
-// const arr = [b1, b2, b3, b4];
-//  Bubbles = arr.map(bubble) =>
-//   arr[bubble].style.display = "block"

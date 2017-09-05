@@ -1,41 +1,13 @@
+/***********
+GENERAL
+************/
+
 body {
   margin: 0;
   padding: 0;
   font-family: 'lato' !important;
   background-color: mistyrose;
 }
-
-/***********
-RESET CODE
-************/
-
-article, aside, details, figcaption,  figure,  footer, header, hgroup, menu, nav, section {
-	display : block ;
-}
-
-/* http://meyerweb.com/eric/tools/css/reset/     v2.0 | 20110126    License: none (public domain) */  html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video { 	margin: 0; 	padding: 0; 	border: 0; 	font-size: 100%; 	font: inherit; 	vertical-align: baseline; } /* HTML5 display-role reset for older browsers */ article, aside, details, figcaption, figure,  footer, header, hgroup, menu, nav, section { 	display: block; } body { 	line-height: 1; } ol, ul { 	list-style: none; } blockquote, q { 	quotes: none; } blockquote:before, blockquote:after, q:before, q:after { 	content: ''; 	content: none; } table { 	border-collapse: collapse; 	border-spacing: 0; }
-
-.grouping :before,
-.grouping :after {
-content :  " ";
-display : table;
-}
-
-.grouping :after {
-clear :both;
-}
-
-img, iframe, video, object {
-max-width : 100%;
-}
-
-strong, b {
-font-weight : bold;
-}
-
-/***********
-GENERAL
-************/
 
 * {
   margin: 0;
@@ -50,59 +22,31 @@ html {
   box-sizing: inherit;
 }
 
-h1 {
-	font-family: 'lato', sans-serif;
-  font-size: 10rem;
-}
-
 a:focus, a:hover, a:active {
   color: white;
   text-decoration: none;
 }
 
-.wrapper {
-  max-width: 1150px;
-  width: 90%;
-  margin-right: auto;
-  margin-left: auto;
-}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video { 	margin: 0; 	padding: 0; 	border: 0; 	font-size: 100%; 	font: inherit; 	vertical-align: baseline; } /* HTML5 display-role reset for older browsers */ article, aside, details, figcaption, figure,  footer, header, hgroup, menu, nav, section { 	display: block; } body { 	line-height: 1; } ol, ul { 	list-style: none; } blockquote, q { 	quotes: none; } blockquote:before, blockquote:after, q:before, q:after { 	content: ''; 	content: none; } table { 	border-collapse: collapse; 	border-spacing: 0; }
 
-.floatLeft {
-  float: left;
-}
+/*.grouping :before,
+.grouping :after {
+content :  " ";
+display : table;
+}*/
 
-.floatRight {
-  float: right;
-}
+/*.grouping :after {
+clear :both;
+}*/
 
-.clear {
-  clear: both;
-}
+/*img, iframe, video, object {
+max-width : 100%;
+}*/
 
-.bold {
-  font-weight: bold;
-}
+/*strong, b {
+font-weight : bold;
+}*/
 
-.hidden,
-.hide {
-  display: none;
-}
-
-.relative {
-  position: relative;
-}
-
-.absolute {
-  position: absolute;
-}
-
-.block {
-  display: block;
-}
-
-.inline {
-  display: inline;
-}
 
 .bars {
   float: right;
@@ -112,7 +56,7 @@ a:focus, a:hover, a:active {
   -webkit-animation-delay: 2s;
   -webkit-animation-fill-mode: backwards;
   animation : crazyMenu 1s ease;
-  animation-delay: 2s;
+  animation-delay: 5s;
   animation-fill-mode: backwards;
 }
 @-webkit-keyframes crazyMenu {
@@ -173,7 +117,6 @@ nav {
   top: 41px;
   right: 19px;
   display: none;
-  z-index: 5;
 }
 
 .submenu:hover ul {
@@ -196,7 +139,6 @@ nav {
 .submenu a {
   display: block;
   position: relative;
-  z-index: 10;
 	color: #FE4365;
 	text-decoration: none;
 }
@@ -223,20 +165,6 @@ li .submenu {
 HEADER
 ************/
 
-.circle {
-  animation: slide 5s forwards;
-}
-@keyframes slide {
-  from {
-    transform: translateY(0px);
-  }
-  /*50% {
-    transform: translateY(-182px);
-  }*/
-  to {
-    transform: translateY(-365px);
-  }
-}
 
 .circle-top {
 	margin-top: 460px;
@@ -259,7 +187,35 @@ HEADER
 	color: black;
 }
 
-/*Typing Animation*/
+.header-subtitle {
+	font-family: 'Nixie One', cursive;
+	padding-top: 20px;
+	font-size: 2rem;
+	color: black;
+	float: right;
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	border-right: .10em solid orange; /* The typwriter cursor */
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin-right: 30px;
+	letter-spacing: 0em; /* Adjust as needed */
+	animation:
+	typing 3.5s steps(30, end),
+	blink-caret 5.5s step-end infinite;
+	height: 54px;
+  margin-top: 120px;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 33% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
 
 /*End Typing animation*/
 .circle-bottom {
@@ -274,6 +230,7 @@ HEADER
 .bubble-pink {
   fill: #FE4365;
 }
+
 
 .bubble-black {
   fill: black;
@@ -296,7 +253,15 @@ div#bubble-wrap1 {
   -ms-transform: translate(-79%, -73%);
   -o-transform: translate(-79%, -73%);
   transform: translate(-79%, -73%);
-  z-index: 100;
+  animation: animateBubble 25s linear, sideWays 7s ease-in-out;
+}
+@-webkit-keyframes animateBubble {
+    0% {
+        margin-top: 60px;
+    }
+    10% {
+        margin-top: -10%;
+    }
 }
 
 div#bubble-wrap2 {
@@ -308,7 +273,7 @@ div#bubble-wrap2 {
   -ms-transform: translate(-20%, -69%);
   -o-transform: translate(-20%, -69%);
   transform: translate(-20%, -69%);
-  z-index: 100;
+  -webkit-animation: animateBubble 8s linear, sideWays 8s ease-in-out;
 }
 
 div#bubble-wrap2 p {
@@ -328,7 +293,6 @@ div#bubble-wrap3 {
   -ms-transform: translate(-40%, -93%);
   -o-transform: translate(-40%, -93%);
   transform: translate(-40%, -93%);
-  z-index: 100;
 }
 
 div#bubble-wrap3 p {
@@ -348,7 +312,6 @@ div#bubble-wrap4 {
   -ms-transform: translate(-60%, -87%);
   -o-transform: translate(-60%, -87%);
   transform: translate(-60%, -87%);
-  z-index: 100;
 }
 
 div#bubble-wrap4 p {
@@ -368,7 +331,6 @@ div#bubble-wrap5 {
   -ms-transform: translate(-85%, -57%);
   -o-transform: translate(-85%, -57%);
   transform: translate(-85%, -57%);
-  z-index: 100;
 }
 
 div#bubble-wrap6 {
@@ -380,7 +342,6 @@ div#bubble-wrap6 {
   -ms-transform: translate(-85%, -57%);
   -o-transform: translate(-85%, -57%);
   transform: translate(-85%, -57%);
-  z-index: 100;
 }
 
 div#bubble-wrap6 p {
@@ -400,7 +361,6 @@ div#bubble-wrap7 {
   -ms-transform: translate(-85%, -57%);
   -o-transform: translate(-85%, -57%);
   transform: translate(-85%, -57%);
-  z-index: 100;
 }
 
 div#bubble-wrap8 {
@@ -412,7 +372,6 @@ div#bubble-wrap8 {
   -ms-transform: translate(-85%, -57%);
   -o-transform: translate(-85%, -57%);
   transform: translate(-85%, -57%);
-  z-index: 100;
 }
 
 div#bubble-wrap9 {
@@ -424,7 +383,6 @@ div#bubble-wrap9 {
   -ms-transform: translate(-67%, -69%);
   -o-transform: translate(-67%, -69%);
   transform: translate(-67%, -69%);
-  z-index: 100;
 }
 
 div#bubble-wrap10 {
@@ -436,7 +394,6 @@ div#bubble-wrap10 {
   -ms-transform: translate(-85%, -57%);
   -o-transform: translate(-85%, -57%);
   transform: translate(-85%, -57%);
-  z-index: 100;
 }
 
 div#bubble-wrap11 {
@@ -448,7 +405,6 @@ div#bubble-wrap11 {
   -ms-transform: translate(-50%, -65%);
   -o-transform: translate(-50%, -65%);
   transform: translate(-50%, -65%);
-  z-index: 100;
 }
 
 div#bubble-wrap11 p {
@@ -468,7 +424,6 @@ div#bubble-wrap12 {
   -ms-transform: translate(-92%, -64%);
   -o-transform: translate(-92%, -64%);
   transform: translate(-92%, -64%);
-  z-index: 100;
 }
 
 div#bubble-wrap13 {
@@ -480,7 +435,6 @@ div#bubble-wrap13 {
   -ms-transform: translate(-75%, -86%);
   -o-transform: translate(-75%, -86%);
   transform: translate(-75%, -86%);
-  z-index: 100;
 }
 
 div#bubble-wrap14 {
@@ -492,7 +446,6 @@ div#bubble-wrap14 {
   -ms-transform: translate(-69%, -53%);
   -o-transform: translate(-69%, -53%);
   transform: translate(-69%, -53%);
-  z-index: 100;
 }
 
 div#bubble-wrap15 {
@@ -504,7 +457,6 @@ div#bubble-wrap15 {
   -ms-transform: translate(-24%, -85%);
   -o-transform: translate(-24%, -85%);
   transform: translate(-24%, -85%);
-  z-index: 100;
 }
 
 div#bubble-wrap15 p {
@@ -524,7 +476,6 @@ div#bubble-wrap16 {
   -ms-transform: translate(-13%, -75%);
   -o-transform: translate(-13%, -75%);
   transform: translate(-13%, -75%);
-  z-index: 100;
 }
 div#bubble-wrap17 {
   position: absolute;
@@ -535,7 +486,6 @@ div#bubble-wrap17 {
   -ms-transform: translate(-24%, -85%);
   -o-transform: translate(-24%, -85%);
   transform: translate(-24%, -85%);
-  z-index: 100;
 }
 
 div#bubble-wrap18 {
@@ -547,7 +497,6 @@ div#bubble-wrap18 {
   -ms-transform: translate(-45%, -78%);
   -o-transform: translate(-45%, -78%);
   transform: translate(-45%, -78%);
-  z-index: 100;
 }
 
 div#bubble-wrap19 {
@@ -559,5 +508,4 @@ div#bubble-wrap19 {
   -ms-transform: translate(-14%, -55%);
   -o-transform: translate(-14%, -55%);
   transform: translate(-14%, -55%);
-  z-index: 100;
 }

@@ -3,10 +3,11 @@ import '../index.css';
 
 class Menu extends React.Component {
   render() {
+
     return (
       <nav>
         <div className="navbar">
-          <ul>
+          <ul className="list-group">
             <li className="submenu">
               <img src={require('../img/bars.png')} className="bars" alt="menu" />
               <ul>
