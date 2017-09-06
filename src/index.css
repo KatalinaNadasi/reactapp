@@ -29,48 +29,13 @@ a:focus, a:hover, a:active {
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video { 	margin: 0; 	padding: 0; 	border: 0; 	font-size: 100%; 	font: inherit; 	vertical-align: baseline; } /* HTML5 display-role reset for older browsers */ article, aside, details, figcaption, figure,  footer, header, hgroup, menu, nav, section { 	display: block; } body { 	line-height: 1; } ol, ul { 	list-style: none; } blockquote, q { 	quotes: none; } blockquote:before, blockquote:after, q:before, q:after { 	content: ''; 	content: none; } table { 	border-collapse: collapse; 	border-spacing: 0; }
 
-/*.grouping :before,
-.grouping :after {
-content :  " ";
-display : table;
-}*/
-
-/*.grouping :after {
-clear :both;
-}*/
-
-/*img, iframe, video, object {
-max-width : 100%;
-}*/
-
-/*strong, b {
-font-weight : bold;
-}*/
-
-
-.bars {
-  float: right;
-  padding-right: 16px;
-  padding-top: 10px;
-  -webkit-animation : crazyMenu 1s ease;
-  -webkit-animation-delay: 2s;
-  -webkit-animation-fill-mode: backwards;
-  animation : crazyMenu 1s ease;
-  animation-delay: 5s;
-  animation-fill-mode: backwards;
+.black {
+	color: black;
 }
-@-webkit-keyframes crazyMenu {
-  0% {-webkit-transform: translate(90%, 70%); opacity: 0;}
-  33% {-webkit-transform: translate(40%, 20%) rotate(90deg);}
-  66% {-webkit-transform: translate(10%, 50%);}
-  100% {-webkit-transform: translate(0%) rotate(0deg); opacity: 1;}
-}
-@keyframes crazyMenu {
-  0% {transform: translate(90%, 70%); opacity: 0;}
-  33% {transform: translate(40%, 20%) rotate(90deg);}
-  66% {transform: translate(10%, 50%);}
-  100% {transform: translate(0%) rotate(0deg); opacity: 1;}
-}
+
+/***********
+GENERAL
+************/
 
 /*.button {
   padding: 15px;
@@ -92,30 +57,13 @@ font-weight : bold;
 
 
 /***********
-NAVBAR
+NAVBAR - MENU
 ************/
-
-nav {
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-}
-
-.navbar {
-  width: 100%;
-  height: 48px;
-  background-color: none;
-}
-
-.navbar > li {
-  float: right;
-}
 
 .submenu ul {
   position: absolute;
-  top: 41px;
-  right: 19px;
+  top: 50px;
+  right: 24px;
   display: none;
 }
 
@@ -127,38 +75,45 @@ nav {
 }
 @-webkit-keyframes slideDown {
   0% { -webkit-transform: translateY(-100%);opacity: 0;}
-  90% {-webkit-transform: translateY(10%);opacity: 0.1;}
+  90% {-webkit-transform: translateY(20%);opacity: 0.1;}
   100% {-webkit-transform: translateY(0%);opacity: 1;}
 }
 @keyframes slideDown {
   0% { transform: translateY(-100%);opacity: 0;}
-  90% {transform: translateY(10%);opacity: 0.1;}
+  90% {transform: translateY(20%);opacity: 0.1;}
   100% {transform: translateY(0%);opacity: 1;}
 }
 
-.submenu a {
+.submenu ul li a {
+  text-align: right;
+  float: right;
   display: block;
   position: relative;
-	color: #FE4365;
-	text-decoration: none;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 10px;
+  margin: 0;
+  background: transparent;
+  width: 150px;
+  transition: all .5s;
+  line-height: 20px;
+  color: #FE4365;
+  -moz-transition: all .5s;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  line-height: 20px;
 }
 
-.submenu a:hover, .submenu a:active, .submenu li:hover, .submenu li:active {
-	color: white !important;
-}
-
-.submenu li {
-  margin: 10px 4px;;
-  padding: 13px;
-}
-
-li .submenu {
-  list-style-type: none !important;
-}
-
-.submenu li:hover {
-  background-color: black;
-  border: solid 1px white;
+.submenu ul li a:hover {
+  background: #FE4365;
+  padding: 10px 40px 10px 0;
+  width: 200px;
+  -moz-transition: all .5s;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  color: white;
 }
 
 /***********
@@ -166,64 +121,6 @@ HEADER
 ************/
 
 
-.circle-top {
-	margin-top: 460px;
-  min-height: 590px;
-  background: #FE4365;
-  border-corner-shape: bevel;
-  border-radius: 999px 999px 0 0;
-  width: auto;
-}
-
-.circle-top h1 {
-	font-family: 'Abril Fatface', cursive;
-	font-size: 10rem;
-	padding: 100px 197px 0 263px;
-	color: mistyrose;
-  height: 150px;
-}
-
-.circle-top h1 span {
-	color: black;
-}
-
-.header-subtitle {
-	font-family: 'Nixie One', cursive;
-	padding-top: 20px;
-	font-size: 2rem;
-	color: black;
-	float: right;
-	overflow: hidden; /* Ensures the content is not revealed until the animation */
-	border-right: .10em solid orange; /* The typwriter cursor */
-	white-space: nowrap; /* Keeps the content on a single line */
-	margin-right: 30px;
-	letter-spacing: 0em; /* Adjust as needed */
-	animation:
-	typing 3.5s steps(30, end),
-	blink-caret 5.5s step-end infinite;
-	height: 54px;
-  margin-top: 120px;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 33% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange }
-}
-
-/*End Typing animation*/
-.circle-bottom {
-  height: 590px;
-  width: auto;
-  background: rgba(165, 26, 65, 0.1);
-  border-radius: 0 0 999px 999px;
-}
 
 /*bubbles*/
 
@@ -231,40 +128,40 @@ HEADER
   fill: #FE4365;
 }
 
-
 .bubble-black {
   fill: black;
 }
 
-div#bubble-wrap1 p {
-  position: absolute;
-  left: 23%;
-  top: 42%;
-	color: white;
-	font-size: 1.7rem;
-}
-
 div#bubble-wrap1 {
-  position: absolute;
+  /*position: absolute;
   left: 83%;
-  top: 73%;
-  -webkit-transform: translate(-79%, -73%);
+  top: 73%;*/
+  /*-webkit-transform: translate(-79%, -73%);
   -moz-transform: translate(-79%, -73%);
   -ms-transform: translate(-79%, -73%);
   -o-transform: translate(-79%, -73%);
-  transform: translate(-79%, -73%);
-  animation: animateBubble 25s linear, sideWays 7s ease-in-out;
+  transform: translate(-79%, -73%);*/
+  /*animation: animateBubble 25s linear, sideWays 7s ease-in-out;*/
 }
-@-webkit-keyframes animateBubble {
+/*@-webkit-keyframes animateBubble {
     0% {
         margin-top: 60px;
     }
     10% {
         margin-top: -10%;
     }
-}
+}*/
 
-div#bubble-wrap2 {
+/*div#bubble-wrap1 p {
+  position: absolute;
+  left: 23%;
+  top: 42%;
+	color: white;
+	font-size: 1.7rem;
+}*/
+
+
+/*div#bubble-wrap2 {
   position: absolute;
   left: 20%;
   top: 69%;
@@ -273,18 +170,18 @@ div#bubble-wrap2 {
   -ms-transform: translate(-20%, -69%);
   -o-transform: translate(-20%, -69%);
   transform: translate(-20%, -69%);
-  -webkit-animation: animateBubble 8s linear, sideWays 8s ease-in-out;
-}
+  -webkit-animation: animateBubble 8s linear;
+}*/
 
-div#bubble-wrap2 p {
+/*div#bubble-wrap2 p {
   position: absolute;
   left: 29%;
   top: 43%;
   color: white;
   font-size: 1.3rem;
-}
+}*/
 
-div#bubble-wrap3 {
+/*div#bubble-wrap3 {
   position: absolute;
   left: 40%;
   top: 93%;
@@ -293,17 +190,17 @@ div#bubble-wrap3 {
   -ms-transform: translate(-40%, -93%);
   -o-transform: translate(-40%, -93%);
   transform: translate(-40%, -93%);
-}
+}*/
 
-div#bubble-wrap3 p {
+/*div#bubble-wrap3 p {
   position: absolute;
   left: 34%;
   top: 42%;
   color: white;
   font-size: 1.3rem;
-}
+}*/
 
-div#bubble-wrap4 {
+/*div#bubble-wrap4 {
   position: absolute;
   left: 60%;
   top: 87%;
@@ -320,9 +217,9 @@ div#bubble-wrap4 p {
   top: 44%;
   color: white;
   font-size: 1.8rem;
-}
+}*/
 
-div#bubble-wrap5 {
+/*div#bubble-wrap5 {
   position: absolute;
   left: 85%;
   top: 57%;
@@ -331,9 +228,9 @@ div#bubble-wrap5 {
   -ms-transform: translate(-85%, -57%);
   -o-transform: translate(-85%, -57%);
   transform: translate(-85%, -57%);
-}
+}*/
 
-div#bubble-wrap6 {
+/*div#bubble-wrap6 {
   position: absolute;
   left: 40%;
   top: 74%;
@@ -350,9 +247,9 @@ div#bubble-wrap6 p {
   top: 40%;
   color: white;
   font-size: 1.2rem;
-}
+}*/
 
-div#bubble-wrap7 {
+/*div#bubble-wrap7 {
   position: absolute;
   left: 35%;
   top: 55%;
@@ -361,9 +258,9 @@ div#bubble-wrap7 {
   -ms-transform: translate(-85%, -57%);
   -o-transform: translate(-85%, -57%);
   transform: translate(-85%, -57%);
-}
+}*/
 
-div#bubble-wrap8 {
+/*div#bubble-wrap8 {
   position: absolute;
   left: 51%;
   top: 94%;
@@ -372,9 +269,9 @@ div#bubble-wrap8 {
   -ms-transform: translate(-85%, -57%);
   -o-transform: translate(-85%, -57%);
   transform: translate(-85%, -57%);
-}
+}*/
 
-div#bubble-wrap9 {
+/*div#bubble-wrap9 {
   position: absolute;
   left: 67%;
   top: 69%;
@@ -393,10 +290,10 @@ div#bubble-wrap10 {
   -moz-transform: translate(-85%, -57%);
   -ms-transform: translate(-85%, -57%);
   -o-transform: translate(-85%, -57%);
-  transform: translate(-85%, -57%);
-}
+  transform: translate(-85%, -57%);*/
+/*}*/
 
-div#bubble-wrap11 {
+/*div#bubble-wrap11 {
   position: absolute;
   left: 50%;
   top: 65%;
@@ -405,17 +302,17 @@ div#bubble-wrap11 {
   -ms-transform: translate(-50%, -65%);
   -o-transform: translate(-50%, -65%);
   transform: translate(-50%, -65%);
-}
+}*/
 
-div#bubble-wrap11 p {
+/*div#bubble-wrap11 p {
   position: absolute;
   left: 22%;
   top: 42%;
   color: white;
   font-size: 1.8rem;
-}
+}*/
 
-div#bubble-wrap12 {
+/*div#bubble-wrap12 {
   position: absolute;
   left: 92%;
   top: 64%;
@@ -424,9 +321,9 @@ div#bubble-wrap12 {
   -ms-transform: translate(-92%, -64%);
   -o-transform: translate(-92%, -64%);
   transform: translate(-92%, -64%);
-}
+}*/
 
-div#bubble-wrap13 {
+/*div#bubble-wrap13 {
   position: absolute;
   left: 75%;
   top: 86%;
@@ -435,9 +332,9 @@ div#bubble-wrap13 {
   -ms-transform: translate(-75%, -86%);
   -o-transform: translate(-75%, -86%);
   transform: translate(-75%, -86%);
-}
+}*/
 
-div#bubble-wrap14 {
+/*div#bubble-wrap14 {
   position: absolute;
   left: 69%;
   top: 53%;
@@ -446,9 +343,9 @@ div#bubble-wrap14 {
   -ms-transform: translate(-69%, -53%);
   -o-transform: translate(-69%, -53%);
   transform: translate(-69%, -53%);
-}
+}*/
 
-div#bubble-wrap15 {
+/*div#bubble-wrap15 {
   position: absolute;
   left: 24%;
   top: 85%;
@@ -465,9 +362,9 @@ div#bubble-wrap15 p {
   top: 39%;
   color: white;
   font-size: 1.3rem;
-}
+}*/
 
-div#bubble-wrap16 {
+/*div#bubble-wrap16 {
   position: absolute;
   left: 13%;
   top: 75%;
@@ -476,8 +373,8 @@ div#bubble-wrap16 {
   -ms-transform: translate(-13%, -75%);
   -o-transform: translate(-13%, -75%);
   transform: translate(-13%, -75%);
-}
-div#bubble-wrap17 {
+}*/
+/*div#bubble-wrap17 {
   position: absolute;
   left: 20%;
   top: 57%;
@@ -486,9 +383,9 @@ div#bubble-wrap17 {
   -ms-transform: translate(-24%, -85%);
   -o-transform: translate(-24%, -85%);
   transform: translate(-24%, -85%);
-}
+}*/
 
-div#bubble-wrap18 {
+/*div#bubble-wrap18 {
   position: absolute;
   left: 45%;
   top: 78%;
@@ -497,9 +394,9 @@ div#bubble-wrap18 {
   -ms-transform: translate(-45%, -78%);
   -o-transform: translate(-45%, -78%);
   transform: translate(-45%, -78%);
-}
+}*/
 
-div#bubble-wrap19 {
+/*div#bubble-wrap19 {
   position: absolute;
   left: 14%;
   top: 55%;
@@ -508,4 +405,4 @@ div#bubble-wrap19 {
   -ms-transform: translate(-14%, -55%);
   -o-transform: translate(-14%, -55%);
   transform: translate(-14%, -55%);
-}
+}*/
