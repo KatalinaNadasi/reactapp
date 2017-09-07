@@ -26,7 +26,7 @@ export const CircleTop = styled.div`
  /* The typing effect */
  export const typing = keyframes`
    from { width: 0;}
-   to { width: 33%;}
+   to { width: 30%;}
  `;
  /* The typewriter cursor effect */
  export const blinkCaret = keyframes`
@@ -57,7 +57,7 @@ export const CircleTop = styled.div`
  `
  /* Bubble jump */
  export const jump = keyframes`
-  0% { margin-top: 60px;}
+  0% { margin-top: 40px;}
   10% { margin-top: -5%;}
  `
 
@@ -81,15 +81,15 @@ export const CircleTop = styled.div`
   position: absolute;
   left: 69%;
   top: 62%;
-  animation: ${jump} 25s infinite linear;
-  animation-iteration-count: 2;
+  animation: ${jump} 25s linear;
+	animation-delay: 7s;
  `
  export const Bubble2 = styled.div`
   position: absolute;
   left: 24%;
   top: 69%;
   animation: ${jump} 25s linear;
-  animation-iteration-count: 2;
+	animation-delay: 7s;
  `
 
  export const Bubble3 = styled.div`
@@ -97,7 +97,7 @@ export const CircleTop = styled.div`
    left: 36%;
    top: 82%;
    animation: ${jump} 25s linear;
-   animation-iteration-count: 2;
+	 animation-delay: 7s;
  `
 
  export const Bubble4 = styled.div`
@@ -105,7 +105,7 @@ export const CircleTop = styled.div`
   left: 53%;
   top: 78%;
   animation: ${jump} 25s linear;
-  animation-iteration-count: 2;
+	animation-delay: 7s;
  `
 
  export const Bubble5 = styled.div`
@@ -113,14 +113,14 @@ export const CircleTop = styled.div`
   left: 85%;
   top: 57%;
   animation: ${jump} 25s linear;
-  animation-iteration-count: 2;
+	animation-delay: 7s;
  `
  export const Bubble6 = styled.div`
   position: absolute;
   left: 39%;
   top: 62%;
   animation: ${jump} 25s linear;
-  animation-iteration-count: 2;
+	animation-delay: 7s;
  `
 
  export const Bubble7 = styled.div`
@@ -128,7 +128,7 @@ export const CircleTop = styled.div`
   left: 35%;
   top: 55%;
   animation: ${jump} 25s linear;
-  animation-iteration-count: 2;
+	animation-delay: 7s;
  `
 
  export const Bubble8 = styled.div`
@@ -136,7 +136,7 @@ export const CircleTop = styled.div`
   left: 51%;
   top: 94%;
   animation: ${jump} 25s linear;
-  animation-iteration-count: 2;
+	animation-delay: 7s;
  `
 
  export const Bubble9 = styled.div`
@@ -144,7 +144,7 @@ export const CircleTop = styled.div`
   left: 67%;
   top: 69%;
   animation: ${jump} 25s linear;
-  animation-iteration-count: 2;
+	animation-delay: 7s;
  `
 
  export const Bubble10 = styled.div`
@@ -152,7 +152,7 @@ export const CircleTop = styled.div`
   left: 10%;
   top: 62%;
   animation: ${jump} 25s linear;
-  animation-iteration-count: 2;
+	animation-delay: 7s;
  `
 
  export const Bubble11 = styled.div`
@@ -160,7 +160,7 @@ export const CircleTop = styled.div`
   left: 50%;
   top: 56%;
   animation: ${jump} 25s linear;
-  animation-iteration-count: 2;
+	animation-delay: 7s;
  `
 
  export const Bubble12 = styled.div`
@@ -168,7 +168,7 @@ export const CircleTop = styled.div`
   left: 92%;
   top: 64%;
   animation: ${jump} 25s linear;
-  animation-iteration-count: 2;
+	animation-delay: 7s;
  `
 
  export const Bubble13 = styled.div`
@@ -176,7 +176,7 @@ export const CircleTop = styled.div`
   left: 75%;
   top: 86%;
   animation: ${jump} 25s linear;
-  animation-iteration-count: 2;
+	animation-delay: 7s;
  `
 
  export const Bubble14 = styled.div`
@@ -184,7 +184,7 @@ export const CircleTop = styled.div`
   left: 69%;
   top: 53%;
   animation: ${jump} 25s linear;
-  animation-iteration-count: 2;
+	animation-delay: 7s;
  `
 
  export const Bubble15 = styled.div`
@@ -192,40 +192,40 @@ export const CircleTop = styled.div`
   left: 24%;
   top: 83%;
   animation: ${jump} 25s linear;
-  animation-iteration-count: 2;
+	animation-delay: 7s;
  `
  export const Bubble16 = styled.div`
   position: absolute;
   left: 13%;
   top: 75%;
   animation: ${jump} 25s linear;
-  animation-iteration-count: 2;
+	animation-delay: 7s;
  `
  export const Bubble17 = styled.div`
   position: absolute;
   left: 20%;
   top: 57%;
   animation: ${jump} 25s linear;
-  animation-iteration-count: 2;
+	animation-delay: 7s;
  `
  export const Bubble18 = styled.div`
   position: absolute;
   left: 45%;
   top: 78%;
   animation: ${jump} 25s linear;
-  animation-iteration-count: 2;
+	animation-delay: 7s;
  `
  export const Bubble19 = styled.div`
   position: absolute;
   left: 14%;
   top: 55%;
   animation: ${jump} 25s linear;
-  animation-iteration-count: 2;
+	animation-delay: 7s;
  `
  export const Bubble20 = styled.div`
    position: absolute;
    left: 12%;
    top: 60%;
    animation: ${jump} 25s linear;
-   animation-iteration-count: 2;
+	 animation-delay: 7s;
  `
