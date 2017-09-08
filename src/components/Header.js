@@ -3,7 +3,7 @@ import '../index.css';
 // import styled, {keyframes} from 'styled-components';
 import Wrapper from '../components/Wrapper';
 import {
-  Circle, CircleTop, CircleTitle,CircleSub, CircleBottom, Ellipse, BubbleP, BubblePmin, Bubble1, Bubble2, Bubble3, Bubble4, Bubble5, Bubble6, Bubble7, Bubble8, Bubble9, Bubble10, Bubble11, Bubble12, Bubble13, Bubble14, Bubble15, Bubble16, Bubble17, Bubble18, Bubble19, Bubble20
+  Circle, CircleTop, CircleTitle, Black, CircleSub, CircleBottom, Ellipse, BubbleP, BubblePmin, Bubble1, Bubble2, Bubble3, Bubble4, Bubble5, Bubble6, Bubble7, Bubble8, Bubble9, Bubble10, Bubble11, Bubble12, Bubble13, Bubble14, Bubble15, Bubble16, Bubble17, Bubble18, Bubble19, Bubble20
 } from '../components/Header.style';
 // import WhenInView from '../components/WhenInView';
 // import TransitionGroup from 'react-addons-transition-group';
@@ -17,8 +17,8 @@ export default class Header extends React.Component {
       <Wrapper>
         <Circle>
           <CircleTop>
-            <CircleTitle>Katal<span className="black">i</span>na</CircleTitle>
-            <CircleTitle>Na<span className="black">d</span>asi</CircleTitle>
+            <CircleTitle>Katal<Black>i</Black>na</CircleTitle>
+            <CircleTitle>Na<Black>d</Black>asi</CircleTitle>
             <CircleSub>Front-End Developer</CircleSub>
           </CircleTop>
           <CircleBottom>

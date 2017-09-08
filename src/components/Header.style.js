@@ -25,6 +25,11 @@ export const CircleTop = styled.div`
    color: mistyrose;
     height: 150px;
  `
+
+ export const Black = styled.span`
+ 	color: black;
+ `
+
  /* The typing effect */
  export const typing = keyframes`
    from { width: 0;}
