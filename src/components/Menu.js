@@ -1,6 +1,7 @@
 import React from 'react';
 import '../index.css';
 import styled, {keyframes} from 'styled-components';
+import {pink} from '../variables.js';
 
 const Navbar = styled.div`
   position: fixed;
@@ -10,7 +11,7 @@ const Navbar = styled.div`
   width: 100%;
   height: 48px;
   background-color: none;
-`
+`;
 
 const jump = keyframes`
   0% {-webkit-transform: translate(90%, 70%); opacity: 0;}
@@ -28,6 +29,31 @@ const Bars = styled.img`
   cursor: pointer;
 `;
 
+const SubLink = styled.a`
+  text-align: right;
+  float: right;
+  display: block;
+  position: relative;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 10px;
+  margin: 0;
+  background: transparent;
+  width: 150px;
+  transition: all .5s;
+  line-height: 20px;
+  color: ${pink};
+  line-height: 20px;
+
+  &:hover {
+    background: ${pink};
+    padding: 10px 40px 10px 0;
+    width: 200px;
+    transition: all .5s;
+    color: white;
+  }
+`
+
 export default class Menu extends React.Component {
     render() {
 
@@ -37,12 +63,12 @@ export default class Menu extends React.Component {
           <li className="submenu">
             <Bars src={require('../img/bars.png')} alt="menu" />
             <ul>
-              <li><a href="#">Work</a></li>
-              <li><a href="#">Skills</a></li>
-              <li><a href="#">About me</a></li>
-              <li><a href="#">Availabilities</a></li>
-              <li><a href="#">Contact me</a></li>
-              <li><a href="#">Previous website</a></li>
+              <li><SubLink href="#">Work</SubLink></li>
+              <li><SubLink href="#">Skills</SubLink></li>
+              <li><SubLink href="#">About me</SubLink></li>
+              <li><SubLink href="#">Availabilities</SubLink></li>
+              <li><SubLink href="#">Contact me</SubLink></li>
+              <li><SubLink href="#">Previous website</SubLink></li>
             </ul>
           </li>
         </ul>

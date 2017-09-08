@@ -1,4 +1,5 @@
 import styled, {keyframes} from 'styled-components';
+import {pink} from '../variables.js';
 
 
 export const slide = keyframes`
@@ -8,11 +9,12 @@ export const slide = keyframes`
 export const Circle = styled.div`
   margin-bottom: 250px;
   animation: ${slide} 5s forwards;
+	z-index: -99;
 `;
 export const CircleTop = styled.div`
   margin-top: 460px;
   min-height: 590px;
-  background-color: #FE4365;
+  background-color: ${pink};
   border-radius: 999px 999px 0 0;
   width: auto;
  `
@@ -55,6 +57,11 @@ export const CircleTop = styled.div`
    background: rgba(165, 26, 65, 0.1);
    border-radius: 0 0 999px 999px;
  `
+
+ export const Ellipse = styled.ellipse`
+   fill: ${props => props.pink ? '#FE4365' : '#000'};
+ `
+
  /* Bubble jump */
  export const jump = keyframes`
   0% { margin-top: 40px;}
