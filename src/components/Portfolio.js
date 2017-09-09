@@ -20,16 +20,16 @@ const SpaceBeetween = styled.div`
 
 const ImageContainer1 = styled.div`
   width: 25%;
-  height: 165vh;
   margin: 119px 0px 11px 220px;
   float: left;
 `
 const ImageContainer2 = styled.div`
   width: 25%;
-  height: 165vh;
   float: left;
-  margin: 250px;
+  height: 25%;
+  margin: 250px 0 0 250px;
 `
+
 
 
 class Portfolio extends React.Component {
@@ -46,6 +46,16 @@ class Portfolio extends React.Component {
               reduceHeight={2/3}
               src={require('../img/portfolio/adaweek/adaweekAll.jpg')}/>
           </ImageContainer2>
+          <ImageContainer1>
+            <ParallaxImage
+              reduceHeight={2/3}
+              src={require('../img/portfolio/katalinanadasi/katalina.jpg')}/>
+          </ImageContainer1>
+          <ImageContainer1>
+            <ParallaxImage
+
+              src={require('../img/portfolio/labanquepostale/labanque.png')}/>
+          </ImageContainer1>
         </SpaceBeetween>
       </Background>
 
