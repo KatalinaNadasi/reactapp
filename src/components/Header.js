@@ -103,7 +103,7 @@ export default class Header extends React.Component {
                     <svg height="100" width="100">
                       <Ellipse black cx="50" cy="50" rx="50" ry="50" />
                     </svg>
-                    <BubblePmin>Webpack</BubblePmin>
+                    <BubblePmin>npm, Webpack</BubblePmin>
                   </Bubble15>
                   <Bubble16>
                     <svg height="20" width="20">

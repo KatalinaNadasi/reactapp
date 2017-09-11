@@ -83,8 +83,8 @@ export const CircleTop = styled.div`
 
  export const BubblePmin = styled.p `
   position: absolute;
-  left: 18%;
-  top: 42%;
+	left: 14%;
+	top: 32%;
   color: white;
   font-size: 1.2rem;
  `
