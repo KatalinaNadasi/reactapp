@@ -23,7 +23,7 @@ export const CircleTop = styled.div`
    font-size: 10rem;
    padding: 100px 197px 0 263px;
    color: mistyrose;
-    height: 150px;
+   height: 150px;
  `
 
  export const Black = styled.span`
