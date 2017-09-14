@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import {pink} from '../variables.js';
 
 export const Background1 = styled.div`
-  height: 95vh;
+  height: 100vh;
   background-image: url('${require('../img/logo-transp.svg')}');
   background-repeat: no-repeat;
   background-size: 86%;

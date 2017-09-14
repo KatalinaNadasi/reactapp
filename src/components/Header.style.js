@@ -70,7 +70,7 @@ export const CircleTop = styled.div`
  /* Bubble jump */
  export const jump = keyframes`
   0% { margin-top: 40px;}
-  10% { margin-top: -15%;}
+  3% { margin-top: -2%;}
  `
 
  export const sideWays = keyframes`
@@ -98,7 +98,7 @@ export const CircleTop = styled.div`
   position: absolute;
   left: 69%;
   top: 62%;
-	animation: ${jump} 25s linear, ${sideWays} 2s ease-in-out backwards;
+	animation: ${jump} 25s linear backwards, ${sideWays} 25s ease-in-out backwards;
 	display: block;
 
 	&:after {
