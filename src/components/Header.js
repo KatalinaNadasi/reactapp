@@ -1,15 +1,41 @@
 import React from 'react';
 import '../index.css';
-// import styled, {keyframes} from 'styled-components';
 import Wrapper from '../components/Wrapper';
 import {
   Circle, CircleTop, CircleTitle, Black, CircleSub, CircleBottom, Ellipse, BubbleP, BubblePmin, Bubble1, Bubble2, Bubble3, Bubble4, Bubble5, Bubble6, Bubble7, Bubble8, Bubble9, Bubble10, Bubble11, Bubble12, Bubble13, Bubble14, Bubble15, Bubble16, Bubble17, Bubble18, Bubble19, Bubble20
 } from '../components/Header.style';
-// import WhenInView from '../components/WhenInView';
-// import TransitionGroup from 'react-addons-transition-group';
+import WhenInView from '../js/WhenInView';
+
+// const circle = document.getElementById('circle');
+addEventListener('scroll', function(){
+  console.log(`
+    taillePage: ${document.body.scrollHeight}
+    tailleAffichage: ${innerHeight}
+    positionScroll: ${pageYOffset}
+    `)
+});
+
 
 
 export default class Header extends React.Component {
+  constructor(){
+    super();
+    this.state = {
+      onShow : false,
+      opacity: 0,
+    }
+  }
+
+
+  onShow(){
+        this.setState({
+          opacity: this.state.opacity === 0 ? 1 : 0
+        })
+
+    }
+
+
+
 
   render(){
 
@@ -21,19 +47,29 @@ export default class Header extends React.Component {
             <CircleTitle>Na<Black>d</Black>asi</CircleTitle>
             <CircleSub>Front-End Developer</CircleSub>
           </CircleTop>
+
+
+
           <CircleBottom>
-                  <Bubble1>
+            <div className="bubbles">
+                  <Bubble1
+                    style={{opacity: this.state.opacity}}
+                    onClick={this.onShow.bind(this)}>
                     <svg height="200" width="200">
                       <Ellipse pink cx="100" cy="100" rx="90" ry="90" />
                     </svg>
                     <BubbleP>Animations</BubbleP>
                   </Bubble1>
-                  <Bubble2>
-                    <svg height="160" width="160">
-                      <Ellipse black cx="80" cy="80" rx="70" ry="70" />
-                    </svg>
-                    <BubbleP>HTML5 / CSS3</BubbleP>
-                  </Bubble2>
+                  <WhenInView>
+                    {({isInView}) =>
+                    <Bubble2 hide={!isInView}>
+                      <svg height="160" width="160">
+                        <Ellipse black cx="80" cy="80" rx="70" ry="70" />
+                      </svg>
+                      <BubbleP>HTML5 / CSS3</BubbleP>
+                    </Bubble2>
+                  }
+                  </WhenInView>
                   <Bubble3>
                     <svg height="160" width="160">
                       <Ellipse pink cx="80" cy="80" rx="70" ry="70" />
@@ -131,6 +167,7 @@ export default class Header extends React.Component {
                     </svg>
                     <BubblePmin>Bootstrap</BubblePmin>
                   </Bubble20>
+              </div>
           </CircleBottom>
         </Circle>
       </Wrapper>

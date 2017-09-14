@@ -4,7 +4,7 @@ import styled, {keyframes} from 'styled-components';
 import {pink} from '../variables.js';
 
 const Navbar = styled.div`
-  position: fixed;
+  position: relative;
   left: 0;
   right: 0;
   top: 0;
@@ -44,9 +44,10 @@ const SubLink = styled.a`
   line-height: 20px;
   color: ${pink};
   line-height: 20px;
+  z-index: 10;
 
   &:hover {
-    background: ${pink};
+    background: black;
     padding: 10px 40px 10px 0;
     width: 200px;
     transition: all .5s;
@@ -61,14 +62,13 @@ export default class Menu extends React.Component {
       <Navbar>
         <ul>
           <li className="submenu">
-            <Bars src={require('../img/bars.png')} alt="menu" />
+            <Bars src={require('../img/bars.png')} alt="menu"/>
             <ul>
-              <li><SubLink href="#">Work</SubLink></li>
-              <li><SubLink href="#">Skills</SubLink></li>
+              <li><SubLink href="#">Home</SubLink></li>
+              <li><SubLink href="#">Projects</SubLink></li>
               <li><SubLink href="#">About me</SubLink></li>
               <li><SubLink href="#">Availabilities</SubLink></li>
               <li><SubLink href="#">Contact me</SubLink></li>
-              <li><SubLink href="#">Previous website</SubLink></li>
             </ul>
           </li>
         </ul>

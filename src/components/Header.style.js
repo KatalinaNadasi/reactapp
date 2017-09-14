@@ -1,6 +1,5 @@
-import styled, {keyframes} from 'styled-components';
+import styled, {keyframes, css} from 'styled-components';
 import {pink} from '../variables.js';
-
 
 export const slide = keyframes`
 	from { transform: translateY(0px);}
@@ -9,15 +8,16 @@ export const slide = keyframes`
 export const Circle = styled.div`
   margin-bottom: 250px;
   animation: ${slide} 5s forwards;
-	z-index: -99;
 `;
+
 export const CircleTop = styled.div`
-  margin-top: 460px;
-  min-height: 590px;
-  background-color: ${pink};
-  border-radius: 999px 999px 0 0;
-  width: auto;
- `
+	margin-top: 460px;
+	height: 590px;
+	width: auto;
+	background: ${pink};
+	border-radius: 999px 999px 0 0;
+`
+
  export const CircleTitle = styled.h1`
    font-family: 'Abril Fatface', cursive;
    font-size: 10rem;
@@ -70,7 +70,12 @@ export const CircleTop = styled.div`
  /* Bubble jump */
  export const jump = keyframes`
   0% { margin-top: 40px;}
-  10% { margin-top: -5%;}
+  10% { margin-top: -15%;}
+ `
+
+ export const sideWays = keyframes`
+  0% { margin-left:0px;}
+  100% { margin-left:3px;}
  `
 
  export const BubbleP = styled.p`
@@ -93,151 +98,130 @@ export const CircleTop = styled.div`
   position: absolute;
   left: 69%;
   top: 62%;
-  animation: ${jump} 25s linear;
-	animation-delay: 7s;
  `
  export const Bubble2 = styled.div`
   position: absolute;
   left: 24%;
   top: 69%;
-  animation: ${jump} 25s linear;
-	animation-delay: 7s;
- `
+	animation: ${jump} 25s linear, ${sideWays} 2s ease-in-out backwards;
+	transition: 3s;
+	display: block;
+
+	${({hide}) => hide && css`
+		display: none;
+	`}
+ `;
 
  export const Bubble3 = styled.div`
    position: absolute;
    left: 36%;
    top: 82%;
-   animation: ${jump} 25s linear;
-	 animation-delay: 7s;
+
+	 &:after {
+    background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+		border-radius: 50%;
+		box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+		content: "";
+    height: 180px;
+		left: 10px;
+		position: absolute;
+		width: 180px;
+		}
  `
 
  export const Bubble4 = styled.div`
   position: absolute;
   left: 53%;
   top: 78%;
-  animation: ${jump} 25s linear;
-	animation-delay: 7s;
  `
 
  export const Bubble5 = styled.div`
   position: absolute;
   left: 85%;
   top: 57%;
-  animation: ${jump} 25s linear;
-	animation-delay: 7s;
  `
  export const Bubble6 = styled.div`
   position: absolute;
   left: 39%;
   top: 62%;
-  animation: ${jump} 25s linear;
-	animation-delay: 7s;
  `
 
  export const Bubble7 = styled.div`
   position: absolute;
   left: 35%;
   top: 55%;
-  animation: ${jump} 25s linear;
-	animation-delay: 7s;
  `
 
  export const Bubble8 = styled.div`
   position: absolute;
   left: 51%;
   top: 94%;
-  animation: ${jump} 25s linear;
-	animation-delay: 7s;
  `
 
  export const Bubble9 = styled.div`
   position: absolute;
   left: 67%;
   top: 69%;
-  animation: ${jump} 25s linear;
-	animation-delay: 7s;
  `
 
  export const Bubble10 = styled.div`
   position: absolute;
   left: 10%;
   top: 62%;
-  animation: ${jump} 25s linear;
-	animation-delay: 7s;
  `
 
  export const Bubble11 = styled.div`
   position: absolute;
   left: 50%;
   top: 56%;
-  animation: ${jump} 25s linear;
-	animation-delay: 7s;
  `
 
  export const Bubble12 = styled.div`
   position: absolute;
   left: 92%;
   top: 64%;
-  animation: ${jump} 25s linear;
-	animation-delay: 7s;
  `
 
  export const Bubble13 = styled.div`
   position: absolute;
   left: 75%;
   top: 86%;
-  animation: ${jump} 25s linear;
-	animation-delay: 7s;
  `
 
  export const Bubble14 = styled.div`
   position: absolute;
   left: 69%;
   top: 53%;
-  animation: ${jump} 25s linear;
-	animation-delay: 7s;
  `
 
  export const Bubble15 = styled.div`
   position: absolute;
   left: 24%;
   top: 83%;
-  animation: ${jump} 25s linear;
-	animation-delay: 7s;
  `
  export const Bubble16 = styled.div`
   position: absolute;
   left: 13%;
   top: 75%;
-  animation: ${jump} 25s linear;
-	animation-delay: 7s;
  `
  export const Bubble17 = styled.div`
   position: absolute;
   left: 20%;
   top: 57%;
-  animation: ${jump} 25s linear;
-	animation-delay: 7s;
  `
  export const Bubble18 = styled.div`
   position: absolute;
   left: 45%;
   top: 78%;
-  animation: ${jump} 25s linear;
-	animation-delay: 7s;
  `
  export const Bubble19 = styled.div`
   position: absolute;
   left: 14%;
   top: 55%;
-  animation: ${jump} 25s linear;
-	animation-delay: 7s;
  `
  export const Bubble20 = styled.div`
    position: absolute;
    left: 12%;
    top: 60%;
-   animation: ${jump} 25s linear;
-	 animation-delay: 7s;
  `
