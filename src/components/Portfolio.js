@@ -1,14 +1,14 @@
 import React from 'react';
 import ParallaxImage from 'react-image-parallax2';
-import {Background1, Wrapper, ImageContainer1, ImageContainer2, Background2, Background3} from '../components/Portfolio.style';
+import '../index.css';
+import {Container, IconTitle, Wrapper, ImageContainer1, ImageContainer2, Background1, Background2} from '../components/Portfolio.style';
 
 class Portfolio extends React.Component {
   render () {
     return(
-    <div>
+    <Container>
+      <IconTitle></IconTitle>
       <Background1>
-      </Background1>
-      <Background2>
         <Wrapper>
           <ImageContainer1>
             <ParallaxImage
@@ -33,8 +33,8 @@ class Portfolio extends React.Component {
             </ImageContainer2>
           <div className="clear"></div>
           </Wrapper>
-        </Background2>
-        <Background3>
+        </Background1>
+        <Background2>
           <Wrapper>
             <ImageContainer1>
               <ParallaxImage
@@ -48,9 +48,9 @@ class Portfolio extends React.Component {
             </ImageContainer2>
             <div className="clear"></div>
           </Wrapper>
-        </Background3>
+        </Background2>
         <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-    </div>
+    </Container>
 
     )
   }

@@ -91,11 +91,19 @@ HEADER
   animation: jump 25s linear;
 }
 
-#circle {
-  background: blue;
-}
-
 @keyframes jump {
   0% { margin-top: 40px;}
   10% { margin-top: -5%;}
+}
+
+/***********
+PORTFOLIO
+************/
+.container {
+  transform: translateY(-300px);
+}
+
+svg#Calque_1 {
+  margin: 0px 470px 0px;
+  font-weight: bolder;
 }

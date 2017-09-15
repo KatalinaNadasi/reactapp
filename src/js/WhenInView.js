@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 import Waypoint from 'react-waypoint';
 
 class WhenInView extends React.Component {
