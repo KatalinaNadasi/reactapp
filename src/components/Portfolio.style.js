@@ -11,9 +11,9 @@ import {pink} from '../variables.js';
 //   z-index: -99;
 // `
 
-export const Container = styled.div`
-  transform: translateY(-500px);
-`
+// export const Container = styled.div`
+//   transform: translateY(-500px);
+// `
 
 export const IconTitle = React.createClass({
  render() {
@@ -33,7 +33,15 @@ export const Wrapper = styled.div`
   margin: 0 auto;
   width: 90%;
 `
-
+export const BackgroundTitle = styled.div`
+   height: 116vh;
+   background-image: url('${require('../img/logo-transp.svg')}');
+   background-repeat: no-repeat;
+   background-size: 86%;
+   margin: -540px 0 15px 150px;
+   z-index: -99;
+   opacity: 0.6;
+ `
 export const ImageContainer1 = styled.div`
   width: 60%;
   float: left;
