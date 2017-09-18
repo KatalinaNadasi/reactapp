@@ -59,6 +59,32 @@ GENERAL
 NAVBAR - MENU
 ************/
 
+.sublink {
+  text-align: right;
+  float: right;
+  display: block;
+  position: relative;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 10px;
+  margin: 0;
+  background: transparent;
+  width: 150px;
+  transition: all .5s;
+  line-height: 20px;
+  color: #FE4365;
+  line-height: 20px;
+  z-index: 10;
+}
+.sublink:hover {
+     background: black;
+     padding: 10px 40px 10px 0;
+     width: 200px;
+     transition: all .5s;
+     color: white;
+   }
+
+
 .submenu ul {
   position: absolute;
   top: 50px;
