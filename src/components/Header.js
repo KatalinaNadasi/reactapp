@@ -134,7 +134,7 @@ export default class Header extends React.Component {
             </Bubble12>
             <Bubble13>
               <svg height="20" width="20">
-                <ellipse className="bubble-black" cx="10" cy="10" rx="10" ry="10" />
+                <Ellipse black cx="10" cy="10" rx="10" ry="10" />
               </svg>
             </Bubble13>
             <Bubble14>

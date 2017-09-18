@@ -40,7 +40,7 @@ export const BackgroundTitle = styled.div`
    background-size: 86%;
    margin: -540px 0 15px 150px;
    z-index: -99;
-   opacity: 0.6;
+   opacity: 0.3;
  `
 export const ImageContainer1 = styled.div`
   width: 60%;
