@@ -11,9 +11,9 @@ import {pink} from '../variables.js';
 //   z-index: -99;
 // `
 
-// export const Container = styled.div`
-//   transform: translateY(-500px);
-// `
+export const Container = styled.div`
+  width: 100%;
+`
 
 export const IconTitle = React.createClass({
  render() {

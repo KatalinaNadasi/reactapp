@@ -251,8 +251,6 @@ export const CircleTop = styled.div`
   position: absolute;
   left: 35%;
   top: 55%;
-	animation: ${jump} 25s linear, ${sideWays} 2s ease-in-out backwards;
-	animation-delay: 1.2s;
 	display: block;
 
 	&:after {
@@ -267,19 +265,12 @@ export const CircleTop = styled.div`
   top: 0px;
   position: absolute;
 	}
-
-	 ${({hide}) => hide && css`
-		 display: none;
-	 `}
  `
 
  export const Bubble8 = styled.div`
   position: absolute;
   left: 51%;
   top: 94%;
-	animation: ${jump} 25s linear, ${sideWays} 2s ease-in-out backwards;
-	animation-delay: 1.4s;
-	display: block;
 
 	&:after {
 	background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 40%);
@@ -293,19 +284,12 @@ export const CircleTop = styled.div`
   top: 0px;
   position: absolute;
 	}
-
-	 ${({hide}) => hide && css`
-		 display: none;
-	 `}
  `
 
  export const Bubble9 = styled.div`
   position: absolute;
   left: 67%;
   top: 69%;
-	animation: ${jump} 25s linear, ${sideWays} 2s ease-in-out backwards;
-	animation-delay: 1.6s;
-	display: block;
 
 	&:after {
 	background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 40%);
@@ -319,19 +303,12 @@ export const CircleTop = styled.div`
   top: 0px;
   position: absolute;
 	}
-
-	 ${({hide}) => hide && css`
-		 display: none;
-	 `}
  `
 
  export const Bubble10 = styled.div`
   position: absolute;
   left: 10%;
   top: 62%;
-	animation: ${jump} 25s linear, ${sideWays} 2s ease-in-out backwards;
-	animation-delay: 1.8s;
-	display: block;
 
 	&:after {
 	background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 40%);
@@ -345,10 +322,6 @@ export const CircleTop = styled.div`
   top: 0px;
   position: absolute;
 	}
-
-	 ${({hide}) => hide && css`
-		 display: none;
-	 `}
  `
 
  export const Bubble11 = styled.div`
@@ -381,9 +354,6 @@ export const CircleTop = styled.div`
   position: absolute;
   left: 92%;
   top: 64%;
-	animation: ${jump} 25s linear, ${sideWays} 2s ease-in-out backwards;
-	animation-delay: 2.2s;
-	display: block;
 
 	&:after {
 	 background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 40%);
@@ -397,19 +367,12 @@ export const CircleTop = styled.div`
 	 width: 50px;
 	 top: -18px;
 	 }
-
-	 ${({hide}) => hide && css`
-		 display: none;
-	 `}
  `
 
  export const Bubble13 = styled.div`
   position: absolute;
   left: 75%;
   top: 86%;
-	animation: ${jump} 25s linear, ${sideWays} 2s ease-in-out backwards;
-	animation-delay: 2.4s;
-	display: block;
 
 	&:after {
 	 background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 40%);
@@ -423,19 +386,12 @@ export const CircleTop = styled.div`
 	 width: 50px;
 	 top: -18px;
 	 }
-
-	 ${({hide}) => hide && css`
-		 display: none;
-	 `}
  `
 
  export const Bubble14 = styled.div`
   position: absolute;
   left: 69%;
   top: 53%;
-	animation: ${jump} 25s linear, ${sideWays} 2s ease-in-out backwards;
-	animation-delay: 2.6s;
-	display: block;
 
 	&:after {
 	 background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 40%);
@@ -449,10 +405,6 @@ export const CircleTop = styled.div`
 	 width: 50px;
 	 top: -18px;
 	 }
-
-	 ${({hide}) => hide && css`
-		 display: none;
-	 `}
  `
 
  export const Bubble15 = styled.div`
@@ -509,9 +461,6 @@ export const CircleTop = styled.div`
   position: absolute;
   left: 20%;
   top: 57%;
-	animation: ${jump} 25s linear, ${sideWays} 2s ease-in-out backwards;
-	animation-delay: 3.2s;
-	display: block;
 
 	&:after {
 	 background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 40%);
@@ -525,18 +474,11 @@ export const CircleTop = styled.div`
 	 width: 50px;
 	 top: -18px;
 	 }
-
-	 ${({hide}) => hide && css`
-		 display: none;
-	 `}
  `
  export const Bubble18 = styled.div`
   position: absolute;
   left: 45%;
   top: 78%;
-	animation: ${jump} 25s linear, ${sideWays} 2s ease-in-out backwards;
-	animation-delay: 3.4s;
-	display: block;
 
 	&:after {
 	 background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 40%);
@@ -550,18 +492,11 @@ export const CircleTop = styled.div`
 	 width: 50px;
 	 top: -18px;
 	 }
-
-	 ${({hide}) => hide && css`
-		 display: none;
-	 `}
  `
  export const Bubble19 = styled.div`
   position: absolute;
   left: 14%;
   top: 55%;
-	animation: ${jump} 25s linear, ${sideWays} 2s ease-in-out backwards;
-	animation-delay: 3.6s;
-	display: block;
 
 	&:after {
 	background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 40%);
@@ -575,10 +510,6 @@ export const CircleTop = styled.div`
   top: 0px;
   position: absolute;
 	}
-
-	 ${({hide}) => hide && css`
-		 display: none;
-	 `}
  `
  export const Bubble20 = styled.div`
    position: absolute;

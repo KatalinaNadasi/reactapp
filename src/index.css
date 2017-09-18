@@ -101,9 +101,18 @@ PORTFOLIO
 ************/
 .container {
   transform: translateY(-300px);
+  position: relative;
+}
+
+.wrapper-title {
+  position: relative;
+  display: inline;
 }
 
 svg#Calque_1 {
   margin: 0px 470px 0px;
   font-weight: bolder;
+  position: absolute;
+  top: -709px;
+  left: 145px;
 }

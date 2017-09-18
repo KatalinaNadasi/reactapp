@@ -7,9 +7,10 @@ class Portfolio extends React.Component {
   render () {
     return(
     <Container>
-      <BackgroundTitle>
-      </BackgroundTitle>
-      <IconTitle></IconTitle>
+      <div className="wrapper-title">
+        <BackgroundTitle></BackgroundTitle>
+        <IconTitle></IconTitle>
+      </div>
       <Background1>
         <Wrapper>
           <ImageContainer1>

@@ -97,42 +97,26 @@ export default class Header extends React.Component {
                 </Bubble6>
               }
             </WhenInView>
-            <WhenInView>
-              {({isInView}) =>
-                <Bubble7 hide={!isInView}>
-                  <svg height="40" width="40">
-                    <Ellipse black cx="20" cy="20" rx="20" ry="20" />
-                  </svg>
-                </Bubble7>
-              }
-            </WhenInView>
-            <WhenInView>
-              {({isInView}) =>
-                <Bubble8 hide={!isInView}>
-                  <svg height="40" width="40">
-                    <Ellipse black cx="20" cy="20" rx="20" ry="20" />
-                  </svg>
-                </Bubble8>
-              }
-            </WhenInView>
-            <WhenInView>
-              {({isInView}) =>
-                <Bubble9 hide={!isInView}>
-                  <svg height="40" width="40">
-                    <Ellipse pink cx="20" cy="20" rx="20" ry="20" />
-                  </svg>
-                </Bubble9>
-              }
-            </WhenInView>
-            <WhenInView>
-              {({isInView}) =>
-                <Bubble10 hide={!isInView}>
-                  <svg height="40" width="40">
-                    <Ellipse pink cx="20" cy="20" rx="20" ry="20" />
-                  </svg>
-                </Bubble10>
-              }
-            </WhenInView>
+            <Bubble7 >
+              <svg height="40" width="40">
+                <Ellipse black cx="20" cy="20" rx="20" ry="20" />
+              </svg>
+            </Bubble7>
+            <Bubble8>
+              <svg height="40" width="40">
+                <Ellipse black cx="20" cy="20" rx="20" ry="20" />
+              </svg>
+            </Bubble8>
+            <Bubble9>
+              <svg height="40" width="40">
+                <Ellipse pink cx="20" cy="20" rx="20" ry="20" />
+              </svg>
+            </Bubble9>
+            <Bubble10>
+              <svg height="40" width="40">
+                <Ellipse pink cx="20" cy="20" rx="20" ry="20" />
+              </svg>
+            </Bubble10>
             <WhenInView>
               {({isInView}) =>
                 <Bubble11 hide={!isInView}>
@@ -143,33 +127,21 @@ export default class Header extends React.Component {
                 </Bubble11>
               }
             </WhenInView>
-            <WhenInView>
-              {({isInView}) =>
-                <Bubble12 hide={!isInView}>
-                  <svg height="20" width="20">
-                    <Ellipse pink cx="10" cy="10" rx="10" ry="10" />
-                  </svg>
-                </Bubble12>
-              }
-            </WhenInView>
-            <WhenInView>
-              {({isInView}) =>
-                <Bubble13 hide={!isInView}>
-                  <svg height="20" width="20">
-                    <ellipse className="bubble-black" cx="10" cy="10" rx="10" ry="10" />
-                  </svg>
-                </Bubble13>
-              }
-            </WhenInView>
-            <WhenInView>
-              {({isInView}) =>
-                <Bubble14 hide={!isInView}>
-                  <svg height="20" width="20">
-                    <Ellipse pink cx="10" cy="10" rx="10" ry="10" />
-                  </svg>
-                </Bubble14>
-              }
-            </WhenInView>
+            <Bubble12>
+              <svg height="20" width="20">
+                <Ellipse pink cx="10" cy="10" rx="10" ry="10" />
+              </svg>
+            </Bubble12>
+            <Bubble13>
+              <svg height="20" width="20">
+                <ellipse className="bubble-black" cx="10" cy="10" rx="10" ry="10" />
+              </svg>
+            </Bubble13>
+            <Bubble14>
+              <svg height="20" width="20">
+                <Ellipse pink cx="10" cy="10" rx="10" ry="10" />
+              </svg>
+            </Bubble14>
             <WhenInView>
               {({isInView}) =>
                 <Bubble15 hide={!isInView}>
@@ -180,42 +152,26 @@ export default class Header extends React.Component {
                 </Bubble15>
               }
             </WhenInView>
-            <WhenInView>
-              {({isInView}) =>
-                <Bubble16 hide={!isInView}>
-                  <svg height="20" width="20">
-                    <Ellipse pink cx="10" cy="10" rx="10" ry="10" />
-                  </svg>
-                </Bubble16>
-              }
-            </WhenInView>
-            <WhenInView>
-              {({isInView}) =>
-                <Bubble17 hide={!isInView}>
-                  <svg height="20" width="20">
-                    <Ellipse pink cx="10" cy="10" rx="10" ry="10" />
-                  </svg>
-                </Bubble17>
-              }
-            </WhenInView>
-            <WhenInView>
-              {({isInView}) =>
-                <Bubble18 hide={!isInView}>
-                  <svg height="20" width="20">
-                    <Ellipse pink cx="10" cy="10" rx="10" ry="10" />
-                  </svg>
-                </Bubble18>
-              }
-            </WhenInView>
-            <WhenInView>
-              {({isInView}) =>
-                <Bubble19 hide={!isInView}>
-                  <svg height="40" width="40">
-                    <Ellipse black cx="20" cy="20" rx="20" ry="20" />
-                  </svg>
-                </Bubble19>
-              }
-            </WhenInView>
+            <Bubble16>
+              <svg height="20" width="20">
+                <Ellipse pink cx="10" cy="10" rx="10" ry="10" />
+              </svg>
+            </Bubble16>
+            <Bubble17>
+              <svg height="20" width="20">
+                <Ellipse pink cx="10" cy="10" rx="10" ry="10" />
+              </svg>
+            </Bubble17>
+            <Bubble18>
+              <svg height="20" width="20">
+                <Ellipse pink cx="10" cy="10" rx="10" ry="10" />
+              </svg>
+            </Bubble18>
+            <Bubble19>
+              <svg height="40" width="40">
+                <Ellipse black cx="20" cy="20" rx="20" ry="20" />
+              </svg>
+            </Bubble19>
             <WhenInView>
               {({isInView}) =>
                 <Bubble20 hide={!isInView}>
