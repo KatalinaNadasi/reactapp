@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import '../theme/globalStyle';
+// import '../theme/globalStyle';
 import {
   BrowserRouter as Router,
   Route,
   NavLink
 } from 'react-router-dom';
 import {
-  Navbar, Bars, jump
+  Navbar, Bars
 } from './components/Menu.style';
 import Home from './components/Home';
 import About from './components/About';
@@ -23,10 +23,10 @@ ReactDOM.render(
         <li className="submenu">
           <Bars src={require('./img/bars.png')} alt="menu"/>
           <ul>
-            <li className="active"><NavLink to="/" className="sublink">Home</NavLink></li>
-            <li><NavLink to="/projects" className="sublink">Projects</NavLink></li>
-            <li><NavLink to="/about" className="sublink">About me</NavLink></li>
-            <li><NavLink to="/contact" className="sublink">Contact</NavLink></li>
+            <li><NavLink to="/" exact activeClassName="activeNav" className="sublink">Home</NavLink></li>
+            <li><NavLink to="/projects" activeClassName="activeNav" className="sublink">Projects</NavLink></li>
+            <li><NavLink to="/about" activeClassName="activeNav" className="sublink">About me</NavLink></li>
+            <li><NavLink to="/contact" activeClassName="activeNav" className="sublink">Contact</NavLink></li>
           </ul>
         </li>
       </ul>

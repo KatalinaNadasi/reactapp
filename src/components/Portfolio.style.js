@@ -2,14 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import {pink} from '../variables.js';
 
-// export const Background1 = styled.div`
-//   height: 100vh;
-//   background-image: url('${require('../img/logo-transp.svg')}');
-//   background-repeat: no-repeat;
-//   background-size: 86%;
-//   margin: -540px 0 15px 150px;
-//   z-index: -99;
-// `
 
 export const Container = styled.div`
   width: 100%;
@@ -110,16 +102,16 @@ export const ImageContainer6 = styled.div`
 `
 
 export const Background1 = styled.div`
-  height: 800px;
+  height: 1500px;
   z-index: -99;
   background: rgb(255,228,226);
-  background: linear-gradient(to bottom, rgba(255,228,226,1) 0%,rgba(255,67,101,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: linear-gradient(to bottom, rgba(255,228,226,1) 0%, rgba(255, 189, 160, 1) 50%, rgba(255,67,101,1) 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe4e2', endColorstr='${pink}',GradientType=0 ); /* IE6-9 */
 `
 
 export const Background2 = styled.div`
-  height: 1000px;
-  background: linear-gradient(to bottom, rgba(254,67,101,1) 0%, rgba(255,228,226,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  height: 2000px;
+  background: linear-gradient(to bottom, rgba(254,67,101,1) 0%, rgba(255, 189, 160, 1) 30%, rgba(255,228,226,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe4365', endColorstr='#ffe4e2',GradientType=0 ); /* IE6-9 */
   z-index: -99;
 `

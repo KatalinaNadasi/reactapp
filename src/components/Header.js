@@ -1,10 +1,10 @@
 import React from 'react';
 import '../index.css';
-import Wrapper from '../components/Wrapper';
+import Wrapper from './Wrapper';
 import {
   Circle, CircleTop, CircleTitle, Black, CircleSub, CircleBottom, Ellipse, BubbleP, BubblePmin, Bubble1, Bubble2, Bubble3, Bubble4, Bubble5, Bubble6, Bubble7, Bubble8, Bubble9, Bubble10, Bubble11, Bubble12, Bubble13, Bubble14, Bubble15, Bubble16, Bubble17, Bubble18, Bubble19, Bubble20
-} from '../components/Header.style';
-import WhenInView from '../js/WhenInView';
+} from './Header.style';
+import WhenInView from './WhenInView';
 
 
 export default class Header extends React.Component {
