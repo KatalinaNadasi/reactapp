@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import {CircleTitle} from './Header.style';
-import {blue, creme} from '../variables.js';
+import {blue, creme, pink, grey} from '../variables.js';
 
 export const Container = styled.div`
   margin: auto;
@@ -29,7 +29,7 @@ export const AboutTitle = CircleTitle.extend`
 export const ScrollDown = styled.div`
   width: 80px;
   height: 80px;
-  background-color: ${blue};
+  background-color: #20B2AA;
   transform: rotate(45deg);
   position: relative;
   margin-bottom: -52px;
@@ -44,16 +44,55 @@ export const ScrollPosition = styled.div`
   margin-top: -41px;
 `
 
-export const ProjectBgd = styled.div`
-  background-color: ${blue};
+export const SectionBgd = styled.div`
+  background-color: #20B2AA;
   width: 100%;
   height: 200px;
   margin-top: -8px;
 `
 
-export const ProjectTitle = styled.h1`
+export const SectionTitle = styled.h1`
   color: ${creme};
   text-align: center;
   font-size: 4rem;
   line-height: 3;
+`
+
+export const SectionHeader = SectionBgd.extend `
+  background-color: white;
+  color: #FF5B51;
+  width: 100%;
+  height: 200px;
+  margin-top: -8px;
+  font-size: 2rem;
+  text-align: center;
+  padding: 55px 70px;
+  font-weight: bold;
+  letter-spacing: 1px;
+`
+
+export const TextSide = styled.div`
+  background-color: #F3F3ED;
+  color: black;
+  width: 65%;
+  float: left;
+  font-size: 2rem;
+  height: 250px;
+  border: 5px solid #E7E6D8;
+`
+
+export const TitleSide = styled.div`
+  background-color: crimson;
+  border: 5px solid #E7E6D8;
+  border-left: none;
+  width: 35%;
+  color: white;
+  float: right;
+  font-size: 2rem;
+  height: 250px;
+`
+
+export const Projects = styled.div`
+  padding : 0 70px;
+  background-color: white;
 `
