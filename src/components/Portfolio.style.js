@@ -104,14 +104,14 @@ export const ImageContainer6 = styled.div`
 export const Background1 = styled.div`
   height: 1500px;
   z-index: -99;
-  background: rgb(255,228,226);
-  background: linear-gradient(to bottom, rgba(255,228,226,1) 0%, rgba(255, 189, 160, 1) 50%, rgba(220, 20, 60, 1.0) 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe4e2', endColorstr='${pink}',GradientType=0 ); /* IE6-9 */
+  background: rgba(243, 243, 237, 1.0);
+  background: linear-gradient(to bottom, rgba(243, 243, 237, 1.0) 0%, rgba(255, 189, 160, 1) 50%, rgba(220, 20, 60, 1.0) 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F3F3ED', endColorstr='${pink}',GradientType=0 ); /* IE6-9 */
 `
 
 export const Background2 = styled.div`
   height: 2000px;
-  background: linear-gradient(to bottom, rgba(220, 20, 60, 1.0) 0%, rgba(255, 189, 160, 1) 30%, rgba(255,228,226,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='crimson', endColorstr='#ffe4e2',GradientType=0 ); /* IE6-9 */
+  background: linear-gradient(to bottom, rgba(220, 20, 60, 1.0) 0%, rgba(255, 189, 160, 1) 30%, 	rgba(243, 243, 237, 1.0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='crimson', endColorstr='F3F3ED',GradientType=0 ); /* IE6-9 */
   z-index: -99;
 `

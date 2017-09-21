@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import {CircleTitle} from './Header.style';
-import {blue, creme, pink, grey} from '../variables.js';
+import {blue, creme, pink, grey, orange} from '../variables.js';
 
 export const Container = styled.div`
   margin: auto;
@@ -29,7 +29,7 @@ export const AboutTitle = CircleTitle.extend`
 export const ScrollDown = styled.div`
   width: 80px;
   height: 80px;
-  background-color: #20B2AA;
+  background-color: ${blue};
   transform: rotate(45deg);
   position: relative;
   margin-bottom: -52px;
@@ -45,7 +45,7 @@ export const ScrollPosition = styled.div`
 `
 
 export const SectionBgd = styled.div`
-  background-color: #20B2AA;
+  background-color: ${blue};
   width: 100%;
   height: 200px;
   margin-top: -8px;
@@ -60,7 +60,7 @@ export const SectionTitle = styled.h1`
 
 export const SectionHeader = SectionBgd.extend `
   background-color: white;
-  color: #FF5B51;
+  color: ${orange};
   width: 100%;
   height: 200px;
   margin-top: -8px;
@@ -72,27 +72,36 @@ export const SectionHeader = SectionBgd.extend `
 `
 
 export const TextSide = styled.div`
-  background-color: #F3F3ED;
-  color: black;
-  width: 65%;
-  float: left;
   font-size: 2rem;
   height: 250px;
   border: 5px solid #E7E6D8;
+  background-color: ${creme};
+  color: ${orange};
+  float: left;
+  width: 65%;
+  padding: 15px;
 `
 
 export const TitleSide = styled.div`
-  background-color: crimson;
+  font-size: 2rem;
+  height: 250px;
   border: 5px solid #E7E6D8;
+  padding: 15px;
+  background-color: ${orange};
   border-left: none;
   width: 35%;
   color: white;
   float: right;
-  font-size: 2rem;
-  height: 250px;
 `
 
 export const Projects = styled.div`
   padding : 0 70px;
   background-color: white;
+`
+
+export const BlueLetters = styled.p`
+  color: ${blue};
+  font-size: 1.3rem;
+  font-family: 'Nixie One',cursive;
+  line-height: 2;
 `
