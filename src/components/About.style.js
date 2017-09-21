@@ -44,7 +44,7 @@ export const ScrollPosition = styled.div`
   margin-top: -41px;
 `
 
-export const SectionBgd = styled.div`
+export const BlueBgd = styled.div`
   background-color: ${blue};
   width: 100%;
   height: 200px;
@@ -58,7 +58,7 @@ export const SectionTitle = styled.h1`
   line-height: 3;
 `
 
-export const SectionHeader = SectionBgd.extend `
+export const SectionHeader = BlueBgd.extend `
   background-color: white;
   color: ${orange};
   width: 100%;
@@ -94,7 +94,7 @@ export const TitleSide = styled.div`
   float: right;
 `
 
-export const Projects = styled.div`
+export const ProjectsContainer = styled.div`
   padding : 0 70px;
   background-color: white;
 `
@@ -104,4 +104,22 @@ export const BlueLetters = styled.p`
   font-size: 1.3rem;
   font-family: 'Nixie One',cursive;
   line-height: 2;
+`
+
+export const ImgSide = styled.div `
+  height: 307px;
+  border: 5px solid #E7E6D8;
+  width: 100%;
+  float: left;
+  background-image: url('${require('../img/projects/konexio.jpg')}');
+  background-repeat: no-repeat;
+  background-size: contain;
+`
+
+export const TextSide2 = TextSide.extend`
+  float: right;
+`
+
+export const TitleSide2 = TitleSide.extend`
+  float: left;
 `

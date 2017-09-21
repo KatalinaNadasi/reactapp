@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Container, BackgroundImage, AboutTitle, ScrollPosition, ScrollDown, SectionBgd, SectionTitle, SectionHeader, TextSide, TitleSide, Projects, BlueLetters} from './About.style';
+import {Container, BackgroundImage, AboutTitle, ScrollPosition, ScrollDown, BlueBgd, SectionTitle, SectionHeader, TextSide, TitleSide, ProjectsContainer, BlueLetters, ImgSide, TextSide2, TitleSide2} from './About.style';
 import '../index.css';
 import {Retro} from '../variables.js';
 
@@ -16,25 +16,32 @@ export default class About extends Component {
           </ScrollPosition>
         </Container>
         <Container>
-          <SectionBgd>
+          <BlueBgd>
             <SectionTitle>Side projects</SectionTitle>
-          </SectionBgd>
+          </BlueBgd>
           <SectionHeader>
             <h1>I work for causes where I can share my passion. sdsdsd sdsdsd</h1>
           </SectionHeader>
-            <Projects>
+            <ProjectsContainer>
               <TextSide>
                 <Retro pink>Konexio</Retro>
-                <BlueLetters>Professeur de code / Public de réfugiés</BlueLetters>
+                <BlueLetters>Professeur de code / conférencière</BlueLetters>
               </TextSide>
-              <TitleSide>mon titre</TitleSide>
-              <TitleSide>mon titre</TitleSide>
-                <TextSide>
-                  <Retro pink>Konexio</Retro>
-                  <BlueLetters>Professeur de code / Public de réfugiés</BlueLetters>
-                </TextSide>
+              <TitleSide>Public de réfugiés</TitleSide>
+              <ImgSide></ImgSide>
+                <TextSide2>
+                  <Retro pink>Le Reacteur</Retro>
+                  <BlueLetters>Aide à la communication</BlueLetters>
+                </TextSide2>
+                <TitleSide2>blabla</TitleSide2>
+                  <TextSide>
+                    <Retro pink>Adaweek</Retro>
+                    <BlueLetters>Developpement site internet 2016</BlueLetters>
+                  </TextSide>
+                  <TitleSide>mon titre</TitleSide>
+
               <div className="clear"></div>
-            </Projects>
+            </ProjectsContainer>
         </Container>
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
   <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
