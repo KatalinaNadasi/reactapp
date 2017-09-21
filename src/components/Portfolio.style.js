@@ -15,7 +15,7 @@ export const IconTitle = React.createClass({
      	 xmlSpace="preserve">
        <text transform="matrix(0.9256 0 0 1 4 238.6028)" fontFamily="'NewsGothicMT-Bold'" fontSize="72">PRO</text>
        <text transform="matrix(0.9256 0 0 1 4 325.0032)" fontFamily="'NewsGothicMT-Bold'" fontSize="72">JECTS </text>
-      <ellipse fill="#FE4365" stroke="#FE4365" strokeMiterlimit="10" cx="239.675" cy="304.391" rx="23" ry="22.588"/>
+      <ellipse fill="crimson" strokeMiterlimit="10" cx="239.675" cy="304.391" rx="23" ry="22.588"/>
      </svg>
    )
  }
@@ -105,13 +105,13 @@ export const Background1 = styled.div`
   height: 1500px;
   z-index: -99;
   background: rgb(255,228,226);
-  background: linear-gradient(to bottom, rgba(255,228,226,1) 0%, rgba(255, 189, 160, 1) 50%, rgba(255,67,101,1) 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: linear-gradient(to bottom, rgba(255,228,226,1) 0%, rgba(255, 189, 160, 1) 50%, rgba(220, 20, 60, 1.0) 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe4e2', endColorstr='${pink}',GradientType=0 ); /* IE6-9 */
 `
 
 export const Background2 = styled.div`
   height: 2000px;
-  background: linear-gradient(to bottom, rgba(254,67,101,1) 0%, rgba(255, 189, 160, 1) 30%, rgba(255,228,226,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe4365', endColorstr='#ffe4e2',GradientType=0 ); /* IE6-9 */
+  background: linear-gradient(to bottom, rgba(220, 20, 60, 1.0) 0%, rgba(255, 189, 160, 1) 30%, rgba(255,228,226,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='crimson', endColorstr='#ffe4e2',GradientType=0 ); /* IE6-9 */
   z-index: -99;
 `

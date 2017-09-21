@@ -64,7 +64,7 @@ export const CircleTop = styled.div`
  `
 
  export const Ellipse = styled.ellipse`
-   fill: ${props => props.pink ? '#FE4365' : '#000'};
+   fill: ${props => props.pink ? 'crimson' : '#000'};
  `
 
  /* Bubble jump */
