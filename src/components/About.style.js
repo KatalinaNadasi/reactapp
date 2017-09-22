@@ -1,14 +1,15 @@
 import styled from 'styled-components';
 import {CircleTitle} from './Header.style';
-import {blue, creme, pink, grey, orange} from '../variables.js';
+import {blue, creme, darkcreme, pink, grey, orange} from '../variables.js';
 
 export const Container = styled.div`
   margin: auto;
   width: 100%;
   padding: 0 15px;
+  position: relative;
 `
 export const BackgroundImage = styled.div`
-  height: 100vh;
+  height: 65vh;
   background-image: url('${require('../img/moreabout.jpg')}');
   background-repeat: no-repeat;
   z-index: -99;
@@ -31,17 +32,15 @@ export const ScrollDown = styled.div`
   height: 80px;
   background-color: ${blue};
   transform: rotate(45deg);
-  position: relative;
-  margin-bottom: -52px;
   margin: 0 auto;
 `
 
 export const ScrollPosition = styled.div`
   width: 100%;
   text-align: center;
-  position: absolute;
   z-index: 10;
-  margin-top: -41px;
+  position: absolute;
+  bottom: 150px;
 `
 
 export const BlueBgd = styled.div`
@@ -69,12 +68,13 @@ export const SectionHeader = BlueBgd.extend `
   padding: 55px 70px;
   font-weight: bold;
   letter-spacing: 1px;
+  line-height: 40px;
 `
 
 export const TextSide = styled.div`
   font-size: 2rem;
   height: 250px;
-  border: 5px solid #E7E6D8;
+  border: 5px solid ${darkcreme};
   background-color: ${creme};
   color: ${orange};
   float: left;
@@ -84,13 +84,12 @@ export const TextSide = styled.div`
 
 export const TitleSide = styled.div`
   font-size: 2rem;
-  height: 250px;
-  border: 5px solid #E7E6D8;
+  height: 114vh;
+  border: 5px solid ${darkcreme};
   padding: 15px;
   background-color: ${orange};
-  border-left: none;
   width: 35%;
-  color: white;
+  color: ${darkcreme};
   float: right;
 `
 
@@ -108,8 +107,8 @@ export const BlueLetters = styled.p`
 
 export const ImgSide = styled.div `
   height: 307px;
-  border: 5px solid #E7E6D8;
-  width: 100%;
+  border: 5px solid ${darkcreme};
+  width: 65%;
   float: left;
   background-image: url('${require('../img/projects/konexio.jpg')}');
   background-repeat: no-repeat;
@@ -118,8 +117,15 @@ export const ImgSide = styled.div `
 
 export const TextSide2 = TextSide.extend`
   float: right;
+  margin-top: -6px;
 `
 
 export const TitleSide2 = TitleSide.extend`
   float: left;
+  background-color: ${blue};
+  margin-top: -6px;
+  height: 51vh;
+`
+export const TitleSide3 = TitleSide.extend `
+  height: 52vh;
 `
