@@ -27,6 +27,14 @@ export const AboutTitle = CircleTitle.extend`
 }
 `
 
+export const ScrollPosition = styled.div`
+width: 100%;
+text-align: center;
+z-index: 10;
+position: absolute;
+bottom: 150px;
+`
+
 export const ScrollDown = styled.div`
   width: 80px;
   height: 80px;
@@ -35,13 +43,6 @@ export const ScrollDown = styled.div`
   margin: 0 auto;
 `
 
-export const ScrollPosition = styled.div`
-  width: 100%;
-  text-align: center;
-  z-index: 10;
-  position: absolute;
-  bottom: 150px;
-`
 
 export const BlueBgd = styled.div`
   background-color: ${blue};
