@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {HeaderContainer, Container, BackgroundImage, AboutTitle, ScrollPosition, ScrollDown, Line, BlueBgd, SectionTitle, SectionHeader, ProjectsContainer, BlueLetters, ImgSide, Wrapper, LongColLeft, LongColRight, LongColLeftImg, ShortColRight, ShortColLeft, ShortColRightSmall} from './About.style';
+import {HeaderContainer, Container, BackgroundImage, AboutTitle, ScrollPosition, ScrollDown, Line, BlueBgd, SectionTitle, SectionSpace, ProjectsContainer, BlueLetters, CremeLetters, ImgSide, Wrapper, LongColLeft, LongColRight, LongColLeftImg, ShortColRight, ShortColLeft, ShortColRightSmall, Padding} from './About.style';
 import '../index.css';
 import {Retro} from '../variables.js';
 
@@ -21,18 +21,19 @@ export default class About extends Component {
           </BlueBgd>
         </Container>
         <Container>
-          <SectionHeader>
+          <SectionSpace>
             <h1>Various projects around the code</h1>
-          </SectionHeader>
+          </SectionSpace>
             <ProjectsContainer>
               <Wrapper>
                 <Line>
                   <LongColLeft>
-                    <Retro pink>Konexio</Retro>
-                    <BlueLetters>Professeur de code / conférencière <br/>Refugees</BlueLetters>
+                    <Retro pink><a href="http://konexio.eu/index-french.html">Konexio</a></Retro>
+                    <BlueLetters>Code teacher freelance<br/>Welcoming refugees into the community through tech and innovation</BlueLetters>
                   </LongColLeft>
                   <ShortColRight>
-                    I've met Jean Guo in a hackaton about refugees in le Wagon. With my team we developped the <a href="https://www.grazia.fr/news-et-societe/news/textfugees-refugenius-la-technologie-au-service-des-migrants-809301" target="_blank">'Linkedin for refugees'</a>
+                    <CremeLetters>The story behind</CremeLetters>
+                    <Padding>I've met Jean Guo in a hackaton about refugees in le Wagon. With my team we developped the <a href="https://www.grazia.fr/news-et-societe/news/textfugees-refugenius-la-technologie-au-service-des-migrants-809301" target="_blank">'Linkedin for refugees'</a></Padding>
                   </ShortColRight>
                   <LongColLeftImg></LongColLeftImg>
                 </Line>
@@ -54,13 +55,10 @@ export default class About extends Component {
                   </ShortColRightSmall>
                 </Line>
               </Wrapper>
-
               <div className="clear"></div>
             </ProjectsContainer>
+            <SectionSpace></SectionSpace>
         </Container>
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 
       </div>

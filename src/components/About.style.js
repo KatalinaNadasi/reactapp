@@ -49,7 +49,6 @@ export const ScrollDown = styled.div`
   margin: 0 auto;
 `
 
-
 export const BlueBgd = styled.div`
   background-color: ${blue};
   width: 100%;
@@ -64,7 +63,7 @@ export const SectionTitle = styled.h1`
   line-height: 3;
 `
 
-export const SectionHeader = BlueBgd.extend `
+export const SectionSpace = BlueBgd.extend `
   background-color: white;
   color: ${orange};
   width: 100%;
@@ -115,11 +114,21 @@ export const ShortColRight = styled.div`
   float: right;
 `
 
+export const Padding = styled.div`
+  padding: 70px 30px;
+`
+
 export const BlueLetters = styled.p`
   color: ${blue};
-  font-size: 1.3rem;
+  font-weight: bold;
+  font-size: 1.4rem;
   font-family: 'Nixie One',cursive;
-  line-height: 2;
+  padding: 20px 0;
+  line-height: 30px;
+`
+
+export const CremeLetters = BlueLetters.extend`
+  color: ${creme};
 `
 
 export const LongColLeftImg = LongColLeft.extend`
