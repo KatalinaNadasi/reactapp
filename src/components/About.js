@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Container, BackgroundImage, AboutTitle, ScrollPosition, ScrollDown, BlueBgd, SectionTitle, SectionHeader, TextSide, TitleSide, ProjectsContainer, BlueLetters, ImgSide, TextSide2, TitleSide2, TitleSide3} from './About.style';
+import {HeaderContainer, Container, BackgroundImage, AboutTitle, ScrollPosition, ScrollDown, BlueBgd, SectionTitle, SectionHeader, TextSide, TitleSide, ProjectsContainer, BlueLetters, ImgSide, TextSide2, TitleSide2, TitleSide3} from './About.style';
 import '../index.css';
 import {Retro} from '../variables.js';
 
@@ -8,10 +8,10 @@ export default class About extends Component {
   render(){
     return(
       <div>
-        <Container>
+        <HeaderContainer>
           <BackgroundImage></BackgroundImage>
           <AboutTitle>About me</AboutTitle>
-        </Container>
+        </HeaderContainer>
         <Container>
           <ScrollPosition>
             <ScrollDown></ScrollDown>

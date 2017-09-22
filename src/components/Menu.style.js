@@ -6,9 +6,11 @@ export const Navbar = styled.div`
   right: 0;
   top: 0;
   width: 100%;
-  height: 48px;
+  height: 62px;
   background-color: none;
+  z-index: 10 !important;
 `;
+
 
 export const jump = keyframes`
   0% {-webkit-transform: translate(90%, 70%); opacity: 0;}
@@ -16,6 +18,8 @@ export const jump = keyframes`
   66% {-webkit-transform: translate(10%, 50%);}
   100% {-webkit-transform: translate(0%) rotate(0deg); opacity: 1;}
 `;
+
+
 export const Bars = styled.img`
   animation: ${jump} 1s ease;
   animation-delay: 5s;

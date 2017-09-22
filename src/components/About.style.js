@@ -2,6 +2,12 @@ import styled from 'styled-components';
 import {CircleTitle} from './Header.style';
 import {blue, creme, darkcreme, pink, grey, orange} from '../variables.js';
 
+export const HeaderContainer = styled.div`
+  margin: auto;
+  width: 100%;
+  padding: 0 15px;
+`
+
 export const Container = styled.div`
   margin: auto;
   width: 100%;
