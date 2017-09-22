@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import {CircleTitle} from './Header.style';
-import {blue, creme, darkcreme, pink, grey, orange} from '../variables.js';
+import {blue, creme, darkcreme, orange} from '../variables.js';
 
 export const HeaderContainer = styled.div`
   margin: auto;
@@ -15,7 +15,7 @@ export const Container = styled.div`
   position: relative;
 `
 export const BackgroundImage = styled.div`
-  height: 65vh;
+  min-height: 102vh;
   background-image: url('${require('../img/moreabout.jpg')}');
   background-repeat: no-repeat;
   z-index: -99;
@@ -75,10 +75,25 @@ export const SectionHeader = BlueBgd.extend `
   padding: 55px 70px;
   font-weight: bold;
   letter-spacing: 1px;
-  line-height: 40px;
+  line-height: 90px;
 `
 
-export const TextSide = styled.div`
+export const ProjectsContainer = styled.div`
+  padding : 0 70px;
+  background-color: white;
+`
+
+export const Wrapper = styled.div `
+  width: 100%;
+  height: 500px;
+`
+
+export const Line = styled.div`
+  width: 100%;
+  height: 550px;
+`
+
+export const LongColLeft = styled.div`
   font-size: 2rem;
   height: 250px;
   border: 5px solid ${darkcreme};
@@ -89,20 +104,15 @@ export const TextSide = styled.div`
   padding: 15px;
 `
 
-export const TitleSide = styled.div`
+export const ShortColRight = styled.div`
   font-size: 2rem;
-  height: 114vh;
+  height: 550px;
   border: 5px solid ${darkcreme};
   padding: 15px;
   background-color: ${orange};
   width: 35%;
   color: ${darkcreme};
   float: right;
-`
-
-export const ProjectsContainer = styled.div`
-  padding : 0 70px;
-  background-color: white;
 `
 
 export const BlueLetters = styled.p`
@@ -112,27 +122,24 @@ export const BlueLetters = styled.p`
   line-height: 2;
 `
 
-export const ImgSide = styled.div `
-  height: 307px;
-  border: 5px solid ${darkcreme};
-  width: 65%;
-  float: left;
+export const LongColLeftImg = LongColLeft.extend`
+  height: 300px;
+  padding: 0;
   background-image: url('${require('../img/projects/konexio.jpg')}');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 `
 
-export const TextSide2 = TextSide.extend`
-  float: right;
-  margin-top: -6px;
-`
-
-export const TitleSide2 = TitleSide.extend`
+export const ShortColLeft = ShortColRight.extend`
   float: left;
   background-color: ${blue};
-  margin-top: -6px;
-  height: 51vh;
+  height: 250px;
 `
-export const TitleSide3 = TitleSide.extend `
-  height: 52vh;
+
+export const LongColRight = LongColLeft.extend`
+  float: right;
+`
+
+export const ShortColRightSmall = ShortColRight.extend`
+  height: 250px;
 `
