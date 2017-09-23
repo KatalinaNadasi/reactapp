@@ -110,7 +110,7 @@ export const Background1 = styled.div`
 `
 
 export const Background2 = styled.div`
-  height: 2000px;
+  height: 1300px;
   background: linear-gradient(to bottom, rgba(220, 20, 60, 1.0) 0%, rgba(255, 189, 160, 1) 30%, 	rgba(243, 243, 237, 1.0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='crimson', endColorstr='F3F3ED',GradientType=0 ); /* IE6-9 */
   z-index: -99;

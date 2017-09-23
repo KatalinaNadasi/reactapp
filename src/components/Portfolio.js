@@ -52,7 +52,6 @@ class Portfolio extends React.Component {
             <div className="clear"></div>
           </Wrapper>
         </Background2>
-        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
     </Container>
 
     )

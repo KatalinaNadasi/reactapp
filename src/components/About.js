@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
-import {HeaderContainer, Container, BackgroundImage, AboutTitle, ScrollPosition, ScrollDown, Line, BlueBgd, SectionTitle, SectionSpace, ProjectsContainer, BlueLetters, CremeLetters, ImgSide, Wrapper, LongColLeft, LongColRight, LongColLeftImg, ShortColRight, ShortColLeft, ShortColRightSmall, Padding} from './About.style';
+import {HeaderContainer, Container, BackgroundImage, AboutTitle, ScrollPosition, ScrollDown, Line, BlueBgd, SectionTitle, SectionSpace, ProjectsContainer, BlueLetters, CremeLetters, Wrapper, LongColLeft, LongColRight, LongColLeftImg, ShortColRight, ShortColLeft, ShortColRightSmall, Padding} from './About.style';
 import '../index.css';
 import {Retro} from '../variables.js';
+// import {Footer} from './Footer';
 
 
 export default class About extends Component {
@@ -49,7 +50,7 @@ export default class About extends Component {
                     <Retro pink>Le Reacteur</Retro>
                     <BlueLetters>Help for the launch communication of the school</BlueLetters>
                     <BlueLetters>One week React bootcamp as student</BlueLetters>
-                  </LongColLeft>
+                </LongColLeft>
                   <ShortColRightSmall>
                     logo du reacteur
                   </ShortColRightSmall>
@@ -59,8 +60,6 @@ export default class About extends Component {
             </ProjectsContainer>
             <SectionSpace></SectionSpace>
         </Container>
-
-
       </div>
     );
   }

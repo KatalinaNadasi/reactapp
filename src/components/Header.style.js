@@ -1,5 +1,6 @@
 import styled, {keyframes, css} from 'styled-components';
-import {pink} from '../variables.js';
+import {pink, creme} from '../variables.js';
+
 
 export const slide = keyframes`
 	from { transform: translateY(0px);}
@@ -22,7 +23,7 @@ export const CircleTop = styled.div`
    font-family: 'Abril Fatface', cursive;
    font-size: 10rem;
    padding: 100px 197px 0 263px;
-   color: mistyrose;
+   color: ${creme};
    height: 150px;
  `
 
