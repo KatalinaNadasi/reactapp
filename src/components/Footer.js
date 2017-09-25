@@ -48,14 +48,14 @@ const IconSocials = React.createClass({
      	 width="300px" height="72px" viewBox="21.316 180.445 248.824 70" enableBackground="new 17.316 177.445 248.824 70"
      	 xmlSpace="preserve">
      <title  id="simpleicons-linkedin-icon">LinkedIn icon</title>
-     <ellipse id="work" fill="#F3F3ED" stroke="#E7E6D8" strokeMiterlimit="10" strokeWidth="3.04" cx="232.14" cy="213.445" rx="30" ry="30"/>
+     <ellipse id="work" fill="#F3F3ED" stroke="#FF3D68" strokeMiterlimit="10" strokeWidth="3.04" cx="232.14" cy="213.445" rx="30" ry="30"/>
        <text transform="matrix(1 0 0 1 210.9895 210.3413)">
          <tspan x="-6" y="18" fontSize="41">C</tspan>
          <tspan x="5" y="4" fontFamily="'OCRAStd'" fontSize="10">ontact</tspan>
          <tspan x="17.132" y="11" fontFamily="'OCRAStd'" fontSize="10">me</tspan>
        </text>
-     <ellipse id="linked" fill="#F3F3ED" stroke="#E7E6D8" strokeMiterlimit="10" strokeWidth="3.04" cx="51.316" cy="213.445" rx="30" ry="30"/>
-     <ellipse id="github" fill="#F3F3ED" stroke="#E7E6D8" strokeMiterlimit="10" strokeWidth="3.04" cx="141.679" cy="213.445" rx="30" ry="30"/>
+     <ellipse id="linked" fill="#F3F3ED" stroke="#FF3D68" strokeMiterlimit="10" strokeWidth="3.04" cx="51.316" cy="213.445" rx="30" ry="30"/>
+     <ellipse id="github" fill="#F3F3ED" stroke="#FF3D68" strokeMiterlimit="10" strokeWidth="3.04" cx="141.679" cy="213.445" rx="30" ry="30"/>
        <path d="M156.84,227.239h-6.378v-9.746c0-2.325-0.049-5.316-3.324-5.316c-3.327,0-3.834,2.529-3.834,5.145v9.918h-6.38v-20.043
        	h6.128v2.731h0.082c0.856-1.575,2.938-3.238,6.05-3.238c6.463,0,7.658,4.147,7.658,9.548v11.002H156.84z M129.72,204.453
        	c-2.053,0-3.703-1.62-3.703-3.615c0-1.991,1.65-3.609,3.703-3.609c2.045,0,3.704,1.618,3.704,3.609
