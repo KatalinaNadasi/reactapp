@@ -142,3 +142,12 @@ svg#Calque_1 {
   top: -709px;
   left: 145px;
 }
+
+/***********
+PORTFOLIO
+************/
+
+#socials {
+  transition: 300ms all;
+  transform-origin: 50% 50%;
+}
