@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const pink = '#990000';
+export const pink = 'crimson';
 export const black = '#000';
 export const creme = '#F3F3ED';
 export const blue = '#008080';

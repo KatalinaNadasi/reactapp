@@ -23,14 +23,14 @@ export default class About extends Component {
         </Container>
         <Container>
           <SectionSpace>
-            <h1>Various projects around the code</h1>
+            <h1>When I don't code I do that</h1>
           </SectionSpace>
             <ProjectsContainer>
               <Wrapper>
                 <Line>
                   <LongColLeft>
                     <Retro pink><a href="http://konexio.eu/index-french.html">Konexio</a></Retro>
-                    <BlueLetters>Code teacher freelance<br/>Welcoming refugees into the community through tech and innovation</BlueLetters>
+                    <BlueLetters>Code teacher - Salaried<br/>Welcoming refugees into the community through tech and innovation</BlueLetters>
                   </LongColLeft>
                   <ShortColRight>
                     <CremeLetters>The story behind</CremeLetters>
@@ -40,17 +40,17 @@ export default class About extends Component {
                 </Line>
                 <Line>
                   <ShortColLeft>
-                    the presentation of our project at 1'99 + video
+                  <iframe width="414" height="220" src="//www.ytcropper.com/embed/Oh59c8f552f24fa/loop/noautoplay/" frameborder="0" allowfullscreen></iframe>
                   </ShortColLeft>
                   <LongColRight>
                     <Retro pink>Pitch project at The Family</Retro>
                     <BlueLetters>Project developped at Le Wagon Bootcamp + logo Wagon</BlueLetters>
                   </LongColRight>
                   <LongColLeft>
-                    <Retro pink>Le Reacteur</Retro>
+                    <Retro>Le Reacteur</Retro>
                     <BlueLetters>Help for the launch communication of the school</BlueLetters>
                     <BlueLetters>One week React bootcamp as student</BlueLetters>
-                </LongColLeft>
+                  </LongColLeft>
                   <ShortColRightSmall>
                     logo du reacteur
                   </ShortColRightSmall>

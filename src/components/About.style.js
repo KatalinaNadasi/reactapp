@@ -15,7 +15,7 @@ export const Container = styled.div`
   position: relative;
 `
 export const BackgroundImage = styled.div`
-  min-height: 106vh;
+  min-height: 102vh;
   background-image: url('${require('../img/moreabout.jpg')}');
   background-repeat: no-repeat;
   z-index: -99;
