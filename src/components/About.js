@@ -30,11 +30,11 @@ export default class About extends Component {
                 <Line>
                   <LongColLeft>
                     <Retro pink><a href="http://konexio.eu/index-french.html">Konexio</a></Retro>
-                    <BlueLetters>Code teacher - Salaried<br/>Welcoming refugees into the community through tech and innovation</BlueLetters>
+                    <BlueLetters>Since 2017 I work with Konexio as code teacher as Salaried.<br/>The purpose of the Association is to welcome refugees into the community through tech and innovation. <br/>The year 2017 is gonna be a great year for us. The school is not yet reviewed but still reference <a href="https://www.switchup.org/bootcamps/konexio" target="_blank">here</a>.</BlueLetters>
                   </LongColLeft>
                   <ShortColRight>
                     <CremeLetters>The story behind</CremeLetters>
-                    <Padding>I've met Jean Guo in a hackaton about refugees in le Wagon. With my team we developped the <a href="https://www.grazia.fr/news-et-societe/news/textfugees-refugenius-la-technologie-au-service-des-migrants-809301" target="_blank">'Linkedin for refugees'</a></Padding>
+                    <Padding>I've met Jean Guo in a hackaton about refugees in le Wagon. With my team we developped the'Linkedin for refugees'. Wait...hey! Grazia talk about us <a href="https://www.grazia.fr/news-et-societe/news/textfugees-refugenius-la-technologie-au-service-des-migrants-809301" target="_blank">there</a>.</Padding>
                   </ShortColRight>
                   <LongColLeftImg></LongColLeftImg>
                 </Line>
@@ -43,16 +43,15 @@ export default class About extends Component {
                   <iframe width="414" height="220" src="//www.ytcropper.com/embed/Oh59c8f552f24fa/loop/noautoplay/" frameborder="0" allowfullscreen></iframe>
                   </ShortColLeft>
                   <LongColRight>
-                    <Retro pink>Pitch project at The Family</Retro>
-                    <BlueLetters>Project developped at Le Wagon Bootcamp + logo Wagon</BlueLetters>
+                    <Retro pink>Pitch of sneakr.fr at The Family</Retro>
+                    <BlueLetters>At the end of my training at <a href="https://www.switchup.org/locations/paris-coding-bootcamp" target="_blank">the best coding bootcamp in Europe</a>(Le Wagon, off course) we pitched our project developped in 2 weeks in front of professionals.</BlueLetters>
                   </LongColRight>
                   <LongColLeft>
-                    <Retro>Le Reacteur</Retro>
-                    <BlueLetters>Help for the launch communication of the school</BlueLetters>
-                    <BlueLetters>One week React bootcamp as student</BlueLetters>
+                    <Retro><a href="https://www.lereacteur.io/" target="_blank">Le Reacteur</a></Retro>
+                    <BlueLetters>I did their one week intensive training in React and then helped them a little for the launch communication of their bootcamp. <br/>I found the project very smart because I'm convinced that React will have a special slice in the coding cake next years.</BlueLetters>
                   </LongColLeft>
                   <ShortColRightSmall>
-                    logo du reacteur
+                    <Padding>We share with Xavier the same passion for vintage and retro.</Padding>
                   </ShortColRightSmall>
                 </Line>
               </Wrapper>

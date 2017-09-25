@@ -115,7 +115,7 @@ export const ShortColRight = styled.div`
 `
 
 export const Padding = styled.div`
-  padding: 70px 30px;
+  padding: 40px 30px;
 `
 
 export const BlueLetters = styled.p`
@@ -143,6 +143,7 @@ export const ShortColLeft = ShortColRight.extend`
   float: left;
   background-color: ${blue};
   height: 250px;
+  padding: 10px;
 `
 
 export const LongColRight = LongColLeft.extend`
