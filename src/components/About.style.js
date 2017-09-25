@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import {CircleTitle} from './Header.style';
-import {blue, creme, darkcreme, orange} from '../variables.js';
+import {blue, lightpink, creme, darkcreme, orange} from '../variables.js';
 
 export const HeaderContainer = styled.div`
   margin: auto;
@@ -15,7 +15,7 @@ export const Container = styled.div`
   position: relative;
 `
 export const BackgroundImage = styled.div`
-  min-height: 102vh;
+  min-height: 106vh;
   background-image: url('${require('../img/moreabout.jpg')}');
   background-repeat: no-repeat;
   z-index: -99;
@@ -65,7 +65,7 @@ export const SectionTitle = styled.h1`
 
 export const SectionSpace = BlueBgd.extend `
   background-color: white;
-  color: ${orange};
+  color: ${lightpink};
   width: 100%;
   height: 200px;
   margin-top: -8px;
@@ -97,7 +97,7 @@ export const LongColLeft = styled.div`
   height: 250px;
   border: 5px solid ${darkcreme};
   background-color: ${creme};
-  color: ${orange};
+  color: ${lightpink};
   float: left;
   width: 65%;
   padding: 15px;
@@ -108,7 +108,7 @@ export const ShortColRight = styled.div`
   height: 550px;
   border: 5px solid ${darkcreme};
   padding: 15px;
-  background-color: ${orange};
+  background-color: ${lightpink};
   width: 35%;
   color: ${darkcreme};
   float: right;

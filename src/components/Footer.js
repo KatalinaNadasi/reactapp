@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import styled from 'styled-components';
 import {blue, darkcreme} from '../variables.js';
 
-const Wrapper = styled.div `
+export const Wrapper = styled.div `
   width: 100%;
   height: 150px;
   background-color: ${blue};
@@ -11,7 +11,7 @@ const Wrapper = styled.div `
   padding: 25px 290px;
 `
 
-const Contact = styled.div `
+export const Contact = styled.div `
   width: 900px;
   display: inline-block;
   vertical-align: middle;
@@ -27,12 +27,12 @@ const LeftCol = styled.ul `
   margin: 0;
 `
 
-const RightCol = LeftCol.extend `
+export const RightCol = LeftCol.extend `
   float: right;
   width: 300px;
 `
 
-const Border = styled.li `
+export const Border = styled.li `
   padding: 5px;
   border-bottom: 2px solid ${darkcreme};
 
@@ -41,7 +41,7 @@ const Border = styled.li `
   }
 `
 
-const IconSocials = React.createClass({
+export const IconSocials = React.createClass({
  render() {
    return (
      <svg version="1.1" id="socials" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -77,8 +77,8 @@ const IconSocials = React.createClass({
    )
  }
 });
-
-export default class Footer extends Component {
+  
+export default class FooterL extends Component {
   render(){
     return(
       <Wrapper>

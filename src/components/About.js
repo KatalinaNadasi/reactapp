@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {HeaderContainer, Container, BackgroundImage, AboutTitle, ScrollPosition, ScrollDown, Line, BlueBgd, SectionTitle, SectionSpace, ProjectsContainer, BlueLetters, CremeLetters, Wrapper, LongColLeft, LongColRight, LongColLeftImg, ShortColRight, ShortColLeft, ShortColRightSmall, Padding} from './About.style';
 import '../index.css';
 import {Retro} from '../variables.js';
-// import {Footer} from './Footer';
+import Footer from './Footer';
 
 
 export default class About extends Component {
@@ -60,6 +60,7 @@ export default class About extends Component {
             </ProjectsContainer>
             <SectionSpace></SectionSpace>
         </Container>
+        <Footer></Footer>
       </div>
     );
   }
