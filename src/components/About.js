@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {HeaderContainer, Container, BackgroundImage, AboutTitle, ScrollPosition, ScrollDown, Line, BlueBgd, SectionTitle, SectionSpace, ProjectsContainer, BlueLetters, CremeLetters, Wrapper, LongColLeft, LongColRight, LongColLeftImg, ShortColRight, ShortColLeft, ShortColRightSmall, Padding} from './About.style';
+import {HeaderContainer, Container, BackgroundImage, AboutTitle, ScrollPosition, SvgContainer , BottomArrow, ScrollDown, Line, BlueBgd, SectionTitle, SectionSpace, ProjectsContainer, BlueLetters, CremeLetters, Wrapper, LongColLeft, LongColRight, LongColLeftImg, ShortColRight, ShortColLeft, ShortColRightSmall, Padding} from './About.style';
 import '../index.css';
 import {Retro} from '../variables.js';
 import Footer from './Footer';
@@ -15,7 +15,11 @@ export default class About extends Component {
         </HeaderContainer>
         <Container>
           <ScrollPosition>
-            <ScrollDown></ScrollDown>
+            <ScrollDown>
+              <SvgContainer>
+                <BottomArrow></BottomArrow>
+              </SvgContainer>
+            </ScrollDown>
             </ScrollPosition>
           <BlueBgd>
             <SectionTitle>Side projects</SectionTitle>
@@ -40,11 +44,11 @@ export default class About extends Component {
                 </Line>
                 <Line>
                   <ShortColLeft>
-                  <iframe width="414" height="220" src="//www.ytcropper.com/embed/Oh59c8f552f24fa/loop/noautoplay/" frameborder="0" allowfullscreen></iframe>
-                  </ShortColLeft>
+                  <iframe width="414" height="220" src="//www.ytcropper.com/embed/Oh59c944c800dfc/loop/noautoplay/" frameborder="0" allowfullscreen></iframe>
+                </ShortColLeft>
                   <LongColRight>
                     <Retro pink>Pitch of sneakr.fr at The Family</Retro>
-                    <BlueLetters>At the end of my training at <a href="https://www.switchup.org/locations/paris-coding-bootcamp" target="_blank">the best coding bootcamp in Europe</a>(Le Wagon, off course) we pitched our project developped in 2 weeks in front of professionals.</BlueLetters>
+                    <BlueLetters>At the end of my training at <a href="https://www.switchup.org/locations/paris-coding-bootcamp" target="_blank">the best coding bootcamp in Europe</a> (Le Wagon, off course) we pitched our project developped in 2 weeks in front of professionals poeple.</BlueLetters>
                   </LongColRight>
                   <LongColLeft>
                     <Retro><a href="https://www.lereacteur.io/" target="_blank">Le Reacteur</a></Retro>

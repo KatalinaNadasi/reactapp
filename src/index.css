@@ -146,6 +146,9 @@ svg#Calque_1 {
 /***********
 PORTFOLIO
 ************/
+svg#bottom-arrow {
+    transform: translate(-16px, -12px);
+}
 
 #socials {
   transition: 300ms all;
