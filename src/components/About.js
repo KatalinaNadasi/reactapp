@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {HeaderContainer, Container, BackgroundImage, AboutTitle, ScrollPosition, SvgContainer , BottomArrow, ScrollDown, Line, BlueBgd, SectionTitle, SectionSpace, ProjectsContainer, BlueLetters, CremeLetters, Wrapper, LongColLeft, LongColRight, LongColLeftImg, ShortColRight, ShortColLeft, ShortColRightSmall, Padding} from './About.style';
+import {HeaderContainer, Container, BackgroundImage, ArrowAnimation, AboutTitle, ScrollPosition, BottomArrow, SvgContainer , ScrollDown, Line, BlueBgd, SectionTitle, SectionSpace, ProjectsContainer, BlueLetters, CremeLetters, Wrapper, LongColLeft, LongColRight, LongColLeftImg, ShortColRight, ShortColLeft, ShortColRightSmall, Padding} from './About.style';
 import '../index.css';
 import {Retro} from '../variables.js';
 import Footer from './Footer';
@@ -10,14 +10,16 @@ export default class About extends Component {
     return(
       <div>
         <HeaderContainer>
-          <BackgroundImage></BackgroundImage>
+          <BackgroundImage />
           <AboutTitle>About me</AboutTitle>
         </HeaderContainer>
         <Container>
           <ScrollPosition>
             <ScrollDown>
               <SvgContainer>
-                <BottomArrow></BottomArrow>
+                <ArrowAnimation>
+                  <BottomArrow />
+                </ArrowAnimation>
               </SvgContainer>
             </ScrollDown>
             </ScrollPosition>
@@ -40,11 +42,13 @@ export default class About extends Component {
                     <CremeLetters>The story behind</CremeLetters>
                     <Padding>I've met Jean Guo in a hackaton about refugees in le Wagon. With my team we developped the'Linkedin for refugees'. Wait...hey! Grazia talk about us <a href="https://www.grazia.fr/news-et-societe/news/textfugees-refugenius-la-technologie-au-service-des-migrants-809301" target="_blank">there</a>.</Padding>
                   </ShortColRight>
-                  <LongColLeftImg></LongColLeftImg>
+                  <LongColLeftImg>
+                    <img src={require('../img/projects/konexio.jpg')} alt="team"/>
+                  </LongColLeftImg>
                 </Line>
                 <Line>
                   <ShortColLeft>
-                  <iframe width="414" height="220" src="//www.ytcropper.com/embed/Oh59c944c800dfc/loop/noautoplay/" frameborder="0" allowfullscreen></iframe>
+                  <iframe width="414" height="220" src="//www.ytcropper.com/embed/Oh59c944c800dfc/loop/noautoplay/" frameBorder="0" allowFullScreen></iframe>
                 </ShortColLeft>
                   <LongColRight>
                     <Retro pink>Pitch of sneakr.fr at The Family</Retro>
@@ -55,17 +59,17 @@ export default class About extends Component {
                     <BlueLetters>I did their one week intensive training in React and then helped them a little for the launch communication of their bootcamp. <br/>I found the project very smart because I'm convinced that React will have a special slice in the coding cake next years.</BlueLetters>
                   </LongColLeft>
                   <ShortColRightSmall>
-                    <Padding>We share with Xavier the same passion for vintage and retro.</Padding>
+                    <CremeLetters>The story behind</CremeLetters>
+                    <div style={{ paddingLeft: 30, paddingRight: 30 }}>We share with Xavier the same passion for vintage and retro.</div>
                   </ShortColRightSmall>
                 </Line>
               </Wrapper>
               <div className="clear"></div>
             </ProjectsContainer>
-            <SectionSpace></SectionSpace>
+            <SectionSpace />
         </Container>
-        <Footer></Footer>
+        <Footer />
       </div>
     );
   }
-
 }

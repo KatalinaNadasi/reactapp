@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import styled from 'styled-components';
+import React from 'react';
+import styled, {keyframes} from 'styled-components';
 import {CircleTitle} from './Header.style';
 import {blue, lightpink, creme, darkcreme} from '../variables.js';
 
@@ -50,19 +50,30 @@ export const ScrollDown = styled.div`
   margin: 0 auto;
 `
 
-export const BottomArrow = React.createClass({
-  render(){
-    return (
-      <svg version="1.1" id="bottom-arrow" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	     width="30px" height="30px" viewBox="0 0 512 512" enableBackground="new 0 0 512 512" xmlSpace="preserve">
+export function BottomArrow(props){
+  return (
+    <svg version="1.1" id="bottom-arrow" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      width="30px" height="30px" viewBox="0 0 512 512" enableBackground="new 0 0 512 512" xmlSpace="preserve" {...props}>
       <path fill="#FFFFFF" d="M430.284,345.375c7.243-6.951,7.283-18.56,0.089-25.804c-6.951-6.999-18.561-7.038-25.543-0.088
-	    L273.543,449.87l1.485-431.742c0.019-10.064-7.953-18.091-18.018-18.126c-10.064-0.034-18.351,7.936-18.385,18l-1.486,431.743
-	    L106.997,318.459c-7.196-7-18.821-7.04-25.804-0.089c-7.244,7.194-7.283,18.819-0.089,25.804L242.359,506.54
-	    c6.95,7.243,18.56,7.283,25.543,0.088L430.284,345.375z"/>
-      </svg>
-    )
+        L273.543,449.87l1.485-431.742c0.019-10.064-7.953-18.091-18.018-18.126c-10.064-0.034-18.351,7.936-18.385,18l-1.486,431.743
+        L106.997,318.459c-7.196-7-18.821-7.04-25.804-0.089c-7.244,7.194-7.283,18.819-0.089,25.804L242.359,506.54
+        c6.95,7.243,18.56,7.283,25.543,0.088L430.284,345.375z"/>
+    </svg>
+  );
+}
+
+
+export const whiteFill = keyframes `
+  to {
+    opacity: 0;
   }
-})
+`
+
+export const ArrowAnimation = styled.span`
+  animation: ${whiteFill} 2s;
+   animation-iteration-count: 5;
+`
+
 
 export const SvgContainer = styled.div `
   transform: rotate(-45deg);
@@ -154,9 +165,7 @@ export const CremeLetters = BlueLetters.extend`
 export const LongColLeftImg = LongColLeft.extend`
   height: 300px;
   padding: 0;
-  background-image: url('${require('../img/projects/konexio.jpg')}');
-  background-repeat: no-repeat;
-  background-size: cover;
+  overflow: hidden;
 `
 
 export const ShortColLeft = ShortColRight.extend`
