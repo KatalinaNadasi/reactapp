@@ -39,12 +39,12 @@ export default class Header extends React.Component {
           <div className="bubbles">
             <WhenInView>
               {({isInView}) =>
-                <Bubble1 hide={!isInView}>
-                  <svg height="200" width="200">
-                    <Ellipse pink cx="100" cy="100" rx="90" ry="90" />
-                  </svg>
-                  <BubbleP>Animations</BubbleP>
-                </Bubble1>
+              <Bubble1 hide={!isInView}>
+                <svg height="200" width="200">
+                  <Ellipse pink cx="100" cy="100" rx="90" ry="90" />
+                </svg>
+                <BubbleP>Animations</BubbleP>
+              </Bubble1>
               }
             </WhenInView>
             <WhenInView>

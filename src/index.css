@@ -160,5 +160,5 @@ g#linked:hover, g#contact:hover, g#github:hover {
   fill: #E3DAC9;
   cursor: pointer;
   transition: 1s all;
-  stroke: deeppink;
+  stroke: #FF3D68;
 }

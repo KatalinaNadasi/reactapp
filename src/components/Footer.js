@@ -56,7 +56,7 @@ export function IconSocials(props){
         </text>
     </g>
     <g id="github">
-      <ellipse fill="#F3F3ED" stroke="#FF3D68" strokeMiterlimit="10" strokeWidth="3.04" cx="51.316" cy="213.445" rx="29" ry="28"/>
+      <ellipse id="github-circle" fill="#F3F3ED" stroke="#FF3D68" strokeMiterlimit="10" strokeWidth="3.04" cx="51.316" cy="213.445" rx="29" ry="28"/>
         <title id="simpleicons-github-icon">GitHub icon</title>
         <path id="github" d="M51.315,186.175c-15.509,0-28.07,12.062-28.07,26.938c0,11.903,8.042,21.999,19.192,25.557
         c1.404,0.254,1.919-0.579,1.919-1.295c0-0.64-0.023-2.335-0.035-4.579c-7.809,1.625-9.455-3.614-9.455-3.614

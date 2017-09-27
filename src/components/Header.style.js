@@ -116,7 +116,7 @@ export const CircleTop = styled.div`
 	 }
 
 	${({hide}) => hide && css`
-		display: none;
+		animation: none;
 	`}
  `
  export const Bubble2 = styled.div`
@@ -141,7 +141,7 @@ export const CircleTop = styled.div`
 	 }
 
 	${({hide}) => hide && css`
-		display: none;
+	 animation: none;
 	`}
  `;
 
@@ -167,7 +167,7 @@ export const CircleTop = styled.div`
 		}
 
 		${({hide}) => hide && css`
-			display: none;
+			animation: none;
 		`}
  `
 
@@ -193,7 +193,7 @@ export const CircleTop = styled.div`
 	 }
 
 	 ${({hide}) => hide && css`
-		 display: none;
+		 animation: none;
 	 `}
  `
 
@@ -219,7 +219,7 @@ export const CircleTop = styled.div`
 	}
 
 	 ${({hide}) => hide && css`
-		 display: none;
+		animation: none;
 	 `}
  `
  export const Bubble6 = styled.div`
@@ -244,7 +244,7 @@ export const CircleTop = styled.div`
 	 }
 
 	 ${({hide}) => hide && css`
-		 display: none;
+		 animation: none;
 	 `}
  `
 
@@ -346,7 +346,7 @@ export const CircleTop = styled.div`
 	 }
 
 	 ${({hide}) => hide && css`
-		 display: none;
+		 animation: none;
 	 `}
  `
 
@@ -429,7 +429,7 @@ export const CircleTop = styled.div`
 	 }
 
 	 ${({hide}) => hide && css`
-		 display: none;
+		 animation: none;
 	 `}
  `
  export const Bubble16 = styled.div`
@@ -526,6 +526,6 @@ export const CircleTop = styled.div`
 		}
 
 		${({hide}) => hide && css`
-			display: none;
+			animation: none;
 		`}
  `
