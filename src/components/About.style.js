@@ -136,6 +136,13 @@ export const Img = LongCol.extend`
   height: 300px;
   padding: 0;
   overflow: hidden;
+  cursor: pointer;
+
+  &:hover{
+    & > img {
+      transform: scale(1.1);
+    }
+  }
 `
 
 export const ShortCol = styled.div`

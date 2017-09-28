@@ -5,12 +5,13 @@
   "dependencies": {
     "jquery.stellar": "github:markdalgleish/stellar.js#v0.6.2",
     "react": "^15.6.1",
-    "react-addons-transition-group": "^15.6.0",
+    "react-animations": "^0.1.0",
     "react-dom": "^15.6.1",
     "react-fontawesome": "^1.6.1",
     "react-image-parallax2": "^0.1.6",
     "react-router-dom": "^4.2.2",
     "react-scripts": "0.9.5",
+    "react-transition-group": "^1.2.0",
     "react-waypoint": "^7.1.0",
     "really-smooth-scroll": "^2.1.1",
     "styled-components": "^2.1.2"

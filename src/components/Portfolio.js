@@ -1,28 +1,51 @@
 import React from 'react';
 import ParallaxImage from 'react-image-parallax2';
 import '../index.css';
-import {Container, IconTitle, Wrapper, BackgroundTitle, ImageContainer1, ImageContainer2, ImageContainer3, ImageContainer4, ImageContainer5, ImageContainer6, Background1, Background2, Mountains} from './Portfolio.style';
+import {Container, IconTitle, Wrapper, BackgroundTitle, FadeDiv, ImageContainer1, ImageContainer2, ImageContainer3, ImageContainer4, ImageContainer5, ImageContainer6, Background1, Background2, Mountains} from './Portfolio.style';
+import WhenInView from './WhenInView';
+
 
 class Portfolio extends React.Component {
+
+
   render () {
     return(
     <Container>
-      <div className="wrapper-title">
-        <BackgroundTitle />
-        <IconTitle />
-      </div>
-      <Background1>
-        <Wrapper>
-          <ImageContainer1>
-            <ParallaxImage
-              reduceHeight={0.2/3}
-              src={require('../img/portfolio/chopard.jpg')}/>
-          </ImageContainer1>
-          <ImageContainer2>
-            <ParallaxImage
-              reduceHeight={2/3}
-              src={require('../img/portfolio/adaweek.jpg')}/>
-          </ImageContainer2>
+      <WhenInView>
+        {({isInView}) =>
+            <div className="wrapper-title">
+              <BackgroundTitle hide={!isInView}>
+                <FadeDiv>
+                  <IconTitle />
+                </FadeDiv>
+              </BackgroundTitle>
+            </div>
+        }
+        </WhenInView>
+        <Background1>
+          <Wrapper>
+            <FadeDiv>
+              <WhenInView>
+                {({isInView}) =>
+                <ImageContainer1 hide={!isInView}>
+                  <ParallaxImage
+                    reduceHeight={0.2/3}
+                    src={require('../img/portfolio/chopard.jpg')}/>
+                </ImageContainer1>
+                }
+              </WhenInView>
+            </FadeDiv>
+            <FadeDiv>
+              <WhenInView>
+                {({isInView}) =>
+                <ImageContainer2 hide={!isInView}>
+                  <ParallaxImage
+                    reduceHeight={2/3}
+                    src={require('../img/portfolio/adaweek.jpg')}/>
+                </ImageContainer2>
+                }
+              </WhenInView>
+            </FadeDiv>
           <div className="clear"></div>
             <ImageContainer3>
               <ParallaxImage

@@ -149,18 +149,15 @@ svg#bottom-arrow {
     transform: translate(-17px, -12px);
 }
 
-#socials {
-  transition: 300ms all;
-  transform-origin: 50% 50%;
-}
 
 /***********
 FOOTER
 ************/
 
+
 g#linked:hover, g#contact:hover, g#github:hover {
   fill: #E3DAC9;
   cursor: pointer;
-  transition: 1s all;
+  transition: 0.3s all;
   stroke: #FF3D68;
 }
