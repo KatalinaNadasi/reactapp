@@ -24,12 +24,8 @@ export const Wrapper = styled.div`
 `
 export const BackgroundTitle = styled.div`
    height: 116vh;
-   background-image: url('${require('../img/logo-transp.svg')}');
-   background-repeat: no-repeat;
    background-size: 86%;
-   margin: -540px 0 15px 150px;
    z-index: -99;
-   opacity: 0.3;
  `
 export const ImageContainer1 = styled.div`
   width: 60%;
@@ -111,4 +107,8 @@ export const Background2 = styled.div`
   background: linear-gradient(to bottom, rgba(220, 20, 60, 1.0) 0%, rgba(255, 189, 160, 1) 30%, 	rgba(243, 243, 237, 1.0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='crimson', endColorstr='F3F3ED',GradientType=0 ); /* IE6-9 */
   z-index: -99;
+`
+
+export const Mountains = styled.div `
+   background-image: url('${require('../img/logo-transp.svg')}') no-repeat;
 `

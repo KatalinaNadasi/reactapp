@@ -136,11 +136,13 @@ PORTFOLIO
 }
 
 svg#Calque_1 {
-  margin: 0px 470px 0px;
+  margin: 0px 325px;
   font-weight: bolder;
   position: absolute;
-  top: -709px;
-  left: 145px;
+  top: -767px;
+  left: 152px;
+  border-top: 5px solid;
+  border-bottom: 5px solid;
 }
 
 svg#bottom-arrow {

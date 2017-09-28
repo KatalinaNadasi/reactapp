@@ -7,7 +7,6 @@ export const slide = keyframes`
 	to { transform: translateY(-285px);}
 `;
 export const Circle = styled.div`
-  margin-bottom: 250px;
   animation: ${slide} 5s forwards;
 `;
 
