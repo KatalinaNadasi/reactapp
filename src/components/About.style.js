@@ -70,15 +70,13 @@ export const whiteFill = keyframes `
 `
 
 export const ArrowAnimation = styled.span`
-  animation: ${whiteFill} 2s;
-   animation-iteration-count: 5;
+  animation: ${whiteFill} 1.1s;
+  animation-iteration-count: 7;
 `
-
 
 export const SvgContainer = styled.div `
   transform: rotate(-45deg);
 `
-
 
 export const BlueBgd = styled.div`
   background-color: ${blue};
@@ -123,62 +121,43 @@ export const Line = styled.div`
   height: 550px;
 `
 
-export const LongColLeft = styled.div`
+export const LongCol = styled.div`
   font-size: 2rem;
   height: 250px;
   border: 5px solid ${darkcreme};
   background-color: ${creme};
   color: ${lightpink};
-  float: left;
+  float: ${props => props.left ? 'left' : 'right'};
   width: 65%;
   padding: 15px;
 `
 
-export const ShortColRight = styled.div`
+export const Img = LongCol.extend`
+  height: 300px;
+  padding: 0;
+  overflow: hidden;
+`
+
+export const ShortCol = styled.div`
   font-size: 2rem;
-  height: 550px;
+  height: ${props => props.tall ? '550px' : '250px'};
   border: 5px solid ${darkcreme};
-  padding: 15px;
-  background-color: ${lightpink};
+  padding: ${props => props.padding ? '15px' : '10px'};
+  background-color: ${props => props.pink ? '#FF3D68' : '#008080'};
   width: 35%;
   color: ${darkcreme};
-  float: right;
+  float: ${props => props.left ? 'left' : 'right'};
 `
 
 export const Padding = styled.div`
   padding: 40px 30px;
 `
 
-export const BlueLetters = styled.p`
-  color: ${blue};
+export const Letters = styled.p`
+  color: ${props => props.blue ? '#008080' : '#E3DAC9'};
   font-weight: bold;
   font-size: 1.4rem;
   font-family: 'Nixie One',cursive;
   padding: 20px 0;
   line-height: 30px;
-`
-
-export const CremeLetters = BlueLetters.extend`
-  color: ${creme};
-`
-
-export const LongColLeftImg = LongColLeft.extend`
-  height: 300px;
-  padding: 0;
-  overflow: hidden;
-`
-
-export const ShortColLeft = ShortColRight.extend`
-  float: left;
-  background-color: ${blue};
-  height: 250px;
-  padding: 10px;
-`
-
-export const LongColRight = LongColLeft.extend`
-  float: right;
-`
-
-export const ShortColRightSmall = ShortColRight.extend`
-  height: 250px;
 `
