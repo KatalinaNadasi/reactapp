@@ -32,27 +32,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 .clear {
   clear: both;
 }
-/***********
-GENERAL
-************/
 
-/*.button {
-  padding: 15px;
-  border: 1px solid;
-  border-radius: 2px;
-  display: block;
-  text-align: center;
-  transition: .6s all ease;
-  height: 50px;
+.relative {
+  position: relative;
 }
 
-.button-sm {
-  width: 70px;
-}
-
-.button-lg {
-  width: 170px;
-}*/
 
 
 /***********

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, {css, keyframes} from 'styled-components';
-import {pink, blue} from '../variables.js';
+import {pink, darkcreme, blue} from '../variables.js';
 import { fadeIn } from 'react-animations';
 
 export const Container = styled.div`
@@ -45,15 +45,55 @@ export const ImageContainer1 = styled.div`
   float: left;
   margin: 0 0 0 125px;
   transition: 0.5s all;
+  position: relative;
 
-  &:hover {
-    transform: scale(1.1, 1.1);
-    transition: 0.5s all;
-  }
   ${({hide}) => hide && css`
   opacity: 0;
   `}
 `;
+
+export const Hover = styled.div `
+    opacity: 0;
+    transition: 0.3s all ease-in-out;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: ${pink};
+
+    &:hover {
+      opacity: 0.9;
+    }
+
+`
+
+export const Btn = styled.button `
+    cursor: pointer;
+    opacity: 1;
+    padding: 15px;
+    border: 3px solid ${darkcreme};
+    display: block;
+    transition: .6s all ease;
+    height: 50px;
+    width: 180px;
+    background: ${pink};
+    color: ${darkcreme};
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -46px -28px 0 -82px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+
+    &:hover {
+      color: blue;
+      background: ${darkcreme};
+      color: ${pink};
+      opacity: 1;
+    }
+`
 
 export const ImageContainer2 = styled.div`
   margin: -50px 0px 23px 125px;
