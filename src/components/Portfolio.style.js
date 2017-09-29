@@ -40,59 +40,103 @@ export const FadeDiv = styled.div`
   animation: 6s ${fadeAnimation};
 `;
 
+export const ImgDiv = styled.div `
+  overflow: hidden;
+`
+
 export const ImageContainer1 = styled.div`
   width: 60%;
   float: left;
   margin: 0 0 0 125px;
-  transition: 0.5s all;
   position: relative;
+  transition: all 0.2s ease-in;
+  overflow: hidden;
 
   ${({hide}) => hide && css`
   opacity: 0;
   `}
 `;
 
-export const Hover = styled.div `
+export const hoverAnim = keyframes `
+  0% 	{transform: translate(265px, 145px) rotate(45deg);}
+  100% { transform: translate(-80px, -125px) rotate(45deg);}
+`
+
+export const Mask = styled.div `
     opacity: 0;
-    transition: 0.3s all ease-in-out;
+    transition: all ease-in-out 0.1s;
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: ${pink};
+  	background-color: ${pink};
+    overflow: hidden;
+
+    > div {
+      opacity: 0;
+    }
 
     &:hover {
       opacity: 0.9;
+      animation: 0.1s ${hoverAnim};
+
+      > div {
+        opacity: 1;
+        transition-delay: 0.2s;
+      }
+    }
+
+    h2 {
+      background: transparent;
+      margin-top: 5px;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        transition-delay: 0.3s;
+      }
+    }
+
+    p {
+	    transition: all 0.2s ease-in-out;
+
+      &:hover {
+    	  transition-delay: 0.4s;
+      }
+    }
+
+    a {
+	    transition: all 0.2s 0.1s ease-in-out;
+
+      &:hover {
+        transition-delay: 0.5s;
+      }
     }
 
 `
 
 export const Btn = styled.button `
-    cursor: pointer;
-    opacity: 1;
-    padding: 15px;
-    border: 3px solid ${darkcreme};
-    display: block;
-    transition: .6s all ease;
-    height: 50px;
-    width: 180px;
-    background: ${pink};
-    color: ${darkcreme};
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin: -46px -28px 0 -82px;
-    text-transform: uppercase;
-    font-size: 15px;
-    font-weight: bold;
+  cursor: pointer;
+  padding: 15px;
+  border: 3px solid ${darkcreme};
+  display: block;
+  height: 50px;
+  width: 180px;
+  background: ${pink};
+  color: ${darkcreme};
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -46px -28px 0 -82px;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+  transition: all 0.6s ease-in-out;
 
-    &:hover {
-      color: blue;
-      background: ${darkcreme};
-      color: ${pink};
-      opacity: 1;
-    }
+  &:hover {
+    background: ${darkcreme};
+    color: ${pink};
+  }
 `
 
 export const ImageContainer2 = styled.div`

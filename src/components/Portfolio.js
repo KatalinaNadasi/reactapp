@@ -1,7 +1,7 @@
 import React from 'react';
 import ParallaxImage from 'react-image-parallax2';
 import '../index.css';
-import {Container, IconTitle, Wrapper, BackgroundTitle, FadeDiv, ImageContainer1, Hover, Btn, ImageContainer2, ImageContainer3, ImageContainer4, ImageContainer5, ImageContainer6, Background1, Background2, Mountains} from './Portfolio.style';
+import {Container, IconTitle, Wrapper, BackgroundTitle, FadeDiv, ImgDiv, ImageContainer1, Mask, Btn, ImageContainer2, ImageContainer3, ImageContainer4, ImageContainer5, ImageContainer6, Background1, Background2, Mountains} from './Portfolio.style';
 import WhenInView from './WhenInView';
 
 
@@ -24,20 +24,24 @@ class Portfolio extends React.Component {
         </WhenInView>
         <Background1>
           <Wrapper>
-            <FadeDiv>
+            <ImgDiv>
               <WhenInView>
                 {({isInView}) =>
                 <ImageContainer1 hide={!isInView}>
                   <ParallaxImage
                     reduceHeight={0.2/3}
                     src={require('../img/portfolio/chopard.jpg')}/>
-                  <Hover>
-                    <Btn>Voir plus</Btn>
-                  </Hover>
+                  <Mask>
+                      <h2>Title</h2>
+                      <p>text</p>
+                      <div><Btn><a href="#">Know more</a></Btn></div>
+                  </Mask>
                 </ImageContainer1>
                 }
               </WhenInView>
-            </FadeDiv>
+            </ImgDiv>
+
+
             <FadeDiv>
               <WhenInView>
                 {({isInView}) =>
