@@ -24,47 +24,48 @@ class Portfolio extends React.Component {
         </WhenInView>
         <Background1>
           <Wrapper>
-            <ImgDiv>
-              <WhenInView>
-                {({isInView}) =>
-                <ImageContainer1 hide={!isInView}>
+              <ImgDiv>
+                <ImageContainer1>
                   <ParallaxImage
                     reduceHeight={0.2/3}
                     src={require('../img/portfolio/chopard.jpg')}/>
                   <Mask>
-                      <h2>Title</h2>
+                    <h2>Title</h2>
                       <p>text</p>
                       <div><Btn><a href="#">Know more</a></Btn></div>
                   </Mask>
                 </ImageContainer1>
-                }
-              </WhenInView>
-            </ImgDiv>
-
-
-            <FadeDiv>
-              <WhenInView>
-                {({isInView}) =>
-                <ImageContainer2 hide={!isInView}>
-                  <ParallaxImage
-                    reduceHeight={2/3}
-                    src={require('../img/portfolio/adaweek.jpg')}/>
-                </ImageContainer2>
-                }
-              </WhenInView>
-            </FadeDiv>
-          <div className="clear"></div>
-            <ImageContainer3>
+              </ImgDiv>
+              <ImageContainer2>
+                <ParallaxImage
+                  reduceHeight={2/3}
+                  src={require('../img/portfolio/adaweek.jpg')}/>
+                  <Mask>
+                    <h2>Title</h2>
+                      <p>text</p>
+                      <div><Btn><a href="#">Know more</a></Btn></div>
+                  </Mask>
+              </ImageContainer2>
+              <ImageContainer3>
               <ParallaxImage
                 reduceHeight={2/3}
                 src={require('../img/portfolio/katalina.jpg')}/>
-            </ImageContainer3>
-            <ImageContainer4>
-              <ParallaxImage
-                reduceHeight={0.2/3}
-                src={require('../img/portfolio/labanque.png')}/>
-            </ImageContainer4>
-          <div className="clear"></div>
+                <Mask>
+                  <h2>Title</h2>
+                    <p>text</p>
+                    <div><Btn><a href="#">Know more</a></Btn></div>
+                </Mask>
+              </ImageContainer3>
+              <ImageContainer4>
+                <ParallaxImage
+                  reduceHeight={0.2/3}
+                  src={require('../img/portfolio/labanque.png')}/>
+                  <Mask>
+                    <h2>Title</h2>
+                      <p>text</p>
+                      <div><Btn><a href="#">Know more</a></Btn></div>
+                  </Mask>
+              </ImageContainer4>
           </Wrapper>
         </Background1>
         <Background2>
@@ -73,18 +74,24 @@ class Portfolio extends React.Component {
               <ParallaxImage
                 reduceHeight={2/3}
                 src={require('../img/portfolio/sneakr.jpg')}/>
+                <Mask>
+                  <h2>Title</h2>
+                    <p>text</p>
+                    <div><Btn><a href="#">Know more</a></Btn></div>
+                </Mask>
             </ImageContainer5>
             <ImageContainer6>
               <ParallaxImage
                 reduceHeight={2/3}
                 src={require('../img/portfolio/eavest.jpg')}/>
+                <Mask>
+                  <h2>Title</h2>
+                    <p>text</p>
+                    <div><Btn><a href="#">Know more</a></Btn></div>
+                </Mask>
             </ImageContainer6>
-            <div className="clear"></div>
           </Wrapper>
         </Background2>
-        <Mountains>
-
-        </Mountains>
     </Container>
 
     )

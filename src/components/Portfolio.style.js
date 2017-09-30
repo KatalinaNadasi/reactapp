@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, {css, keyframes} from 'styled-components';
-import {pink, darkcreme, blue} from '../variables.js';
+import {pink, darkcreme} from '../variables.js';
 import { fadeIn } from 'react-animations';
 
 export const Container = styled.div`
@@ -29,6 +29,7 @@ export const BackgroundTitle = styled.div`
    z-index: -99;
    margin-top: 550px;
    transition: 6s all ease;
+
    ${({hide}) => hide && css`
    opacity: 0;
    `}
@@ -37,7 +38,7 @@ export const BackgroundTitle = styled.div`
 export const fadeAnimation = keyframes`${fadeIn}`;
 
 export const FadeDiv = styled.div`
-  animation: 6s ${fadeAnimation};
+  animation: ${fadeAnimation};
 `;
 
 export const ImgDiv = styled.div `
@@ -52,25 +53,26 @@ export const ImageContainer1 = styled.div`
   transition: all 0.2s ease-in;
   overflow: hidden;
 
-  ${({hide}) => hide && css`
-  opacity: 0;
-  `}
+  &:hover {
+    transform: scale(1.1, 1.1);
+  }
 `;
 
 export const hoverAnim = keyframes `
   0% 	{transform: translate(265px, 145px) rotate(45deg);}
-  100% { transform: translate(-80px, -125px) rotate(45deg);}
+  50% { transform: translate(-80px, -125px) rotate(45deg);}
+  100% {transform: translate(265px, 145px) rotate(45deg);}
 `
 
 export const Mask = styled.div `
     opacity: 0;
-    transition: all ease-in-out 0.1s;
+    transition: all ease-in 0.2s;
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-  	background-color: ${pink};
+  	background-color: rgba(135, 182, 183, 1.0);
     overflow: hidden;
 
     > div {
@@ -88,28 +90,45 @@ export const Mask = styled.div `
     }
 
     h2 {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.3);
       background: transparent;
-      margin-top: 5px;
-      border-bottom: 1px solid rgba(255,255,255,0.2);
+      margin: 20px 40px 0px 40px;
+  	  transition: all 0.2s ease-in-out;
+      text-transform: uppercase;
       transition: all 0.2s ease-in-out;
+      text-transform: uppercase;
+      color: #fff;
+      text-align: center;
+      position: relative;
+      font-size: 17px;
+      padding: 10px;
+      margin: 180px 80px 0 80px;
       &:hover {
         transition-delay: 0.3s;
       }
     }
 
     p {
-	    transition: all 0.2s ease-in-out;
+      font-style: italic;
+      font-size: 12px;
+      position: relative;
+      color: #fff;
+      padding: 10px 20px 20px;
+      text-align: center;
+      transition: all 0.2s ease-in-out;
 
       &:hover {
-    	  transition-delay: 0.4s;
+      transition-delay: 0.4s;
       }
     }
 
     a {
 	    transition: all 0.2s 0.1s ease-in-out;
+      text-decoration: none;
 
       &:hover {
         transition-delay: 0.5s;
+        text-decoration: none;
       }
     }
 
@@ -117,12 +136,12 @@ export const Mask = styled.div `
 
 export const Btn = styled.button `
   cursor: pointer;
-  padding: 15px;
+  padding: 10px;
   border: 3px solid ${darkcreme};
   display: block;
   height: 50px;
   width: 180px;
-  background: ${pink};
+  background: black;
   color: ${darkcreme};
   position: absolute;
   left: 50%;
@@ -135,7 +154,7 @@ export const Btn = styled.button `
 
   &:hover {
     background: ${darkcreme};
-    color: ${pink};
+    color: black;
   }
 `
 
@@ -212,6 +231,6 @@ export const Background2 = styled.div`
   z-index: -99;
 `;
 
-export const Mountains = styled.div `
-   background-image: url('${require('../img/logo-transp.svg')}') no-repeat;
-`;
+// export const Mountains = styled.div `
+//    background-image: url('${require('../img/logo-transp.svg')}') no-repeat;
+// `;

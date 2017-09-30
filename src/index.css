@@ -145,3 +145,7 @@ g#linked:hover, g#contact:hover, g#github:hover {
   transition: 0.3s all;
   stroke: #FF3D68;
 }
+
+.imganim {  
+  transition: all 0.2s ease-in;
+}
