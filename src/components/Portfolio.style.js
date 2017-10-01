@@ -7,6 +7,10 @@ export const Container = styled.div`
   width: 100%;
 `;
 
+export const Relative = styled.div`
+  position: relative;
+`;
+
 export function IconTitle(props){
   return (
     <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -92,8 +96,6 @@ export const Mask = styled.div `
     h2 {
       border-bottom: 1px solid rgba(0, 0, 0, 0.3);
       background: transparent;
-      margin: 20px 40px 0px 40px;
-  	  transition: all 0.2s ease-in-out;
       text-transform: uppercase;
       transition: all 0.2s ease-in-out;
       text-transform: uppercase;
@@ -162,10 +164,9 @@ export const ImageContainer2 = styled.div`
   margin: -50px 0px 23px 125px;
   width: 51%;
   float: right;
-  transition: 0.5s all;
+  transition: all 0.2s ease-in;
   &:hover {
     transform: scale(1.1, 1.1);
-    transition: 0.5s all;
   }
   ${({hide}) => hide && css`
   opacity: 0;
@@ -176,10 +177,9 @@ export const ImageContainer3 = styled.div`
   width: 50%;
   float: left;
   margin: -345px 0 0 60px;
-  transition: 0.5s all;
+  transition: all 0.2s ease-in;
   &:hover {
     transform: scale(1.1, 1.1);
-    transition: 0.5s all;
   }
 `;
 
@@ -187,21 +187,19 @@ export const ImageContainer4 = styled.div`
   width: 35%;
   float: right;
   margin: 25px 76px 25px 0;
-  transition: 0.5s all;
+  transition: all 0.2s ease-in;
   &:hover {
     transform: scale(1.1, 1.1);
-    transition: 0.5s all;
   }
 `;
 
 export const ImageContainer5 = styled.div`
   margin: 31px -52px 23px 0px;
   float: right;
-  transition: 0.5s all;
+  transition: all 0.2s ease-in;
   width: 44%;
   &:hover {
     transform: scale(1.1, 1.1);
-    transition: 0.5s all;
   }
 `;
 
@@ -209,10 +207,9 @@ export const ImageContainer6 = styled.div`
   margin: -80px 0px 0px 71px;
   width: 60%;
   float: right;
-  transition: 0.5s all;
+  transition: all 0.2s ease-in;
   &:hover {
     transform: scale(1.1, 1.1);
-    transition: 0.5s all;
   }
 `;
 
