@@ -54,7 +54,7 @@ viewMore() {
                     <Mask>
                       <h2>Title</h2>
                       <p>text</p>
-                      <div><Btn><a href="#">Know more</a></Btn></div>
+                      <div><Btn/></div>
                     </Mask>
                   </Relative>
                 </ImgDiv>
@@ -69,7 +69,7 @@ viewMore() {
                     <Mask>
                       <h2>Title</h2>
                       <p>text</p>
-                      <div><Btn><a href="#">Know more</a></Btn></div>
+                      <div><Btn/></div>
                     </Mask>
                   </Relative>
                 </ImgDiv>
@@ -82,7 +82,7 @@ viewMore() {
                   <Mask>
                     <h2>Title</h2>
                     <p>text</p>
-                    <div><Btn><a href="#">Know more</a></Btn></div>
+                    <div><Btn/></div>
                   </Mask>
                 </ImgDiv>
               </ImageContainer4>
@@ -100,7 +100,7 @@ viewMore() {
                     <Mask>
                       <h2>Title</h2>
                       <p>text</p>
-                      <div><Btn><a href="#">Know more</a></Btn></div>
+                      <div><Btn/></div>
                     </Mask>
                   </Relative>
                 </ImgDiv>
@@ -113,7 +113,7 @@ viewMore() {
                   <Mask>
                     <h2>Title</h2>
                     <p>text</p>
-                    <div><Btn><a href="#">Know more</a></Btn></div>
+                    <div><Btn/></div>
                   </Mask>
                 </ImgDiv>
               </ImageContainer6>

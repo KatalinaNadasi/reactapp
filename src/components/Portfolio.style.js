@@ -105,7 +105,7 @@ export const Mask = styled.div `
       position: relative;
       font-size: 17px;
       padding: 10px;
-      margin: 180px 80px 0 80px;
+      margin: 80px 80px 0 80px;
       &:hover {
         transition-delay: 0.3s;
       }
