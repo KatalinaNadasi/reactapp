@@ -14,10 +14,10 @@ import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
-
+import { browserHistory } from 'react-router';
 
 ReactDOM.render(
-  <Router>
+  <Router history={browserHistory}>
     <Navbar>
       <ul>
         <li className="submenu">
@@ -35,6 +35,7 @@ ReactDOM.render(
       <Route path="/about" component={About}/>
       <Route path="/contact" component={Contact}/>
     </Navbar>
+
   </Router>,
   document.getElementById('root')
 );

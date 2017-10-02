@@ -1,12 +1,21 @@
 import React from 'react';
 import ParallaxImage from 'react-image-parallax2';
 import '../index.css';
-import {Container, Relative, IconTitle, Wrapper, BackgroundTitle, FadeDiv, ImgDiv, ImageContainer1, Mask, Btn, ImageContainer2, ImageContainer3, ImageContainer4, ImageContainer5, ImageContainer6, Background1, Background2, Mountains} from './Portfolio.style';
+import {Container, Relative, IconTitle, Wrapper, BackgroundTitle, FadeDiv, ImgDiv, ImageContainer1, Mask, ImageContainer2, ImageContainer3, ImageContainer4, ImageContainer5, ImageContainer6, Background1, Background2} from './Portfolio.style';
 import WhenInView from './WhenInView';
+import { browserHistory } from 'react-router';
+import {withRouter} from 'react-router-dom';
 
+const Btn = withRouter(({history}) => (
+  <button type='button' className="btn-style"
+    onClick={() => { history.push('/projects') }}>Know more</button>
+))
 
 class Portfolio extends React.Component {
 
+viewMore() {
+  browserHistory.push('/projects');
+}
 
   render () {
     return(
@@ -32,7 +41,7 @@ class Portfolio extends React.Component {
                     <Mask>
                       <h2>Title</h2>
                         <p>text</p>
-                        <div><Btn><a href="#">Know more</a></Btn></div>
+                        <div><Btn/></div>
                     </Mask>
                 </ImageContainer1>
               </ImgDiv>

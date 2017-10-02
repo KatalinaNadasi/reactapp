@@ -1,7 +1,8 @@
 import React from 'react';
 import styled, {css, keyframes} from 'styled-components';
-import {pink, darkcreme} from '../variables.js';
+import {pink} from '../variables.js';
 import { fadeIn } from 'react-animations';
+
 
 export const Container = styled.div`
   width: 100%;
@@ -32,7 +33,7 @@ export const Wrapper = styled.div`
 export const BackgroundTitle = styled.div`
    z-index: -99;
    margin-top: 550px;
-   transition: 6s all ease;
+   transition: 1s all ease;
 
    ${({hide}) => hide && css`
    opacity: 0;
@@ -42,7 +43,7 @@ export const BackgroundTitle = styled.div`
 export const fadeAnimation = keyframes`${fadeIn}`;
 
 export const FadeDiv = styled.div`
-  animation: ${fadeAnimation};
+  animation: 0.2s ${fadeAnimation};
 `;
 
 export const ImgDiv = styled.div `
@@ -134,30 +135,6 @@ export const Mask = styled.div `
       }
     }
 
-`
-
-export const Btn = styled.button `
-  cursor: pointer;
-  padding: 10px;
-  border: 3px solid ${darkcreme};
-  display: block;
-  height: 50px;
-  width: 180px;
-  background: black;
-  color: ${darkcreme};
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin: -46px -28px 0 -82px;
-  text-transform: uppercase;
-  font-size: 15px;
-  font-weight: bold;
-  transition: all 0.6s ease-in-out;
-
-  &:hover {
-    background: ${darkcreme};
-    color: black;
-  }
 `
 
 export const ImageContainer2 = styled.div`
