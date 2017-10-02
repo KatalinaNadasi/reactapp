@@ -3,7 +3,6 @@ import ParallaxImage from 'react-image-parallax2';
 import '../index.css';
 import {Container, Relative, IconTitle, Wrapper, BackgroundTitle, FadeDiv, ImgDiv, ImageContainer1, Mask, ImageContainer2, ImageContainer3, ImageContainer4, ImageContainer5, ImageContainer6, Background1, Background2} from './Portfolio.style';
 import WhenInView from './WhenInView';
-import { browserHistory } from 'react-router';
 import {withRouter} from 'react-router-dom';
 
 const Btn = withRouter(({history}) => (
@@ -12,10 +11,6 @@ const Btn = withRouter(({history}) => (
 ))
 
 class Portfolio extends React.Component {
-
-viewMore() {
-  browserHistory.push('/projects');
-}
 
   render () {
     return(

@@ -8,22 +8,6 @@ import WhenInView from './WhenInView';
 
 
 export default class Header extends React.Component {
-  // constructor(){
-  //   super();
-  //   this.state = {
-  //     onShow : false,
-  //     opacity: 0,
-  //   }
-  // }
-  //
-  //
-  // onShow(){
-  //       this.setState({
-  //         opacity: this.state.opacity === 0 ? 1 : 0
-  //       })
-  //
-  //   }
-
 
   render(){
 

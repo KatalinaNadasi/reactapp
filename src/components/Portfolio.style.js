@@ -33,7 +33,7 @@ export const Wrapper = styled.div`
 export const BackgroundTitle = styled.div`
    z-index: -99;
    margin-top: 550px;
-   transition: 1s all ease;
+   transition: 0.5s all ease;
 
    ${({hide}) => hide && css`
    opacity: 0;
