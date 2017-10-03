@@ -138,7 +138,7 @@ export const Mask = styled.div `
 `
 
 export const ImageContainer2 = styled.div`
-  margin: -50px 0px 23px 125px;
+  margin: -50px 36px 23px 125px;
   width: 51%;
   float: right;
   transition: all 0.2s ease-in;
@@ -181,7 +181,7 @@ export const ImageContainer5 = styled.div`
 `;
 
 export const ImageContainer6 = styled.div`
-  margin: -80px 0px 0px 71px;
+  margin: -80px 37px 150px 71px;
   width: 60%;
   float: right;
   transition: all 0.2s ease-in;
@@ -191,19 +191,13 @@ export const ImageContainer6 = styled.div`
 `;
 
 export const Background1 = styled.div`
-  height: 1500px;
+  height: 3000px;
   z-index: -99;
   background: rgba(243, 243, 237, 1.0);
-  background: linear-gradient(to bottom, rgba(243, 243, 237, 1.0) 0%, rgba(255, 189, 160, 1) 50%, rgba(220, 20, 60, 1.0) 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: linear-gradient(to bottom, rgba(243, 243, 237, 1.0) 0%, rgba(255, 189, 160, 1) 30%, rgba(220, 20, 60, 1.0) 50%, rgba(255, 189, 160, 1) 80%, rgba(243, 243, 237, 1.0) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F3F3ED', endColorstr='${pink}',GradientType=0 ); /* IE6-9 */
 `;
 
-export const Background2 = styled.div`
-  height: 1500px;
-  background: linear-gradient(to bottom, rgba(220, 20, 60, 1.0) 0%, rgba(255, 189, 160, 1) 30%, 	rgba(243, 243, 237, 1.0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='crimson', endColorstr='F3F3ED',GradientType=0 ); /* IE6-9 */
-  z-index: -99;
-`;
 
 // export const Mountains = styled.div `
 //    background-image: url('${require('../img/logo-transp.svg')}') no-repeat;

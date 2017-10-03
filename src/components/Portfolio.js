@@ -1,8 +1,7 @@
 import React from 'react';
 import ParallaxImage from 'react-image-parallax2';
 import '../index.css';
-import {Container, Relative, IconTitle, Wrapper, BackgroundTitle, FadeDiv, ImgDiv, ImageContainer1, Mask, ImageContainer2, ImageContainer3, ImageContainer4, ImageContainer5, ImageContainer6, Background1, Background2} from './Portfolio.style';
-import WhenInView from './WhenInView';
+import {Container, Relative, Wrapper, ImgDiv, ImageContainer1, Mask, ImageContainer2, ImageContainer3, ImageContainer4, ImageContainer5, ImageContainer6, Background1} from './Portfolio.style';
 import {withRouter} from 'react-router-dom';
 
 const Btn = withRouter(({history}) => (
@@ -15,17 +14,6 @@ class Portfolio extends React.Component {
   render () {
     return(
     <Container>
-      <WhenInView>
-        {({isInView}) =>
-            <div className="wrapper-title">
-              <BackgroundTitle hide={!isInView}>
-                <FadeDiv>
-                  <IconTitle />
-                </FadeDiv>
-              </BackgroundTitle>
-            </div>
-        }
-        </WhenInView>
         <Background1>
           <Wrapper>
               <ImgDiv>
@@ -81,11 +69,6 @@ class Portfolio extends React.Component {
                   </Mask>
                 </ImgDiv>
               </ImageContainer4>
-              <div className="clear"></div>
-          </Wrapper>
-        </Background1>
-        <Background2>
-          <Wrapper>
               <ImageContainer5>
                 <ImgDiv>
                   <Relative>
@@ -114,7 +97,7 @@ class Portfolio extends React.Component {
               </ImageContainer6>
             <div className="clear"></div>
           </Wrapper>
-        </Background2>
+        </Background1>
     </Container>
 
     )

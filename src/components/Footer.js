@@ -4,15 +4,15 @@ import {blue, darkcreme} from '../variables.js';
 
 export const Wrapper = styled.div `
   width: 100%;
-  height: 150px;
+  height: auto;
   background-color: ${blue};
   color: ${darkcreme};
   border: 8px solid ${darkcreme};
-  padding: 25px 290px;
+  text-align: center;
+  padding: 25px 0;
 `
 
 export const Contact = styled.div `
-  width: 900px;
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -25,11 +25,27 @@ const LeftCol = styled.ul `
   padding: 0 6px;
   list-style: none;
   margin: 0;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    width: 250px;
+  }
 `
 
 export const RightCol = LeftCol.extend `
   float: right;
   width: 300px;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    width: 250px;
+  }
 `
 
 export const Border = styled.li `
@@ -39,6 +55,13 @@ export const Border = styled.li `
   &:first-child{
     border-top: 2px solid ${darkcreme};
   }
+  @media screen and (max-width: 768px){
+    border: none;
+    &:first-child{
+      border: none;
+    }
+  }
+
 `
 
 export function IconSocials(props){
@@ -47,7 +70,7 @@ export function IconSocials(props){
       width="300px" height="72px" viewBox="21.316 180.445 248.824 70" enableBackground="new 17.316 177.445 248.824 70"
       xmlSpace="preserve" {...props}>
     <title  id="simpleicons-linkedin-icon">LinkedIn icon</title>
-    <a href="katalinanadasi.com/contact" style={{'text-decoration' : 'none'}}>
+    <a href="katalinanadasi.com/contact" style={{'textDecoration' : 'none'}}>
       <g id="contact">
         <ellipse id="contact" fill="#F3F3ED" stroke="#FF3D68" strokeMiterlimit="10" strokeWidth="3.04" cx="232.14" cy="213.445" rx="30" ry="30"/>
         <text transform="matrix(1 0 0 1 210.9895 210.3413)">

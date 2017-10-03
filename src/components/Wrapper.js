@@ -5,6 +5,7 @@ const Wrapper = styled.div `
   width: 90%;
   margin-right: auto;
   margin-left: auto;
+  text-align: center;
 `;
 
 export default Wrapper;

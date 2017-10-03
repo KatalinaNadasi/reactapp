@@ -5,6 +5,9 @@ import {
   Circle, CircleTop, CircleTitle, Black, CircleSub, CircleBottom, Ellipse, BubbleP, BubblePmin, Bubble1, Bubble2, Bubble3, Bubble4, Bubble5, Bubble6, Bubble7, Bubble8, Bubble9, Bubble10, Bubble11, Bubble12, Bubble13, Bubble14, Bubble15, Bubble16, Bubble17, Bubble18, Bubble19, Bubble20
 } from './Header.style';
 import WhenInView from './WhenInView';
+import { BackgroundTitle, FadeDiv, IconTitle} from './Portfolio.style';
+
+
 
 
 export default class Header extends React.Component {
@@ -169,6 +172,17 @@ export default class Header extends React.Component {
           </div>
           </CircleBottom>
         </Circle>
+        <WhenInView>
+          {({isInView}) =>
+              <div className="wrapper-title">
+                <BackgroundTitle hide={!isInView}>
+                  <FadeDiv>
+                    <IconTitle id="title"/>
+                  </FadeDiv>
+                </BackgroundTitle>
+              </div>
+          }
+          </WhenInView>
       </Wrapper>
     )
   }

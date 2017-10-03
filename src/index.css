@@ -118,14 +118,17 @@ PORTFOLIO
   display: inline;
 }
 
-svg#Calque_1 {
-  margin: 0px 325px;
-  font-weight: bolder;
-  position: absolute;
-  top: -767px;
-  left: 152px;
+svg#title {
+  margin: -800px 0 100px 0;
   border-top: 5px solid;
   border-bottom: 5px solid;
+}
+
+@media screen and (max-width: 992px){
+  svg#title {
+    width: 250px;
+    height: 250px;
+  }
 }
 
 svg#bottom-arrow {
@@ -167,4 +170,16 @@ g#linked:hover, g#contact:hover, g#github:hover {
   cursor: pointer;
   transition: 0.3s all;
   stroke: #FF3D68;
+}
+
+@media screen and (max-width: 768px) {
+  svg#socials {
+    width: 250px;
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  svg#socials {
+    width: 250px;
+  }
 }
