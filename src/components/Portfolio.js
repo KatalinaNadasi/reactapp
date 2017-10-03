@@ -18,14 +18,16 @@ class Portfolio extends React.Component {
           <Wrapper>
               <ImgDiv>
                 <ImageContainer1>
-                  <ParallaxImage
-                    reduceHeight={0.2/3}
-                    src={require('../img/portfolio/chopard.jpg')}/>
+                  <Relative>
+                    <ParallaxImage
+                      reduceHeight={0.2/3}
+                      src={require('../img/portfolio/chopard.jpg')}/>
                     <Mask>
-                      <h2>Title</h2>
-                        <p>text</p>
-                        <div><Btn/></div>
+                      <h2>Chopard</h2>
+                      <p>chopard blabla</p>
+                      <div><Btn/></div>
                     </Mask>
+                  </Relative>
                 </ImageContainer1>
               </ImgDiv>
               <ImageContainer2>
@@ -35,8 +37,8 @@ class Portfolio extends React.Component {
                       reduceHeight={2/3}
                       src={require('../img/portfolio/adaweek.jpg')}/>
                     <Mask>
-                      <h2>Title</h2>
-                      <p>text</p>
+                      <h2>adaweek</h2>
+                      <p>adawekk blabla</p>
                       <div><Btn/></div>
                     </Mask>
                   </Relative>
@@ -50,8 +52,8 @@ class Portfolio extends React.Component {
                       reduceHeight={2/3}
                       src={require('../img/portfolio/katalina.jpg')}/>
                     <Mask>
-                      <h2>Title</h2>
-                      <p>text</p>
+                      <h2>site katalina</h2>
+                      <p>katalina blabla</p>
                       <div><Btn/></div>
                     </Mask>
                   </Relative>
@@ -59,14 +61,16 @@ class Portfolio extends React.Component {
               </ImageContainer3>
               <ImageContainer4>
                 <ImgDiv>
-                  <ParallaxImage
-                    reduceHeight={0.2/3}
-                    src={require('../img/portfolio/labanque.png')}/>
-                  <Mask>
-                    <h2>Title</h2>
-                    <p>text</p>
-                    <div><Btn/></div>
-                  </Mask>
+                  <Relative>
+                    <ParallaxImage
+                      reduceHeight={0.2/3}
+                      src={require('../img/portfolio/labanque.png')}/>
+                    <Mask>
+                      <h2>banque postale</h2>
+                      <p>blanque postale blabla</p>
+                      <div><Btn/></div>
+                    </Mask>
+                  </Relative>
                 </ImgDiv>
               </ImageContainer4>
               <ImageContainer5>
@@ -76,8 +80,8 @@ class Portfolio extends React.Component {
                       reduceHeight={2/3}
                       src={require('../img/portfolio/sneakr.jpg')}/>
                     <Mask>
-                      <h2>Title</h2>
-                      <p>text</p>
+                      <h2>sneakr</h2>
+                      <p>sneakr blabla</p>
                       <div><Btn/></div>
                     </Mask>
                   </Relative>
@@ -85,14 +89,16 @@ class Portfolio extends React.Component {
               </ImageContainer5>
               <ImageContainer6>
                 <ImgDiv>
+                  <Relative>
                   <ParallaxImage
                     reduceHeight={2/3}
                     src={require('../img/portfolio/eavest.jpg')}/>
-                  <Mask>
-                    <h2>Title</h2>
-                    <p>text</p>
-                    <div><Btn/></div>
-                  </Mask>
+                    <Mask>
+                      <h2>eavest</h2>
+                      <p>eavest blabla</p>
+                      <div><Btn/></div>
+                    </Mask>
+                  </Relative>
                 </ImgDiv>
               </ImageContainer6>
             <div className="clear"></div>

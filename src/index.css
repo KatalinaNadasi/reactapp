@@ -67,7 +67,6 @@ NAVBAR - MENU
      color: white;
    }
 
-
 .submenu ul {
   position: absolute;
   top: 50px;
@@ -124,13 +123,6 @@ svg#title {
   border-bottom: 5px solid;
 }
 
-@media screen and (max-width: 992px){
-  svg#title {
-    width: 250px;
-    height: 250px;
-  }
-}
-
 svg#bottom-arrow {
     transform: translate(-17px, -12px);
 }
@@ -172,14 +164,37 @@ g#linked:hover, g#contact:hover, g#github:hover {
   stroke: #FF3D68;
 }
 
+@media screen and (max-width: 376px) {
+  .sublink {
+    background: white;
+    width: 100%;
+  }
+  .sublink:hover, .activeNav {
+    width: 100%;
+    color: crimson;
+  }
+  .submenu ul {
+    float: right;
+    width: 100%;
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+}
+
 @media screen and (max-width: 768px) {
   svg#socials {
     width: 250px;
     margin-top: 20px;
   }
 }
+
 @media screen and (min-width: 768px) and (max-width: 992px) {
   svg#socials {
     width: 250px;
+  }
+  svg#title {
+    width: 250px;
+    height: 250px;
   }
 }

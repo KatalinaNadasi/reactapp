@@ -9,6 +9,10 @@ export const Navbar = styled.div`
   height: 62px;
   background-color: none;
   z-index: 10 !important;
+
+  @media (max-width: 376px){
+    background: white;
+  }
 `;
 
 
@@ -28,30 +32,12 @@ export const Bars = styled.img`
   float: right;
   padding : 10px 16px 0 0;
   cursor: pointer;
-`;
 
-// export const SubLink = styled.a`
-//   text-align: right;
-//   float: right;
-//   display: block;
-//   position: relative;
-//   text-decoration: none;
-//   font-size: 17px;
-//   padding: 10px;
-//   margin: 0;
-//   background: transparent;
-//   width: 150px;
-//   transition: all .5s;
-//   line-height: 20px;
-//   color: ${pink};
-//   line-height: 20px;
-//   z-index: 10;
-//
-//   &:hover {
-//     background: black;
-//     padding: 10px 40px 10px 0;
-//     width: 200px;
-//     transition: all .5s;
-//     color: white;
-//   }
-// `
+  @media (max-width : 368px) {
+    padding: 0;
+  }
+  @media (max-width: 768px){
+    height: 40px;
+    width: 50px;
+  }
+`;

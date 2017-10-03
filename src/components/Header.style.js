@@ -51,7 +51,7 @@ export const CircleTop = styled.div`
 	   padding: 100px 4px 0 20px;
 	 }
 	 @media (min-width: 768px) and (max-width: 992px) {
-		 font-size: 8rem;
+		 font-size: 7rem;
 	   padding: 100px 88px 0 122px;
 	 }
 	 @media (min-width: 992px) and (max-width: 1150px) {
