@@ -2,7 +2,7 @@ import React from 'react';
 import '../index.css';
 import Wrapper from './Wrapper';
 import {
-  Circle, CircleTop, CircleTitle, Black, CircleSub, CircleBottom, Ellipse, BubbleP, BubblePmin, Bubble1, Bubble2, Bubble3, Bubble4, Bubble5, Bubble6, Bubble7, Bubble8, Bubble9, Bubble10, Bubble11, Bubble12, Bubble13, Bubble14, Bubble15, Bubble16, Bubble17, Bubble18, Bubble19, Bubble20
+  Circle, CircleTop, CircleTitle, CircleTitle2, Black, CircleSub, CircleBottom, Ellipse, BubbleP, BubblePmin, Bubble1, Bubble2, Bubble3, Bubble4, Bubble5, Bubble6, Bubble7, Bubble8, Bubble9, Bubble10, Bubble11, Bubble12, Bubble13, Bubble14, Bubble15, Bubble16, Bubble17, Bubble18, Bubble19, Bubble20
 } from './Header.style';
 import WhenInView from './WhenInView';
 import { BackgroundTitle, FadeDiv, IconTitle} from './Portfolio.style';
@@ -19,7 +19,7 @@ export default class Header extends React.Component {
         <Circle>
           <CircleTop>
             <CircleTitle>Katal<Black>i</Black>na</CircleTitle>
-            <CircleTitle>Na<Black>d</Black>asi</CircleTitle>
+            <CircleTitle2>Na<Black>d</Black>asi</CircleTitle2>
             <CircleSub>Front-End Developer</CircleSub>
           </CircleTop>
           <CircleBottom>

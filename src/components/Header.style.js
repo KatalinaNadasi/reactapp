@@ -16,14 +16,62 @@ export const CircleTop = styled.div`
 	width: auto;
 	background: ${pink};
 	border-radius: 999px 999px 0 0;
-`
+
+	@media (max-width: 450px) {
+		border-radius: 300px 300px 0 0;
+    height: 250px;
+	}
+	@media (min-width: 450px) and (max-width: 768px) {
+		border-radius: 500px 500px 0 0;
+    height: 370px;
+	}
+	@media (min-width: 768px) and (max-width: 992px) {
+		border-radius: 650px 650px 0 0;
+		height: 450px;
+	}
+	@media (min-width: 992px) and (max-width: 1150px) {
+		border-radius: 930px 930px 0 0;
+		height: 520px;
+	}
+`;
 
  export const CircleTitle = styled.h1`
    font-family: 'Abril Fatface', cursive;
-   font-size: 10rem;
-   padding: 100px 197px 0 263px;
+   font-size: 9rem;
+   padding: 100px 209px 0 263px;
    color: ${creme};
    height: 150px;
+
+	 @media (max-width: 450px) {
+		 font-size: 3rem;
+     padding: 60px 0 0 0;
+	 }
+	 @media (min-width: 450px) and (max-width: 768px) {
+		 font-size: 6rem;
+	   padding: 100px 4px 0 20px;
+	 }
+	 @media (min-width: 768px) and (max-width: 992px) {
+		 font-size: 8rem;
+	   padding: 100px 88px 0 122px;
+	 }
+	 @media (min-width: 992px) and (max-width: 1150px) {
+		 font-size: 8rem;
+	   padding: 100px 220px 0 240px;
+	 }
+ `;
+
+ export const CircleTitle2 = CircleTitle.extend `
+
+ @media (max-width: 450px) {
+	 font-size: 3rem;
+	 padding: 0;
+ }
+ @media (min-width: 450px) and (max-width: 768px) {
+	 padding-top: 40px;
+ }
+ @media (min-width: 768px) and (max-width: 992px) {
+	padding-top: 70px;
+ }
  `
 
  export const Black = styled.span`
@@ -55,12 +103,40 @@ export const CircleTop = styled.div`
    animation:
    ${typing} 3.5s steps(30, end),
    ${blinkCaret} 5.5s step-end infinite;
+
+	 @media (max-width: 768px){
+		 margin: 0px 30px 0 0;
+		 font-size: 1.3rem;
+		 height: 43px;
+	 }
+	 @media (min-width: 768px) and (max-width: 992px){
+		 margin: 50px 30px 0 0;
+		 font-size: 1.7rem;
+		 height: 48px;
+	 }
  `
  export const CircleBottom = styled.div`
    height: 590px;
    width: auto;
    background: rgba(165, 26, 65, 0.1);
    border-radius: 0 0 999px 999px;
+
+	 @media (max-width: 450px) {
+			height: 250px;
+			border-radius: 0 0 300px 300px;
+	 }
+	 @media (min-width: 450px) and (max-width: 768px) {
+		 border-radius: 0 0 500px 500px;
+		 height: 370px;
+	 }
+	 @media (min-width: 768px) and (max-width: 992px) {
+		 border-radius: 0 0 650px 650px;
+		 height: 450px;
+	 }
+	 @media (min-width: 992px) and (max-width: 1150px) {
+		 border-radius: 0 0 930px 930px;
+		 height: 520px;
+	 }
  `
 
  export const Ellipse = styled.ellipse`
