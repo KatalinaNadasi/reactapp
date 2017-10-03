@@ -6,6 +6,11 @@ const Wrapper = styled.div `
   margin-right: auto;
   margin-left: auto;
   text-align: center;
+
+  @media (max-width: 768px) {
+    margin: 0;
+    width: 100%;
+  }
 `;
 
 export default Wrapper;

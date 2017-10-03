@@ -64,7 +64,7 @@ export const CircleTop = styled.div`
 
  @media (max-width: 450px) {
 	 font-size: 3rem;
-	 padding: 0;
+	 transform: translateY(-92px);
  }
  @media (min-width: 450px) and (max-width: 768px) {
 	 padding-top: 40px;
@@ -104,7 +104,12 @@ export const CircleTop = styled.div`
    ${typing} 3.5s steps(30, end),
    ${blinkCaret} 5.5s step-end infinite;
 
-	 @media (max-width: 768px){
+	 @media (max-width: 450px) {
+		 margin: -130px 13px 0 0;
+     font-size: 1rem;
+     height: 38px;
+	 }
+	 @media (min-width: 450px) and (max-width: 768px){
 		 margin: 0px 30px 0 0;
 		 font-size: 1.3rem;
 		 height: 43px;
