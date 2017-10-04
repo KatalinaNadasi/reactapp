@@ -7,21 +7,20 @@ import {
   Route,
   NavLink
 } from 'react-router-dom';
-import {
-  Navbar, Bars
-} from './components/Menu.style';
+import { Navbar, Bars } from './components/Menu.style';
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
 import { browserHistory } from 'react-router';
+import Menu from './components/Menu';
 
 ReactDOM.render(
   <Router history={browserHistory}>
     <Navbar>
       <ul>
         <li className="submenu">
-          <Bars src={require('./img/bars.png')} alt="menu"/>
+          <Bars src={require('./img/bars.png')} alt="menu" id="menu"/>
           <ul>
             <li><NavLink to="/" exact activeClassName="activeNav" className="sublink">Home</NavLink></li>
             <li><NavLink to="/projects" activeClassName="activeNav" className="sublink">Projects</NavLink></li>

@@ -56,7 +56,6 @@ NAVBAR - MENU
   transition: all .5s;
   line-height: 20px;
   color: crimson;
-  line-height: 20px;
   z-index: 10;
 }
 .sublink:hover, .activeNav {
@@ -156,7 +155,6 @@ svg#bottom-arrow {
 FOOTER
 ************/
 
-
 g#linked:hover, g#contact:hover, g#github:hover {
   fill: #E3DAC9;
   cursor: pointer;
@@ -165,20 +163,57 @@ g#linked:hover, g#contact:hover, g#github:hover {
 }
 
 @media screen and (max-width: 376px) {
+  #menu {
+    display: none;
+  }
   .sublink {
-    background: white;
-    width: 100%;
-  }
-  .sublink:hover, .activeNav {
-    width: 100%;
+    float: none;
+    display: block;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 5px;
+    margin: 0;
+    width: 150px;
+    background: transparent;
+    width: auto;
+    line-height: 20px;
     color: crimson;
+    z-index: 10;
   }
+  .sublink:hover {
+    float: none;
+    display: block;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 5px;
+    margin: 0;
+    width: 150px;
+    background: transparent;
+    width: auto;
+    line-height: 20px;
+    background: black;
+    transition: all .5s;
+    color: white;
+     }
   .submenu ul {
-    float: right;
     width: 100%;
     position: relative;
     top: 0;
     right: 0;
+    display: flex;
+    background-color: white;
+  }
+  .submenu li {
+    padding: 5px 12px;
+    background-color: white;
+  }
+  .submenu li:hover {
+    background: black;
+  }
+  .submenu:hover ul {
+    color: white;
+    display: flex;
+    animation: none;
   }
 }
 

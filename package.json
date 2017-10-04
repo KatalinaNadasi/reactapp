@@ -5,6 +5,7 @@
   "dependencies": {
     "jquery.stellar": "github:markdalgleish/stellar.js#v0.6.2",
     "react": "^15.6.1",
+    "react-addons-css-transition-group": "^15.6.2",
     "react-animations": "^0.1.0",
     "react-dom": "^15.6.1",
     "react-fontawesome": "^1.6.1",

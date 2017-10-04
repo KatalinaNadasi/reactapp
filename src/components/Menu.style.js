@@ -9,10 +9,6 @@ export const Navbar = styled.div`
   height: 62px;
   background-color: none;
   z-index: 10 !important;
-
-  @media (max-width: 376px){
-    background: white;
-  }
 `;
 
 
@@ -32,12 +28,4 @@ export const Bars = styled.img`
   float: right;
   padding : 10px 16px 0 0;
   cursor: pointer;
-
-  @media (max-width : 368px) {
-    padding: 0;
-  }
-  @media (max-width: 768px){
-    height: 40px;
-    width: 50px;
-  }
 `;
