@@ -8,12 +8,30 @@ import WhenInView from './WhenInView';
 import { BackgroundTitle, FadeDiv, IconTitle} from './Portfolio.style';
 
 
-
-
 export default class Header extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      cx: 100,
+      cy: 100,
+      rx: 90,
+      ry: 90
+    }
+  }
+
+  updateDimensions() {
+  if(window.innerWidth < 992) {
+    this.setState({ cx: 80, cy: 80, rx: 70, ry: 70});
+  }
+}
+
+componentDidMount() {
+   this.updateDimensions();
+   window.addEventListener("resize", this.updateDimensions.bind(this));
+ }
 
   render(){
-
+    const { cx, cy, rx, ry} = this.state;
     return(
       <Wrapper>
         <Circle>
@@ -28,7 +46,12 @@ export default class Header extends React.Component {
               {({isInView}) =>
               <Bubble1 hide={!isInView}>
                 <svg height="200" width="200">
-                  <Ellipse pink cx="100" cy="100" rx="90" ry="90" />
+                  <Ellipse pink
+                    cx={this.state.cx}
+                    cy={this.state.cy}
+                    rx={this.state.rx}
+                    ry={this.state.ry}
+                    />
                 </svg>
                 <BubbleP>Animations</BubbleP>
               </Bubble1>
