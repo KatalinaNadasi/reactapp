@@ -162,7 +162,13 @@ g#linked:hover, g#contact:hover, g#github:hover {
   stroke: #FF3D68;
 }
 
-@media screen and (max-width: 376px) {
+@media (max-width: 375px) {
+  .submenu li {
+    padding: 5px 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
   #menu {
     display: none;
   }
@@ -173,7 +179,6 @@ g#linked:hover, g#contact:hover, g#github:hover {
     font-size: 15px;
     padding: 5px;
     margin: 0;
-    width: 150px;
     background: transparent;
     width: auto;
     line-height: 20px;
@@ -187,7 +192,6 @@ g#linked:hover, g#contact:hover, g#github:hover {
     font-size: 15px;
     padding: 5px;
     margin: 0;
-    width: 150px;
     background: transparent;
     width: auto;
     line-height: 20px;
@@ -204,9 +208,11 @@ g#linked:hover, g#contact:hover, g#github:hover {
     background-color: white;
   }
   .submenu li {
-    padding: 5px 12px;
+    padding: 5px 23px;
     background-color: white;
-  }
+    margin-left: 10px;
+}
+
   .submenu li:hover {
     background: black;
   }
@@ -214,6 +220,12 @@ g#linked:hover, g#contact:hover, g#github:hover {
     color: white;
     display: flex;
     animation: none;
+  }
+}
+
+@media screen (min-width: 376px) and (max-width: 500px) {
+  .sublink li{
+    padding: 5px 20px;
   }
 }
 

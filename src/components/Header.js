@@ -15,15 +15,19 @@ export default class Header extends React.Component {
       cx: 100,
       cy: 100,
       rx: 90,
-      ry: 90
+      ry: 90,
+      width: 200,
+      height: 200
     }
   }
 
   updateDimensions() {
   if(window.innerWidth < 992 && window.innerWidth > 768) {
-    this.setState({ cx: 80, cy: 80, rx: 70, ry: 70});
-  } else if(window.innerWidth < 768) {
-    this.setState({ cx: 50, cy: 50, rx: 50, ry: 50});
+    this.setState({ cx: 80, cy: 80, rx: 70, ry: 70, width: 160, height: 160});
+  } else if(window.innerWidth < 768 && window.innerWidth > 450) {
+    this.setState({ cx: 50, cy: 50, rx: 50, ry: 50, width: 100, height: 100});
+  } else if(window.innerWidth < 450){
+    this.setState({ cx: 30, cy: 30, rx: 30, ry: 30, width: 60, height: 60});
   }
 }
 
@@ -33,7 +37,7 @@ componentDidMount() {
  }
 
   render(){
-    const { cx, cy, rx, ry} = this.state;
+    const { cx, cy, rx, ry, width, height} = this.state;
     return(
       <Wrapper>
         <Circle>
@@ -47,7 +51,7 @@ componentDidMount() {
             <WhenInView>
               {({isInView}) =>
               <Bubble1 hide={!isInView}>
-                <svg height="200" width="200">
+                <svg width={this.state.width} height={this.state.height}>
                   <Ellipse pink cx={this.state.cx} cy={this.state.cy} rx={this.state.rx} ry={this.state.ry} />
                 </svg>
                 <BubbleP>Animations</BubbleP>
@@ -57,7 +61,7 @@ componentDidMount() {
             <WhenInView>
               {({isInView}) =>
                 <Bubble2 hide={!isInView}>
-                  <svg height="200" width="200">
+                  <svg width={this.state.width} height={this.state.height}>
                     <Ellipse black cx={this.state.cx} cy={this.state.cy} rx={this.state.rx} ry={this.state.ry} />
                   </svg>
                   <BubbleP>HTML5 / <br/> CSS3</BubbleP>
@@ -67,7 +71,7 @@ componentDidMount() {
             <WhenInView>
               {({isInView}) =>
                 <Bubble3 hide={!isInView}>
-                  <svg height="200" width="200">
+                  <svg width={this.state.width} height={this.state.height}>
                     <Ellipse pink cx={this.state.cx} cy={this.state.cy} rx={this.state.rx} ry={this.state.ry} />
                   </svg>
                   <BubblePmin>Responsive</BubblePmin>
@@ -77,7 +81,7 @@ componentDidMount() {
             <WhenInView>
               {({isInView}) =>
                 <Bubble4 hide={!isInView}>
-                  <svg height="200" width="200">
+                  <svg width={this.state.width} height={this.state.height}>
                     <Ellipse black cx={this.state.cx} cy={this.state.cy} rx={this.state.rx} ry={this.state.ry} />
                   </svg>
                   <BubbleP>React</BubbleP>
@@ -127,7 +131,7 @@ componentDidMount() {
             <WhenInView>
               {({isInView}) =>
                 <Bubble11 hide={!isInView}>
-                  <svg height="200" width="200">
+                  <svg width={this.state.width} height={this.state.height}>
                     <Ellipse black cx={this.state.cx} cy={this.state.cy} rx={this.state.rx} ry={this.state.ry} />
                   </svg>
                   <BubbleP>Javascript / <br/> JQUERY</BubbleP>
@@ -182,7 +186,7 @@ componentDidMount() {
             <WhenInView>
               {({isInView}) =>
                 <Bubble20 hide={!isInView}>
-                  <svg height="200" width="200">
+                  <svg width={this.state.width} height={this.state.height}>
                     <Ellipse pink cx={this.state.cx} cy={this.state.cy} rx={this.state.rx} ry={this.state.ry} />
                   </svg>
                   <BubblePmin>Bootstrap</BubblePmin>

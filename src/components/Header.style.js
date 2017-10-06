@@ -168,9 +168,14 @@ export const CircleTop = styled.div`
 	left: 20%;
 	top: 39%;
   color: white;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
 
-	@media (max-width: 768px) {
+	@media (max-width: 450px){
+		font-size: 0.7em;
+		top: 30%;
+		left: 8%;
+	}
+	@media (min-width: 450px) and (max-width: 768px) {
 		font-size: 1rem;
 		left: 4%;
 		top: 22%;
@@ -187,11 +192,16 @@ export const CircleTop = styled.div`
   color: white;
   font-size: 1.2rem;
 
-	@media(max-width: 768px){
+	@media(max-width: 450px){
+		left: 9%;
+    top: 41%;
+		font-size: 0.7rem;
+	}
+	@media(min-width: 450px) and (max-width: 768px){
 		left: 6%;
     top: 22%;
 	}
-	@media (max-width: 992px) {
+	@media (min-width: 768px) and (max-width: 992px) {
 		font-size: 1rem;
 	}
  `
@@ -227,12 +237,19 @@ export const CircleTop = styled.div`
 	 	position: absolute;
 	 	width: 180px;
 	 	top: -14px;
+
+		@media(max-width: 450px){
+			height: 83px;
+			width: 92px;
+		}
 	 }
-
-
 	${({hide}) => hide && css`
 		animation: none;
 	`}
+	@media(max-width: 450px){
+		left: 63%;
+		top: 64%;
+	}
  `
  export const Bubble2 = styled.div`
   position: absolute;
@@ -253,11 +270,19 @@ export const CircleTop = styled.div`
   	position: absolute;
   	width: 180px;
   	top: -14px;
+		@media(max-width: 450px){
+			height: 83px;
+			width: 92px;
+		}
 	 }
 
 	${({hide}) => hide && css`
 	 animation: none;
 	`}
+	@media(max-width: 450px){
+		left: 17%;
+		top: 57%;
+	}
  `;
 
  export const Bubble3 = styled.div`
@@ -279,11 +304,19 @@ export const CircleTop = styled.div`
 		 position: absolute;
 		 width: 180px;
 		 top: -14px;
+
+		 @media(max-width: 450px){
+			 height: 83px;
+			 width: 92px;
+		 }
  	 }
 
 		${({hide}) => hide && css`
 			animation: none;
 		`}
+		@media(max-width: 450px){
+			 top: 82%;
+		}
  `
 
  export const Bubble4 = styled.div`
@@ -305,11 +338,19 @@ export const CircleTop = styled.div`
  	 position: absolute;
  	 width: 180px;
  	 top: -14px;
+
+	 	@media(max-width: 450px){
+			height: 83px;
+		 	width: 92px;
+	 	}
 	 }
 
 	 ${({hide}) => hide && css`
 		 animation: none;
 	 `}
+	 @media(max-width: 450px){
+		 left: 68%;
+	 }
  `
 
  export const Bubble5 = styled.div`
@@ -337,13 +378,13 @@ export const CircleTop = styled.div`
 		animation: none;
 	 `}
 
-	 @media(max-width: 500px){
-		 left: 76%;
-     top: 53%;
+	 @media(max-width: 450px){
+		 left: 74%;
+		 top: 52%;
 	 }
-	 @media(min-width: 500px) and (max-width: 768px){
-		 left: 81%;
-		 top: 53%;
+	 @media(min-width: 450px) and (max-width: 768px){
+		 left: 78%;
+     top: 51%;
 	 }
  `
  export const Bubble6 = styled.div`
@@ -390,7 +431,7 @@ export const CircleTop = styled.div`
   position: absolute;
 	}
 
-	@media(max-width: 500px){
+	@media(max-width: 450px){
 		display: none;
 	}
  `
@@ -413,7 +454,7 @@ export const CircleTop = styled.div`
   position: absolute;
 	}
 
-	@media(max-width: 500px){
+	@media(max-width: 450px){
 		display: none;
 	}
  `
@@ -436,7 +477,7 @@ export const CircleTop = styled.div`
   position: absolute;
 	}
 
-	@media(max-width: 500px){
+	@media(max-width: 450px){
 		display: none;
 	}
  `
@@ -444,7 +485,7 @@ export const CircleTop = styled.div`
  export const Bubble10 = styled.div`
   position: absolute;
 	left: 52%;
-  top: 79%;
+  top: 72%;
 
 	&:after {
 	background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 40%);
@@ -458,7 +499,7 @@ export const CircleTop = styled.div`
   top: 0px;
   position: absolute;
 	}
-	@media(max-width: 500px){
+	@media(max-width: 450px){
 		display: none;
 	}
  `
@@ -482,15 +523,20 @@ export const CircleTop = styled.div`
  	 position: absolute;
  	 width: 180px;
  	 top: -14px;
+
+	 	@media(max-width: 450px){
+		 	height: 83px;
+			width: 92px;
+	 	}
 	 }
 
 	 ${({hide}) => hide && css`
 		 animation: none;
 	 `}
 
-	 @media(max-width: 500px){
-		 left: 47%;
-     top: 63%;
+	 @media(max-width: 450px){
+		 top: 75%;
+		 left: 49%;
 	 }
  `
 
@@ -512,7 +558,7 @@ export const CircleTop = styled.div`
 	 top: -18px;
 	 }
 
-	 @media(max-width: 500px){
+	 @media(max-width: 450px){
 		 display: none;
 	 }
  `
@@ -558,7 +604,7 @@ export const CircleTop = styled.div`
 	 top: -18px;
 	 }
 
-	 @media(max-width: 500px){
+	 @media(max-width: 450px){
 		 display: none;
 	 }
  `
@@ -588,13 +634,13 @@ export const CircleTop = styled.div`
 		 animation: none;
 	 `}
 
-	@media(max-width: 500px){
-		left: 11%;
-		top: 72%;
+	@media(max-width: 450px){
+		left: 14%;
+		top: 68%;
 	}
-	 @media(min-width: 500px) and (max-width: 768px){
-		 left: 18%;
-		 top: 72%;
+	 @media(min-width: 450px) and (max-width: 768px){
+		 left: 17%;
+		 top: 69%;
 	 }
  `
  export const Bubble16 = styled.div`
@@ -615,7 +661,7 @@ export const CircleTop = styled.div`
 	 top: -18px;
 	 }
 
-	 @media(max-width: 500px){
+	 @media(max-width: 450px){
 		 display: none;
 	 }
  `
@@ -637,7 +683,7 @@ export const CircleTop = styled.div`
 	 top: -18px;
 	 }
 
-	 @media(max-width: 500px){
+	 @media(max-width: 450px){
 		 display: none;
 	 }
  `
@@ -659,7 +705,7 @@ export const CircleTop = styled.div`
 	 top: -18px;
 	 }
 
-	 @media(max-width: 500px){
+	 @media(max-width: 450px){
 		 display: none;
 	 }
  `
@@ -703,9 +749,19 @@ export const CircleTop = styled.div`
    	 position: absolute;
    	 width: 180px;
    	 top: -14px;
+
+		 @media(max-width: 450px){
+			 height: 83px;
+		    width: 92px;
+		 }
  	 }
 
 		${({hide}) => hide && css`
 			animation: none;
 		`}
+
+		@media(max-width: 450px){
+			left: 1%;
+    	top: 52%;
+		}
  `
