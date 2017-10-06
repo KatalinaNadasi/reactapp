@@ -109,7 +109,8 @@ export const Mask = styled.div `
       color: #fff;
       text-align: center;
       position: relative;
-      font-size: 17px;
+      font-size: 22px;
+      font-weight: bold;
       padding: 10px;
       margin: 80px 80px 0 80px;
       &:hover {
@@ -119,12 +120,81 @@ export const Mask = styled.div `
 
     p {
       font-style: italic;
-      font-size: 12px;
+      font-size: 20px;
       position: relative;
       color: #fff;
-      padding: 10px 20px 20px;
+      padding: 20px 120px;
       text-align: center;
       transition: all 0.2s ease-in-out;
+      line-height: 25px;
+
+      &:hover {
+      transition-delay: 0.4s;
+      }
+    }
+
+    a {
+	    transition: all 0.2s 0.1s ease-in-out;
+      text-decoration: none;
+
+      &:hover {
+        transition-delay: 0.5s;
+        text-decoration: none;
+      }
+    }
+`
+
+export const MaskSmallImg = styled.div `
+    opacity: 0;
+    transition: all ease-in 0.2s;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  	background-color: rgba(135, 182, 183, 1.0);
+    overflow: hidden;
+
+    > div {
+      opacity: 0;
+    }
+
+    &:hover {
+      opacity: 0.9;
+      animation: 0.1s ${hoverAnim};
+
+      > div {
+        opacity: 1;
+        transition-delay: 0.2s;
+      }
+    }
+
+    h2 {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+      background: transparent;
+      text-transform: uppercase;
+      transition: all 0.2s ease-in-out;
+      text-transform: uppercase;
+      color: #fff;
+      text-align: center;
+      position: relative;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 10px;
+      &:hover {
+        transition-delay: 0.3s;
+      }
+    }
+
+    p {
+      font-style: italic;
+      font-size: 18px;
+      position: relative;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      transition: all 0.2s ease-in-out;
+      line-height: 25px;
 
       &:hover {
       transition-delay: 0.4s;
