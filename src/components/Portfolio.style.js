@@ -15,7 +15,7 @@ export const Relative = styled.div`
 export function IconTitle(props){
   return (
     <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-      width="500px" height="500px" viewBox="4 175.711 259.175 164.726" enableBackground="new 4 175.711 259.175 164.726"
+      viewBox="4 175.711 259.175 164.726" enableBackground="new 4 175.711 259.175 164.726"
       xmlSpace="preserve" {...props}>
       <text transform="matrix(0.9256 0 0 1 4 238.6028)" fontFamily="'NewsGothicMT-Bold'" fontSize="72">PRO</text>
       <text transform="matrix(0.9256 0 0 1 4 325.0032)" fontFamily="'NewsGothicMT-Bold'" fontSize="72">JECTS </text>
@@ -32,12 +32,18 @@ export const Wrapper = styled.div`
 
 export const BackgroundTitle = styled.div`
    z-index: -99;
-   margin-top: 550px;
+   margin-top: 400px;
    transition: 0.5s all ease;
 
    ${({hide}) => hide && css`
    opacity: 0;
    `}
+   @media(max-width: 450px){
+     margin-top: 100px;
+   }
+   @media(min-width: 450px) and (max-width: 768px){
+      margin-top: 150px;
+   }
  `;
 
 export const fadeAnimation = keyframes`${fadeIn}`;

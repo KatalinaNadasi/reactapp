@@ -120,6 +120,8 @@ svg#title {
   margin: -800px 0 100px 0;
   border-top: 5px solid;
   border-bottom: 5px solid;
+  width: 500px;
+  height: 500px;
 }
 
 svg#bottom-arrow {
@@ -185,7 +187,7 @@ g#linked:hover, g#contact:hover, g#github:hover {
     color: crimson;
     z-index: 10;
   }
-  .sublink:hover {
+  .sublink:hover, .activeNav {
     float: none;
     display: block;
     text-decoration: none;
@@ -201,18 +203,16 @@ g#linked:hover, g#contact:hover, g#github:hover {
      }
   .submenu ul {
     width: 100%;
-    position: relative;
     top: 0;
     right: 0;
     display: flex;
     background-color: white;
   }
   .submenu li {
-    padding: 5px 23px;
+    padding: 5px 20px;
     background-color: white;
-    margin-left: 10px;
+    height: 50px
 }
-
   .submenu li:hover {
     background: black;
   }
@@ -234,6 +234,10 @@ g#linked:hover, g#contact:hover, g#github:hover {
     width: 250px;
     margin-top: 20px;
   }
+  svg#title {
+    width: 250px;
+    height: 250px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -241,7 +245,7 @@ g#linked:hover, g#contact:hover, g#github:hover {
     width: 250px;
   }
   svg#title {
-    width: 250px;
-    height: 250px;
+    width: 400px;
+    height: 400px;
   }
 }
