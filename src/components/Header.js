@@ -2,7 +2,7 @@ import React from 'react';
 import '../index.css';
 import Wrapper from './Wrapper';
 import {
-  Circle, CircleTop, CircleTitle, CircleTitle2, Black, CircleSub, CircleBottom, Ellipse, BubbleP, BubblePmin, Bubble1, Bubble2, Bubble3, Bubble4, Bubble5, Bubble6, Bubble7, Bubble8, Bubble9, Bubble10, Bubble11, Bubble12, Bubble13, Bubble14, Bubble15, Bubble16, Bubble17, Bubble18, Bubble19, Bubble20
+  Circle, CircleTop, CircleTitle, CircleTitle2, Black, CircleSub, CircleBottom, Ellipse, BubbleP, BubblePmin, BubblePxSmall, Bubble1, Bubble2, Bubble3, Bubble4, Bubble5, Bubble6, Bubble7, Bubble8, Bubble9, Bubble10, Bubble11, Bubble12, Bubble13, Bubble14, Bubble15, Bubble16, Bubble17, Bubble18, Bubble19, Bubble20
 } from './Header.style';
 import WhenInView from './WhenInView';
 import { BackgroundTitle, FadeDiv, IconTitle} from './Portfolio.style';
@@ -20,8 +20,10 @@ export default class Header extends React.Component {
   }
 
   updateDimensions() {
-  if(window.innerWidth < 992) {
+  if(window.innerWidth < 992 && window.innerWidth > 768) {
     this.setState({ cx: 80, cy: 80, rx: 70, ry: 70});
+  } else if(window.innerWidth < 768) {
+    this.setState({ cx: 50, cy: 50, rx: 50, ry: 50});
   }
 }
 
@@ -46,12 +48,7 @@ componentDidMount() {
               {({isInView}) =>
               <Bubble1 hide={!isInView}>
                 <svg height="200" width="200">
-                  <Ellipse pink
-                    cx={this.state.cx}
-                    cy={this.state.cy}
-                    rx={this.state.rx}
-                    ry={this.state.ry}
-                    />
+                  <Ellipse pink cx={this.state.cx} cy={this.state.cy} rx={this.state.rx} ry={this.state.ry} />
                 </svg>
                 <BubbleP>Animations</BubbleP>
               </Bubble1>
@@ -60,18 +57,18 @@ componentDidMount() {
             <WhenInView>
               {({isInView}) =>
                 <Bubble2 hide={!isInView}>
-                  <svg height="160" width="160">
-                    <Ellipse black cx="80" cy="80" rx="70" ry="70" />
+                  <svg height="200" width="200">
+                    <Ellipse black cx={this.state.cx} cy={this.state.cy} rx={this.state.rx} ry={this.state.ry} />
                   </svg>
-                  <BubbleP>HTML5 / CSS3</BubbleP>
+                  <BubbleP>HTML5 / <br/> CSS3</BubbleP>
                 </Bubble2>
               }
             </WhenInView>
             <WhenInView>
               {({isInView}) =>
                 <Bubble3 hide={!isInView}>
-                  <svg height="160" width="160">
-                    <Ellipse pink cx="80" cy="80" rx="70" ry="70" />
+                  <svg height="200" width="200">
+                    <Ellipse pink cx={this.state.cx} cy={this.state.cy} rx={this.state.rx} ry={this.state.ry} />
                   </svg>
                   <BubblePmin>Responsive</BubblePmin>
                 </Bubble3>
@@ -81,7 +78,7 @@ componentDidMount() {
               {({isInView}) =>
                 <Bubble4 hide={!isInView}>
                   <svg height="200" width="200">
-                    <Ellipse black cx="100" cy="100" rx="100" ry="100" />
+                    <Ellipse black cx={this.state.cx} cy={this.state.cy} rx={this.state.rx} ry={this.state.ry} />
                   </svg>
                   <BubbleP>React</BubbleP>
                 </Bubble4>
@@ -131,9 +128,9 @@ componentDidMount() {
               {({isInView}) =>
                 <Bubble11 hide={!isInView}>
                   <svg height="200" width="200">
-                    <Ellipse black cx="100" cy="100" rx="100" ry="100" />
+                    <Ellipse black cx={this.state.cx} cy={this.state.cy} rx={this.state.rx} ry={this.state.ry} />
                   </svg>
-                  <BubbleP>Javascript / JQUERY</BubbleP>
+                  <BubbleP>Javascript / <br/> JQUERY</BubbleP>
                 </Bubble11>
               }
             </WhenInView>
@@ -158,7 +155,7 @@ componentDidMount() {
                   <svg height="100" width="100">
                     <Ellipse black cx="50" cy="50" rx="50" ry="50" />
                   </svg>
-                  <BubblePmin>npm, Webpack</BubblePmin>
+                  <BubblePxSmall>npm, Webpack</BubblePxSmall>
                 </Bubble15>
               }
             </WhenInView>
@@ -185,8 +182,8 @@ componentDidMount() {
             <WhenInView>
               {({isInView}) =>
                 <Bubble20 hide={!isInView}>
-                  <svg height="160" width="160">
-                    <Ellipse pink cx="80" cy="80" rx="70" ry="70" />
+                  <svg height="200" width="200">
+                    <Ellipse pink cx={this.state.cx} cy={this.state.cy} rx={this.state.rx} ry={this.state.ry} />
                   </svg>
                   <BubblePmin>Bootstrap</BubblePmin>
                 </Bubble20>

@@ -165,18 +165,48 @@ export const CircleTop = styled.div`
 
  export const BubbleP = styled.p`
   position: absolute;
-  left: 22%;
-  top: 42%;
+	left: 20%;
+	top: 39%;
   color: white;
   font-size: 1.7rem;
+
+	@media (max-width: 768px) {
+		font-size: 1rem;
+		left: 4%;
+		top: 22%;
+	}
+	@media (min-width: 768px) and (max-width: 992px) {
+		font-size: 1.2rem;
+	}
  `
 
  export const BubblePmin = styled.p `
   position: absolute;
-	left: 14%;
+	left: 23%;
 	top: 32%;
   color: white;
   font-size: 1.2rem;
+
+	@media(max-width: 768px){
+		left: 6%;
+    top: 22%;
+	}
+	@media (max-width: 992px) {
+		font-size: 1rem;
+	}
+ `
+
+ export const BubblePxSmall = styled.p `
+	position: absolute;
+ 	left: 10%;
+ 	top: 32%;
+	color: white;
+	font-size: 1rem;
+
+	@media(max-width: 768px){
+		left: 6%;
+    top: 33%;
+	}
  `
 
  export const Bubble1 = styled.div`
@@ -187,17 +217,18 @@ export const CircleTop = styled.div`
 	display: block;
 
 	&:after {
-	 background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 40%);
-	 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-	 border-radius: 50%;
-	 box-shadow: inset 0 20px 30px rgba (255,255,255,0.3);
-	 content: "";
-	 height: 185px;
-	 left: 10px;
-	 position: absolute;
-	 width: 180px;
-	 top: 9px;
+	 	background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 40%);
+	 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	 	border-radius: 50%;
+	 	box-shadow: inset 0 20px 30px rgba (255,255,255,0.3);
+	 	content: "";
+	 	height: 185px;
+	 	left: -13px;
+	 	position: absolute;
+	 	width: 180px;
+	 	top: -14px;
 	 }
+
 
 	${({hide}) => hide && css`
 		animation: none;
@@ -205,23 +236,23 @@ export const CircleTop = styled.div`
  `
  export const Bubble2 = styled.div`
   position: absolute;
-  left: 24%;
-  top: 69%;
+	left: 26%;
+	top: 59%;
 	animation: ${jump} 25s linear, ${sideWays} 2s ease-in-out backwards;
 	animation-delay: 0.2s;
 	display: block;
 
 	&:after {
-	 background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 40%);
-	 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-	 border-radius: 50%;
-	 box-shadow: inset 0 20px 30px rgba(255,255,255,0.3);
-	 content: "";
-	 height: 135px;
-	 left: 10px;
-	 position: absolute;
- 	 width: 139px;
-	 top: 10px;
+		background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 40%);
+  	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  	border-radius: 50%;
+  	box-shadow: inset 0 20px 30px rgba (255,255,255,0.3);
+  	content: "";
+  	height: 185px;
+  	left: -13px;
+  	position: absolute;
+  	width: 180px;
+  	top: -14px;
 	 }
 
 	${({hide}) => hide && css`
@@ -231,24 +262,24 @@ export const CircleTop = styled.div`
 
  export const Bubble3 = styled.div`
    position: absolute;
-   left: 36%;
-   top: 82%;
+	 left: 34%;
+	 top: 76%;
 	 animation: ${jump} 25s linear, ${sideWays} 2s ease-in-out backwards;
 	 animation-delay: 0.4s;
 	 display: block;
 
 	 &:after {
-    background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 40%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-		border-radius: 50%;
-    box-shadow: inset 0 20px 30px rgba(255,255,255,0.3);
-    content: "";
-    height: 134px;
-    left: 10px;
-    position: absolute;
-    width: 139px;
-    top: 9px;
-		}
+		 background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 40%);
+		 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+		 border-radius: 50%;
+		 box-shadow: inset 0 20px 30px rgba (255,255,255,0.3);
+		 content: "";
+		 height: 185px;
+		 left: -13px;
+		 position: absolute;
+		 width: 180px;
+		 top: -14px;
+ 	 }
 
 		${({hide}) => hide && css`
 			animation: none;
@@ -265,15 +296,15 @@ export const CircleTop = styled.div`
 
 	&:after {
 	 background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 40%);
-	 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-	 border-radius: 50%;
-	 box-shadow: inset 0 20px 30px rgba (255,255,255,0.3);
-	 content: "";
-	 height: 185px;
-	 left: 10px;
-	 position: absolute;
-	 width: 180px;
-	 top: 9px;
+ 	 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+ 	 border-radius: 50%;
+ 	 box-shadow: inset 0 20px 30px rgba (255,255,255,0.3);
+ 	 content: "";
+ 	 height: 185px;
+ 	 left: -13px;
+ 	 position: absolute;
+ 	 width: 180px;
+ 	 top: -14px;
 	 }
 
 	 ${({hide}) => hide && css`
@@ -290,26 +321,35 @@ export const CircleTop = styled.div`
 	display: block;
 
 	&:after {
-	background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 40%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-	border-radius: 50%;
-  box-shadow: inset 0 20px 30px rgba(255,255,255,0.3);
-  content: "";
-  height: 100px;
-  left: 0px;
-  position: absolute;
-  width: 100px;
-  top: -0px;
+		background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 40%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+		border-radius: 50%;
+  	box-shadow: inset 0 20px 30px rgba(255,255,255,0.3);
+  	content: "";
+  	height: 100px;
+  	left: 0px;
+  	position: absolute;
+  	width: 100px;
+  	top: -0px;
 	}
 
 	 ${({hide}) => hide && css`
 		animation: none;
 	 `}
+
+	 @media(max-width: 500px){
+		 left: 76%;
+     top: 53%;
+	 }
+	 @media(min-width: 500px) and (max-width: 768px){
+		 left: 81%;
+		 top: 53%;
+	 }
  `
  export const Bubble6 = styled.div`
   position: absolute;
-  left: 39%;
-  top: 62%;
+	left: 40%;
+	top: 52%;
 	animation: ${jump} 25s linear, ${sideWays} 2s ease-in-out backwards;
 	animation-delay: 1s;
 	display: block;
@@ -349,6 +389,10 @@ export const CircleTop = styled.div`
   top: 0px;
   position: absolute;
 	}
+
+	@media(max-width: 500px){
+		display: none;
+	}
  `
 
  export const Bubble8 = styled.div`
@@ -367,6 +411,10 @@ export const CircleTop = styled.div`
   width: 40px;
   top: 0px;
   position: absolute;
+	}
+
+	@media(max-width: 500px){
+		display: none;
 	}
  `
 
@@ -387,12 +435,16 @@ export const CircleTop = styled.div`
   top: 0px;
   position: absolute;
 	}
+
+	@media(max-width: 500px){
+		display: none;
+	}
  `
 
  export const Bubble10 = styled.div`
   position: absolute;
-  left: 10%;
-  top: 62%;
+	left: 52%;
+  top: 79%;
 
 	&:after {
 	background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 40%);
@@ -406,6 +458,9 @@ export const CircleTop = styled.div`
   top: 0px;
   position: absolute;
 	}
+	@media(max-width: 500px){
+		display: none;
+	}
  `
 
  export const Bubble11 = styled.div`
@@ -418,20 +473,25 @@ export const CircleTop = styled.div`
 
 	&:after {
 	 background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 40%);
-	 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-	 border-radius: 50%;
-	 box-shadow: inset 0 20px 30px rgba (255,255,255,0.3);
-	 content: "";
-	 height: 185px;
-	 left: 10px;
-	 position: absolute;
-	 width: 180px;
-	 top: 9px;
+ 	 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+ 	 border-radius: 50%;
+ 	 box-shadow: inset 0 20px 30px rgba (255,255,255,0.3);
+ 	 content: "";
+ 	 height: 185px;
+ 	 left: -13px;
+ 	 position: absolute;
+ 	 width: 180px;
+ 	 top: -14px;
 	 }
 
 	 ${({hide}) => hide && css`
 		 animation: none;
 	 `}
+
+	 @media(max-width: 500px){
+		 left: 47%;
+     top: 63%;
+	 }
  `
 
  export const Bubble12 = styled.div`
@@ -450,6 +510,10 @@ export const CircleTop = styled.div`
 	 position: absolute;
 	 width: 50px;
 	 top: -18px;
+	 }
+
+	 @media(max-width: 500px){
+		 display: none;
 	 }
  `
 
@@ -470,6 +534,10 @@ export const CircleTop = styled.div`
 	 width: 50px;
 	 top: -18px;
 	 }
+
+	 @media(max-width: 500px){
+		 display: none;
+	 }
  `
 
  export const Bubble14 = styled.div`
@@ -489,12 +557,16 @@ export const CircleTop = styled.div`
 	 width: 50px;
 	 top: -18px;
 	 }
+
+	 @media(max-width: 500px){
+		 display: none;
+	 }
  `
 
  export const Bubble15 = styled.div`
   position: absolute;
-  left: 24%;
-  top: 83%;
+	left: 24%;
+	top: 75%;
 	animation: ${jump} 25s linear, ${sideWays} 2s ease-in-out backwards;
 	animation-delay: 2.8s;
 	display: block;
@@ -515,6 +587,15 @@ export const CircleTop = styled.div`
 	 ${({hide}) => hide && css`
 		 animation: none;
 	 `}
+
+	@media(max-width: 500px){
+		left: 11%;
+		top: 72%;
+	}
+	 @media(min-width: 500px) and (max-width: 768px){
+		 left: 18%;
+		 top: 72%;
+	 }
  `
  export const Bubble16 = styled.div`
   position: absolute;
@@ -533,11 +614,15 @@ export const CircleTop = styled.div`
 	 width: 50px;
 	 top: -18px;
 	 }
+
+	 @media(max-width: 500px){
+		 display: none;
+	 }
  `
  export const Bubble17 = styled.div`
   position: absolute;
-  left: 20%;
-  top: 57%;
+	left: 6%;
+  top: 53%;
 
 	&:after {
 	 background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 40%);
@@ -550,12 +635,16 @@ export const CircleTop = styled.div`
 	 position: absolute;
 	 width: 50px;
 	 top: -18px;
+	 }
+
+	 @media(max-width: 500px){
+		 display: none;
 	 }
  `
  export const Bubble18 = styled.div`
   position: absolute;
-  left: 45%;
-  top: 78%;
+	left: 50%;
+	top: 72%;
 
 	&:after {
 	 background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 40%);
@@ -569,11 +658,15 @@ export const CircleTop = styled.div`
 	 width: 50px;
 	 top: -18px;
 	 }
+
+	 @media(max-width: 500px){
+		 display: none;
+	 }
  `
  export const Bubble19 = styled.div`
   position: absolute;
-  left: 14%;
-  top: 55%;
+	left: 26%;
+	top: 87%;
 
 	&:after {
 	background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 40%);
@@ -587,27 +680,30 @@ export const CircleTop = styled.div`
   top: 0px;
   position: absolute;
 	}
+	@media(max-width: 500px){
+		display: none;
+	}
  `
  export const Bubble20 = styled.div`
    position: absolute;
-   left: 12%;
-   top: 60%;
+	 left: 6%;
+	 top: 55%;
 	 animation: ${jump} 25s linear, ${sideWays} 2s ease-in-out backwards;
 	 animation-delay: 3.8s;
 	 display: block;
 
 	 &:after {
-    background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 40%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-		border-radius: 50%;
-    box-shadow: inset 0 20px 30px rgba(255,255,255,0.3);
-    content: "";
-    height: 134px;
-    left: 10px;
-    position: absolute;
-    width: 139px;
-    top: 9px;
-		}
+		 background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 40%);
+   	 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+   	 border-radius: 50%;
+   	 box-shadow: inset 0 20px 30px rgba (255,255,255,0.3);
+   	 content: "";
+   	 height: 185px;
+   	 left: -13px;
+   	 position: absolute;
+   	 width: 180px;
+   	 top: -14px;
+ 	 }
 
 		${({hide}) => hide && css`
 			animation: none;
