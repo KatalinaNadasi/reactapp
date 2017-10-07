@@ -271,7 +271,7 @@ export const ImageContainer1 = styled.div`
     height: 380px;
   }
   @media(min-width: 768px) and (max-width: 992px){
-    height: 500px;
+    height: 404px;
   }
 `;
 
@@ -349,17 +349,20 @@ export const ImageContainer4 = styled.div`
     width: 90%;
     margin: 20px auto;
     float: none;
+    height: 335px;
   }
   @media (min-width: 500px) and (max-width: 650px) {
     margin: 20px 80px 0px 80px;
     width: 70%;
     float: none;
+    height: 341px;
   }
   @media (min-width: 650px) and ( max-width: 768px){
     width: 70%;
     float: none;
     margin: 0 100px;
     display: block;
+    height: 281px;
   }
 `;
 
@@ -430,22 +433,10 @@ export const ImageContainer6 = styled.div`
 `;
 
 export const Background1 = styled.div`
-  height: 3000px;
+  height: auto;
+  margin-bottom: 50px;
   z-index: -99;
   background: rgba(243, 243, 237, 1.0);
   background: linear-gradient(to bottom, rgba(243, 243, 237, 1.0) 0%, rgba(255, 189, 160, 1) 30%, rgba(220, 20, 60, 1.0) 50%, rgba(255, 189, 160, 1) 80%, rgba(243, 243, 237, 1.0) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F3F3ED', endColorstr='${pink}',GradientType=0 ); /* IE6-9 */
-
-  @media (max-width: 500px){
-    height: 2000px;
-  }
-  @media (min-width: 500px) and (max-width: 768px){
-    height: 2500px;
-  }
-  @media (min-width: 768px) and (max-width: 992px){
-    height: 2000px;
-  }
-  @media (min-width: 992px){
-    height: 2500px;
-  }
 `;

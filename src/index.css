@@ -193,6 +193,7 @@ MEDIA QUERIES
     margin: 0;
     background: transparent;
     width: auto;
+    color: black;
      }
   .submenu ul {
     top: 0;
@@ -205,11 +206,7 @@ MEDIA QUERIES
     background-color: white;
     margin: 10px auto;
 }
-  .submenu li:hover {
-    background: black;
-  }
   .submenu:hover ul {
-    color: white;
     display: flex;
     animation: none;
   }

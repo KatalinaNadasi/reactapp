@@ -12,7 +12,7 @@ export const Circle = styled.div`
 
 export const CircleTop = styled.div`
 	margin-top: 460px;
-	height: 590px;
+	height: 630px;
 	width: auto;
 	background: ${pink};
 	border-radius: 999px 999px 0 0;
@@ -65,7 +65,6 @@ export const CircleTop = styled.div`
  `;
 
  export const CircleTitle2 = CircleTitle.extend `
-
  @media (max-width: 450px) {
 	 font-size: 3rem;
 	 transform: translateY(-92px);
@@ -125,7 +124,7 @@ export const CircleTop = styled.div`
 	 }
  `
  export const CircleBottom = styled.div`
-   height: 590px;
+   height: 630px;
    width: auto;
    background: rgba(165, 26, 65, 0.1);
    border-radius: 0 0 999px 999px;
