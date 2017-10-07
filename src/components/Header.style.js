@@ -18,12 +18,12 @@ export const CircleTop = styled.div`
 	border-radius: 999px 999px 0 0;
 
 	@media (max-width: 376px) {
-		margin-top: 329px;
+		margin-top: 365px;
 	}
 	@media (max-width: 450px) {
 		border-radius: 300px 300px 0 0;
     height: 250px;
-		margin-top: 329px;
+		margin-top: 365px;
 	}
 	@media (min-width: 450px) and (max-width: 768px) {
 		border-radius: 500px 500px 0 0;
@@ -247,8 +247,8 @@ export const CircleTop = styled.div`
 		animation: none;
 	`}
 	@media(max-width: 450px){
-		left: 63%;
-		top: 64%;
+		left: 61%;
+		top: 67%;
 	}
  `
  export const Bubble2 = styled.div`
@@ -379,8 +379,8 @@ export const CircleTop = styled.div`
 	 `}
 
 	 @media(max-width: 450px){
-		 left: 74%;
-		 top: 52%;
+		 left: 72%;
+     top: 51%;
 	 }
 	 @media(min-width: 450px) and (max-width: 768px){
 		 left: 78%;

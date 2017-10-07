@@ -164,11 +164,9 @@ g#linked:hover, g#contact:hover, g#github:hover {
   stroke: #FF3D68;
 }
 
-@media (max-width: 375px) {
-  .submenu li {
-    padding: 5px 10px;
-  }
-}
+/***********
+MEDIA QUERIES
+************/
 
 @media screen and (max-width: 500px) {
   #menu {
@@ -178,7 +176,7 @@ g#linked:hover, g#contact:hover, g#github:hover {
     float: none;
     display: block;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 13px;
     padding: 5px;
     margin: 0;
     background: transparent;
@@ -187,31 +185,25 @@ g#linked:hover, g#contact:hover, g#github:hover {
     color: crimson;
     z-index: 10;
   }
-  .sublink:hover, .activeNav {
+  .sublink:hover {
     float: none;
     display: block;
     text-decoration: none;
-    font-size: 15px;
     padding: 5px;
     margin: 0;
     background: transparent;
     width: auto;
-    line-height: 20px;
-    background: black;
-    transition: all .5s;
-    color: white;
      }
   .submenu ul {
-    width: 100%;
     top: 0;
     right: 0;
     display: flex;
     background-color: white;
+    width: 100%;
   }
   .submenu li {
-    padding: 5px 20px;
     background-color: white;
-    height: 50px
+    margin: 10px auto;
 }
   .submenu li:hover {
     background: black;
@@ -220,12 +212,6 @@ g#linked:hover, g#contact:hover, g#github:hover {
     color: white;
     display: flex;
     animation: none;
-  }
-}
-
-@media screen (min-width: 376px) and (max-width: 500px) {
-  .sublink li{
-    padding: 5px 20px;
   }
 }
 
@@ -238,6 +224,13 @@ g#linked:hover, g#contact:hover, g#github:hover {
     width: 250px;
     height: 250px;
   }
+  .btn-style {
+    padding: 10px;
+    height: auto;
+    width: 120px;
+    font-size: 10px;
+    margin-top: 20px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -248,9 +241,6 @@ g#linked:hover, g#contact:hover, g#github:hover {
     width: 400px;
     height: 400px;
   }
-}
-
-@media screen and (max-width: 992px) {
   .btn-style {
     padding: 10px;
     height: auto;

@@ -105,13 +105,13 @@ export const Mask = styled.div `
         transition-delay: 0.3s;
       }
 
-      @media(min-width: 376px) and (max-width: 768px){
-        margin: 20px 80px 0 80px;
-        font-size: 18px
+      @media (max-width: 768px){
+        margin: 10px 20px 0 20px;
+        font-size: 16px;
       }
-      @media(min-width: 768px) and (max-width: 1170px){
+      @media (min-width: 768px) and (max-width: 1170px){
         margin: 40px 80px 0 80px;
-        font-size: 18px
+        font-size: 18px;
       }
     }
 
@@ -124,15 +124,17 @@ export const Mask = styled.div `
       text-align: center;
       transition: all 0.2s ease-in-out;
       line-height: 25px;
-
       &:hover {
       transition-delay: 0.4s;
       }
 
-      @media(min-width: 376px) and (max-width: 768px){
+      @media (max-width: 768px) {
         margin: 0;
+        padding: 20px 30px;
+        font-size: 14px;
+        line-height: 20px;
       }
-        @media (max-width: 1170px){
+      @media (min-width: 768px) and (max-width: 1170px){
         padding: 20px 60px;
         font-size: 16px;
       }
@@ -191,8 +193,9 @@ export const MaskSmallImg = styled.div `
         transition-delay: 0.3s;
       }
 
-      @media(min-width: 376px) and (max-width: 768px){
-        font-size: 18px
+      @media (max-width: 768px){
+        margin: 10px 20px 0 20px;
+        font-size: 16px;
       }
       @media(min-width: 768px) and (max-width: 992px){
         font-size: 16px;
@@ -213,9 +216,11 @@ export const MaskSmallImg = styled.div `
       transition-delay: 0.4s;
       }
 
-      @media(min-width: 376px) and (max-width: 768px){
-        font-size: 16px;
-        padding: 20px 60px;
+      @media (max-width: 768px){
+        margin: 0;
+        padding: 20px 30px;
+        font-size: 14px;
+        line-height: 20px;
       }
       @media(min-width: 768px) and (max-width: 992px){
         font-size: 14px;
@@ -249,8 +254,9 @@ export const ImageContainer1 = styled.div`
 
   @media (max-width: 500px){
     width: 90%;
-    margin: 20px auto;
+    margin: 20px auto 0px;
     float: none;
+    height: 281px;
   }
   @media (min-width: 500px) and (max-width: 650px) {
     margin: 20px 80px 0px 80px;
@@ -430,11 +436,16 @@ export const Background1 = styled.div`
   background: linear-gradient(to bottom, rgba(243, 243, 237, 1.0) 0%, rgba(255, 189, 160, 1) 30%, rgba(220, 20, 60, 1.0) 50%, rgba(255, 189, 160, 1) 80%, rgba(243, 243, 237, 1.0) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F3F3ED', endColorstr='${pink}',GradientType=0 ); /* IE6-9 */
 
-
-  @media (max-width: 768px){
-    height: 3000px;
-  }
-  @media (min-width: 768px){
+  @media (max-width: 500px){
     height: 2000px;
+  }
+  @media (min-width: 500px) and (max-width: 768px){
+    height: 2500px;
+  }
+  @media (min-width: 768px) and (max-width: 992px){
+    height: 2000px;
+  }
+  @media (min-width: 992px){
+    height: 2500px;
   }
 `;

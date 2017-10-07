@@ -13,7 +13,6 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
 import { browserHistory } from 'react-router';
-import Menu from './components/Menu';
 
 ReactDOM.render(
   <Router history={browserHistory}>
@@ -24,7 +23,7 @@ ReactDOM.render(
           <ul>
             <li><NavLink to="/" exact activeClassName="activeNav" className="sublink">Home</NavLink></li>
             <li><NavLink to="/projects" activeClassName="activeNav" className="sublink">Projects</NavLink></li>
-            <li><NavLink to="/about" activeClassName="activeNav" className="sublink">About me</NavLink></li>
+            <li><NavLink to="/about" activeClassName="activeNav" className="sublink">About</NavLink></li>
             <li><NavLink to="/contact" activeClassName="activeNav" className="sublink">Contact</NavLink></li>
           </ul>
         </li>

@@ -81,7 +81,7 @@ class Portfolio extends React.Component {
                       src={require('../img/portfolio/sneakr.jpg')}/>
                     <MaskSmallImg>
                       <h2>Sneakr</h2>
-                      <p>Design and Development of a website with a search engine of vintage sneakr from Ebay and Le Bon Coin.</p>
+                      <p>Design and Development of a website with a search engine of vintage sneakr.</p>
                       <div><Btn/></div>
                     </MaskSmallImg>
                   </Relative>
@@ -95,7 +95,7 @@ class Portfolio extends React.Component {
                     src={require('../img/portfolio/eavest.jpg')}/>
                   <MaskSmallImg>
                       <h2>Eavest</h2>
-                      <p>Lead Front-End in the recast of all the existing website previous made on Wordpress. Launch planned in 2018.</p>
+                      <p>Lead Front-End in the recast of all the existing website.</p>
                       <div><Btn/></div>
                     </MaskSmallImg>
                   </Relative>
