@@ -56,19 +56,6 @@ export const ImgDiv = styled.div `
   overflow: hidden;
 `
 
-export const ImageContainer1 = styled.div`
-  width: 60%;
-  float: left;
-  margin: 0 0 0 125px;
-  position: relative;
-  transition: all 0.2s ease-in;
-  overflow: hidden;
-
-  &:hover {
-    transform: scale(1.1, 1.1);
-  }
-`;
-
 export const hoverAnim = keyframes `
   0% 	{transform: translate(265px, 145px) rotate(45deg);}
   50% { transform: translate(-80px, -125px) rotate(45deg);}
@@ -116,6 +103,9 @@ export const Mask = styled.div `
       &:hover {
         transition-delay: 0.3s;
       }
+      @media(min-width: 768px) and (max-width: 1170px){
+        margin: 40px 80px 0 80px;
+      }
     }
 
     p {
@@ -130,6 +120,10 @@ export const Mask = styled.div `
 
       &:hover {
       transition-delay: 0.4s;
+      }
+
+      @media(min-width: 768px) and (max-width: 1170px){
+        padding: 20px 80px;
       }
     }
 
@@ -180,6 +174,7 @@ export const MaskSmallImg = styled.div `
       position: relative;
       font-size: 20px;
       font-weight: bold;
+      margin: 30px 30px 0 30px;
       padding: 10px;
       &:hover {
         transition-delay: 0.3s;
@@ -191,7 +186,7 @@ export const MaskSmallImg = styled.div `
       font-size: 18px;
       position: relative;
       color: #fff;
-      padding: 10px;
+      padding: 20px 40px;
       text-align: center;
       transition: all 0.2s ease-in-out;
       line-height: 25px;
@@ -213,8 +208,25 @@ export const MaskSmallImg = styled.div `
 
 `
 
+export const ImageContainer1 = styled.div`
+  width: 60%;
+  float: left;
+  margin: 0 0 0 125px;
+  position: relative;
+  transition: all 0.2s ease-in;
+  overflow: hidden;
+
+  &:hover {
+    transform: scale(1.1, 1.1);
+  }
+
+  @media(min-width: 768px) and (max-width: 992px){
+    height: 500px;
+  }
+`;
+
 export const ImageContainer2 = styled.div`
-  margin: -50px 36px 23px 125px;
+  margin: -50px 9px 23px 125px;
   width: 51%;
   float: right;
   transition: all 0.2s ease-in;
@@ -229,7 +241,7 @@ export const ImageContainer2 = styled.div`
 export const ImageContainer3 = styled.div`
   width: 50%;
   float: left;
-  margin: -345px 0 0 60px;
+  margin: -345px 0px 0 10px;
   transition: all 0.2s ease-in;
   &:hover {
     transform: scale(1.1, 1.1);
@@ -247,12 +259,22 @@ export const ImageContainer4 = styled.div`
 `;
 
 export const ImageContainer5 = styled.div`
-  margin: 31px -52px 23px 0px;
+  margin: 50px -52px 23px 0px;
   float: right;
   transition: all 0.2s ease-in;
   width: 44%;
   &:hover {
     transform: scale(1.1, 1.1);
+  }
+
+  button {
+    @media (max-width: 1170px){
+      margin-top: 60px;
+    }
+  }
+
+  @media(min-width: 768px) and (max-width: 1170px){
+    margin: 50px 30px 23px 0px;
   }
 `;
 
@@ -263,6 +285,10 @@ export const ImageContainer6 = styled.div`
   transition: all 0.2s ease-in;
   &:hover {
     transform: scale(1.1, 1.1);
+  }
+
+  @media(min-width: 768px) and (max-width: 1170px){
+    margin: 7px 37px 150px 71px;
   }
 `;
 
