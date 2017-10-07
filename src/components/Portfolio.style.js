@@ -10,6 +10,7 @@ export const Container = styled.div`
 
 export const Relative = styled.div`
   position: relative;
+  overflow: hidden;
 `;
 
 export function IconTitle(props){
@@ -103,8 +104,14 @@ export const Mask = styled.div `
       &:hover {
         transition-delay: 0.3s;
       }
+
+      @media(min-width: 376px) and (max-width: 768px){
+        margin: 20px 80px 0 80px;
+        font-size: 18px
+      }
       @media(min-width: 768px) and (max-width: 1170px){
         margin: 40px 80px 0 80px;
+        font-size: 18px
       }
     }
 
@@ -122,8 +129,12 @@ export const Mask = styled.div `
       transition-delay: 0.4s;
       }
 
-      @media(min-width: 768px) and (max-width: 1170px){
-        padding: 20px 80px;
+      @media(min-width: 376px) and (max-width: 768px){
+        margin: 0;
+      }
+        @media (max-width: 1170px){
+        padding: 20px 60px;
+        font-size: 16px;
       }
     }
 
@@ -174,10 +185,17 @@ export const MaskSmallImg = styled.div `
       position: relative;
       font-size: 20px;
       font-weight: bold;
-      margin: 30px 30px 0 30px;
+      margin: 10px 30px 0 10px;
       padding: 10px;
       &:hover {
         transition-delay: 0.3s;
+      }
+
+      @media(min-width: 376px) and (max-width: 768px){
+        font-size: 18px
+      }
+      @media(min-width: 768px) and (max-width: 992px){
+        font-size: 16px;
       }
     }
 
@@ -193,6 +211,15 @@ export const MaskSmallImg = styled.div `
 
       &:hover {
       transition-delay: 0.4s;
+      }
+
+      @media(min-width: 376px) and (max-width: 768px){
+        font-size: 16px;
+        padding: 20px 60px;
+      }
+      @media(min-width: 768px) and (max-width: 992px){
+        font-size: 14px;
+        line-height: 20px;
       }
     }
 
@@ -220,6 +247,23 @@ export const ImageContainer1 = styled.div`
     transform: scale(1.1, 1.1);
   }
 
+  @media (max-width: 500px){
+    width: 90%;
+    margin: 20px auto;
+    float: none;
+  }
+  @media (min-width: 500px) and (max-width: 650px) {
+    margin: 20px 80px 0px 80px;
+    width: 70%;
+    float: none;
+  }
+  @media (min-width: 650px) and ( max-width: 768px){
+    width: 70%;
+    float: none;
+    margin: 20px 100px 0px 100px;
+    display: block;
+    height: 380px;
+  }
   @media(min-width: 768px) and (max-width: 992px){
     height: 500px;
   }
@@ -233,9 +277,26 @@ export const ImageContainer2 = styled.div`
   &:hover {
     transform: scale(1.1, 1.1);
   }
-  ${({hide}) => hide && css`
-  opacity: 0;
-  `}
+
+  @media (max-width: 500px){
+    width: 90%;
+    margin: 20px auto;
+    float: none;
+  }
+  @media (min-width: 500px) and (max-width: 650px) {
+    margin: 20px 80px 0px 80px;
+    width: 70%;
+    float: none;
+  }
+  @media (min-width: 650px) and ( max-width: 768px){
+    width: 70%;
+    float: none;
+    margin: 20px 100px;
+    display: block;
+  }
+  @media (min-width: 768px) and (max-width: 992px){
+    margin: -94px 25px 23px 125px;
+  }
 `;
 
 export const ImageContainer3 = styled.div`
@@ -246,6 +307,26 @@ export const ImageContainer3 = styled.div`
   &:hover {
     transform: scale(1.1, 1.1);
   }
+
+  @media (max-width: 500px){
+    width: 90%;
+    margin: 20px auto;
+    float: none;
+  }
+  @media (min-width: 500px) and (max-width: 650px) {
+    margin: 20px 80px 0px 80px;
+    width: 70%;
+    float: none;
+  }
+  @media (min-width: 650px) and ( max-width: 768px){
+    width: 70%;
+    float: none;
+    margin: 20px 100px;
+    display: block;
+  }
+  @media(min-width: 768px) and (max-width: 992px){
+    margin: -245px 0px 0 30px;
+  }
 `;
 
 export const ImageContainer4 = styled.div`
@@ -253,8 +334,26 @@ export const ImageContainer4 = styled.div`
   float: right;
   margin: 25px 76px 25px 0;
   transition: all 0.2s ease-in;
+  height: auto;
   &:hover {
     transform: scale(1.1, 1.1);
+  }
+
+  @media (max-width: 500px){
+    width: 90%;
+    margin: 20px auto;
+    float: none;
+  }
+  @media (min-width: 500px) and (max-width: 650px) {
+    margin: 20px 80px 0px 80px;
+    width: 70%;
+    float: none;
+  }
+  @media (min-width: 650px) and ( max-width: 768px){
+    width: 70%;
+    float: none;
+    margin: 0 100px;
+    display: block;
   }
 `;
 
@@ -268,11 +367,27 @@ export const ImageContainer5 = styled.div`
   }
 
   button {
-    @media (max-width: 1170px){
+    @media (max-width: 992px){
       margin-top: 60px;
     }
   }
 
+  @media (max-width: 500px){
+    width: 90%;
+    margin: 20px auto;
+    float: none;
+  }
+  @media (min-width: 500px) and (max-width: 650px) {
+    margin: 20px 80px 0px 80px;
+    width: 70%;
+    float: none;
+  }
+  @media (min-width: 650px) and ( max-width: 768px){
+    width: 70%;
+    float: none;
+    margin: 20px 100px;
+    display: block;
+  }
   @media(min-width: 768px) and (max-width: 1170px){
     margin: 50px 30px 23px 0px;
   }
@@ -287,6 +402,22 @@ export const ImageContainer6 = styled.div`
     transform: scale(1.1, 1.1);
   }
 
+  @media (max-width: 500px){
+    width: 90%;
+    margin: 20px auto;
+    float: none;
+  }
+  @media (min-width: 500px) and (max-width: 650px) {
+    margin: 20px 80px 0px 80px;
+    width: 70%;
+    float: none;
+  }
+  @media (min-width: 650px) and ( max-width: 768px){
+    width: 70%;
+    float: none;
+    margin: 20px 100px;
+    display: block;
+  }
   @media(min-width: 768px) and (max-width: 1170px){
     margin: 7px 37px 150px 71px;
   }
@@ -298,9 +429,12 @@ export const Background1 = styled.div`
   background: rgba(243, 243, 237, 1.0);
   background: linear-gradient(to bottom, rgba(243, 243, 237, 1.0) 0%, rgba(255, 189, 160, 1) 30%, rgba(220, 20, 60, 1.0) 50%, rgba(255, 189, 160, 1) 80%, rgba(243, 243, 237, 1.0) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F3F3ED', endColorstr='${pink}',GradientType=0 ); /* IE6-9 */
+
+
+  @media (max-width: 768px){
+    height: 3000px;
+  }
+  @media (min-width: 768px){
+    height: 2000px;
+  }
 `;
-
-
-// export const Mountains = styled.div `
-//    background-image: url('${require('../img/logo-transp.svg')}') no-repeat;
-// `;

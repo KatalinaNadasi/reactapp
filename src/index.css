@@ -249,3 +249,13 @@ g#linked:hover, g#contact:hover, g#github:hover {
     height: 400px;
   }
 }
+
+@media screen and (max-width: 992px) {
+  .btn-style {
+    padding: 10px;
+    height: auto;
+    width: 140px;
+    font-size: 12px;
+    margin-top: 20px;
+  }
+}
