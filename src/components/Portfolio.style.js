@@ -135,7 +135,7 @@ export const Mask = styled.div `
         line-height: 20px;
       }
       @media (min-width: 768px) and (max-width: 1170px){
-        padding: 20px 60px;
+        padding: 20px 20px;
         font-size: 16px;
       }
     }
@@ -363,6 +363,9 @@ export const ImageContainer4 = styled.div`
     margin: 0 100px;
     display: block;
     height: 281px;
+  }
+  @media (min-width: 768px) and (max-width: 992px){
+    height: 276px;
   }
 `;
 

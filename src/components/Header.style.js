@@ -31,7 +31,7 @@ export const CircleTop = styled.div`
 	}
 	@media (min-width: 768px) and (max-width: 992px) {
 		border-radius: 650px 650px 0 0;
-		height: 450px;
+		height: 550px;
 	}
 	@media (min-width: 992px) and (max-width: 1150px) {
 		border-radius: 930px 930px 0 0;
@@ -139,7 +139,7 @@ export const CircleTop = styled.div`
 	 }
 	 @media (min-width: 768px) and (max-width: 992px) {
 		 border-radius: 0 0 650px 650px;
-		 height: 450px;
+		 height: 550px;
 	 }
 	 @media (min-width: 992px) and (max-width: 1150px) {
 		 border-radius: 0 0 930px 930px;
