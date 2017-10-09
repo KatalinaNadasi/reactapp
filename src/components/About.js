@@ -43,7 +43,7 @@ export default class About extends Component {
                     <Padding>I've met Jean Guo in a hackaton about refugees in le Wagon. With my team we developped the'Linkedin for refugees'. Wait...hey! Grazia talk about us <a href="https://www.grazia.fr/news-et-societe/news/textfugees-refugenius-la-technologie-au-service-des-migrants-809301" target="_blank">there</a>.</Padding>
                   </ShortCol>
                   <Img>
-                    <img src={require('../img/projects/konexio.jpg')} alt="team"/>
+                    <img src={require('../img/about/konexio.jpg')} alt="team"/>
                   </Img>
                 </Line>
                 <Line>
