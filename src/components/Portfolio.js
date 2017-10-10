@@ -24,7 +24,7 @@ class Portfolio extends React.Component {
                       src={require('../img/portfolio/chopard.jpg')}/>
                     <Mask>
                       <h2>Chopard</h2>
-                      <p>Front-End development of a mini-website for the opening of a shop in the UK. </p>
+                      <p>Front-End development of a mini-website. </p>
                       <div><Btn/></div>
                     </Mask>
                   </Relative>

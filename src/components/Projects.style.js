@@ -19,14 +19,14 @@ export const Title = styled.h1 `
 `
 
 export const Opacity = styled.div `
-  opacity : 0.6;
+  opacity : 0.8;
 `
 
 export const TextLeft = styled.div `
   font-size: 3rem;
   padding: 15px;
   position: absolute;
-  bottom: 176px;
+  bottom: 776px;
   right: 550px;
   color: black;
   width: 30%;
@@ -65,14 +65,27 @@ export const Right = Left.extend `
   float: right;
 `
 
+import Eavest from '../img/projects/eavest-detail.png';
+
+export const Container = styled.div `
+  padding: 20px;
+  width: 100%;
+  height: 100vh;
+`
+
 export const Img = styled.div `
   width: 30%;
   float: left;
   height: 81vh;
-  background-image: url('${require('../img/projects/eavest-detail.png')}');
+  background-image: ${(props) => props.eavest ? `url(${Eavest})` : 'grey' };
   background-repeat: no-repeat;
   margin: 25px 0 0 50px;
   border: 5px solid ivory;
+`
+
+export const ImgChop = Img.extend `
+  background-image: url('${require('../img/projects/chopard-detail.png')}');
+  background-size: cover;
 `
 
 export const TextWrap = styled.div `
@@ -104,6 +117,10 @@ export const Vignet = styled.div `
       border-bottom: 2px solid ${orange};
     }
   }
+`
+
+export const VignetChop = Vignet.extend `
+  width: 40%;
 `
 
 export const Detail = styled.p `
