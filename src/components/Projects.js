@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Wrapper from './Wrapper';
-import {Background, Title, Opacity, AbsoluteText, Container, TextLeft, TextRight, Left, Right, Img, ImgChop, ImgAda, ImgLBP, TextWrap, Vignet, VignetChop, Detail} from './Projects.style';
+import {Background, Title, Opacity, AbsoluteText, Container, TextLeft, TextRight, Left, Right, Img, ImgChop, ImgAda, ImgLBP, ImgSneakr, TextWrap, Vignet, VignetLarge, Brand, Detail} from './Projects.style';
 import { Carousel } from 'react-responsive-carousel';
 import '../style/carousel.css';
 
@@ -67,7 +67,7 @@ export default class Projects extends Component {
         <Container id="eavest">
           <a href="http://eavest.com/" target="_blank"><Img eavest /></a>
           <TextWrap>
-            <h1>Recast of all the previous website made on Wordpress.</h1>
+            <Brand>Eavest</Brand><h1>Recast of all the previous website made on Wordpress.</h1>
             <Vignet>
               <h2>HTML / CSS</h2>
               <h2>Javascript</h2>
@@ -92,17 +92,17 @@ export default class Projects extends Component {
         <Container id="chopard">
           <ImgChop />
           <TextWrap>
-            <h1>Mini-website for the 'Happy Diamons' collection launch in the UK</h1>
-            <VignetChop>
+            <Brand>Chopard</Brand><h1>Mini-website for the 'Happy Diamons' collection launch in the UK</h1>
+            <VignetLarge>
               <h2>HTML / CSS</h2>
               <h2>Javascript</h2>
               <h2>Bootstrap</h2>
-            </VignetChop>
-            <VignetChop>
+            </VignetLarge>
+            <VignetLarge>
               <h2>Angular 1.5</h2>
               <h2>Git / Github</h2>
               <h2>Paris</h2>
-            </VignetChop>
+            </VignetLarge>
             <div className="clear"></div>
             <Detail>
               Integration and development of a 3 pages website from a model given by the client. Environment of production in Angular 1.5. Lean environment.
@@ -114,7 +114,7 @@ export default class Projects extends Component {
             <ImgAda />
           </a>
           <TextWrap>
-            <h1>Design and development of all the website for the event in 2016.</h1>
+            <Brand>Adaweek</Brand><h1>Design and development of all the website for the event in 2016.</h1>
             <Vignet>
               <h2>HTML / CSS</h2>
               <h2>Javascript</h2>
@@ -138,19 +138,39 @@ export default class Projects extends Component {
         <Container id="banque-postale">
             <ImgLBP />
           <TextWrap>
-            <h1>Development of a 6 pages play mini-website for La Banque Postale.</h1>
-            <VignetChop>
+            <Brand>La Banque Postale</Brand><h1>Development of a 6 pages play mini-website for La Banque Postale.</h1>
+            <VignetLarge>
               <h2>HTML / CSS</h2>
               <h2>Javascript</h2>
               <h2>Bootstrap</h2>
-            </VignetChop>
-            <VignetChop>
+            </VignetLarge>
+            <VignetLarge>
               <h2>Angular</h2>
               <h2>Git / Github</h2>
               <h2>Paris</h2>
-            </VignetChop>
+            </VignetLarge>
             <div className="clear"></div>
             <Detail>Integration and development of a 3 pages website from a model given by the client. Environment of production in Angular 1.5. Lean environment.
+            </Detail>
+          </TextWrap>
+        </Container>
+        <Container id="sneakr">
+            <ImgSneakr />
+          <TextWrap>
+            <Brand>Sneakr</Brand><h1>Development of a Beta version of a website with a search engine.</h1>
+            <VignetLarge>
+              <h2>HTML / CSS</h2>
+              <h2>Javascript</h2>
+              <h2>Bootstrap</h2>
+            </VignetLarge>
+            <VignetLarge>
+              <h2>Ruby / Ruby on Rails</h2>
+              <h2>Git / Github</h2>
+              <h2>Scraping / Parsing</h2>
+            </VignetLarge>
+            <div className="clear"></div>
+            <Detail>Development of a App with a search engine that helps you to find vintage sneakers at the best price from Ebay and Le Bon Coin.
+              Website built in Ruby on Rails as a final project of the training at Le Wagon / Paris.
             </Detail>
           </TextWrap>
         </Container>

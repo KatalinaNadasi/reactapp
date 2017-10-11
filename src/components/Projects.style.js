@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {darkcreme, orange} from  '../variables';
+import {darkcreme, orange,} from  '../variables';
 
 
 export const Background = styled.div `
@@ -101,6 +101,10 @@ export const ImgLBP = Img.extend `
   background-image: url('${require('../img/projects/banque-detail.png')}');
 `
 
+export const ImgSneakr = Img.extend `
+  background-image: url('${require('../img/projects/sneakr-detail.png')}');
+`
+
 export const TextWrap = styled.div `
   width: 60%;
   float: right;
@@ -132,8 +136,13 @@ export const Vignet = styled.div `
   }
 `
 
-export const VignetChop = Vignet.extend `
+export const VignetLarge = Vignet.extend `
   width: 40%;
+`
+
+export const Brand = styled.span `
+  color: ${orange};
+  font-size: 2.5rem;
 `
 
 export const Detail = styled.p `
