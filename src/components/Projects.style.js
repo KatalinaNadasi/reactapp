@@ -70,7 +70,7 @@ export const Right = Left.extend `
   float: right;
 `
 
-import Eavest from '../img/projects/eavest-detail.png';
+import Eavest from '../img/projects/eavest-detail.jpg';
 
 export const Container = styled.div `
   padding: 20px;
@@ -86,11 +86,19 @@ export const Img = styled.div `
   background-repeat: no-repeat;
   margin: 25px 0 0 50px;
   border: 5px solid ivory;
+  background-size: cover;
 `
 
 export const ImgChop = Img.extend `
   background-image: url('${require('../img/projects/chopard-detail.png')}');
-  background-size: cover;
+`
+
+export const ImgAda = Img.extend `
+  background-image: url('${require('../img/projects/adaweek-detail.jpg')}');
+`
+
+export const ImgLBP = Img.extend `
+  background-image: url('${require('../img/projects/banque-detail.png')}');
 `
 
 export const TextWrap = styled.div `
