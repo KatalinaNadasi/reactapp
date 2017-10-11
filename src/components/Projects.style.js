@@ -18,6 +18,11 @@ export const Title = styled.h1 `
   -webkit-text-fill-color: transparent;
 `
 
+export const AbsoluteText = styled.div `
+  width: 100%;
+  height: auto;
+`
+
 export const Opacity = styled.div `
   opacity : 0.8;
 `
@@ -26,7 +31,7 @@ export const TextLeft = styled.div `
   font-size: 3rem;
   padding: 15px;
   position: absolute;
-  bottom: 776px;
+  top: 676px;
   right: 550px;
   color: black;
   width: 30%;

@@ -12,10 +12,10 @@ export const Circle = styled.div`
 
 export const CircleTop = styled.div`
 	margin-top: 460px;
-	height: 630px;
+	height: 730px;
 	width: auto;
 	background: ${pink};
-	border-radius: 999px 999px 0 0;
+	border-radius: 1399px 1399px 0 0;
 
 	@media (max-width: 376px) {
 		margin-top: 365px;
@@ -95,7 +95,7 @@ export const CircleTop = styled.div`
    font-family: 'Nixie One', cursive;
    padding-top: 20px;
    height: 54px;
-   margin: 120px 30px 0 0;
+   margin: 150px 70px 0 0;
    font-size: 2rem;
    color: black;
    float: right;
@@ -124,10 +124,10 @@ export const CircleTop = styled.div`
 	 }
  `
  export const CircleBottom = styled.div`
-   height: 630px;
+   height: 730px;
    width: auto;
    background: rgba(165, 26, 65, 0.1);
-   border-radius: 0 0 999px 999px;
+   border-radius: 0 0 1399px 1399px;
 
 	 @media (max-width: 450px) {
 			height: 250px;
