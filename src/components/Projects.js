@@ -8,6 +8,9 @@ import '../index.css';
 
 ReactModal.defaultStyles.overlay.zIndex = '1000';
 ReactModal.defaultStyles.overlay.position = 'fixed';
+ReactModal.defaultStyles.overlay.border = '5px solid';
+ReactModal.defaultStyles.overlay.backgroundColor = 'black';
+
 
 const style = {
   transition: 'all 1s ease'
@@ -77,8 +80,8 @@ export default class Projects extends Component {
             </div>
             <ReactModal isOpen={this.state.showModal}>
               <button onClick={this.handleCloseModal}>Close Modal</button>
-
                   <TextWrap>
+                    <Img eavest/>
                     <Brand>Eavest</Brand><h1>Recast of all the previous website made on Wordpress.</h1>
                       <Vignet>
                         <h2>HTML / CSS</h2>
@@ -100,7 +103,7 @@ export default class Projects extends Component {
                           Working directly with the person in charge of the back-end part (Java). Source of proposal for animations and tools choices. Launch of the website planned in 2018.
                         </Detail>
                       </TextWrap>
-                  
+
               </ReactModal>
             <div>
               <h2>Adaweek</h2><p>Front-end developer / Design</p>
