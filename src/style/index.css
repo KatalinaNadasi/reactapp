@@ -142,3 +142,16 @@ svg#Calque_1 {
   top: -709px;
   left: 145px;
 }
+
+
+/***********
+PROJECTS
+************/
+
+Modal.defaultStyles {
+  z-index: 1000;
+}
+
+.ReactModal__Overlay {
+    z-index: 1000;
+}

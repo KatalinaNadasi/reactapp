@@ -18,27 +18,24 @@ export const Title = styled.h1 `
   -webkit-text-fill-color: transparent;
 `
 
-export const AbsoluteText = styled.div `
-  width: 100%;
-  height: auto;
-`
+
 
 export const Opacity = styled.div `
   opacity : 0.8;
 `
 
-export const TextLeft = styled.div `
+export const BrandText = styled.div `
   font-size: 3rem;
-  padding: 15px;
-  position: absolute;
-  top: 676px;
-  right: 550px;
   color: black;
-  width: 30%;
+  width: 50%;
+  text-align: center;
   float: left;
 
+
   div {
-    padding: 35px;
+    padding: 80px;
+    border: 3px solid #E3DAC9;
+    background-color: cadetblue;
 
     &:hover {
       background-color: #FF3E5F;
@@ -46,20 +43,15 @@ export const TextLeft = styled.div `
       transition: all 0.5s ease-in;
     }
   }
+
   h2 {
-    text-align: left;
     font-size: 2rem;
   }
   p {
     font-size: 1.3rem;
-    text-align: left;
   }
 
   }
-`
-
-export const TextRight = TextLeft.extend `
-  right: 148px;
 `
 
 export const Left = styled.div `
@@ -76,6 +68,37 @@ export const Container = styled.div `
   padding: 20px;
   width: 100%;
   height: 100vh;
+`
+
+export const BrandContainer = styled.div `
+  margin-bottom: 50px;
+  height: 150vh;
+  z-index: -1;
+`
+
+export const BrandTitle = styled.div `
+  width: 30%;
+  float: left;
+  position: absolute;
+  top: 676px;
+  right: 550px;
+  transition: all 1s ease;
+
+  &:hover {
+    background-color: #FF3E5F;
+    color: white;
+    transition: all 0.5s ease-in;
+  }
+`
+
+export const BrandTitleAda = BrandTitle.extend `
+  top: 776px;
+  transition: all 1s ease;
+`
+
+export const BrandTitleChopard = BrandTitle.extend `
+  top: 876px;
+  transition: all 1s ease;
 `
 
 export const Img = styled.div `
@@ -105,15 +128,17 @@ export const ImgSneakr = Img.extend `
   background-image: url('${require('../img/projects/sneakr-detail.png')}');
 `
 
+export const ImgKat = Img.extend `
+  background-image: url('${require('../img/projects/katalina-detail.jpg')}');
+`
+
 export const TextWrap = styled.div `
   width: 60%;
-  float: right;
-  height: 100vh;
   margin-right: 50px;
 
   h1 {
-    font-size: 2.5rem;
-    margin: 50px 20px 0 0;
+    font-size: 1.7rem;
+    margin: 20px 20px 0 0;
     float: left;
   }
 `
@@ -121,12 +146,12 @@ export const TextWrap = styled.div `
 export const Vignet = styled.div `
   width: 26%;
   float: left;
-  margin: 30px;
+  margin: 30px 40px 0 0;
 
   h2 {
     border-top: 2px solid ${orange};
     color: black;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: left;
     padding: 5px;
 
@@ -140,9 +165,10 @@ export const VignetLarge = Vignet.extend `
   width: 40%;
 `
 
-export const Brand = styled.span `
+export const Brand = styled.h3 `
   color: ${orange};
-  font-size: 2.5rem;
+  font-size: 2rem;
+  margin: 30px 0 0 0;
 `
 
 export const Detail = styled.p `
