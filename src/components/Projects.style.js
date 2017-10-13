@@ -4,10 +4,10 @@ import {darkcreme, orange,} from  '../variables';
 
 export function Close(props){
   return (
-    <svg version="1.1" id="close" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-      width="100.75px" height="16.001px" viewBox="0 0 100.75 16.001" enableBackground="new 0 0 100.75 16.001" xmlSpace="preserve">
-      <line fill="none" stroke="#000000" strokeMiterlimit="10" x1="85.103" y1="0.354" x2="100.396" y2="15.647"/>
-      <line fill="none" stroke="#000000" strokeMiterlimit="10" x1="100.396" y1="0.354" x2="85.103" y2="15.647"/>
+    <svg version="1.1" id="Close1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="16.001px" height="16.001px" viewBox="0 0 16.001 16.001" enableBackground="new 0 0 16.001 16.001" xmlSpace="preserve">
+      <line fill="none" stroke="#000000" strokeMiterlimit="10" x1="0.354" y1="0.354" x2="15.647" y2="15.647"/>
+      <line fill="none" stroke="#000000" strokeMiterlimit="10" x1="15.647" y1="0.354" x2="0.354" y2="15.647"/>
     </svg>
   )
 };
