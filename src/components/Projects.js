@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Wrapper from './Wrapper';
-import {Close, Background, Title, Opacity, BrandContainer, BrandText, Img, ImgChop, ImgAda, ImgLBP, ImgSneakr, ImgKat, TextWrap, TextWrapChop, TextWrapAda, Vignet, VignetLarge, Brand, Detail} from './Projects.style';
+import {Close, Background, Title, Opacity, BrandContainer, BrandText, Img, ImgChop, ImgAda, ImgLBP, ImgSneakr, ImgKat, TextWrap, TextWrapChop, TextWrapAda, TextWrapLBP, Vignet, VignetLarge, Brand, Detail} from './Projects.style';
 import { Carousel } from 'react-responsive-carousel';
 import '../style/carousel.css';
 import ReactModal from 'react-modal';
@@ -257,8 +257,8 @@ export default class Projects extends Component {
                 <Close/>
               </button>
                 <ImgLBP/>
-                <TextWrap>
-                  <Brand>La Banque Postale</Brand><h1>Development of a 6 pages play mini-website for La Banque Postale.</h1>
+                <TextWrapLBP>
+                  <Brand>La Banque Postale</Brand><h1>Development of a 6 pages play mini-website for <br/> La Banque Postale.</h1>
                     <VignetLarge>
                       <h2>HTML / CSS</h2>
                       <h2>Javascript</h2>
@@ -272,7 +272,7 @@ export default class Projects extends Component {
                     <div className="clear"></div>
                       <Detail>Integration and development of a 3 pages website from a model given by the client. Environment of production in Angular 1.5. Lean environment.
                       </Detail>
-                  </TextWrap>
+                  </TextWrapLBP>
               </ReactModal>
               <ReactModal
                 isOpen={this.state.showModal5}

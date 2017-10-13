@@ -107,10 +107,17 @@ export const ImgAda = Img.extend `
 
 export const ImgLBP = Img.extend `
   background-image: url('${require('../img/projects/banque-detail.png')}');
+  height: 63vh;
+  width: 31%;
+  margin: 25px 30px;
 `
 
 export const ImgSneakr = Img.extend `
   background-image: url('${require('../img/projects/sneakr-detail.png')}');
+  width: 30%;
+  float: left;
+  height: 78vh;
+  margin: 0;
 `
 
 export const ImgKat = Img.extend `
@@ -135,6 +142,12 @@ export const TextWrapChop = TextWrap.extend `
 export const TextWrapAda = TextWrap.extend `
   width: 66%;
   margin-top: 50px;
+`
+
+export const TextWrapLBP = TextWrap.extend `
+  margin-top: 50px;
+  width: 60%;
+  margin: 33px 0 0 10px;
 `
 
 export const Vignet = styled.div `
