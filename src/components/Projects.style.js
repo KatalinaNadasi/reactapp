@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import {darkcreme, orange, pink} from  '../variables';
-import {ScrollPosition} from './About.style';
 
 
 export function Close(props){
@@ -22,8 +21,12 @@ export const Background = styled.div `
   border: 10px solid ${darkcreme};
 `
 
-export const ScrollContainer = ScrollPosition.extend `
-    top: 544px;
+export const ScrollContainer = styled.div `
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+  position: absolute;
+  top: 544px;
 `
 
 export const Title = styled.h1 `

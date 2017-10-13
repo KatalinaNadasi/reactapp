@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Wrapper from './Wrapper';
-import {Close, Background, ScrollContainer, Title, Opacity, BrandContainer, BrandText, Img, ImgChop, ImgAda, ImgLBP, ImgSneakr, ImgKat, TextWrap, TextWrapChop, TextWrapAda, TextWrapLBP, TextWrapSneakr, Vignet, VignetLarge, Brand, Detail} from './Projects.style';
+import {Close, Background, Title, Opacity, ScrollContainer, BrandContainer, BrandText, Img, ImgChop, ImgAda, ImgLBP, ImgSneakr, ImgKat, TextWrap, TextWrapChop, TextWrapAda, TextWrapLBP, TextWrapSneakr, Vignet, VignetLarge, Brand, Detail} from './Projects.style';
 import {ScrollDown, SvgContainer, ArrowAnimation, BottomArrow} from './About.style';
 import { Carousel } from 'react-responsive-carousel';
 import '../style/carousel.css';
@@ -103,7 +103,7 @@ export default class Projects extends Component {
               </ArrowAnimation>
             </SvgContainer>
           </ScrollDown>
-          </ScrollContainer>
+        </ScrollContainer>
         <Opacity>
           <Carousel autoPlay interval={3000} transitionTime={1000} showThumbs={false} showStatus={false} showIndicators={false}>
             <div>
