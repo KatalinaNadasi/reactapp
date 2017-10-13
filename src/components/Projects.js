@@ -110,7 +110,7 @@ export default class Projects extends Component {
               <img height="650" src={require('../img/projects/chopard-banner.jpg')} alt="Chopard"/>
             </div>
             <div>
-              <img height="650" src={require('../img/projects/eavest.jpg')} alt="Eavest" />
+              <img height="650" src={require('../img/projects/eavest-banner.jpg')} alt="Eavest" />
             </div>
             <div>
               <img height="650" src={require('../img/projects/labanque.jpg')} alt="La Banque Postale" />
