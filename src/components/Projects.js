@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Wrapper from './Wrapper';
-import {Close, Background, Title, Opacity, BrandContainer, BrandText, Img, ImgChop, ImgAda, ImgLBP, ImgSneakr, ImgKat, TextWrap, TextWrapChop, TextWrapAda, TextWrapLBP, Vignet, VignetLarge, Brand, Detail} from './Projects.style';
+import {Close, Background, Title, Opacity, BrandContainer, BrandText, Img, ImgChop, ImgAda, ImgLBP, ImgSneakr, ImgKat, TextWrap, TextWrapChop, TextWrapAda, TextWrapLBP, TextWrapSneakr, Vignet, VignetLarge, Brand, Detail} from './Projects.style';
 import { Carousel } from 'react-responsive-carousel';
 import '../style/carousel.css';
 import ReactModal from 'react-modal';
@@ -284,7 +284,7 @@ export default class Projects extends Component {
                   <Close/>
                 </button>
                   <ImgSneakr/>
-                  <TextWrap>
+                  <TextWrapSneakr>
                     <Brand>Sneakr</Brand><h1>Development of a Beta version of a website with a search engine.</h1>
                       <VignetLarge>
                         <h2>HTML / CSS</h2>
@@ -300,7 +300,7 @@ export default class Projects extends Component {
                         <Detail>Development of a App with a search engine that helps you to find vintage sneakers at the best price from Ebay and Le Bon Coin.
                           Website built in Ruby on Rails as a final project of the training at Le Wagon / Paris.
                         </Detail>
-                    </TextWrap>
+                    </TextWrapSneakr>
                 </ReactModal>
                 <ReactModal
                   isOpen={this.state.showModal6}

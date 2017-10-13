@@ -150,6 +150,10 @@ export const TextWrapLBP = TextWrap.extend `
   margin: 33px 0 0 10px;
 `
 
+export const TextWrapSneakr = TextWrapAda.extend `
+  margin-left: 50px;
+`
+
 export const Vignet = styled.div `
   width: 26%;
   float: left;
