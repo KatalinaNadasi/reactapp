@@ -68,7 +68,7 @@ export default class Projects extends Component {
               <div>
                 <h2>Adaweek</h2><p>Front-end developer / Design</p>
               </div>
-              
+
             </TextLeft>
           </Left>
           <Right>
@@ -89,32 +89,7 @@ export default class Projects extends Component {
 
 
 
-        <Container id="adaweek" style={{opacity: this.state.opacity, height: this.state.height}}>
-          <a href="http://adaweek.fr/" target="_blank">
-            <ImgAda style={{height: this.state.height}}/>
-          </a>
-          <TextWrap style={{height: this.state.height}}>
-            <Brand>Adaweek</Brand><h1>Design and development of all the website for the event in 2016.</h1>
-            <Vignet>
-              <h2>HTML / CSS</h2>
-              <h2>Javascript</h2>
-              <h2>Bootstrap</h2>
-            </Vignet>
-            <Vignet>
-              <h2>Jquery</h2>
-              <h2>Photoshop</h2>
-              <h2>SVG</h2>
-            </Vignet>
-            <Vignet>
-              <h2>Animations</h2>
-              <h2>Freelance</h2>
-              <h2>Paris</h2>
-            </Vignet>
-            <div className="clear"></div>
-            <Detail>Website built in 3 days from scratch for the tech event in 2016. First experience as Designer.
-            </Detail>
-          </TextWrap>
-        </Container>
+        
         <Container id="banque-postale" style={{opacity: this.state.opacity, height: this.state.height}}>
             <ImgLBP style={{height: this.state.height}}/>
           <TextWrap style={{height: this.state.height}}>

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {darkcreme, orange,} from  '../variables';
+import {darkcreme, orange, pink} from  '../variables';
 
 export function Close(props){
   return (
@@ -11,7 +11,6 @@ export function Close(props){
     </svg>
   )
 };
-
 
 export const Background = styled.div `
   background-color: black;
@@ -40,11 +39,11 @@ export const BrandText = styled.div `
   text-align: center;
   float: left;
 
-
   div {
     padding: 80px;
     border: 3px solid #E3DAC9;
-    background-color: cadetblue;
+    background-color: #000059;
+    color: white;
 
     &:hover {
       background-color: #FF3E5F;
@@ -90,19 +89,20 @@ export const Img = styled.div `
   margin-top: 45px;
 `
 
-
 export const ImgChop = Img.extend `
-  background-image: url('${require('../img/projects/chopard-detail.png')}');
   width: 40%;
   height: 80vh;
-  margin: 0px 26px 0 0;
-  background-image: url(/static/media/chopard-detail.bfa1ff04.png);
+  margin: 0px 30px 0 0;
+  background-image: url('${require('../img/projects/chopard-modal.png')}');
   transform: translateY(-10px);
   border: 5px solid #F3F3ED;
 `
 
 export const ImgAda = Img.extend `
-  background-image: url('${require('../img/projects/adaweek-detail.jpg')}');
+  background-image: url('${require('../img/projects/adaweek-modal.jpg')}');
+  width: 28%;
+  height: 65vh;
+  margin: 25px 30px;
 `
 
 export const ImgLBP = Img.extend `
@@ -132,6 +132,11 @@ export const TextWrapChop = TextWrap.extend `
   margin-top: 40px;
 `
 
+export const TextWrapAda = TextWrap.extend `
+  width: 66%;
+  margin-top: 50px;
+`
+
 export const Vignet = styled.div `
   width: 26%;
   float: left;
@@ -155,7 +160,7 @@ export const VignetLarge = Vignet.extend `
 `
 
 export const Brand = styled.h3 `
-  color: ${orange};
+  color: ${pink};
   font-size: 2rem;
 `
 

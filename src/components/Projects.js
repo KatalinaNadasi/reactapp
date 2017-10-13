@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Wrapper from './Wrapper';
-import {Close, Background, Title, Opacity, BrandContainer, BrandText, Img, ImgChop, ImgAda, TextWrap, TextWrapChop, Vignet, VignetLarge, Brand, Detail} from './Projects.style';
+import {Close, Background, Title, Opacity, BrandContainer, BrandText, Img, ImgChop, ImgAda, TextWrap, TextWrapChop, TextWrapAda, Vignet, VignetLarge, Brand, Detail} from './Projects.style';
 import { Carousel } from 'react-responsive-carousel';
 import '../style/carousel.css';
 import ReactModal from 'react-modal';
@@ -10,7 +10,7 @@ import '../index.css';
 ReactModal.defaultStyles.overlay.zIndex = '1000';
 ReactModal.defaultStyles.overlay.position = 'fixed';
 ReactModal.defaultStyles.overlay.border = '5px solid #E3DAC9';
-ReactModal.defaultStyles.overlay.backgroundColor = '#007070';
+ReactModal.defaultStyles.overlay.backgroundColor = '#000059';
 
 
 const style = {
@@ -22,13 +22,16 @@ export default class Projects extends Component {
     super();
     this.state = {
       showModal: false,
-      showModal2: false
+      showModal2: false,
+      showModal3: false
     };
 
     this.handleOpenModal = this.handleOpenModal.bind(this);
     this.handleOpenModal2 = this.handleOpenModal2.bind(this);
+    this.handleOpenModal3 = this.handleOpenModal3.bind(this);
     this.handleCloseModal = this.handleCloseModal.bind(this);
     this.handleCloseModal2 = this.handleCloseModal2.bind(this);
+    this.handleCloseModal3 = this.handleCloseModal3.bind(this);
   }
 
   handleOpenModal () {
@@ -37,12 +40,18 @@ export default class Projects extends Component {
   handleOpenModal2 () {
   this.setState({ showModal2: true });
   }
+  handleOpenModal3 () {
+  this.setState({ showModal3: true });
+  }
 
   handleCloseModal () {
     this.setState({ showModal: false });
   }
   handleCloseModal2 () {
   this.setState({ showModal2: false });
+  }
+  handleCloseModal3 () {
+  this.setState({ showModal3: false });
   }
 
   componentWillMount() {
@@ -92,6 +101,11 @@ export default class Projects extends Component {
               onClick={this.handleOpenModal2}
               style={{...style}}>
               <h2>Chopard</h2><p>Front-end developer</p>
+            </div>
+            <div
+              onClick={this.handleOpenModal3}
+              style={{...style}}>
+              <h2>Adaweek</h2><p>Front-end developer / Design</p>
             </div>
             <ReactModal
               isOpen={this.state.showModal}
@@ -154,10 +168,42 @@ export default class Projects extends Component {
                         </Detail>
                     </TextWrapChop>
                 </ReactModal>
-            <div>
-              <h2>Adaweek</h2><p>Front-end developer / Design</p>
-            </div>
+                <ReactModal
+                  isOpen={this.state.showModal3}
+                  contentLabel="Chopard detail work"
+                  onRequestClose={this.handleCloseModal3}>
+                  <button
+                    onClick={this.handleCloseModal3}
+                    style={{'float': 'right', 'border': 'none', 'backgroundColor': 'transparent'}}>
+                    <Close/>
+                  </button>
+                    <a href="http://adaweek.fr/" target="_blank">
+                      <ImgAda style={{height: this.state.height}}/>
+                    </a>
+                    <TextWrapAda>
+                      <Brand>Adaweek</Brand><h1>Design and development of all the website for the event in 2016.</h1>
+                        <Vignet>
+                          <h2>HTML / CSS</h2>
+                          <h2>Javascript</h2>
+                          <h2>Bootstrap</h2>
+                        </Vignet>
+                        <Vignet>
+                          <h2>Jquery</h2>
+                          <h2>Photoshop</h2>
+                          <h2>SVG</h2>
+                        </Vignet>
+                        <Vignet>
+                          <h2>Animations</h2>
+                          <h2>Freelance</h2>
+                          <h2>Paris</h2>
+                        </Vignet>
+                        <div className="clear"></div>
+                          <Detail>Website built in 3 days from scratch for the tech event in 2016. First experience as Designer.
+                          </Detail>
+                      </TextWrapAda>
+                  </ReactModal>
           </BrandText>
+
           <BrandText>
             <div>
               <h2>La Banque Postale</h2><p>Front-end developer</p>
