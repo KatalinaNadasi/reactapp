@@ -122,6 +122,11 @@ export const ImgSneakr = Img.extend `
 
 export const ImgKat = Img.extend `
   background-image: url('${require('../img/projects/katalina-detail.jpg')}');
+  width: 32%;
+  height: 82vh;
+  margin-right: 50px;
+  margin-top: 0;
+  transform: translateY(-13px);
 `
 
 export const TextWrap = styled.div `
@@ -145,13 +150,16 @@ export const TextWrapAda = TextWrap.extend `
 `
 
 export const TextWrapLBP = TextWrap.extend `
-  margin-top: 50px;
   width: 60%;
   margin: 33px 0 0 10px;
 `
 
 export const TextWrapSneakr = TextWrapAda.extend `
   margin-left: 50px;
+`
+
+export const TextWrapKat = TextWrapLBP.extend `
+
 `
 
 export const Vignet = styled.div `

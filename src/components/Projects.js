@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Wrapper from './Wrapper';
-import {Close, Background, Title, Opacity, BrandContainer, BrandText, Img, ImgChop, ImgAda, ImgLBP, ImgSneakr, ImgKat, TextWrap, TextWrapChop, TextWrapAda, TextWrapLBP, TextWrapSneakr, Vignet, VignetLarge, Brand, Detail} from './Projects.style';
+import {Close, Background, Title, Opacity, BrandContainer, BrandText, Img, ImgChop, ImgAda, ImgLBP, ImgSneakr, ImgKat, TextWrap, TextWrapChop, TextWrapAda, TextWrapLBP, TextWrapSneakr, TextWrapKat, Vignet, VignetLarge, Brand, Detail} from './Projects.style';
 import { Carousel } from 'react-responsive-carousel';
 import '../style/carousel.css';
 import ReactModal from 'react-modal';
@@ -312,7 +312,7 @@ export default class Projects extends Component {
                     <Close/>
                   </button>
                     <ImgKat/>
-                    <TextWrap>
+                    <TextWrapKat>
                       <Brand>Personal website</Brand><h1>Design and development of a website from scratch.</h1>
                         <Vignet>
                           <h2>HTML / CSS</h2>
@@ -333,7 +333,7 @@ export default class Projects extends Component {
                           <Detail>I hesitated to put my first personal website here but I told to myself that I was kind of proud of it. It was the first time that I designed an developped an entire website from scratch alone, that meant a lot to me.
                             One page multilanguage website.
                           </Detail>
-                      </TextWrap>
+                      </TextWrapKat>
                   </ReactModal>
           </BrandText>
         </BrandContainer>
