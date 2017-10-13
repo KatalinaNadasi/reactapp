@@ -73,41 +73,10 @@ export const Right = Left.extend `
 
 import Eavest from '../img/projects/eavest-modal.gif';
 
-export const Container = styled.div `
-  padding: 20px;
-  width: 100%;
-  height: 100vh;
-`
-
 export const BrandContainer = styled.div `
   margin-bottom: 50px;
   height: 150vh;
   z-index: -1;
-`
-
-export const BrandTitle = styled.div `
-  width: 30%;
-  float: left;
-  position: absolute;
-  top: 676px;
-  right: 550px;
-  transition: all 1s ease;
-
-  &:hover {
-    background-color: #FF3E5F;
-    color: white;
-    transition: all 0.5s ease-in;
-  }
-`
-
-export const BrandTitleAda = BrandTitle.extend `
-  top: 776px;
-  transition: all 1s ease;
-`
-
-export const BrandTitleChopard = BrandTitle.extend `
-  top: 876px;
-  transition: all 1s ease;
 `
 
 export const Img = styled.div `
@@ -124,6 +93,12 @@ export const Img = styled.div `
 
 export const ImgChop = Img.extend `
   background-image: url('${require('../img/projects/chopard-detail.png')}');
+  width: 40%;
+  height: 80vh;
+  margin: 0px 26px 0 0;
+  background-image: url(/static/media/chopard-detail.bfa1ff04.png);
+  transform: translateY(-10px);
+  border: 5px solid #F3F3ED;
 `
 
 export const ImgAda = Img.extend `
@@ -151,6 +126,10 @@ export const TextWrap = styled.div `
     margin: 20px 20px 0 0;
     float: left;
   }
+`
+
+export const TextWrapChop = TextWrap.extend `
+  margin-top: 40px;
 `
 
 export const Vignet = styled.div `
