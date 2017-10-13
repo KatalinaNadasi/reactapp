@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import {darkcreme, orange, pink} from  '../variables';
+import {ScrollPosition} from './About.style';
+
 
 export function Close(props){
   return (
@@ -18,6 +20,10 @@ export const Background = styled.div `
   line-height: 563px;
   height: 100vh;
   border: 10px solid ${darkcreme};
+`
+
+export const ScrollContainer = ScrollPosition.extend `
+    top: 544px;
 `
 
 export const Title = styled.h1 `
@@ -73,8 +79,7 @@ export const Right = Left.extend `
 import Eavest from '../img/projects/eavest-modal.gif';
 
 export const BrandContainer = styled.div `
-  margin-bottom: 50px;
-  height: 150vh;
+  height: 111vh;
   z-index: -1;
 `
 
@@ -156,10 +161,6 @@ export const TextWrapLBP = TextWrap.extend `
 
 export const TextWrapSneakr = TextWrapAda.extend `
   margin-left: 50px;
-`
-
-export const TextWrapKat = TextWrapLBP.extend `
-
 `
 
 export const Vignet = styled.div `

@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
 import Wrapper from './Wrapper';
-import {Close, Background, Title, Opacity, BrandContainer, BrandText, Img, ImgChop, ImgAda, ImgLBP, ImgSneakr, ImgKat, TextWrap, TextWrapChop, TextWrapAda, TextWrapLBP, TextWrapSneakr, TextWrapKat, Vignet, VignetLarge, Brand, Detail} from './Projects.style';
+import {Close, Background, Title, Opacity, ScrollContainer, BrandContainer, BrandText, Img, ImgChop, ImgAda, ImgLBP, ImgSneakr, ImgKat, TextWrap, TextWrapChop, TextWrapAda, TextWrapLBP, TextWrapSneakr, Vignet, VignetLarge, Brand, Detail} from './Projects.style';
+import {ScrollDown, SvgContainer, ArrowAnimation, BottomArrow} from './About.style';
 import { Carousel } from 'react-responsive-carousel';
 import '../style/carousel.css';
 import ReactModal from 'react-modal';
 import '../index.css';
+import Footer from './Footer';
 
 
 ReactModal.defaultStyles.overlay.zIndex = '1000';
@@ -93,6 +95,15 @@ export default class Projects extends Component {
         <Background>
           <Title>Projects</Title>
         </Background>
+        <ScrollContainer>
+          <ScrollDown>
+            <SvgContainer>
+              <ArrowAnimation>
+                <BottomArrow />
+              </ArrowAnimation>
+            </SvgContainer>
+          </ScrollDown>
+        </ScrollContainer>
         <Opacity>
           <Carousel autoPlay interval={3000} transitionTime={1000} showThumbs={false} showStatus={false} showIndicators={false}>
             <div>
@@ -312,7 +323,7 @@ export default class Projects extends Component {
                     <Close/>
                   </button>
                     <ImgKat/>
-                    <TextWrapKat>
+                    <TextWrapLBP>
                       <Brand>Personal website</Brand><h1>Design and development of a website from scratch.</h1>
                         <Vignet>
                           <h2>HTML / CSS</h2>
@@ -333,17 +344,11 @@ export default class Projects extends Component {
                           <Detail>I hesitated to put my first personal website here but I told to myself that I was kind of proud of it. It was the first time that I designed an developped an entire website from scratch alone, that meant a lot to me.
                             One page multilanguage website.
                           </Detail>
-                      </TextWrapKat>
+                      </TextWrapLBP>
                   </ReactModal>
           </BrandText>
         </BrandContainer>
-
-
-
-
-
-
-
+        <Footer />
       </Wrapper>
     );
   }
