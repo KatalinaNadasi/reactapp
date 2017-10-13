@@ -107,7 +107,7 @@ export default class Projects extends Component {
         <Opacity>
           <Carousel autoPlay interval={3000} transitionTime={1000} showThumbs={false} showStatus={false} showIndicators={false}>
             <div>
-              <img height="650" src={require('../img/projects/chopard.jpg')} alt="Chopard"/>
+              <img height="650" src={require('../img/projects/chopard-banner.jpg')} alt="Chopard"/>
             </div>
             <div>
               <img height="650" src={require('../img/projects/eavest.jpg')} alt="Eavest" />
@@ -125,7 +125,7 @@ export default class Projects extends Component {
               <img height="650" src={require('../img/projects/katalina.jpg')} alt="Katalina Nadasi" />
             </div>
             <div>
-              <img height="650" src={require('../img/projects/chopard.jpg')} alt="Chopard"/>
+              <img height="650" src={require('../img/projects/chopard-banner.jpg')} alt="Chopard"/>
             </div>
           </Carousel>
         </Opacity>
