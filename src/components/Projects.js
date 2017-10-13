@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Wrapper from './Wrapper';
-import {Close, Background, Title, Opacity, BrandContainer, BrandText, Img, ImgChop, ImgAda, TextWrap, TextWrapChop, TextWrapAda, Vignet, VignetLarge, Brand, Detail} from './Projects.style';
+import {Close, Background, Title, Opacity, BrandContainer, BrandText, Img, ImgChop, ImgAda, ImgLBP, ImgSneakr, ImgKat, TextWrap, TextWrapChop, TextWrapAda, Vignet, VignetLarge, Brand, Detail} from './Projects.style';
 import { Carousel } from 'react-responsive-carousel';
 import '../style/carousel.css';
 import ReactModal from 'react-modal';
@@ -23,15 +23,25 @@ export default class Projects extends Component {
     this.state = {
       showModal: false,
       showModal2: false,
-      showModal3: false
+      showModal3: false,
+      showModal4: false,
+      showModal5: false,
+      showModal6: false
     };
 
     this.handleOpenModal = this.handleOpenModal.bind(this);
     this.handleOpenModal2 = this.handleOpenModal2.bind(this);
     this.handleOpenModal3 = this.handleOpenModal3.bind(this);
+    this.handleOpenModal4 = this.handleOpenModal4.bind(this);
+    this.handleOpenModal5 = this.handleOpenModal5.bind(this);
+    this.handleOpenModal6 = this.handleOpenModal6.bind(this);
+
     this.handleCloseModal = this.handleCloseModal.bind(this);
     this.handleCloseModal2 = this.handleCloseModal2.bind(this);
     this.handleCloseModal3 = this.handleCloseModal3.bind(this);
+    this.handleCloseModal4 = this.handleCloseModal4.bind(this);
+    this.handleCloseModal5 = this.handleCloseModal5.bind(this);
+    this.handleCloseModal6 = this.handleCloseModal6.bind(this);
   }
 
   handleOpenModal () {
@@ -43,6 +53,15 @@ export default class Projects extends Component {
   handleOpenModal3 () {
   this.setState({ showModal3: true });
   }
+  handleOpenModal4 () {
+  this.setState({ showModal4: true });
+  }
+  handleOpenModal5 () {
+  this.setState({ showModal5: true });
+  }
+  handleOpenModal6 () {
+  this.setState({ showModal6: true });
+  }
 
   handleCloseModal () {
     this.setState({ showModal: false });
@@ -52,6 +71,15 @@ export default class Projects extends Component {
   }
   handleCloseModal3 () {
   this.setState({ showModal3: false });
+  }
+  handleCloseModal4 () {
+  this.setState({ showModal4: false });
+  }
+  handleCloseModal5 () {
+  this.setState({ showModal5: false });
+  }
+  handleCloseModal6 () {
+  this.setState({ showModal6: false });
   }
 
   componentWillMount() {
@@ -170,7 +198,7 @@ export default class Projects extends Component {
                 </ReactModal>
                 <ReactModal
                   isOpen={this.state.showModal3}
-                  contentLabel="Chopard detail work"
+                  contentLabel="Adaweek detail work"
                   onRequestClose={this.handleCloseModal3}>
                   <button
                     onClick={this.handleCloseModal3}
@@ -203,17 +231,110 @@ export default class Projects extends Component {
                       </TextWrapAda>
                   </ReactModal>
           </BrandText>
-
           <BrandText>
-            <div>
+            <div
+              onClick={this.handleOpenModal4}
+              style={{...style}}>
               <h2>La Banque Postale</h2><p>Front-end developer</p>
             </div>
-            <div>
+            <div
+              onClick={this.handleOpenModal5}
+              style={{...style}}>
               <h2>Sneakr</h2><p>Front-end developer</p>
             </div>
-            <div>
+            <div
+              onClick={this.handleOpenModal6}
+              style={{...style}}>
               <h2>Personal Website</h2><p>Front-end developer</p>
             </div>
+            <ReactModal
+              isOpen={this.state.showModal4}
+              contentLabel="La Banque Postale detail work"
+              onRequestClose={this.handleCloseModal4}>
+              <button
+                onClick={this.handleCloseModal4}
+                style={{'float': 'right', 'border': 'none', 'backgroundColor': 'transparent'}}>
+                <Close/>
+              </button>
+                <ImgLBP/>
+                <TextWrap>
+                  <Brand>La Banque Postale</Brand><h1>Development of a 6 pages play mini-website for La Banque Postale.</h1>
+                    <VignetLarge>
+                      <h2>HTML / CSS</h2>
+                      <h2>Javascript</h2>
+                      <h2>Bootstrap</h2>
+                    </VignetLarge>
+                    <VignetLarge>
+                      <h2>Angular 1.5</h2>
+                      <h2>Git / Github</h2>
+                      <h2>Paris</h2>
+                    </VignetLarge>
+                    <div className="clear"></div>
+                      <Detail>Integration and development of a 3 pages website from a model given by the client. Environment of production in Angular 1.5. Lean environment.
+                      </Detail>
+                  </TextWrap>
+              </ReactModal>
+              <ReactModal
+                isOpen={this.state.showModal5}
+                contentLabel="Sneakr detail work"
+                onRequestClose={this.handleCloseModal5}>
+                <button
+                  onClick={this.handleCloseModal5}
+                  style={{'float': 'right', 'border': 'none', 'backgroundColor': 'transparent'}}>
+                  <Close/>
+                </button>
+                  <ImgSneakr/>
+                  <TextWrap>
+                    <Brand>Sneakr</Brand><h1>Development of a Beta version of a website with a search engine.</h1>
+                      <VignetLarge>
+                        <h2>HTML / CSS</h2>
+                        <h2>Javascript</h2>
+                        <h2>Bootstrap</h2>
+                      </VignetLarge>
+                      <VignetLarge>
+                        <h2>Ruby / Ruby on Rails</h2>
+                        <h2>Scraping / Parsing</h2>
+                        <h2>Git / Github</h2>
+                      </VignetLarge>
+                      <div className="clear"></div>
+                        <Detail>Development of a App with a search engine that helps you to find vintage sneakers at the best price from Ebay and Le Bon Coin.
+                          Website built in Ruby on Rails as a final project of the training at Le Wagon / Paris.
+                        </Detail>
+                    </TextWrap>
+                </ReactModal>
+                <ReactModal
+                  isOpen={this.state.showModal6}
+                  contentLabel="Personal detail work"
+                  onRequestClose={this.handleCloseModal6}>
+                  <button
+                    onClick={this.handleCloseModal6}
+                    style={{'float': 'right', 'border': 'none', 'backgroundColor': 'transparent'}}>
+                    <Close/>
+                  </button>
+                    <ImgKat/>
+                    <TextWrap>
+                      <Brand>Personal website</Brand><h1>Design and development of a website from scratch.</h1>
+                        <Vignet>
+                          <h2>HTML / CSS</h2>
+                          <h2>Javascript</h2>
+                          <h2>Bootstrap</h2>
+                        </Vignet>
+                        <Vignet>
+                          <h2>Jquery</h2>
+                          <h2>SVG</h2>
+                          <h2>Animate.css</h2>
+                        </Vignet>
+                        <Vignet>
+                          <h2>FontAwesome</h2>
+                          <h2>Git / Github</h2>
+                          <h2>Paris</h2>
+                        </Vignet>
+                        <div className="clear"></div>
+                          <Detail>I hesitated to put my first personal website here but I told to myself that I was kind of proud of it. It was the first time that I designed an developped an entire website from scratch alone, that meant a lot to me.
+                            One page multilanguage website.
+                          </Detail>
+                      </TextWrap>
+                  </ReactModal>
           </BrandText>
         </BrandContainer>
 
