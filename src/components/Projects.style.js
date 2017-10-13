@@ -1,5 +1,16 @@
+import React from 'react';
 import styled from 'styled-components';
 import {darkcreme, orange,} from  '../variables';
+
+export function Close(props){
+  return (
+    <svg version="1.1" id="close" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      width="100.75px" height="16.001px" viewBox="0 0 100.75 16.001" enableBackground="new 0 0 100.75 16.001" xmlSpace="preserve">
+      <line fill="none" stroke="#000000" strokeMiterlimit="10" x1="85.103" y1="0.354" x2="100.396" y2="15.647"/>
+      <line fill="none" stroke="#000000" strokeMiterlimit="10" x1="100.396" y1="0.354" x2="85.103" y2="15.647"/>
+    </svg>
+  )
+};
 
 
 export const Background = styled.div `
@@ -100,15 +111,16 @@ export const BrandTitleChopard = BrandTitle.extend `
 `
 
 export const Img = styled.div `
-  width: 74%;
+  width: 49%;
   float: left;
   height: 65vh;
+  background-image: ${(props) => props.eavest ? `url(${Eavest})` : 'grey' };
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: grey
+  background-color: grey;
+  margin-top: 45px;
 `
 
-// background-image: ${(props) => props.eavest ? `url(${Eavest})` : 'grey' };
 
 export const ImgChop = Img.extend `
   background-image: url('${require('../img/projects/chopard-detail.png')}');
@@ -131,8 +143,8 @@ export const ImgKat = Img.extend `
 `
 
 export const TextWrap = styled.div `
-  width: 60%;
-  margin-right: 50px;
+  width: 49%;
+  float: left;
 
   h1 {
     font-size: 1.7rem;
@@ -166,7 +178,6 @@ export const VignetLarge = Vignet.extend `
 export const Brand = styled.h3 `
   color: ${orange};
   font-size: 2rem;
-  margin: 30px 0 0 0;
 `
 
 export const Detail = styled.p `

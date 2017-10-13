@@ -152,6 +152,14 @@ svg#bottom-arrow {
   color: black;
 }
 
+/***********
+PROJECTS
+************/
+
+.ReactModal__Content.ReactModal__Content--after-open {
+  border-radius: 0px !important;
+}
+
 
 /***********
 FOOTER

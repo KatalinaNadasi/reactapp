@@ -1,15 +1,17 @@
 import React, {Component} from 'react';
 import Wrapper from './Wrapper';
-import {Background, Title, Opacity, BrandTitle, BrandTitleAda, BrandTitleChopard, BrandContainer, AbsoluteText, Container, BrandText, Img, ImgChop, ImgAda, TextWrap, Vignet, VignetLarge, Brand, Detail} from './Projects.style';
+import {Close, Background, Title, Opacity, BrandTitle, BrandTitleAda, BrandTitleChopard, BrandContainer, AbsoluteText, Container, BrandText, Img, ImgChop, ImgAda, TextWrap, Vignet, VignetLarge, Brand, Detail} from './Projects.style';
 import { Carousel } from 'react-responsive-carousel';
 import '../style/carousel.css';
 import ReactModal from 'react-modal';
 import '../index.css';
 
+var FontAwesome = require('react-fontawesome');
+
 ReactModal.defaultStyles.overlay.zIndex = '1000';
 ReactModal.defaultStyles.overlay.position = 'fixed';
-ReactModal.defaultStyles.overlay.border = '5px solid';
-ReactModal.defaultStyles.overlay.backgroundColor = 'black';
+ReactModal.defaultStyles.overlay.border = '5px solid #E3DAC9';
+ReactModal.defaultStyles.overlay.backgroundColor = '#007070';
 
 
 const style = {
@@ -79,9 +81,13 @@ export default class Projects extends Component {
               <h2>Eavest</h2><p>Front-end developer</p>
             </div>
             <ReactModal isOpen={this.state.showModal}>
-              <button onClick={this.handleCloseModal}>Close Modal</button>
-                  <TextWrap>
+              <button
+                onClick={this.handleCloseModal}
+                style={{'float': 'right', 'border': 'none', 'backgroundColor': 'transparent'}}>
+                <Close/>
+              </button>
                     <Img eavest/>
+                    <TextWrap>
                     <Brand>Eavest</Brand><h1>Recast of all the previous website made on Wordpress.</h1>
                       <Vignet>
                         <h2>HTML / CSS</h2>
