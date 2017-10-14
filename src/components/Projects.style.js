@@ -37,10 +37,6 @@ export const Title = styled.h1 `
   -webkit-text-fill-color: transparent;
 `
 
-export const Opacity = styled.div `
-  opacity : 0.8;
-`
-
 export const BrandText = styled.div `
   font-size: 3rem;
   color: black;

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Wrapper from './Wrapper';
-import {Close, Background, ScrollContainer, Title, Opacity, BrandContainer, BrandText, Img, ImgChop, ImgAda, ImgLBP, ImgSneakr, ImgKat, TextWrap, TextWrapChop, TextWrapAda, TextWrapLBP, TextWrapSneakr, Vignet, VignetLarge, Brand, Detail} from './Projects.style';
+import {Close, Background, ScrollContainer, Title, BrandContainer, BrandText, Img, ImgChop, ImgAda, ImgLBP, ImgSneakr, ImgKat, TextWrap, TextWrapChop, TextWrapAda, TextWrapLBP, TextWrapSneakr, Vignet, VignetLarge, Brand, Detail} from './Projects.style';
 import {ScrollDown, SvgContainer, ArrowAnimation, BottomArrow} from './About.style';
 import { Carousel } from 'react-responsive-carousel';
 import '../style/carousel.css';
@@ -91,6 +91,7 @@ export default class Projects extends Component {
   render(){
 
     return(
+      <div>
       <Wrapper>
         <Background>
           <Title>Projects</Title>
@@ -104,7 +105,6 @@ export default class Projects extends Component {
             </SvgContainer>
           </ScrollDown>
           </ScrollContainer>
-        <Opacity>
           <Carousel autoPlay interval={3000} transitionTime={1000} showThumbs={false} showStatus={false} showIndicators={false}>
             <div>
               <img height="650" src={require('../img/projects/chopard-banner.jpg')} alt="Chopard"/>
@@ -113,10 +113,10 @@ export default class Projects extends Component {
               <img height="650" src={require('../img/projects/eavest-banner.jpg')} alt="Eavest" />
             </div>
             <div>
-              <img height="650" src={require('../img/projects/labanque.jpg')} alt="La Banque Postale" />
+              <img height="650" src={require('../img/projects/banque-banner.jpg')} alt="La Banque Postale" />
             </div>
             <div>
-              <img height="650" src={require('../img/projects/sneakr.jpg')} alt="Sneakr" />
+              <img height="650" src={require('../img/projects/sneakr-banner.jpg')} alt="Sneakr" />
             </div>
             <div>
               <img height="650" src={require('../img/projects/adaweek.jpg')} alt="Adaweek" />
@@ -128,7 +128,6 @@ export default class Projects extends Component {
               <img height="650" src={require('../img/projects/chopard-banner.jpg')} alt="Chopard"/>
             </div>
           </Carousel>
-        </Opacity>
         <BrandContainer>
           <BrandText>
             <div
@@ -348,8 +347,9 @@ export default class Projects extends Component {
                   </ReactModal>
           </BrandText>
         </BrandContainer>
-        <Footer />
       </Wrapper>
+      <Footer />
+      </div>
     );
   }
 }
