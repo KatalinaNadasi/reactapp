@@ -21,6 +21,10 @@ export const Background = styled.div `
   line-height: 563px;
   height: 91vh;
   margin-top: 52px;
+
+  @media (max-width: 368px) {
+		height: 77vh;
+	}
 `
 
 export const ScrollContainer = styled.div `
@@ -28,11 +32,15 @@ export const ScrollContainer = styled.div `
   text-align: center;
   z-index: 10;
   position: absolute;
-  top: 491px;
+  top: 691px;
+
+  @media (max-width: 368px) {
+    top: 579px;
+  }
 `
 
 export const ScrollDownContainer = ScrollDown.extend `
-  box-shadow: 8px 8px 12px #555; 
+  box-shadow: 8px 8px 12px #555;
 `
 
 
@@ -41,6 +49,13 @@ export const Title = styled.h1 `
   background: -webkit-linear-gradient( left, #FFDC80 0%, #FCAF45 30%, #F56040 40%, #E71D36 50%, #280C7C 90%) repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  @media (max-width: 368px) {
+		font-size: 5rem;
+	}
+  @media (min-width: 368px) and (max-width: 768px) {
+		font-size: 8rem;
+	}
 `
 
 export const BrandText = styled.div `
