@@ -104,29 +104,29 @@ export default class Projects extends Component {
             </SvgContainer>
           </ScrollDownContainer>
           </ScrollContainer>
-          <Carousel autoPlay interval={3000} transitionTime={1000} showThumbs={false} showStatus={false} showIndicators={false}>
-            <div>
-              <img src={require('../img/projects/chopard-banner.jpg')} alt="Chopard"/>
-            </div>
-            <div>
-              <img src={require('../img/projects/eavest-banner.jpg')} alt="Eavest" />
-            </div>
-            <div>
-              <img src={require('../img/projects/banque-banner.jpg')} alt="La Banque Postale" />
-            </div>
-            <div>
-              <img src={require('../img/projects/sneakr-banner.jpg')} alt="Sneakr" />
-            </div>
-            <div>
-              <img height="650" src={require('../img/projects/adaweek-banner.jpg')} alt="Adaweek" />
-            </div>
-            <div>
-              <img height="650" src={require('../img/projects/katalina-banner.jpg')} alt="Katalina Nadasi" />
-            </div>
-            <div>
-              <img height="650" src={require('../img/projects/chopard-banner.jpg')} alt="Chopard"/>
-            </div>
-          </Carousel>
+            <Carousel autoPlay interval={3000} transitionTime={1000} showThumbs={false} showStatus={false} showIndicators={false} dynamicHeight>
+              <div>
+                <img src={require('../img/projects/chopard-banner.jpg')} alt="Chopard"/>
+              </div>
+              <div>
+                <img src={require('../img/projects/eavest-banner.jpg')} alt="Eavest" />
+              </div>
+              <div>
+                <img src={require('../img/projects/banque-banner.jpg')} alt="La Banque Postale" />
+              </div>
+              <div>
+                <img src={require('../img/projects/sneakr-banner.jpg')} alt="Sneakr" />
+              </div>
+              <div>
+                <img src={require('../img/projects/adaweek-banner.jpg')} alt="Adaweek" />
+              </div>
+              <div>
+                <img src={require('../img/projects/katalina-banner.jpg')} alt="Katalina Nadasi" />
+              </div>
+              <div>
+                <img src={require('../img/projects/chopard-banner.jpg')} alt="Chopard"/>
+              </div>
+            </Carousel>
         <BrandContainer>
           <BrandText>
             <div
