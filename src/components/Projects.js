@@ -106,16 +106,16 @@ export default class Projects extends Component {
           </ScrollContainer>
           <Carousel autoPlay interval={3000} transitionTime={1000} showThumbs={false} showStatus={false} showIndicators={false}>
             <div>
-              <img height="650" src={require('../img/projects/chopard-banner.jpg')} alt="Chopard"/>
+              <img src={require('../img/projects/chopard-banner.jpg')} alt="Chopard"/>
             </div>
             <div>
-              <img height="650" src={require('../img/projects/eavest-banner.jpg')} alt="Eavest" />
+              <img src={require('../img/projects/eavest-banner.jpg')} alt="Eavest" />
             </div>
             <div>
-              <img height="650" src={require('../img/projects/banque-banner.jpg')} alt="La Banque Postale" />
+              <img src={require('../img/projects/banque-banner.jpg')} alt="La Banque Postale" />
             </div>
             <div>
-              <img height="650" src={require('../img/projects/sneakr-banner.jpg')} alt="Sneakr" />
+              <img src={require('../img/projects/sneakr-banner.jpg')} alt="Sneakr" />
             </div>
             <div>
               <img height="650" src={require('../img/projects/adaweek-banner.jpg')} alt="Adaweek" />

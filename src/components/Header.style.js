@@ -17,17 +17,15 @@ export const CircleTop = styled.div`
 	background: ${pink};
 	border-radius: 1399px 1399px 0 0;
 
-	@media (max-width: 376px) {
-		margin-top: 365px;
-	}
 	@media (max-width: 450px) {
 		border-radius: 300px 300px 0 0;
     height: 250px;
-		margin-top: 365px;
+		margin-top: 717px;
 	}
 	@media (min-width: 450px) and (max-width: 768px) {
 		border-radius: 500px 500px 0 0;
     height: 370px;
+		margin-top: 717px;
 	}
 	@media (min-width: 768px) and (max-width: 992px) {
 		border-radius: 650px 650px 0 0;
