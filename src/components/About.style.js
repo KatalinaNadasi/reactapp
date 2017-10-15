@@ -48,6 +48,15 @@ export const ScrollDown = styled.div`
   background-color: ${blue};
   transform: rotate(45deg);
   margin: 0 auto;
+
+  @media (max-width: 376px) {
+    width: 50px;
+    height: 50px;
+  }
+  @media (min-width: 376px) and (max-width: 768px){
+    width: 60px;
+    height: 60px;
+  }
 `
 
 export function BottomArrow(props){

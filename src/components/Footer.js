@@ -10,6 +10,7 @@ export const Wrapper = styled.div `
   border: 8px solid ${darkcreme};
   text-align: center;
   padding: 25px 0;
+  display: block;
 `
 
 export const Contact = styled.div `

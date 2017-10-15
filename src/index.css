@@ -125,7 +125,7 @@ svg#title {
 }
 
 svg#bottom-arrow {
-    transform: translate(-17px, -12px);
+  transform: translate(-17px, -12px);
 }
 
 .btn-style {
@@ -192,6 +192,11 @@ g#linked:hover, g#contact:hover, g#github:hover {
 /***********
 MEDIA QUERIES
 ************/
+@media(max-width: 376px) {
+  svg#bottom-arrow {
+    transform: translate(-6px, -3px);
+  }
+}
 
 @media screen and (max-width: 500px) {
   #menu {
@@ -253,6 +258,12 @@ MEDIA QUERIES
     width: 120px;
     font-size: 10px;
     margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  svg#bottom-arrow {
+    transform: translate(-10px, -2px);
   }
 }
 

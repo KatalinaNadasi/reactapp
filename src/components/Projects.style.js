@@ -20,7 +20,7 @@ export const Background = styled.div `
   text-align: center;
   line-height: 563px;
   height: 91vh;
-  margin-top: 52px;
+  margin-top: 70px;
 
   @media (max-width: 368px) {
 		height: 77vh;
@@ -34,8 +34,11 @@ export const ScrollContainer = styled.div `
   position: absolute;
   top: 691px;
 
-  @media (max-width: 368px) {
-    top: 579px;
+  @media (max-width: 376px) {
+    top: 593px;
+  }
+  @media (min-width: 376px) and (max-width: 768px) {
+    top: 701px;
   }
 `
 
@@ -65,11 +68,28 @@ export const BrandText = styled.div `
   text-align: center;
   float: left;
 
+  &:last-child {
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 733px) {
+    width: 100%;
+  }
+
   div {
     padding: 80px;
     border: 3px solid #E3DAC9;
     background-color: #000059;
     color: white;
+
+
+    @media (max-width: 376px){
+      padding: 40px;
+    }
+    @media (min-width: 376px) and (max-width: 768px){
+      padding: 60px;
+    }
+
 
     &:hover {
       background-color: #FF3E5F;
@@ -80,9 +100,25 @@ export const BrandText = styled.div `
 
   h2 {
     font-size: 2rem;
+
+    @media (max-width: 376px){
+      font-size: 1.3rem;
+    }
+    @media (min-width : 376px) and (max-width: 768px){
+      font-size: 1.7rem;
+    }
   }
   p {
     font-size: 1.3rem;
+
+    @media (max-width: 376px){
+      font-size: 0.9rem;
+      margin-top: 10px;
+    }
+    @media (min-width : 376px) and (max-width: 768px){
+      margin-top: 10px;
+      font-size: 1rem;
+    }
   }
 
   }
@@ -99,7 +135,7 @@ export const Right = Left.extend `
 import Eavest from '../img/projects/eavest-modal.gif';
 
 export const BrandContainer = styled.div `
-  height: 111vh;
+  height: auto;
   z-index: -1;
 `
 
