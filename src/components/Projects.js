@@ -153,9 +153,11 @@ export default class Projects extends Component {
                 style={{'float': 'right', 'border': 'none', 'backgroundColor': 'transparent'}}>
                 <Close/>
               </button>
+              <Brand>Eavest
+                <h1>Recast of all the previous website made on Wordpress.</h1>
+              </Brand>
                 <Img eavest/>
                 <TextWrap>
-                  <Brand>Eavest</Brand><h1>Recast of all the previous website made on Wordpress.</h1>
                     <Vignet>
                       <h2>HTML / CSS</h2>
                       <h2>Javascript</h2>
@@ -172,7 +174,7 @@ export default class Projects extends Component {
                       <h2>Paris</h2>
                     </Vignet>
                     <div className="clear"></div>
-                      <Detail>I charge of all the Front of the project. All Front development in a lean environment.
+                      <Detail>In charge of all the Front of the project. All Front development in a lean environment.
                           Working directly with the person in charge of the back-end part (Java). Source of proposal for animations and tools choices. Launch of the website planned in 2018.
                       </Detail>
                     </TextWrap>

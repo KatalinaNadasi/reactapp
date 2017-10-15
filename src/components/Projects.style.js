@@ -110,13 +110,12 @@ export const BrandText = styled.div `
   }
   p {
     font-size: 1.3rem;
+    margin-top: 10px;
 
     @media (max-width: 376px){
       font-size: 0.9rem;
-      margin-top: 10px;
     }
     @media (min-width : 376px) and (max-width: 768px){
-      margin-top: 10px;
       font-size: 1rem;
     }
   }
@@ -140,14 +139,31 @@ export const BrandContainer = styled.div `
 `
 
 export const Img = styled.div `
-  width: 49%;
+  width: 50%;
   float: left;
-  height: 65vh;
+  height: 35vh;
   background-image: ${(props) => props.eavest ? `url(${Eavest})` : 'grey' };
   background-repeat: no-repeat;
   background-size: cover;
   background-color: grey;
-  margin-top: 45px;
+  margin-top: 145px;
+
+  @media(max-width: 368px){
+    height: 12vh;
+  }
+  @media (min-width: 368px) and (max-width: 768px){
+    width: 97%;
+    margin-top: 0px;
+  }
+  @media (min-width: 768px) and (max-width: 970px) {
+    width: 80%;
+    margin-top: 0px;
+    height: 30vh;
+    margin: 0 0 0 60px;
+  }
+  @media (min-width: 970px) and (max-width: 992px) {
+    height: 32vh;
+  }
 `
 
 export const ImgChop = Img.extend `
@@ -191,14 +207,20 @@ export const ImgKat = Img.extend `
 `
 
 export const TextWrap = styled.div `
-  width: 49%;
+  width: 45%;
   float: left;
+  margin: 65px 15px 0 10px;
 
-  h1 {
-    font-size: 1.7rem;
-    margin: 20px 20px 0 0;
-    float: left;
+  @media (max-width: 768px) {
+    width: 92%;
+    margin: 10px;
+}
   }
+  @media (min-width: 768px) and (max-width: 970px) {
+    width: 90%;
+    margin: 30px 0 0 60px;
+  }
+
 `
 
 export const TextWrapChop = TextWrap.extend `
@@ -222,17 +244,38 @@ export const TextWrapSneakr = TextWrapAda.extend `
 export const Vignet = styled.div `
   width: 26%;
   float: left;
-  margin: 30px 40px 0 0;
+  margin: 30px 25px 0 0;
+
+  @media (max-width: 368px){
+    width: 28%;
+    margin: 30px 10px 0 0px;
+  }
+  @media (min-width: 368px) and (max-width: 460px){
+    width: 20%;
+  }
+  @media(min-width: 460px) and (max-width: 670px){
+    width: 25%;
+  }
+  @media(min-width: 670px) and (max-width: 768px){
+    width: 28%;
+  }
 
   h2 {
     border-top: 2px solid ${orange};
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: left;
     padding: 5px;
 
     &:last-child {
       border-bottom: 2px solid ${orange};
+    }
+
+    @media (max-width: 460px){
+      font-size: 0.7rem;
+    }
+    @media (min-width: 460px) and (max-width: 768px){
+      font-size: 1rem;
     }
   }
 `
@@ -244,11 +287,29 @@ export const VignetLarge = Vignet.extend `
 export const Brand = styled.h3 `
   color: ${pink};
   font-size: 2rem;
+  text-align: -webkit-center;
+  margin-top: 15px;
+
+    h1 {
+      font-size: 1.5rem;
+      margin: 15px 20px 0 0;
+      color: black;
+
+      @media(max-width: 768px){
+        font-size: 1rem;
+      }
+    }
+
 `
 
 export const Detail = styled.p `
-  font-size: 1.5rem;
-  text-align: -webkit-left;
+  font-size: 1.3rem;
+  text-align: justify;
   margin-top: 35px;
   line-height: 25px;
+
+  @media(max-width: 768px){
+    font-size: 1rem;
+    line-height: 20px
+  }
 `
