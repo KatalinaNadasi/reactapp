@@ -1,13 +1,12 @@
 import React, {Component} from 'react';
 import Wrapper from './Wrapper';
-import {Close, Background, ScrollContainer, Title, BrandContainer, BrandText, Img, ImgChop, ImgAda, ImgLBP, ImgSneakr, ImgKat, TextWrap, TextWrapChop, TextWrapAda, TextWrapLBP, TextWrapSneakr, Vignet, VignetLarge, Brand, Detail} from './Projects.style';
+import {Close, Background, ScrollContainer, ScrollDownContainer, Title, BrandContainer, BrandText, Img, ImgChop, ImgAda, ImgLBP, ImgSneakr, ImgKat, TextWrap, TextWrapChop, TextWrapAda, TextWrapLBP, TextWrapSneakr, Vignet, VignetLarge, Brand, Detail} from './Projects.style';
 import {ScrollDown, SvgContainer, ArrowAnimation, BottomArrow} from './About.style';
 import { Carousel } from 'react-responsive-carousel';
 import '../style/carousel.css';
 import ReactModal from 'react-modal';
 import '../index.css';
 import Footer from './Footer';
-
 
 ReactModal.defaultStyles.overlay.zIndex = '1000';
 ReactModal.defaultStyles.overlay.position = 'fixed';
@@ -97,13 +96,13 @@ export default class Projects extends Component {
           <Title>Projects</Title>
         </Background>
         <ScrollContainer>
-          <ScrollDown>
+          <ScrollDownContainer>
             <SvgContainer>
               <ArrowAnimation>
                 <BottomArrow />
               </ArrowAnimation>
             </SvgContainer>
-          </ScrollDown>
+          </ScrollDownContainer>
           </ScrollContainer>
           <Carousel autoPlay interval={3000} transitionTime={1000} showThumbs={false} showStatus={false} showIndicators={false}>
             <div>
@@ -119,10 +118,10 @@ export default class Projects extends Component {
               <img height="650" src={require('../img/projects/sneakr-banner.jpg')} alt="Sneakr" />
             </div>
             <div>
-              <img height="650" src={require('../img/projects/adaweek.jpg')} alt="Adaweek" />
+              <img height="650" src={require('../img/projects/adaweek-banner.jpg')} alt="Adaweek" />
             </div>
             <div>
-              <img height="650" src={require('../img/projects/katalina.jpg')} alt="Katalina Nadasi" />
+              <img height="650" src={require('../img/projects/katalina-banner.jpg')} alt="Katalina Nadasi" />
             </div>
             <div>
               <img height="650" src={require('../img/projects/chopard-banner.jpg')} alt="Chopard"/>

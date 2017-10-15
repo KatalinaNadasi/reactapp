@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import {darkcreme, orange, pink} from  '../variables';
+import {ScrollDown} from './About.style';
+
 
 
 export function Close(props){
@@ -14,11 +16,11 @@ export function Close(props){
 };
 
 export const Background = styled.div `
-  background-color: black;
+  background-color: #F3F3ED;
   text-align: center;
   line-height: 563px;
-  height: 100vh;
-  border: 10px solid ${darkcreme};
+  height: 91vh;
+  margin-top: 52px;
 `
 
 export const ScrollContainer = styled.div `
@@ -26,12 +28,16 @@ export const ScrollContainer = styled.div `
   text-align: center;
   z-index: 10;
   position: absolute;
-  top: 544px;
+  top: 491px;
 `
+
+export const ScrollDownContainer = ScrollDown.extend `
+  box-shadow: 8px 8px 12px #555; 
+`
+
 
 export const Title = styled.h1 `
   font-size: 11rem;
-  padding-top: 70px;
   background: -webkit-linear-gradient( left, #FFDC80 0%, #FCAF45 30%, #F56040 40%, #E71D36 50%, #280C7C 90%) repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -110,14 +116,14 @@ export const ImgAda = Img.extend `
 `
 
 export const ImgLBP = Img.extend `
-  background-image: url('${require('../img/projects/banque-detail.png')}');
+  background-image: url('${require('../img/projects/banque-modal.png')}');
   height: 63vh;
   width: 31%;
   margin: 25px 30px;
 `
 
 export const ImgSneakr = Img.extend `
-  background-image: url('${require('../img/projects/sneakr-detail.png')}');
+  background-image: url('${require('../img/projects/sneakr-modal.png')}');
   width: 30%;
   float: left;
   height: 78vh;
@@ -125,7 +131,7 @@ export const ImgSneakr = Img.extend `
 `
 
 export const ImgKat = Img.extend `
-  background-image: url('${require('../img/projects/katalina-detail.jpg')}');
+  background-image: url('${require('../img/projects/katalina-modal.jpg')}');
   width: 32%;
   height: 82vh;
   margin-right: 50px;
