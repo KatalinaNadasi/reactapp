@@ -240,12 +240,36 @@ export const ImgLBP = ImgAda.extend `
   margin: 25px 30px;
 `
 
-export const ImgSneakr = Img.extend `
+export const ImgSneakr = styled.div `
   background-image: url('${require('../img/projects/sneakr-modal.png')}');
-  width: 30%;
+  width: 40%;
   float: left;
-  height: 78vh;
-  margin: 0;
+  height: 61vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: grey;
+
+  @media (max-width: 500px) {
+    width: 92%;
+    height: 33vh;
+    margin: 0;
+    float: none;
+  }
+  @media (min-width: 500px) and (max-width: 768px) {
+    width: 62%;
+    height: 33vh;
+    margin: 0 auto;
+    float: none;
+  }
+  @media (min-width: 768px) and (max-width: 970px) {
+    height: 34vh;
+    margin: 0 auto;
+    float: none;
+    width: 41%;
+  }
+  @media (min-width: 970px) and (max-width: 992px) {
+    height: 46vh;
+  }
 `
 
 export const ImgKat = Img.extend `

@@ -268,7 +268,7 @@ export default class Projects extends Component {
                 <Close/>
               </button>
               <Brand>La Banque Postale
-                <h1>Development of a 6 pages play mini-website for <br/> La Banque Postale.</h1>
+                <h1>Development of a 6 pages play mini-website for <br/> La Banque Postale</h1>
               </Brand>
                 <ImgLBP/>
                 <TextWrapLBP>
@@ -296,9 +296,11 @@ export default class Projects extends Component {
                   style={{'float': 'right', 'border': 'none', 'backgroundColor': 'transparent'}}>
                   <Close/>
                 </button>
+                <Brand>Sneakr
+                  <h1>Development of a Beta version of a website with a search engine</h1>
+                </Brand>
                   <ImgSneakr/>
                   <TextWrapSneakr>
-                    <Brand>Sneakr</Brand><h1>Development of a Beta version of a website with a search engine.</h1>
                       <VignetLarge>
                         <h2>HTML / CSS</h2>
                         <h2>Javascript</h2>
