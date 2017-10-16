@@ -326,9 +326,11 @@ export default class Projects extends Component {
                     style={{'float': 'right', 'border': 'none', 'backgroundColor': 'transparent'}}>
                     <Close/>
                   </button>
+                  <Brand>Personal website
+                    <h1>Design and development of a website from scratch</h1>
+                  </Brand>
                     <ImgKat/>
                     <TextWrapLBP>
-                      <Brand>Personal website</Brand><h1>Design and development of a website from scratch.</h1>
                         <Vignet>
                           <h2>HTML / CSS</h2>
                           <h2>Javascript</h2>

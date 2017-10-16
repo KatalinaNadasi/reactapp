@@ -272,13 +272,38 @@ export const ImgSneakr = styled.div `
   }
 `
 
-export const ImgKat = Img.extend `
+export const ImgKat = styled.div `
   background-image: url('${require('../img/projects/katalina-modal.jpg')}');
-  width: 32%;
-  height: 82vh;
-  margin-right: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: grey;
+  width: 31%;
+  height: 59vh;
+  margin-right: 30px;
   margin-top: 0;
-  transform: translateY(-13px);
+  float: left;
+
+  @media (max-width: 500px) {
+    width: 92%;
+    height: 33vh;
+    margin: 0;
+    float: none;
+  }
+  @media (min-width: 500px) and (max-width: 768px) {
+    width: 62%;
+    height: 33vh;
+    margin: 0 auto;
+    float: none;
+  }
+  @media (min-width: 768px) and (max-width: 970px) {
+    height: 34vh;
+    margin: 0 auto;
+    float: none;
+    width: 41%;
+  }
+  @media (min-width: 970px) and (max-width: 992px) {
+    height: 46vh;
+  }
 `
 
 export const TextWrap = styled.div `
