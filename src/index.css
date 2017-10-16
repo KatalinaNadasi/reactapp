@@ -189,6 +189,11 @@ g#linked:hover, g#contact:hover, g#github:hover {
   stroke: #FF3D68;
 }
 
+button.contact-btn {
+    background-color: transparent;
+    border: none;
+}
+
 /***********
 MEDIA QUERIES
 ************/
