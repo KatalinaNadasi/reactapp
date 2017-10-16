@@ -194,17 +194,44 @@ export const ImgChop = styled.div `
     height: 53vh;
     margin: 0 auto;
     transform: translateY(0px);
+    float: none;
   }
   @media (min-width: 970px) and (max-width: 1170px) {
     height: 55vh;
   }
 `
 
-export const ImgAda = Img.extend `
+export const ImgAda = styled.div `
+  float: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: grey;
   background-image: url('${require('../img/projects/adaweek-modal.jpg')}');
-  width: 28%;
-  height: 65vh;
-  margin: 25px 30px;
+  width: 38%;
+  height: 46vh;
+  margin: 0px 30px;
+
+  @media (max-width: 500px) {
+    width: 92%;
+    height: 33vh;
+    margin: 0;
+    float: none;
+  }
+  @media (min-width: 500px) and (max-width: 768px) {
+    width: 62%;
+    height: 33vh;
+    margin: 0 auto;
+    float: none;
+  }
+  @media (min-width: 768px) and (max-width: 970px) {
+    height: 34vh;
+    margin: 0 auto;
+    float: none;
+    width: 41%;
+  }
+  @media (min-width: 970px) and (max-width: 992px) {
+    height: 46vh;
+  }
 `
 
 export const ImgLBP = Img.extend `
@@ -240,7 +267,7 @@ export const TextWrap = styled.div `
     width: 92%;
     margin: 10px;
   }
-  }
+
   @media (min-width: 768px) and (max-width: 970px) {
     width: 90%;
     margin: 30px 0 0 60px;
@@ -266,8 +293,12 @@ export const TextWrapChop = TextWrap.extend `
 `
 
 export const TextWrapAda = TextWrap.extend `
-  width: 66%;
-  margin-top: 50px;
+  margin: 65px 10px 0 10px;
+  width: 52%;
+
+  @media (min-width: 768px) and (max-width: 970px) {
+    margin: 0px 0 0 60px;
+  }
 `
 
 export const TextWrapLBP = TextWrap.extend `

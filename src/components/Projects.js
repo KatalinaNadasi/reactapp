@@ -216,11 +216,11 @@ export default class Projects extends Component {
                     style={{'float': 'right', 'border': 'none', 'backgroundColor': 'transparent'}}>
                     <Close/>
                   </button>
+                  <Brand>Adaweek<h1>Design and development of all the website for the event in 2016.</h1></Brand>
                     <a href="http://adaweek.fr/" target="_blank">
                       <ImgAda style={{height: this.state.height}}/>
                     </a>
                     <TextWrapAda>
-                      <Brand>Adaweek</Brand><h1>Design and development of all the website for the event in 2016.</h1>
                         <Vignet>
                           <h2>HTML / CSS</h2>
                           <h2>Javascript</h2>
