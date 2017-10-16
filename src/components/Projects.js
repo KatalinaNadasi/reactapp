@@ -267,9 +267,11 @@ export default class Projects extends Component {
                 style={{'float': 'right', 'border': 'none', 'backgroundColor': 'transparent'}}>
                 <Close/>
               </button>
+              <Brand>La Banque Postale
+                <h1>Development of a 6 pages play mini-website for <br/> La Banque Postale.</h1>
+              </Brand>
                 <ImgLBP/>
                 <TextWrapLBP>
-                  <Brand>La Banque Postale</Brand><h1>Development of a 6 pages play mini-website for <br/> La Banque Postale.</h1>
                     <VignetLarge>
                       <h2>HTML / CSS</h2>
                       <h2>Javascript</h2>

@@ -82,7 +82,6 @@ export const BrandText = styled.div `
     background-color: #000059;
     color: white;
 
-
     @media (max-width: 376px){
       padding: 40px;
     }
@@ -234,9 +233,9 @@ export const ImgAda = styled.div `
   }
 `
 
-export const ImgLBP = Img.extend `
+export const ImgLBP = ImgAda.extend `
   background-image: url('${require('../img/projects/banque-modal.png')}');
-  height: 63vh;
+  height: 41vh;
   width: 31%;
   margin: 25px 30px;
 `
@@ -302,8 +301,8 @@ export const TextWrapAda = TextWrap.extend `
 `
 
 export const TextWrapLBP = TextWrap.extend `
-  width: 60%;
-  margin: 33px 0 0 10px;
+  width: 55%;
+  margin: 33px 30px 0 10px;
 `
 
 export const TextWrapSneakr = TextWrapAda.extend `
