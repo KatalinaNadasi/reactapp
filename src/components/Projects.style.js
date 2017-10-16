@@ -18,9 +18,9 @@ export function Close(props){
 export const Background = styled.div `
   background-color: #F3F3ED;
   text-align: center;
-  line-height: 563px;
-  height: 91vh;
-  margin-top: 70px;
+  line-height: initial;
+  height: 71vh;
+  margin-top: 250px;
 
   @media (max-width: 368px) {
 		height: 77vh;
@@ -32,13 +32,13 @@ export const ScrollContainer = styled.div `
   text-align: center;
   z-index: 10;
   position: absolute;
-  top: 691px;
+  top: 530px;
 
   @media (max-width: 376px) {
-    top: 593px;
+    top: 546px;
   }
   @media (min-width: 376px) and (max-width: 768px) {
-    top: 701px;
+    top: 540px;
   }
 `
 
