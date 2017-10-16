@@ -188,9 +188,9 @@ export default class Projects extends Component {
                   style={{'float': 'right', 'border': 'none', 'backgroundColor': 'transparent'}}>
                   <Close/>
                 </button>
+                <Brand>Chopard<h1>Mini-website for the 'Happy Diamons' collection launched in the UK</h1></Brand>
                   <ImgChop/>
                   <TextWrapChop>
-                    <Brand>Chopard</Brand><h1>Mini-website for the 'Happy Diamons' collection launch in the UK</h1>
                       <VignetLarge>
                         <h2>HTML / CSS</h2>
                         <h2>Javascript</h2>

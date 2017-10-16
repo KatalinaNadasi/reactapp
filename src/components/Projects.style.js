@@ -146,7 +146,7 @@ export const Img = styled.div `
   background-repeat: no-repeat;
   background-size: cover;
   background-color: grey;
-  margin-top: 145px;
+  margin-top: 80px;
 
   @media(max-width: 368px){
     height: 12vh;
@@ -166,13 +166,38 @@ export const Img = styled.div `
   }
 `
 
-export const ImgChop = Img.extend `
-  width: 40%;
-  height: 80vh;
-  margin: 0px 30px 0 0;
+export const ImgChop = styled.div `
+  width: 42%;
+  height: 70vh;
+  float: left;
   background-image: url('${require('../img/projects/chopard-modal.png')}');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: grey;
+  margin: 0px 30px 0 0;
   transform: translateY(-10px);
   border: 5px solid #F3F3ED;
+
+  @media (max-width: 376px) {
+    width: 92%;
+    height: 33vh;
+    margin: 0;
+    float: none;
+  }
+  @media (min-width: 376px) and (max-width: 768px) {
+    width: 62%;
+    height: 33vh;
+    margin: 0 auto;
+    float: none;
+  }
+  @media (min-width: 768px) and (max-width: 992px) {
+    height: 53vh;
+    margin: 0 auto;
+    transform: translateY(0px);
+  }
+  @media (min-width: 970px) and (max-width: 1170px) {
+    height: 55vh;
+  }
 `
 
 export const ImgAda = Img.extend `
@@ -214,7 +239,7 @@ export const TextWrap = styled.div `
   @media (max-width: 768px) {
     width: 92%;
     margin: 10px;
-}
+  }
   }
   @media (min-width: 768px) and (max-width: 970px) {
     width: 90%;
@@ -225,6 +250,19 @@ export const TextWrap = styled.div `
 
 export const TextWrapChop = TextWrap.extend `
   margin-top: 40px;
+
+  @media(max-width: 376px){
+    width: 94%;
+    margin: 0;
+  }
+  @media (min-width: 376px) and (max-width: 768px) {
+    width: 92%;
+    margin: 0 10px 0 30px;
+  }
+  @media (min-width: 768px) and (max-width: 970px) {
+    width: 46%;
+    margin: 30px 0 0 40px;
+  }
 `
 
 export const TextWrapAda = TextWrap.extend `
@@ -282,6 +320,11 @@ export const Vignet = styled.div `
 
 export const VignetLarge = Vignet.extend `
   width: 40%;
+
+  @media (max-width: 768px){
+    width: 34%;
+    margin: 30px 10px 0 10px;
+  }
 `
 
 export const Brand = styled.h3 `
@@ -292,7 +335,7 @@ export const Brand = styled.h3 `
 
     h1 {
       font-size: 1.5rem;
-      margin: 15px 20px 0 0;
+      margin: 15px 20px 35px 0;
       color: black;
 
       @media(max-width: 768px){
