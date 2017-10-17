@@ -217,22 +217,41 @@ export const LongCol = styled.div`
   }
 `
 
-export const Img = LongCol.extend`
-  height: 300px;
+export const Img = styled.div`
+  height: 250px;
   padding: 0;
   overflow: hidden;
   cursor: pointer;
+  border: 5px solid ${darkcreme};
+  float: ${props => props.left ? 'left' : 'right'};
+  width: 65%;
+  background-color: ${darkcreme};
+
+  img {
+    transition: 0.5s all ease;
+    width: 100%;
+
+    @media (min-width: 1200px){
+      width: 100%;
+      height: 257px;
+    }
+  }
 
   &:hover{
     & > img {
       transform: scale(1.1);
     }
   }
+
+  @media (min-width: 768px) and (max-width: 992px){
+    width: 64%;
+    height: 200px;
+  }
 `
 
 export const ShortCol = styled.div`
   font-size: 1.8rem;
-  height: ${props => props.tall ? '550px' : '250px'};
+  height: ${props => props.tall ? '500px' : '250px'};
   border: 5px solid ${darkcreme};
   padding: ${props => props.padding ? '15px' : '10px'};
   background-color: ${props => props.pink ? '#FF3D68' : '#008080'};
@@ -249,11 +268,11 @@ export const ShortCol = styled.div`
   @media (min-width: 376px) and (max-width: 768px){
     font-size: 1.5rem;
     width: 100%;
-    height: auto;
     float: none;
   }
   @media (min-width: 768px) and (max-width: 1140px){
     font-size: 1.7rem;
+    height: 450px;
   }
 `
 
@@ -262,6 +281,8 @@ export const PaddingCol = styled.div`
 
   @media (min-width: 768px) and (max-width: 992px){
     padding: 10px 5px;
+    font-size: 1.4rem;
+    line-height: 25px;
   }
 `
 

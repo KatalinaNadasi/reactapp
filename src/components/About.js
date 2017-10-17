@@ -40,7 +40,7 @@ export default class About extends Component {
                   </LongCol>
                   <ShortCol right pink tall padding>
                     <Letters creme>The story behind</Letters>
-                    <PaddingCol>I've met Jean Guo in a hackaton about refugees where we developped the'Linkedin for refugees'. Wait...hey! Grazia talk about us <a href="https://www.grazia.fr/news-et-societe/news/textfugees-refugenius-la-technologie-au-service-des-migrants-809301" target="_blank">there</a>.</PaddingCol>
+                    <PaddingCol>I've met Jean Guo in a hackaton about refugees where we developped the'Linkedin for refugees'. <br/> Wait...hey! Grazia talk about us <a href="https://www.grazia.fr/news-et-societe/news/textfugees-refugenius-la-technologie-au-service-des-migrants-809301" target="_blank">there</a>.</PaddingCol>
                   </ShortCol>
                   <Img>
                     <img src={require('../img/about/konexio.jpg')} alt="team"/>
