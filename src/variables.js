@@ -13,4 +13,11 @@ export const lightpink = '#FF3D68';
 
 export const Retro = styled.h1`
    font-family: 'Abril Fatface', cursive;
+
+   @media (max-width : 376px){
+     font-size: 1.5rem;
+   }
+   @media (min-width : 376px) and (max-width: 768px){
+     font-size: 1.8rem;
+   }
 `

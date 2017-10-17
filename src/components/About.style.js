@@ -46,11 +46,11 @@ export const AboutTitle = CircleTitle.extend`
   left: -193px;
   color: crimson;
 
-  @media (max-width: 368px){
+  @media (max-width: 376px){
     font-size: 3rem;
     padding: 100px 0 0 267px;
   }
-  @media (min-width: 368px) and (max-width: 768px){
+  @media (min-width: 376px) and (max-width: 768px){
     font-size: 4rem;
     padding: 100px 0 0 267px;
   }
@@ -69,10 +69,10 @@ export const ScrollPosition = styled.div`
   bottom: 150px;
   transform: translateY(-25px);
 
-  @media (max-width: 368px){
+  @media (max-width: 376px){
     bottom: 66px;
   }
-  @media (min-width: 368px) and (max-width: 768px){
+  @media (min-width: 376px) and (max-width: 768px){
     bottom: 111px;
   }
 
@@ -130,10 +130,10 @@ export const BlueBgd = styled.div`
   margin-top: -8px;
   transform: translateY(-16px);
 
-  @media (max-width: 368px){
+  @media (max-width: 376px){
     height: 100px;
   }
-  @media (min-width: 368px) and (max-width: 768px){
+  @media (min-width: 376px) and (max-width: 768px){
     height: 150px;
   }
 `
@@ -189,18 +189,34 @@ export const ProjectsContainer = styled.div`
   padding : 0 70px;
   background-color: white;
 
-  @media (max-width: 368px) {
+  @media (max-width: 768px) {
     padding: 0;
   }
 `
 
-export const Line = styled.div`
+export const Col = styled.div`
+  width: 100%;
+  height: 450px;
+
+  @media (max-width: 376px) {
+    height: 595px;
+  }
+  @media (min-width: 376px) and (max-width: 732px) {
+    height: 717px;
+    padding-bottom: 300px;
+  }
+  @media (min-width: 732px) and (max-width: 768px){
+    height: 691px;
+    padding-bottom: 300px;
+  }
+`
+
+export const Col2 = styled.div`
   width: 100%;
   height: 450px;
 
   @media (max-width: 732px) {
-    height: 717px;
-    padding-bottom: 300px;
+    height: 1200px;
   }
   @media (min-width: 732px) and (max-width: 768px){
     height: 691px;
@@ -218,10 +234,16 @@ export const LongCol = styled.div`
   width: 65%;
   padding: 15px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 376px) {
     width: 100%;
-    height: auto;
     float: none;
+    height: 300px;
+  }
+  @media (min-width: 376px) and (max-width: 768px) {
+    width: 100%;
+    height: 350px;
+    float: none;
+    height: 300px;
   }
 `
 
@@ -239,6 +261,7 @@ export const Img = styled.div`
     transition: 0.5s all ease;
     width: 100%;
 
+
     @media (min-width: 768px) and (max-width: 992px){
       width: 100%;
       height: 190px;
@@ -254,12 +277,22 @@ export const Img = styled.div`
       transform: scale(1.1);
     }
   }
+
+  @media (max-width: 376px) {
+    width: 100%;
+    height: 112px;
+  }
   @media (min-width: 376px) and (max-width: 768px){
     width: 100%;
-    height: 200px;
+    height: 135px;
   }
-  @media (min-width: 768px) and (max-width: 1150px){
-    height: 200px;
+  @media (min-width: 768px) and (max-width: 992px){
+    width: 100%;
+    height: 190px;
+  }
+  @media (min-width: 1200px){
+    width: 100%;
+    height: 260px;
   }
 `
 
@@ -276,7 +309,7 @@ export const ShortCol = styled.div`
   @media (max-width: 376px){
     font-size: 1rem;
     width: 100%;
-    height: auto;
+    height: 220px;
     float: none;
   }
   @media (min-width: 376px) and (max-width: 768px){
@@ -299,9 +332,18 @@ export const ShortColVid = styled.div `
   width: 35%;
   float: left;
 
-  @media (max-width: 768px){
+  @media (max-width: 376px) {
+    height: 160px;
     width: 100%;
-    height: 300px;
+
+    & > iframe {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  @media (min-width: 376px) and (max-width: 768px){
+    width: 100%;
+    height: 160px;
 
     & > iframe {
       display: block;
@@ -322,6 +364,9 @@ export const ShortColVid = styled.div `
 export const PaddingCol = styled.div`
   padding: 40px 30px;
 
+  @media (max-width: 768px){
+    padding: 0px 30px 20px 30px;
+  }
   @media (min-width: 768px) and (max-width: 1120px){
     padding: 10px 5px;
     font-size: 1.4rem;
@@ -339,7 +384,7 @@ export const Letters = styled.p`
 
   @media (max-width: 376px) {
     font-size: 1rem;
-    line-height: 25px;
+    line-height: 23px;
   }
   @media (min-width: 376px) and (max-width: 1140px){
     font-size: 1.2rem;

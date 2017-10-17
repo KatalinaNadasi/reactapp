@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {HeaderContainer, Container, BackgroundImage, ArrowAnimation, AboutTitle, ScrollPosition, BottomArrow, SvgContainer , ScrollDown, Line, BlueBgd, SectionTitle, SectionSpace, ProjectsContainer, Letters, Wrapper, LongCol, Img, ShortCol, ShortColVid, PaddingCol} from './About.style';
+import {HeaderContainer, Container, BackgroundImage, ArrowAnimation, AboutTitle, ScrollPosition, BottomArrow, SvgContainer , ScrollDown, Col, Col2, BlueBgd, SectionTitle, SectionSpace, ProjectsContainer, Letters, Wrapper, LongCol, Img, ShortCol, ShortColVid, PaddingCol} from './About.style';
 import '../index.css';
 import {Retro} from '../variables.js';
 import Footer from './Footer';
@@ -27,7 +27,9 @@ export default class About extends Component {
       this.setState({ width: 400, height: 250});
   } else if (window.innerWidth < 575 && window.innerWidth > 480) {
       this.setState({ width: 300, height: 250});
-  } else if (window.innerWidth < 480) {
+  } else if (window.innerWidth < 480 && window.innerWidth > 375) {
+      this.setState({ width: 325, height: 150});
+  }else if (window.innerWidth < 375) {
       this.setState({ width: 200, height: 150});
   }
 }
@@ -64,7 +66,7 @@ componentDidMount() {
             <h1>When I don't code I do that</h1>
           </SectionSpace>
             <ProjectsContainer>
-                <Line>
+                <Col>
                   <LongCol left>
                     <Retro><a href="http://konexio.eu/index-french.html">Konexio</a></Retro>
                     <Letters blue>I work with Konexio as a code teacher.<br/>The purpose of the Association is to help poeple start learning code or work in a tech environment.
@@ -77,14 +79,15 @@ componentDidMount() {
                   <Img>
                     <img src={require('../img/about/konexio.jpg')} alt="team"/>
                   </Img>
-                </Line>
-                <Line>
+                </Col>
+                <Col2>
                 <ShortColVid left blue small nopadding>
                   <iframe width={this.state.width} height={this.state.height} src="//www.ytcropper.com/embed/Oh59c944c800dfc/loop/noautoplay/" frameBorder="0" allowFullScreen></iframe>
                 </ShortColVid>
+                <div className="clear"></div>
                   <LongCol right>
                     <Retro>Pitch of sneakr.fr at The Family</Retro>
-                    <Letters blue>At the end of my training at <a href="https://www.switchup.org/locations/paris-coding-bootcamp" target="_blank">the best coding bootcamp in Europe</a> (Le Wagon, off course) we pitched our project developped in 2 weeks in front of professionals poeple.</Letters>
+                    <Letters blue>At the end of my training at <a href="https://www.switchup.org/locations/paris-coding-bootcamp" target="_blank">the socalled best coding bootcamp in Europe</a> (Le Wagon) :) we pitched our project developped in 2 weeks in front of professionals poeple.</Letters>
                   </LongCol>
                   <LongCol left>
                     <Retro><a href="https://www.lereacteur.io/" target="_blank">Le Reacteur</a></Retro>
@@ -92,9 +95,9 @@ componentDidMount() {
                   </LongCol>
                   <ShortCol right small>
                     <Letters creme>The story behind</Letters>
-                    <div style={{ paddingLeft: 30, paddingRight: 30 }}>We share with Xavier the same passion for vintage and retro.</div>
+                    <div style={{ paddingLeft: 30, paddingRight: 30 }}>We've met with Xavier around the same passion for vintage.</div>
                   </ShortCol>
-                </Line>
+                </Col2>
             </ProjectsContainer>
             <SectionSpace />
         </Container>
