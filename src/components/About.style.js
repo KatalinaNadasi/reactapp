@@ -188,14 +188,22 @@ export const SectionSpace = styled.div `
 export const ProjectsContainer = styled.div`
   padding : 0 70px;
   background-color: white;
+
+  @media (max-width: 368px) {
+    padding: 0;
+  }
 `
 
 export const Line = styled.div`
   width: 100%;
-  height: 550px;
+  height: 450px;
 
-  @media (max-width: 768px) {
-    height: auto;
+  @media (max-width: 732px) {
+    height: 717px;
+    padding-bottom: 300px;
+  }
+  @media (min-width: 732px) and (max-width: 768px){
+    height: 691px;
     padding-bottom: 300px;
   }
 `
@@ -231,9 +239,13 @@ export const Img = styled.div`
     transition: 0.5s all ease;
     width: 100%;
 
+    @media (min-width: 768px) and (max-width: 992px){
+      width: 100%;
+      height: 190px;
+    }
     @media (min-width: 1200px){
       width: 100%;
-      height: 257px;
+      height: 260px;
     }
   }
 
@@ -242,9 +254,11 @@ export const Img = styled.div`
       transform: scale(1.1);
     }
   }
-
-  @media (min-width: 768px) and (max-width: 992px){
-    width: 64%;
+  @media (min-width: 376px) and (max-width: 768px){
+    width: 100%;
+    height: 200px;
+  }
+  @media (min-width: 768px) and (max-width: 1150px){
     height: 200px;
   }
 `
@@ -269,17 +283,46 @@ export const ShortCol = styled.div`
     font-size: 1.5rem;
     width: 100%;
     float: none;
+    height: 300px;
   }
-  @media (min-width: 768px) and (max-width: 1140px){
+  @media (min-width: 768px) and (max-width: 1150px){
     font-size: 1.7rem;
     height: 450px;
+  }
+`
+
+export const ShortColVid = styled.div `
+  height: 250px;
+  border: 5px solid ${darkcreme};
+  padding: '15px';
+  background-color: ${blue};
+  width: 35%;
+  float: left;
+
+  @media (max-width: 768px){
+    width: 100%;
+    height: 300px;
+
+    & > iframe {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1150px){
+    width: 65%;
+    height: 300px;
+
+    & > iframe {
+      display: block;
+      margin: 0 auto;
+    }
   }
 `
 
 export const PaddingCol = styled.div`
   padding: 40px 30px;
 
-  @media (min-width: 768px) and (max-width: 992px){
+  @media (min-width: 768px) and (max-width: 1120px){
     padding: 10px 5px;
     font-size: 1.4rem;
     line-height: 25px;
