@@ -306,7 +306,7 @@ export const ImageContainer2 = styled.div`
 `;
 
 export const ImageContainer3 = styled.div`
-  width: 50%;
+  width: 45%;
   float: left;
   margin: -345px 0px 0 10px;
   transition: all 0.2s ease-in;
@@ -336,7 +336,7 @@ export const ImageContainer3 = styled.div`
 `;
 
 export const ImageContainer4 = styled.div`
-  width: 35%;
+  width: 28%;
   float: right;
   margin: 25px 76px 25px 0;
   transition: all 0.2s ease-in;
@@ -407,7 +407,7 @@ export const ImageContainer5 = styled.div`
 
 export const ImageContainer6 = styled.div`
   margin: -80px 37px 150px 71px;
-  width: 60%;
+  width: 55%;
   float: right;
   transition: all 0.2s ease-in;
   &:hover {

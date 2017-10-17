@@ -37,7 +37,6 @@ componentDidMount() {
  }
 
   render(){
-    // const { cx, cy, rx, ry, width, height} = this.state;
     return(
       <Wrapper>
         <Circle>

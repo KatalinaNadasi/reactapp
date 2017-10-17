@@ -82,7 +82,7 @@ export const CircleTop = styled.div`
  /* The typing effect */
  export const typing = keyframes`
    from { width: 0;}
-   to { width: 30%;}
+   to { width: 28%;}
  `
  /* The typewriter cursor effect */
  export const blinkCaret = keyframes`
