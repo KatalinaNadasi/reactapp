@@ -16,7 +16,7 @@ export const Container = styled.div`
   position: relative;
 `
 export const BackgroundImage = styled.div`
-  min-height: 102vh;
+  height: 102vh;
   background-image: url('${require('../img/moreabout.jpg')}');
   background-repeat: no-repeat;
   z-index: -99;
@@ -24,6 +24,20 @@ export const BackgroundImage = styled.div`
   width: 100%;
   padding: -20px;
   position: relative;
+
+  @media (max-width: 500px){
+    margin-top: 53px;
+    height: 30vh;
+  }
+  @media (min-width: 500px) and (max-width: 768px){
+    height: 45vh;
+  }
+  @media (min-width: 768px) and (max-width: 992px){
+    height: 70vh;
+  }
+  @media (min-width: 992px) and (max-width: 1110px){
+    height: 90vh;
+  }
 `
 export const AboutTitle = CircleTitle.extend`
   font-size: 7rem;
@@ -31,6 +45,19 @@ export const AboutTitle = CircleTitle.extend`
   top: -2vh;
   left: -193px;
   color: crimson;
+
+  @media (max-width: 368px){
+    font-size: 3rem;
+    padding: 100px 0 0 267px;
+  }
+  @media (min-width: 368px) and (max-width: 768px){
+    font-size: 4rem;
+    padding: 100px 0 0 267px;
+  }
+  @media (min-width: 768px) and (max-width: 992px){
+    font-size: 6rem;
+    padding: 100px 0 0 267px;
+  }
 }
 `
 
@@ -40,6 +67,15 @@ export const ScrollPosition = styled.div`
   z-index: 10;
   position: absolute;
   bottom: 150px;
+  transform: translateY(-25px);
+
+  @media (max-width: 368px){
+    bottom: 66px;
+  }
+  @media (min-width: 368px) and (max-width: 768px){
+    bottom: 111px;
+  }
+
 `
 
 export const ScrollDown = styled.div`
@@ -92,6 +128,14 @@ export const BlueBgd = styled.div`
   width: 100%;
   height: 200px;
   margin-top: -8px;
+  transform: translateY(-16px);
+
+  @media (max-width: 368px){
+    height: 100px;
+  }
+  @media (min-width: 368px) and (max-width: 768px){
+    height: 150px;
+  }
 `
 
 export const SectionTitle = styled.h1`
@@ -99,9 +143,22 @@ export const SectionTitle = styled.h1`
   text-align: center;
   font-size: 4rem;
   line-height: 3;
+
+  @media (max-width: 376px){
+    font-size: 2rem;
+    line-height: 3;
+  }
+  @media (min-width: 376px) and (max-width: 768px){
+    font-size: 3rem;
+    line-height: 3;
+  }
+  @media (min-width: 768px) and (max-width: 992px){
+    font-size: 5rem;
+    line-height: 2;
+  }
 `
 
-export const SectionSpace = BlueBgd.extend `
+export const SectionSpace = styled.div `
   background-color: white;
   color: ${lightpink};
   width: 100%;
@@ -113,6 +170,19 @@ export const SectionSpace = BlueBgd.extend `
   font-weight: bold;
   letter-spacing: 1px;
   line-height: 90px;
+
+  @media (max-width: 376px) {
+    height: 100px;
+    padding: 40px 10px;
+    font-size: 1rem;
+    line-height: 25px;
+  }
+  @media (min-width: 376px) and (max-width: 1140px){
+    line-height: 35px;
+    font-size: 1.5rem;
+    padding: 60px 30px;
+    height: 150px;
+  }
 `
 
 export const ProjectsContainer = styled.div`
@@ -120,14 +190,14 @@ export const ProjectsContainer = styled.div`
   background-color: white;
 `
 
-export const Wrapper = styled.div `
-  width: 100%;
-  height: 500px;
-`
-
 export const Line = styled.div`
   width: 100%;
   height: 550px;
+
+  @media (max-width: 768px) {
+    height: auto;
+    padding-bottom: 300px;
+  }
 `
 
 export const LongCol = styled.div`
@@ -139,6 +209,12 @@ export const LongCol = styled.div`
   float: ${props => props.left ? 'left' : 'right'};
   width: 65%;
   padding: 15px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
+    float: none;
+  }
 `
 
 export const Img = LongCol.extend`
@@ -146,7 +222,6 @@ export const Img = LongCol.extend`
   padding: 0;
   overflow: hidden;
   cursor: pointer;
-  transition: 3s all ease;
 
   &:hover{
     & > img {
@@ -156,7 +231,7 @@ export const Img = LongCol.extend`
 `
 
 export const ShortCol = styled.div`
-  font-size: 2rem;
+  font-size: 1.8rem;
   height: ${props => props.tall ? '550px' : '250px'};
   border: 5px solid ${darkcreme};
   padding: ${props => props.padding ? '15px' : '10px'};
@@ -164,10 +239,30 @@ export const ShortCol = styled.div`
   width: 35%;
   color: ${darkcreme};
   float: ${props => props.left ? 'left' : 'right'};
+
+  @media (max-width: 376px){
+    font-size: 1rem;
+    width: 100%;
+    height: auto;
+    float: none;
+  }
+  @media (min-width: 376px) and (max-width: 768px){
+    font-size: 1.5rem;
+    width: 100%;
+    height: auto;
+    float: none;
+  }
+  @media (min-width: 768px) and (max-width: 1140px){
+    font-size: 1.7rem;
+  }
 `
 
-export const Padding = styled.div`
+export const PaddingCol = styled.div`
   padding: 40px 30px;
+
+  @media (min-width: 768px) and (max-width: 992px){
+    padding: 10px 5px;
+  }
 `
 
 export const Letters = styled.p`
@@ -177,4 +272,18 @@ export const Letters = styled.p`
   font-family: 'Nixie One',cursive;
   padding: 20px 0;
   line-height: 30px;
+
+  @media (max-width: 376px) {
+    font-size: 1rem;
+    line-height: 25px;
+  }
+  @media (min-width: 376px) and (max-width: 1140px){
+    font-size: 1.2rem;
+    line-height: 25px;
+    padding: 10px 5px;
+  }
+  @media (min-width: 1140px) and (max-width: 1250px){
+    font-size: 1.3rem;
+    line-height: 27px;
+  }
 `

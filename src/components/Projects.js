@@ -104,6 +104,7 @@ export default class Projects extends Component {
             </SvgContainer>
           </ScrollDownContainer>
           </ScrollContainer>
+          <div className="relative clear"></div>
             <Carousel autoPlay interval={3000} transitionTime={1000} showThumbs={false} showStatus={false} showIndicators={false} dynamicHeight>
               <div>
                 <img src={require('../img/projects/chopard-banner.jpg')} alt="Chopard"/>
@@ -355,7 +356,9 @@ export default class Projects extends Component {
           </BrandText>
         </BrandContainer>
       </Wrapper>
-      <Footer />
+      <div className="relative">
+        <Footer />
+      </div>
       </div>
     );
   }

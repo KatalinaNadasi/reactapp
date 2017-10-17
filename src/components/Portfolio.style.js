@@ -437,7 +437,7 @@ export const ImageContainer6 = styled.div`
 
 export const Background1 = styled.div`
   height: auto;
-  margin-bottom: 50px;
+  margin-bottom: 350px;
   z-index: -99;
   background: rgba(243, 243, 237, 1.0);
   background: linear-gradient(to bottom, rgba(243, 243, 237, 1.0) 0%, rgba(255, 189, 160, 1) 30%, rgba(220, 20, 60, 1.0) 50%, rgba(255, 189, 160, 1) 80%, rgba(243, 243, 237, 1.0) 100%);

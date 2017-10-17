@@ -9,7 +9,9 @@ export default class Home extends Component {
       <div>
         <Header />
         <Portfolio />
-        <Footer />
+        <div className="relative">
+          <Footer />
+        </div>
       </div>
     );
   }

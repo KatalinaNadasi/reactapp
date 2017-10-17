@@ -1,9 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import {darkcreme, orange, pink} from  '../variables';
+import {orange, pink} from  '../variables';
 import {ScrollDown} from './About.style';
-
-
 
 export function Close(props){
   return (
@@ -133,8 +131,9 @@ export const Right = Left.extend `
 import Eavest from '../img/projects/eavest-modal.gif';
 
 export const BrandContainer = styled.div `
-  height: auto;
+  min-height: 822px;
   z-index: -1;
+  position: relative;
 `
 
 export const Img = styled.div `
