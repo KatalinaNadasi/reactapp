@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Wrapper from './Wrapper';
-import {Close, Background, ScrollContainer, ScrollDownContainer, Title, BrandContainer, BrandText, Img, ImgChop, ImgAda, ImgLBP, ImgSneakr, ImgKat, TextWrap, TextWrapChop, TextWrapAda, TextWrapLBP, TextWrapSneakr, Vignet, VignetLarge, Brand, Detail} from './Projects.style';
-import {ScrollDown, SvgContainer, ArrowAnimation, BottomArrow} from './About.style';
+import { Close, Background, ScrollContainer, ScrollDownContainer, Title, BrandContainer, BrandText, Img, ImgChop, ImgAda, ImgLBP, ImgSneakr, ImgKat, TextWrap, TextWrapChop, TextWrapAda, TextWrapLBP, TextWrapSneakr, Vignet, VignetLarge, Brand, Detail } from './Projects.style';
+import { SvgContainer, ArrowAnimation, BottomArrow } from './About.style';
 import { Carousel } from 'react-responsive-carousel';
 import '../style/carousel.css';
 import ReactModal from 'react-modal';
@@ -104,7 +104,6 @@ export default class Projects extends Component {
             </SvgContainer>
           </ScrollDownContainer>
           </ScrollContainer>
-          <div className="relative clear"></div>
             <Carousel autoPlay interval={3000} transitionTime={1000} showThumbs={false} showStatus={false} showIndicators={false} dynamicHeight>
               <div>
                 <img src={require('../img/projects/chopard-banner.jpg')} alt="Chopard"/>
@@ -356,7 +355,7 @@ export default class Projects extends Component {
           </BrandText>
         </BrandContainer>
       </Wrapper>
-      <div className="relative">
+      <div className="relative clear">
         <Footer />
       </div>
       </div>

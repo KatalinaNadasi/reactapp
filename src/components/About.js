@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {HeaderContainer, Container, BackgroundImage, ArrowAnimation, AboutTitle, ScrollPosition, BottomArrow, SvgContainer , ScrollDown, Col, Col2, BlueBgd, SectionTitle, SectionSpace, ProjectsContainer, Letters, Wrapper, LongCol, LongColSneakr, Img, ShortCol, ShortColVid, PaddingCol} from './About.style';
+import {HeaderContainer, Container, BackgroundImage, ArrowAnimation, AboutTitle, ScrollPosition, BottomArrow, SvgContainer , ScrollDown, Col, Col2, BlueBgd, SectionTitle, SectionSpace, ProjectsContainer, Letters, LongCol, LongColSneakr, Img, ShortCol, ShortColVid, PaddingCol} from './About.style';
 import '../index.css';
 import {Retro} from '../variables.js';
 import Footer from './Footer';
