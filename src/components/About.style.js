@@ -202,7 +202,7 @@ export const Col = styled.div`
     height: 595px;
   }
   @media (min-width: 376px) and (max-width: 732px) {
-    height: 717px;
+    height: 684px;
     padding-bottom: 300px;
   }
   @media (min-width: 732px) and (max-width: 768px){
@@ -221,6 +221,9 @@ export const Col2 = styled.div`
   @media (min-width: 732px) and (max-width: 768px){
     height: 691px;
     padding-bottom: 300px;
+  }
+  @media (min-width: 768px){
+    height: 650px;
   }
 `
 
@@ -241,10 +244,39 @@ export const LongCol = styled.div`
   }
   @media (min-width: 376px) and (max-width: 768px) {
     width: 100%;
-    height: 350px;
     float: none;
     height: 300px;
   }
+  @media (min-width: 768px) and (max-width: 992px) {
+    font-size: 1.1rem;
+  }
+`
+
+export const LongColSneakr = styled.div `
+font-size: 2rem;
+height: 250px;
+border: 5px solid ${darkcreme};
+background-color: ${creme};
+color: ${lightpink};
+float: ${props => props.left ? 'left' : 'right'};
+width: 65%;
+padding: 15px;
+
+@media (max-width: 376px) {
+  width: 100%;
+  float: none;
+  height: 300px;
+}
+@media (min-width: 376px) and (max-width: 768px) {
+  width: 100%;
+  float: none;
+  height: 300px;
+}
+@media (min-width: 768px) and (max-width: 1150px) {
+  width: 35%;
+  height: 300px;
+  font-size: 1.1rem;
+}
 `
 
 export const Img = styled.div`
@@ -266,7 +298,7 @@ export const Img = styled.div`
       width: 100%;
       height: 190px;
     }
-    @media (min-width: 1200px){
+    @media (min-width: 992px){
       width: 100%;
       height: 260px;
     }
@@ -290,10 +322,6 @@ export const Img = styled.div`
     width: 100%;
     height: 190px;
   }
-  @media (min-width: 1200px){
-    width: 100%;
-    height: 260px;
-  }
 `
 
 export const ShortCol = styled.div`
@@ -309,18 +337,33 @@ export const ShortCol = styled.div`
   @media (max-width: 376px){
     font-size: 1rem;
     width: 100%;
-    height: 220px;
+    height: 200px;
     float: none;
   }
   @media (min-width: 376px) and (max-width: 768px){
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     width: 100%;
     float: none;
-    height: 300px;
+    height: 250px;
   }
-  @media (min-width: 768px) and (max-width: 1150px){
+  @media (min-width: 768px) and (max-width: 992px){
     font-size: 1.7rem;
-    height: 450px;
+    height: 250px;
+  }
+  @media (min-width: 992px) and (max-width: 1150px){
+    font-size: 1.7rem;
+    height: 500px;
+  }
+
+  &:last-child{
+    @media (min-width: 768px) and (max-width: 992px){
+      font-size: 1.4rem;
+      height: 250px;
+    }
+    @media (min-width: 992x) and (max-width: 1150px){
+      font-size: 1.7rem;
+      height: 250px;
+    }
   }
 `
 
@@ -343,7 +386,7 @@ export const ShortColVid = styled.div `
   }
   @media (min-width: 376px) and (max-width: 768px){
     width: 100%;
-    height: 160px;
+    height: 260px;
 
     & > iframe {
       display: block;
@@ -367,10 +410,12 @@ export const PaddingCol = styled.div`
   @media (max-width: 768px){
     padding: 0px 30px 20px 30px;
   }
-  @media (min-width: 768px) and (max-width: 1120px){
+  @media (min-width: 768px) and (max-width: 992px){
+    font-size: 1.1rem;
+    padding: 10px;
+  }
+  @media (min-width: 992px) and (max-width: 1120px){
     padding: 10px 5px;
-    font-size: 1.4rem;
-    line-height: 25px;
   }
 `
 
@@ -392,7 +437,7 @@ export const Letters = styled.p`
     padding: 10px 5px;
   }
   @media (min-width: 1140px) and (max-width: 1250px){
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 27px;
   }
 `
