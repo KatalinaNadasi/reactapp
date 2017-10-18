@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Wrapper from './Wrapper';
-import { Close, Background, ScrollContainer, ScrollDownContainer, Title, BrandContainer, BrandText, Img, ImgChop, ImgAda, ImgLBP, ImgSneakr, ImgKat, TextWrap, TextWrapChop, TextWrapAda, TextWrapLBP, TextWrapSneakr, Vignet, VignetLarge, Brand, Detail } from './Projects.style';
+import { Close, Background, ScrollContainer, ScrollDownContainer, Title, BrandContainer, BrandText, ImgEav, ImgChop, ImgAda, ImgLBP, ImgSneakr, ImgKat, TextWrap, TextWrapChop, TextWrapAda, TextWrapLBP, TextWrapSneakr, Vignet, VignetLarge, Brand, Detail } from './Projects.style';
 import { SvgContainer, ArrowAnimation, BottomArrow } from './About.style';
 import { Carousel } from 'react-responsive-carousel';
 import '../style/carousel.css';
@@ -154,9 +154,9 @@ export default class Projects extends Component {
                 <Close/>
               </button>
               <Brand>Eavest
-                <h1>Recast of all the previous website made on Wordpress.</h1>
+                <p>Recast of all the previous website made on Wordpress.</p>
               </Brand>
-                <Img eavest/>
+                <ImgEav eavest/>
                 <TextWrap>
                     <Vignet>
                       <h2>HTML / CSS</h2>
@@ -188,7 +188,7 @@ export default class Projects extends Component {
                   style={{'float': 'right', 'border': 'none', 'backgroundColor': 'transparent'}}>
                   <Close/>
                 </button>
-                <Brand>Chopard<h1>Mini-website for the 'Happy Diamons' collection launched in the UK</h1></Brand>
+                <Brand>Chopard<p>Mini-website for the 'Happy Diamons' collection launched in the UK</p></Brand>
                   <ImgChop/>
                   <TextWrapChop>
                       <VignetLarge>
@@ -216,7 +216,7 @@ export default class Projects extends Component {
                     style={{'float': 'right', 'border': 'none', 'backgroundColor': 'transparent'}}>
                     <Close/>
                   </button>
-                  <Brand>Adaweek<h1>Design and development of all the website for the event in 2016.</h1></Brand>
+                  <Brand>Adaweek<p>Design and development of all the website for the event in 2016.</p></Brand>
                     <a href="http://adaweek.fr/" target="_blank">
                       <ImgAda style={{height: this.state.height}}/>
                     </a>
@@ -268,7 +268,7 @@ export default class Projects extends Component {
                 <Close/>
               </button>
               <Brand>La Banque Postale
-                <h1>Development of a 6 pages play mini-website for <br/> La Banque Postale</h1>
+                <p>Development of a 6 pages play mini-website for <br/> La Banque Postale</p>
               </Brand>
                 <ImgLBP/>
                 <TextWrapLBP>
@@ -297,7 +297,7 @@ export default class Projects extends Component {
                   <Close/>
                 </button>
                 <Brand>Sneakr
-                  <h1>Development of a Beta version of a website with a search engine</h1>
+                  <p>Development of a Beta version of a website with a search engine</p>
                 </Brand>
                   <ImgSneakr/>
                   <TextWrapSneakr>
@@ -327,7 +327,7 @@ export default class Projects extends Component {
                     <Close/>
                   </button>
                   <Brand>Personal website
-                    <h1>Design and development of a website from scratch</h1>
+                    <p>Design and development of a website from scratch</p>
                   </Brand>
                     <ImgKat/>
                     <TextWrapLBP>
@@ -342,7 +342,7 @@ export default class Projects extends Component {
                           <h2>Animate.css</h2>
                         </Vignet>
                         <Vignet>
-                          <h2>FontAwesome</h2>
+                          <h2>Font Awesome</h2>
                           <h2>Git / Github</h2>
                           <h2>Paris</h2>
                         </Vignet>

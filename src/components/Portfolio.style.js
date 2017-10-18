@@ -42,8 +42,8 @@ export const BackgroundTitle = styled.div`
    @media(max-width: 450px){
      margin-top: 100px;
    }
-   @media(min-width: 450px) and (max-width: 768px){
-      margin-top: 150px;
+   @media(min-width: 451px) and (max-width: 768px){
+      margin-top: 250px;
    }
  `;
 
@@ -109,7 +109,7 @@ export const Mask = styled.div `
         margin: 10px 20px 0 20px;
         font-size: 16px;
       }
-      @media (min-width: 768px) and (max-width: 1170px){
+      @media (min-width: 769px) and (max-width: 1170px){
         margin: 40px 80px 0 80px;
         font-size: 18px;
       }
@@ -130,11 +130,12 @@ export const Mask = styled.div `
 
       @media (max-width: 768px) {
         margin: 0;
-        padding: 20px 30px;
+        padding-top: 20px;
+        padding: ${props => props.eavest ? '15px' : '30px'};
         font-size: 14px;
         line-height: 20px;
       }
-      @media (min-width: 768px) and (max-width: 1170px){
+      @media (min-width: 769px) and (max-width: 1170px){
         padding: 20px 20px;
         font-size: 16px;
       }
@@ -197,7 +198,7 @@ export const MaskSmallImg = styled.div `
         margin: 10px 20px 0 20px;
         font-size: 16px;
       }
-      @media(min-width: 768px) and (max-width: 992px){
+      @media(min-width: 769px) and (max-width: 992px){
         font-size: 16px;
       }
     }
@@ -222,7 +223,7 @@ export const MaskSmallImg = styled.div `
         font-size: 14px;
         line-height: 20px;
       }
-      @media(min-width: 768px) and (max-width: 992px){
+      @media(min-width: 769px) and (max-width: 992px){
         font-size: 14px;
         line-height: 20px;
       }
@@ -258,19 +259,19 @@ export const ImageContainer1 = styled.div`
     float: none;
     height: 281px;
   }
-  @media (min-width: 500px) and (max-width: 650px) {
+  @media (min-width: 501px) and (max-width: 650px) {
     margin: 20px 80px 0px 80px;
     width: 70%;
     float: none;
   }
-  @media (min-width: 650px) and ( max-width: 768px){
+  @media (min-width: 651px) and ( max-width: 768px){
     width: 70%;
     float: none;
     margin: 20px 100px 0px 100px;
     display: block;
     height: 380px;
   }
-  @media(min-width: 768px) and (max-width: 992px){
+  @media(min-width: 769px) and (max-width: 992px){
     height: 404px;
   }
 `;
@@ -289,18 +290,18 @@ export const ImageContainer2 = styled.div`
     margin: 20px auto;
     float: none;
   }
-  @media (min-width: 500px) and (max-width: 650px) {
+  @media (min-width: 501px) and (max-width: 650px) {
     margin: 20px 80px 0px 80px;
     width: 70%;
     float: none;
   }
-  @media (min-width: 650px) and ( max-width: 768px){
+  @media (min-width: 651px) and ( max-width: 768px){
     width: 70%;
     float: none;
     margin: 20px 100px;
     display: block;
   }
-  @media (min-width: 768px) and (max-width: 992px){
+  @media (min-width: 769px) and (max-width: 992px){
     margin: -94px 25px 23px 125px;
   }
 `;
@@ -319,28 +320,29 @@ export const ImageContainer3 = styled.div`
     margin: 20px auto;
     float: none;
   }
-  @media (min-width: 500px) and (max-width: 650px) {
+  @media (min-width: 501px) and (max-width: 650px) {
     margin: 20px 80px 0px 80px;
     width: 70%;
     float: none;
   }
-  @media (min-width: 650px) and ( max-width: 768px){
+  @media (min-width: 651px) and ( max-width: 768px){
     width: 70%;
     float: none;
     margin: 20px 100px;
     display: block;
   }
-  @media(min-width: 768px) and (max-width: 992px){
+  @media(min-width: 769px) and (max-width: 992px){
     margin: -245px 0px 0 30px;
   }
 `;
+
+
 
 export const ImageContainer4 = styled.div`
   width: 28%;
   float: right;
   margin: 25px 76px 25px 0;
   transition: all 0.2s ease-in;
-  height: auto;
   &:hover {
     transform: scale(1.1, 1.1);
   }
@@ -350,22 +352,26 @@ export const ImageContainer4 = styled.div`
     margin: 20px auto;
     float: none;
     height: 335px;
+    overflow: hidden;
   }
-  @media (min-width: 500px) and (max-width: 650px) {
+  @media (min-width: 501px) and (max-width: 650px) {
     margin: 20px 80px 0px 80px;
     width: 70%;
     float: none;
     height: 341px;
+    overflow: hidden;
   }
-  @media (min-width: 650px) and ( max-width: 768px){
+  @media (min-width: 651px) and ( max-width: 768px){
     width: 70%;
     float: none;
-    margin: 0 100px;
+    margin: 20px 100px;
     display: block;
-    height: 281px;
+    height: 320px;
+    overflow: hidden;
   }
-  @media (min-width: 768px) and (max-width: 992px){
+  @media (min-width: 769px) and (max-width: 992px){
     height: 276px;
+    overflow: hidden;
   }
 `;
 
@@ -389,18 +395,18 @@ export const ImageContainer5 = styled.div`
     margin: 20px auto;
     float: none;
   }
-  @media (min-width: 500px) and (max-width: 650px) {
+  @media (min-width: 501px) and (max-width: 650px) {
     margin: 20px 80px 0px 80px;
     width: 70%;
     float: none;
   }
-  @media (min-width: 650px) and ( max-width: 768px){
+  @media (min-width: 651px) and ( max-width: 768px){
     width: 70%;
     float: none;
     margin: 20px 100px;
     display: block;
   }
-  @media(min-width: 768px) and (max-width: 1170px){
+  @media(min-width: 769px) and (max-width: 1170px){
     margin: 50px 30px 23px 0px;
   }
 `;
@@ -410,8 +416,9 @@ export const ImageContainer6 = styled.div`
   width: 55%;
   float: right;
   transition: all 0.2s ease-in;
-  &:hover {
-    transform: scale(1.1, 1.1);
+    &:hover {
+      transform: scale(1.1, 1.1);
+    }
   }
 
   @media (max-width: 500px){
@@ -419,18 +426,18 @@ export const ImageContainer6 = styled.div`
     margin: 20px auto;
     float: none;
   }
-  @media (min-width: 500px) and (max-width: 650px) {
+  @media (min-width: 501px) and (max-width: 650px) {
     margin: 20px 80px 0px 80px;
     width: 70%;
     float: none;
   }
-  @media (min-width: 650px) and ( max-width: 768px){
+  @media (min-width: 651px) and ( max-width: 768px){
     width: 70%;
     float: none;
     margin: 20px 100px;
     display: block;
   }
-  @media(min-width: 768px) and (max-width: 1170px){
+  @media(min-width: 769px) and (max-width: 1170px){
     margin: 7px 37px 150px 71px;
   }
 `;

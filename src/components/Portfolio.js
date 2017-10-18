@@ -93,9 +93,9 @@ class Portfolio extends React.Component {
                   <ParallaxImage
                     reduceHeight={2/3}
                     src={require('../img/portfolio/eavest.jpg')}/>
-                    <Mask>
+                  <Mask eavest>
                       <h2>Eavest</h2>
-                      <p>Lead Front-End in the recast of all the existing website.</p>
+                      <p>Lead Front in the recast of the website.</p>
                       <div><Btn/></div>
                     </Mask>
                   </Relative>

@@ -22,9 +22,9 @@ export default class Header extends React.Component {
   }
 
   updateDimensions() {
-  if(window.innerWidth < 992 && window.innerWidth > 768) {
+  if(window.innerWidth < 992 && window.innerWidth > 770) {
     this.setState({ cx: 80, cy: 80, rx: 70, ry: 70, width: 160, height: 160});
-  } else if(window.innerWidth < 768 && window.innerWidth > 450) {
+  } else if(window.innerWidth < 769 && window.innerWidth > 451) {
     this.setState({ cx: 50, cy: 50, rx: 50, ry: 50, width: 100, height: 100});
   } else if(window.innerWidth < 450){
     this.setState({ cx: 30, cy: 30, rx: 30, ry: 30, width: 60, height: 60});

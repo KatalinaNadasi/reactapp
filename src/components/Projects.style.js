@@ -1,6 +1,6 @@
 import React from 'react';
  import styled from 'styled-components';
- import {darkcreme, orange, pink} from  '../variables';
+ import {orange, pink} from  '../variables';
  import {ScrollDown} from './About.style';
 
 
@@ -23,8 +23,9 @@ import React from 'react';
     margin-top: 250px;
 
 
-    @media (max-width: 368px) {
+    @media (max-width: 376px) {
   		height: 77vh;
+      margin-top: 183px;
  	}
  `
 
@@ -37,9 +38,9 @@ import React from 'react';
 
 
     @media (max-width: 376px) {
-      top: 546px;
+      top: 588px;
     }
-    @media (min-width: 376px) and (max-width: 768px) {
+    @media (min-width: 377px) and (max-width: 768px) {
       top: 540px;
     }
   `
@@ -55,10 +56,10 @@ import React from 'react';
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
 
-   @media (max-width: 368px) {
+   @media (max-width: 376px) {
  		font-size: 5rem;
  	}
-   @media (min-width: 368px) and (max-width: 768px) {
+   @media (min-width: 377px) and (max-width: 768px) {
  		font-size: 8rem;
  	}
  `
@@ -91,10 +92,10 @@ import React from 'react';
      @media (max-width: 376px){
        padding: 40px;
      }
-     @media (min-width: 376px) and (max-width: 768px){
+     @media (min-width: 377px) and (max-width: 768px){
        padding: 60px;
      }
-     @media (min-width: 768px) and (max-width: 992px){
+     @media (min-width: 769px) and (max-width: 992px){
        padding: 55px;
      }
 
@@ -112,7 +113,7 @@ import React from 'react';
      @media (max-width: 376px){
        font-size: 1.3rem;
      }
-     @media (min-width : 376px) and (max-width: 768px){
+     @media (min-width : 377px) and (max-width: 768px){
        font-size: 1.7rem;
      }
    }
@@ -123,7 +124,7 @@ import React from 'react';
      @media (max-width: 376px){
        font-size: 0.9rem;
      }
-     @media (min-width : 376px) and (max-width: 768px){
+     @media (min-width : 377px) and (max-width: 768px){
        font-size: 1rem;
      }
    }
@@ -146,32 +147,31 @@ import React from 'react';
    z-index: -1;
  `
 
- export const Img = styled.div `
-   width: 50%;
+ export const ImgEav = styled.div `
+   width: 44%;
    float: left;
-   height: 35vh;
+   height: 48vh;
    background-image: ${(props) => props.eavest ? `url(${Eavest})` : 'grey' };
    background-repeat: no-repeat;
    background-size: cover;
    background-color: grey;
-   margin-top: 80px;
+   margin-top: 40px;
 
-   @media(max-width: 368px){
-     height: 12vh;
+   @media(max-width: 376px){
+     height: 18vh;
+      width: 100%;
    }
-   @media (min-width: 368px) and (max-width: 768px){
+   @media (min-width: 377px) and (max-width: 768px){
      width: 97%;
      margin-top: 0px;
+     height: 36vh;
    }
-   @media (min-width: 768px) and (max-width: 970px) {
-     width: 80%;
-     margin-top: 0px;
-     height: 30vh;
-     margin: 0 0 0 60px;
-   }
-   @media (min-width: 970px) and (max-width: 992px) {
-     height: 32vh;
-   }
+   @media (min-width: 769px) and (max-width: 992px) {
+    width: 71%;
+    margin-top: 0px;
+    height: 35vh;
+    margin: 0 0 0 60px;
+  }
  `
 
  export const ImgChop = styled.div `
@@ -187,25 +187,21 @@ import React from 'react';
    border: 5px solid #F3F3ED;
 
    @media (max-width: 376px) {
-     width: 92%;
-     height: 33vh;
-     margin: 0;
-     float: none;
+    width: 93%;
+    height: 33vh;
+    margin: 0;
+    float: none;
    }
-   @media (min-width: 376px) and (max-width: 768px) {
+   @media (min-width: 377px) and (max-width: 768px) {
      width: 62%;
      height: 33vh;
      margin: 0 auto;
      float: none;
    }
-   @media (min-width: 768px) and (max-width: 992px) {
+   @media (min-width: 769px) and (max-width: 992px) {
      height: 53vh;
      margin: 0 auto;
      transform: translateY(0px);
-     float: none;
-   }
-   @media (min-width: 970px) and (max-width: 1170px) {
-     height: 55vh;
    }
  `
 
@@ -216,7 +212,7 @@ import React from 'react';
    background-color: grey;
    background-image: url('${require('../img/projects/adaweek-modal.jpg')}');
    width: 38%;
-   height: 46vh;
+   height: 65vh;
    margin: 0px 30px;
 
    @media (max-width: 500px) {
@@ -225,28 +221,43 @@ import React from 'react';
      margin: 0;
      float: none;
    }
-   @media (min-width: 500px) and (max-width: 768px) {
+   @media (min-width: 501px) and (max-width: 768px) {
      width: 62%;
      height: 33vh;
      margin: 0 auto;
      float: none;
    }
-   @media (min-width: 768px) and (max-width: 970px) {
+   @media (min-width: 769px) and (max-width: 992px) {
      height: 34vh;
      margin: 0 auto;
      float: none;
      width: 41%;
    }
-   @media (min-width: 970px) and (max-width: 992px) {
-     height: 46vh;
+   @media (min-width: 993px) and (max-width: 1172px) {
+     height: 50vh;
    }
  `
 
  export const ImgLBP = ImgAda.extend `
    background-image: url('${require('../img/projects/banque-modal.png')}');
-   height: 41vh;
-   width: 31%;
+   height: 59vh;
+   width: 50%;
    margin: 25px 30px;
+
+
+     @media(max-width: 500px){
+       width: 92%;
+       height: 26vh;
+       margin: 0;
+       float: none;
+     }
+
+     @media (min-width: 501px) and (max-width: 768px) {
+       width: 50%;
+       height: 36vh;
+       margin: 0 auto;
+       float: none;
+     }
  `
 
  export const ImgSneakr = styled.div `
@@ -264,19 +275,19 @@ import React from 'react';
      margin: 0;
      float: none;
    }
-   @media (min-width: 500px) and (max-width: 768px) {
+   @media (min-width: 501px) and (max-width: 768px) {
      width: 62%;
      height: 33vh;
      margin: 0 auto;
      float: none;
    }
-   @media (min-width: 768px) and (max-width: 970px) {
+   @media (min-width: 769px) and (max-width: 992px) {
      height: 34vh;
      margin: 0 auto;
      float: none;
      width: 41%;
    }
-   @media (min-width: 970px) and (max-width: 992px) {
+   @media (min-width: 993px) and (max-width: 992px) {
      height: 46vh;
    }
  `
@@ -298,19 +309,19 @@ import React from 'react';
      margin: 0;
      float: none;
    }
-   @media (min-width: 500px) and (max-width: 768px) {
+   @media (min-width: 501px) and (max-width: 768px) {
      width: 62%;
      height: 33vh;
      margin: 0 auto;
      float: none;
    }
-   @media (min-width: 768px) and (max-width: 970px) {
+   @media (min-width: 769px) and (max-width: 992px) {
      height: 34vh;
      margin: 0 auto;
      float: none;
      width: 41%;
    }
-   @media (min-width: 970px) and (max-width: 992px) {
+   @media (min-width: 993px) and (max-width: 1070px) {
      height: 46vh;
    }
  `
@@ -318,14 +329,14 @@ import React from 'react';
  export const TextWrap = styled.div `
    width: 45%;
    float: left;
-   margin: 65px 15px 0 10px;
+   margin: 5px 15px 0 10px;
 
    @media (max-width: 768px) {
      width: 92%;
      margin: 10px;
    }
 
-   @media (min-width: 768px) and (max-width: 970px) {
+   @media (min-width: 769px) and (max-width: 992px) {
      width: 90%;
      margin: 30px 0 0 60px;
    }
@@ -339,11 +350,11 @@ import React from 'react';
      width: 94%;
      margin: 0;
    }
-   @media (min-width: 376px) and (max-width: 768px) {
+   @media (min-width: 377px) and (max-width: 768px) {
      width: 92%;
      margin: 0 10px 0 30px;
    }
-   @media (min-width: 768px) and (max-width: 970px) {
+   @media (min-width: 769px) and (max-width: 992px) {
      width: 46%;
      margin: 30px 0 0 40px;
    }
@@ -353,14 +364,20 @@ import React from 'react';
    margin: 65px 10px 0 10px;
    width: 52%;
 
-   @media (min-width: 768px) and (max-width: 970px) {
+   @media (min-width: 768px) and (max-width: 992px) {
      margin: 0px 0 0 60px;
    }
  `
 
  export const TextWrapLBP = TextWrap.extend `
-   width: 55%;
+   width: 34%;
    margin: 33px 30px 0 10px;
+
+
+   @media (min-width: 768px) and (max-width: 992px) {
+     width: 85%;
+      margin: 35px 60px 0 64px;
+   }
  `
 
  export const TextWrapSneakr = TextWrapAda.extend `
@@ -370,20 +387,21 @@ import React from 'react';
  export const Vignet = styled.div `
    width: 26%;
    float: left;
-   margin: 30px 25px 0 0;
+   margin: 10px 25px 0 0;
 
-   @media (max-width: 368px){
+   @media (max-width: 376px){
      width: 28%;
      margin: 30px 10px 0 0px;
    }
-   @media (min-width: 368px) and (max-width: 460px){
+   @media (min-width: 377px) and (max-width: 460px){
      width: 20%;
    }
-   @media(min-width: 460px) and (max-width: 670px){
+   @media(min-width: 461px) and (max-width: 670px){
      width: 25%;
    }
-   @media(min-width: 670px) and (max-width: 768px){
+   @media(min-width: 671px) and (max-width: 768px){
      width: 28%;
+     margin: 20px 25px 0 0;
    }
 
    h2 {
@@ -400,7 +418,7 @@ import React from 'react';
      @media (max-width: 460px){
        font-size: 0.7rem;
      }
-     @media (min-width: 460px) and (max-width: 768px){
+     @media (min-width: 461px) and (max-width: 768px){
        font-size: 1rem;
      }
    }
@@ -409,9 +427,16 @@ import React from 'react';
  export const VignetLarge = Vignet.extend `
    width: 40%;
 
-   @media (max-width: 768px){
+   @media (max-width: 376px){
+     width: 33%;
+     margin: 30px 10px 0 20px;
+   }
+   @media (min-width: 376px) and (max-width: 768px){
      width: 34%;
-     margin: 30px 10px 0 10px;
+     margin: 30px 10px 0 60px;
+   }
+   @media (min-width: 769px) and (max-width: 992px){
+     margin: 30px 30px 0 25px;
    }
  `
 
@@ -421,7 +446,7 @@ import React from 'react';
    text-align: -webkit-center;
    margin-top: 15px;
 
-     h1 {
+     p {
        font-size: 1.5rem;
        margin: 15px 20px 35px 0;
        color: black;

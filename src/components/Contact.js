@@ -9,6 +9,10 @@ export const CircleTopBlue = CircleTop.extend `
   text-align: center;
   line-height: 400px;
   margin-top: 175px;
+
+  @media(max-width: 768px){
+    margin-top: 175px;
+  }
 `
 
 export const CircleBottomBlue = CircleBottom.extend `

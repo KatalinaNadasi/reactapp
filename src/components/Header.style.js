@@ -22,16 +22,16 @@ export const CircleTop = styled.div`
     height: 250px;
 		margin-top: 717px;
 	}
-	@media (min-width: 450px) and (max-width: 768px) {
+	@media (min-width: 451px) and (max-width: 768px) {
 		border-radius: 500px 500px 0 0;
     height: 370px;
-		margin-top: 717px;
+		margin-top: 670px;
 	}
-	@media (min-width: 768px) and (max-width: 992px) {
+	@media (min-width: 769px) and (max-width: 992px) {
 		border-radius: 650px 650px 0 0;
 		height: 550px;
 	}
-	@media (min-width: 992px) and (max-width: 1150px) {
+	@media (min-width: 993px) and (max-width: 1150px) {
 		border-radius: 930px 930px 0 0;
 		height: 520px;
 	}
@@ -48,15 +48,15 @@ export const CircleTop = styled.div`
 		 font-size: 3rem;
      padding: 60px 0 0 0;
 	 }
-	 @media (min-width: 450px) and (max-width: 768px) {
+	 @media (min-width: 451px) and (max-width: 768px) {
 		 font-size: 6rem;
 	   padding: 100px 4px 0 20px;
 	 }
-	 @media (min-width: 768px) and (max-width: 992px) {
+	 @media (min-width: 769px) and (max-width: 992px) {
 		 font-size: 7rem;
 	   padding: 100px 88px 0 122px;
 	 }
-	 @media (min-width: 992px) and (max-width: 1150px) {
+	 @media (min-width: 993px) and (max-width: 1150px) {
 		 font-size: 8rem;
 	   padding: 100px 220px 0 240px;
 	 }
@@ -70,7 +70,7 @@ export const CircleTop = styled.div`
  @media (min-width: 450px) and (max-width: 768px) {
 	 padding-top: 40px;
  }
- @media (min-width: 768px) and (max-width: 992px) {
+ @media (min-width: 769px) and (max-width: 992px) {
 	padding-top: 70px;
  }
  `
@@ -110,12 +110,12 @@ export const CircleTop = styled.div`
      font-size: 1rem;
      height: 38px;
 	 }
-	 @media (min-width: 450px) and (max-width: 768px){
+	 @media (min-width: 451px) and (max-width: 768px){
 		 margin: 0px 30px 0 0;
 		 font-size: 1.3rem;
 		 height: 43px;
 	 }
-	 @media (min-width: 768px) and (max-width: 992px){
+	 @media (min-width: 769px) and (max-width: 992px){
 		 margin: 50px 30px 0 0;
 		 font-size: 1.7rem;
 		 height: 48px;
@@ -131,15 +131,15 @@ export const CircleTop = styled.div`
 			height: 250px;
 			border-radius: 0 0 300px 300px;
 	 }
-	 @media (min-width: 450px) and (max-width: 768px) {
+	 @media (min-width: 451px) and (max-width: 768px) {
 		 border-radius: 0 0 500px 500px;
 		 height: 370px;
 	 }
-	 @media (min-width: 768px) and (max-width: 992px) {
+	 @media (min-width: 769px) and (max-width: 992px) {
 		 border-radius: 0 0 650px 650px;
 		 height: 550px;
 	 }
-	 @media (min-width: 992px) and (max-width: 1150px) {
+	 @media (min-width: 993px) and (max-width: 1150px) {
 		 border-radius: 0 0 930px 930px;
 		 height: 520px;
 	 }
@@ -177,7 +177,7 @@ export const CircleTop = styled.div`
 		left: 4%;
 		top: 22%;
 	}
-	@media (min-width: 768px) and (max-width: 992px) {
+	@media (min-width: 769px) and (max-width: 992px) {
 		font-size: 1.2rem;
 	}
  `
@@ -194,11 +194,11 @@ export const CircleTop = styled.div`
     top: 41%;
 		font-size: 0.7rem;
 	}
-	@media(min-width: 450px) and (max-width: 768px){
+	@media(min-width: 451px) and (max-width: 768px){
 		left: 6%;
     top: 22%;
 	}
-	@media (min-width: 768px) and (max-width: 992px) {
+	@media (min-width: 769px) and (max-width: 992px) {
 		font-size: 1rem;
 	}
  `
@@ -379,7 +379,7 @@ export const CircleTop = styled.div`
 		 left: 72%;
      top: 51%;
 	 }
-	 @media(min-width: 450px) and (max-width: 768px){
+	 @media(min-width: 451px) and (max-width: 768px){
 		 left: 78%;
      top: 51%;
 	 }
@@ -635,7 +635,7 @@ export const CircleTop = styled.div`
 		left: 14%;
 		top: 68%;
 	}
-	 @media(min-width: 450px) and (max-width: 768px){
+	 @media(min-width: 451px) and (max-width: 768px){
 		 left: 17%;
 		 top: 69%;
 	 }

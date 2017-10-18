@@ -27,10 +27,10 @@ export default class About extends Component {
       this.setState({ width: 400, height: 250});
   } else if (window.innerWidth < 575 && window.innerWidth > 480) {
       this.setState({ width: 300, height: 250});
-  } else if (window.innerWidth < 480 && window.innerWidth > 375) {
+  } else if (window.innerWidth < 480 && window.innerWidth > 377) {
       this.setState({ width: 325, height: 250});
-  }else if (window.innerWidth < 375) {
-      this.setState({ width: 200, height: 150});
+  }else if (window.innerWidth < 376) {
+      this.setState({ width: 300, height: 150});
   }
 }
 
