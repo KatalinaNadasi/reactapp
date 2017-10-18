@@ -13,8 +13,7 @@ export const Wrapper = styled.div `
   text-align: center;
   padding: 25px 0;
   display: block;
-  position: absolute;
-  bottom: 0;
+  margin-top: 25px;
 `
 
 export const Contact = styled.div `
