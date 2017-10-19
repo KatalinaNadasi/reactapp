@@ -371,6 +371,11 @@ export const ShortColVid = styled.div `
   width: 35%;
   float: left;
 
+  & > iframe {
+    display: block;
+    margin: 0 auto;
+  }
+  
   @media (max-width: 376px) {
     height: 160px;
     width: 100%;

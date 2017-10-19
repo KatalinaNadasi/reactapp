@@ -216,7 +216,7 @@ textarea {
  font-size: 1rem;
  line-height: 1.25;
  color: #55595c;
- background-color: transparent;
+ background-color: #F3F3EE;
  background-image: none;
  background-clip: padding-box;
  border-top: 0;
@@ -269,6 +269,12 @@ textarea {
 .btn:focus {
  outline: 0;
 }
+
+.form-error {
+  color: crimson;
+  padding-top: 8px;
+  }
+
 
 /***********
 FOOTER

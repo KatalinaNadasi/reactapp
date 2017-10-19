@@ -1,7 +1,6 @@
-import styled, {keyframes, css} from 'styled-components';
-import {pink, darkcreme, Retro, blue} from '../variables.js';
+import styled from 'styled-components';
+import { darkcreme, Retro, blue } from '../variables.js';
 import { CircleTop, CircleBottom } from './Header.style';
-import { CircleSub } from './Header.style';
 
 
 export const Wrapper = styled.div `
@@ -19,7 +18,7 @@ export const CircleTopBlue = CircleTop.extend `
 `
 export const CircleBottomBlue = CircleBottom.extend `
   background-color: rgba(0, 159, 160, 0.2);
-	margin-bottom: 100px;
+	margin-bottom: 0px;
 `
 
 export const Intro = styled.p `
@@ -33,3 +32,11 @@ export const Title = Retro.extend `
 	text-align: center;
 	padding-top: 200px;
 `
+
+export const Mountains = styled.div `
+	img {
+		height: 66vh;
+		transform: translate(1px, 29px);
+		opacity: 0.4;
+	}
+`;
