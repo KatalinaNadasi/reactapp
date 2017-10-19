@@ -9,12 +9,20 @@ export const Wrapper = styled.div `
 	text-align: center;
 	position: relative;
 	margin-top: 200px;
+
+	@media(max-width: 768px){
+		margin-top: 0px;
+	}
 `
 
 export const CircleTopBlue = CircleTop.extend `
   background-color: ${blue};
   text-align: center;
   margin-top: 90px;
+
+	@media(max-width: 768px){
+		margin-top: 150px;
+	}
 `
 export const CircleBottomBlue = CircleBottom.extend `
   background-color: rgba(0, 159, 160, 0.2);
@@ -24,6 +32,11 @@ export const CircleBottomBlue = CircleBottom.extend `
 export const Intro = styled.p `
 	font-family: 'Nixie One', cursive;
 	font-size: 2rem;
+
+	@media(max-width: 768px){
+		margin-top: 150px;
+		font-size: 1.7rem;
+	}
 `
 
 export const Title = Retro.extend `
@@ -31,6 +44,10 @@ export const Title = Retro.extend `
 	font-size: 7rem;
 	text-align: center;
 	padding-top: 200px;
+
+	@media(max-width: 768px){
+		font-size: 5rem;
+	}
 `
 
 export const Mountains = styled.div `
@@ -38,5 +55,9 @@ export const Mountains = styled.div `
 		height: 66vh;
 		transform: translate(1px, 29px);
 		opacity: 0.4;
+
+		@media(max-width: 768px){
+			height: 42vh;
+		}
 	}
 `;

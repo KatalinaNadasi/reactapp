@@ -21,7 +21,6 @@ class ReactForm extends React.Component {
       name: '',
       email: '',
       subject: '',
-      phone: '',
       message: ''
      }
   }
@@ -39,11 +38,10 @@ class ReactForm extends React.Component {
   formSender: this.state.name,
   formEmail: this.state.email,
   formSubject: this.state.subject,
-  formPhone: this.state.phone,
   formMessage: this.state.message
  }
 
- if (formData.formSender.length < 1 || formData.formEmail.length < 1 || formData.formSubject.length < 1 || formData.formPhone.length < 1 || formData.formMessage.length < 1) {
+ if (formData.formSender.length < 1 || formData.formEmail.length < 1 || formData.formSubject.length < 1 || formData.formMessage.length < 1) {
   return false;
  }
  $.ajax({
@@ -68,7 +66,6 @@ class ReactForm extends React.Component {
   lastName: '',
   email: '',
   subject: '',
-  phone: '',
   message: ''
  });
 
@@ -93,11 +90,6 @@ render() {
        <fieldset className='form-group'>
          <ReactFormLabel htmlFor='formSubject' title='Subject:'/>
          <input id='formSubject' className='form-input' name='subject' type='text' required onChange={this.handleChange} value={this.state.subject} />
-       </fieldset>
-
-       <fieldset className='form-group'>
-         <ReactFormLabel htmlFor='formPhone' title='Phone Number:'/>
-         <input id='formPhone' className='form-input' name='phone' type='tel' required onChange={this.handleChange} value={this.state.phone} />
        </fieldset>
 
        <fieldset className='form-group'>
