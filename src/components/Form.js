@@ -78,7 +78,7 @@ render() {
    <div>
      <form className='react-form' onSubmit={this.handleSubmit}>
        <fieldset className='form-group'>
-         <ReactFormLabel htmlFor='formName' title='Full Name:' />
+         <ReactFormLabel htmlFor='formName' title='Name:' />
          <input id='formName' className='form-input' name='name' type='text' required onChange={this.handleChange} value={this.state.name} />
        </fieldset>
 

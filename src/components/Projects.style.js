@@ -24,7 +24,7 @@ import React from 'react';
 
 
     @media (max-width: 376px) {
-  		height: 77vh;
+  		height: 27vh;
       margin-top: 183px;
  	}
  `
@@ -34,14 +34,13 @@ import React from 'react';
     text-align: center;
     z-index: 10;
     position: absolute;
-    top: 530px;
-
+    top: 831px;
 
     @media (max-width: 376px) {
-      top: 588px;
+      top: 1338px;
     }
     @media (min-width: 377px) and (max-width: 768px) {
-      top: 540px;
+      top: 1225px;
     }
   `
 
@@ -74,7 +73,10 @@ import React from 'react';
    &:last-child {
      margin-bottom: 200px;
 
-     @media (max-width: 768px){
+     @media (max-width: 376px){
+        margin-bottom: 200px;
+     }
+     @media (min-width: 377px) and (max-width: 768px){
         margin-bottom: 300px;
      }
    }
@@ -159,7 +161,8 @@ import React from 'react';
 
    @media(max-width: 376px){
      height: 18vh;
-      width: 100%;
+     width: 100%;
+     margin-top: 0;
    }
    @media (min-width: 377px) and (max-width: 768px){
      width: 97%;
@@ -175,14 +178,14 @@ import React from 'react';
  `
 
  export const ImgChop = styled.div `
-   width: 42%;
-   height: 70vh;
+   width: 22%;
+   height: 58vh;
    float: left;
    background-image: url('${require('../img/projects/chopard-modal.png')}');
    background-repeat: no-repeat;
    background-size: cover;
    background-color: grey;
-   margin: 0px 30px 0 0;
+   margin: 0px 30px;
    transform: translateY(-10px);
    border: 5px solid #F3F3ED;
 
@@ -240,8 +243,8 @@ import React from 'react';
 
  export const ImgLBP = ImgAda.extend `
    background-image: url('${require('../img/projects/banque-modal.png')}');
-   height: 59vh;
-   width: 50%;
+   height: 58vh;
+   width: 28%;
    margin: 25px 30px;
 
 
@@ -391,7 +394,7 @@ import React from 'react';
 
    @media (max-width: 376px){
      width: 28%;
-     margin: 30px 10px 0 0px;
+     margin: 30px 5px 0 0px;
    }
    @media (min-width: 377px) and (max-width: 460px){
      width: 20%;
@@ -416,7 +419,7 @@ import React from 'react';
      }
 
      @media (max-width: 460px){
-       font-size: 0.7rem;
+       font-size: 0.5rem;
      }
      @media (min-width: 461px) and (max-width: 768px){
        font-size: 1rem;
@@ -429,7 +432,7 @@ import React from 'react';
 
    @media (max-width: 376px){
      width: 33%;
-     margin: 30px 10px 0 20px;
+     margin: 30px 10px 0 10px;
    }
    @media (min-width: 376px) and (max-width: 768px){
      width: 34%;

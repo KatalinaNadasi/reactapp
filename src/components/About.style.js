@@ -215,8 +215,7 @@ export const Col2 = styled.div`
   width: 100%;
 
   @media (max-width: 992px) {
-    height: 1200px;
-    padding-bottom: 300px;
+    height: 1100px;
   }
   @media (min-width: 992px){
     height: 650px;
@@ -410,7 +409,8 @@ export const PaddingCol = styled.div`
   padding: 40px 30px;
 
   @media (max-width: 500px){
-    padding: 0px 30px 20px 30px;
+    padding: 0px 20px 20px 20px;
+    font-size: 0.8rem;
   }
   @media (min-width: 500px) and (max-width: 768px){
     padding: 0px 50px 20px 50px;
@@ -433,8 +433,8 @@ export const Letters = styled.p`
   line-height: 30px;
 
   @media (max-width: 376px) {
-    font-size: 1rem;
-    line-height: 23px;
+    font-size: 0.8rem;
+    line-height: 18px;
   }
   @media (min-width: 376px) and (max-width: 768px){
     font-size: 1rem;

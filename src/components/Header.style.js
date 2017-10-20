@@ -12,7 +12,7 @@ export const Circle = styled.div`
 
 export const CircleTop = styled.div`
 	margin-top: 460px;
-	height: 730px;
+	height: 920px;
 	width: auto;
 	background: ${pink};
 	border-radius: 1399px 1399px 0 0;
@@ -20,7 +20,7 @@ export const CircleTop = styled.div`
 	@media (max-width: 450px) {
 		border-radius: 300px 300px 0 0;
     height: 250px;
-		margin-top: 717px;
+    margin-top: 517px;
 	}
 	@media (min-width: 451px) and (max-width: 768px) {
 		border-radius: 500px 500px 0 0;
@@ -122,7 +122,7 @@ export const CircleTop = styled.div`
 	 }
  `
  export const CircleBottom = styled.div`
-   height: 730px;
+   height: 920px;
    width: auto;
    background: rgba(165, 26, 65, 0.1);
    border-radius: 0 0 1399px 1399px;
@@ -376,7 +376,7 @@ export const CircleTop = styled.div`
 	 `}
 
 	 @media(max-width: 450px){
-		 left: 72%;
+		 left: 68%;
      top: 51%;
 	 }
 	 @media(min-width: 451px) and (max-width: 768px){

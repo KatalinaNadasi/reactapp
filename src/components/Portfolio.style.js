@@ -71,7 +71,7 @@ export const Mask = styled.div `
     top: 0;
     width: 100%;
     height: 100%;
-  	background-color: rgba(135, 182, 183, 1.0);
+  	background: rgba(135, 182, 183, 1.0);
     overflow: hidden;
 
     > div {
@@ -80,7 +80,7 @@ export const Mask = styled.div `
 
     &:hover {
       opacity: 0.9;
-      animation: 0.1s ${hoverAnim};
+      background: rgba(135, 182, 183, 1.0);
 
       > div {
         opacity: 1;
@@ -255,9 +255,9 @@ export const ImageContainer1 = styled.div`
 
   @media (max-width: 500px){
     width: 90%;
-    margin: 20px auto 0px;
+    margin: 0 auto;
     float: none;
-    height: 281px;
+    height: 270px;
   }
   @media (min-width: 501px) and (max-width: 650px) {
     margin: 20px 80px 0px 80px;
@@ -351,7 +351,7 @@ export const ImageContainer4 = styled.div`
     width: 90%;
     margin: 20px auto;
     float: none;
-    height: 335px;
+    height: 315px;
     overflow: hidden;
   }
   @media (min-width: 501px) and (max-width: 650px) {
