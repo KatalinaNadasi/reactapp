@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import ReactDOM from 'react-dom';
 import Wrapper from './Wrapper';
 import { Close, Background, ScrollContainer, ScrollDownContainer, Title, BrandContainer, BrandText, ImgEav, ImgChop, ImgAda, ImgLBP, ImgSneakr, ImgKat, TextWrap, TextWrapChop, TextWrapAda, TextWrapLBP, TextWrapSneakr, Vignet, VignetLarge, Brand, Detail } from './Projects.style';
 import { SvgContainer, ArrowAnimation, BottomArrow } from './About.style';
@@ -85,6 +86,10 @@ export default class Projects extends Component {
 
   componentWillMount() {
       ReactModal.setAppElement('body');
+   }
+
+   componentDidMount () {
+     window.scrollTo(0, 0)
    }
 
   render(){

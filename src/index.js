@@ -16,7 +16,7 @@ import { browserHistory } from 'react-router';
 
 
 ReactDOM.render(
-  <Router history={browserHistory}>
+  <Router history={browserHistory} onUpdate={() => window.scrollTo(0, 0)} >
     <Navbar className="menu-projects">
       <ul>
         <li className="submenu">

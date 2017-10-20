@@ -131,6 +131,10 @@ function LinkedinIcon(props){
 
 
 export default class Footer extends Component {
+  componentDidMount () {
+    window.scrollTo(0, 0)
+  }
+  
   render(){
     return(
       <Wrapper>

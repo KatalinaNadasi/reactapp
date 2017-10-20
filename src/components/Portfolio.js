@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import ParallaxImage from 'react-image-parallax2';
 import '../index.css';
 import {Container, Relative, Wrapper, ImgDiv, ImageContainer1, Mask, MaskSmallImg, ImageContainer2, ImageContainer3, ImageContainer4, ImageContainer5, ImageContainer6, Background1} from './Portfolio.style';
@@ -9,7 +10,12 @@ const Btn = withRouter(({history}) => (
     onClick={() => { history.push('/projects') }}>Know more</button>
 ))
 
+
 class Portfolio extends React.Component {
+
+  componentDidUpdate() {
+  ReactDOM.findDOMNode(this).scrollTop = 0
+}
 
   render () {
     return(
