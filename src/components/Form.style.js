@@ -33,7 +33,11 @@ export const Intro = styled.p `
 	font-family: 'Nixie One', cursive;
 	font-size: 2rem;
 
-	@media(max-width: 768px){
+	@media(max-width: 451px){
+		font-size: 1.3rem;
+		margin-top: 150px;
+	}
+	@media (min-width: 452px) and (max-width: 768px){
 		margin-top: 150px;
 		font-size: 1.7rem;
 	}
@@ -45,7 +49,11 @@ export const Title = Retro.extend `
 	text-align: center;
 	padding-top: 200px;
 
-	@media(max-width: 768px){
+	@media(max-width: 451px){
+		font-size:3rem;
+		padding-top: 100px;
+	}
+	@media (min-width: 452px) and (max-width: 768px){
 		font-size: 5rem;
 	}
 `
@@ -56,8 +64,11 @@ export const Mountains = styled.div `
 		transform: translate(1px, 29px);
 		opacity: 0.4;
 
-		@media(max-width: 768px){
-			height: 42vh;
+		@media (max-width: 451px){
+			height: 24vh;
+		}
+		@media (min-width: 452px ) and (max-width: 768px){
+			height: 50vh;
 		}
 	}
 `;
