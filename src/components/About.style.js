@@ -271,7 +271,6 @@ padding: 15px;
 @media (min-width: 769px) and (max-width: 1150px) {
   width: 35%;
   height: 300px;
-  font-size: 1.1rem;
 }
 `
 
@@ -375,7 +374,7 @@ export const ShortColVid = styled.div `
     display: block;
     margin: 0 auto;
   }
-  
+
   @media (max-width: 376px) {
     height: 160px;
     width: 100%;

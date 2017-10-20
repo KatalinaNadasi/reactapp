@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
-import {HeaderContainer, Container, BackgroundImage, ArrowAnimation, AboutTitle, ScrollPosition, BottomArrow, SvgContainer , ScrollDown, Col, Col2, BlueBgd, SectionTitle, SectionSpace, ProjectsContainer, Letters, LongCol, LongColSneakr, Img, ShortCol, ShortColVid, PaddingCol} from './About.style';
+import React, { Component } from 'react';
+import { HeaderContainer, Container, BackgroundImage, ArrowAnimation, AboutTitle, ScrollPosition, BottomArrow, SvgContainer , ScrollDown, Col, Col2, BlueBgd, SectionTitle, SectionSpace, ProjectsContainer, Letters, LongCol, LongColSneakr, Img, ShortCol, ShortColVid, PaddingCol } from './About.style';
 import '../index.css';
-import {Retro} from '../variables.js';
+import { Retro } from '../variables.js';
 import Footer from './Footer';
 
 
@@ -58,7 +58,7 @@ componentDidMount() {
             </ScrollDown>
             </ScrollPosition>
           <BlueBgd>
-            <SectionTitle>Side projects</SectionTitle>
+            <SectionTitle>Others projects</SectionTitle>
           </BlueBgd>
         </Container>
         <Container>
@@ -87,15 +87,15 @@ componentDidMount() {
                 </ShortColVid>
                 <LongColSneakr right>
                     <Retro>Pitch of sneakr.fr at The Family</Retro>
-                    <Letters blue>At the end of my training at <a href="https://www.switchup.org/locations/paris-coding-bootcamp" target="_blank">the best coding bootcamp in Europe</a> (Le Wagon) :) we pitched our project developped in 2 weeks in front of professionals poeple.</Letters>
+                    <Letters blue>At the end of my training at <a href="https://www.switchup.org/locations/paris-coding-bootcamp" target="_blank">the best coding bootcamp in Europe</a> (Le Wagon) :) we pitched our project developped in 2 weeks in front of professionals.</Letters>
                 </LongColSneakr>
                 <LongCol left>
                   <Retro><a href="https://www.lereacteur.io/" target="_blank">Le Reacteur</a></Retro>
-                  <Letters blue>I did their one week intensive training in React and then helped them a little for the launch communication of their bootcamp. <br/>I found the project very smart because I'm convinced that React will have a special slice in the coding cake next years.</Letters>
+                  <Letters blue>I did their one week intensive training in React and then helped them a little for the launch communication of their bootcamp. <br/>I found the project very smart because I'm convinced that React will have a special slice in the coding cake during the following years.</Letters>
                 </LongCol>
                 <ShortCol right small>
                   <Letters creme>The story behind</Letters>
-                  <div style={{ paddingLeft: 30, paddingRight: 30 }}>We've met with Xavier around the same passion for vintage.</div>
+                  <div style={{ paddingLeft: 30, paddingRight: 30 }}>We've met with Xavier Colombel around the same passion for vintage.</div>
                 </ShortCol>
               </Col2>
             </ProjectsContainer>
