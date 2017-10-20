@@ -17,7 +17,7 @@ export const Container = styled.div`
 `
 export const BackgroundImage = styled.div`
   height: 102vh;
-  background-image: url('${require('../img/moreabout.jpg')}');
+  background-image: url('${require('../img/about/moreabout.jpg')}');
   background-repeat: no-repeat;
   z-index: -99;
   background-size: 100%;

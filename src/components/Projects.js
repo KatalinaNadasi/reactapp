@@ -3,7 +3,6 @@ import Wrapper from './Wrapper';
 import { Close, Background, ScrollContainer, ScrollDownContainer, Title, BrandContainer, BrandText, ImgEav, ImgChop, ImgAda, ImgLBP, ImgSneakr, ImgKat, TextWrap, TextWrapChop, TextWrapAda, TextWrapLBP, TextWrapSneakr, Vignet, VignetLarge, Brand, Detail } from './Projects.style';
 import { SvgContainer, ArrowAnimation, BottomArrow } from './About.style';
 import { Carousel } from 'react-responsive-carousel';
-import '../style/carousel.css';
 import ReactModal from 'react-modal';
 import '../index.css';
 import Footer from './Footer';

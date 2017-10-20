@@ -76,8 +76,8 @@ const ContactBtn = withRouter(({history}) => (
           <ellipse id="contact" fill="#F3F3ED" stroke="#FF3D68" strokeMiterlimit="10" strokeWidth="3.04" cx="58.245" cy="212.233" rx="34" ry="35"/>
           <text transform="matrix(1 0 0 1 35.9895 207.3413)">
             <tspan x="-6" y="18" fontSize="41">C</tspan>
-            <tspan x="5" y="4" fontFamily="'OCRAStd'" fontSize="10">ontact</tspan>
-            <tspan x="17.132" y="11" fontFamily="'OCRAStd'" fontSize="10">me</tspan>
+            <tspan x="5" y="4" fontFamily="'Lato'" fontSize="12">ontact</tspan>
+            <tspan x="17.132" y="11" fontFamily="'Lato'" fontSize="11">me</tspan>
           </text>
         </g>
     </svg>
@@ -134,7 +134,7 @@ export default class Footer extends Component {
   componentDidMount () {
     window.scrollTo(0, 0)
   }
-  
+
   render(){
     return(
       <Wrapper>

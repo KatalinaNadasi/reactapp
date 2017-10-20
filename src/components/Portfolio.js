@@ -27,7 +27,7 @@ class Portfolio extends React.Component {
                   <Relative>
                     <ParallaxImage
                       reduceHeight={0.2/3}
-                      src={require('../img/portfolio/chopard.jpg')}/>
+                      src={require('../img/home/chopard.jpg')}/>
                     <Mask>
                       <h2>Chopard</h2>
                       <p>Front-End development of a mini-website. </p>
@@ -41,7 +41,7 @@ class Portfolio extends React.Component {
                   <Relative>
                     <ParallaxImage
                       reduceHeight={2/3}
-                      src={require('../img/portfolio/adaweek.jpg')}/>
+                      src={require('../img/home/adaweek.jpg')}/>
                     <Mask>
                       <h2>Adaweek</h2>
                       <p>Webdesign, templating and code of a one-page website for the Adaweek festival 2016.</p>
@@ -56,7 +56,7 @@ class Portfolio extends React.Component {
                   <Relative>
                     <ParallaxImage
                       reduceHeight={2/3}
-                      src={require('../img/portfolio/katalina.jpg')}/>
+                      src={require('../img/home/katalina.jpg')}/>
                     <Mask>
                       <h2>Personal website</h2>
                       <p>Design and code of a one-page website. </p>
@@ -70,7 +70,7 @@ class Portfolio extends React.Component {
                   <Relative>
                     <ParallaxImage
                       reduceHeight={0.2/3}
-                      src={require('../img/portfolio/labanque.png')}/>
+                      src={require('../img/home/labanque.png')}/>
                     <MaskSmallImg>
                       <h2>La Banque Postale</h2>
                       <p>Front-End development of a mini-game website.</p>
@@ -84,7 +84,7 @@ class Portfolio extends React.Component {
                   <Relative>
                     <ParallaxImage
                       reduceHeight={2/3}
-                      src={require('../img/portfolio/sneakr.jpg')}/>
+                      src={require('../img/home/sneakr.jpg')}/>
                     <MaskSmallImg>
                       <h2>Sneakr</h2>
                       <p>Design and Development of a website with a search engine of vintage sneakr.</p>
@@ -98,7 +98,7 @@ class Portfolio extends React.Component {
                   <Relative>
                   <ParallaxImage
                     reduceHeight={2/3}
-                    src={require('../img/portfolio/eavest.jpg')}/>
+                    src={require('../img/home/eavest.jpg')}/>
                   <Mask eavest>
                       <h2>Eavest</h2>
                       <p>Lead Front in the recast of the website.</p>

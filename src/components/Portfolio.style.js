@@ -18,8 +18,8 @@ export function IconTitle(props){
     <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
       viewBox="4 175.711 259.175 164.726" enableBackground="new 4 175.711 259.175 164.726"
       xmlSpace="preserve" {...props}>
-      <text transform="matrix(0.9256 0 0 1 4 238.6028)" fontFamily="'NewsGothicMT-Bold'" fontSize="72">PRO</text>
-      <text transform="matrix(0.9256 0 0 1 4 325.0032)" fontFamily="'NewsGothicMT-Bold'" fontSize="72">JECTS </text>
+      <text transform="matrix(0.9256 0 0 1 4 238.6028)" fontFamily="'Didact Gothic'" fontSize="72">PRO</text>
+      <text transform="matrix(0.9256 0 0 1 4 325.0032)" fontFamily="'Didact Gothic'" fontSize="72">JECTS </text>
       <ellipse fill="crimson" strokeMiterlimit="10" cx="239.675" cy="304.391" rx="23" ry="22.588"/>
     </svg>
 

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import ReactForm from './Form';
-import { Wrapper, CircleTopBlue, CircleBottomBlue, Title, Intro, Mountains } from './Form.style';
+import { Wrapper, CircleTopBlue, CircleBottomBlue, Title, Intro, Mountains } from './Contact.style';
 import Footer from './Footer';
 
 export default class Contact extends Component {
@@ -15,7 +15,7 @@ export default class Contact extends Component {
             <ReactForm />
           </CircleBottomBlue>
           <Mountains>
-            <img src={require('../img/logo-transp.svg')} alt="Mountains" />
+            <img src={require('../img/mountains.svg')} alt="Mountains" />
           </Mountains>
         <Footer />
       </Wrapper>
