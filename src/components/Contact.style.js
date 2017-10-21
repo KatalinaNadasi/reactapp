@@ -51,10 +51,45 @@ export const Title = Retro.extend `
 
 	@media(max-width: 451px){
 		font-size:3rem;
-		padding-top: 100px;
+		padding-top: 50px;
 	}
 	@media (min-width: 452px) and (max-width: 768px){
 		font-size: 5rem;
+		padding-top: 85px;
+	}
+`
+
+export const ContactP = styled.p `
+	font-family: 'Lato';
+	color: #e96e66;
+	font-size: 1.3rem;
+	width: 81%;
+	margin: 26px 160px;
+	text-align: justify;
+	line-height: 24px;
+	padding: 10px 80px;
+
+
+	@media (max-width: 600px){
+		margin: 10px auto;
+		line-height: 11px;
+		width: 100%;
+		font-size: 0.7rem;
+	}
+	@media (min-width: 600px) and (max-width: 768px){
+		margin: 8px 20px;
+		width: 95%;
+		font-size: 1rem;
+		line-height: 22px;
+	}
+	@media (min-width: 768px) and (max-width: 1120px){
+		margin: 26px 80px;
+	}
+	@media (min-width: 1120px) and (max-width: 1200){
+		padding: 10px 140px;
+	}
+	@media (min-width: 1200px){
+		padding: 10px 255px;
 	}
 `
 

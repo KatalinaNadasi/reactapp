@@ -79,22 +79,22 @@ render() {
      <form className='react-form' onSubmit={this.handleSubmit}>
        <fieldset className='form-group'>
          <ReactFormLabel htmlFor='formName' title='Name:' />
-         <input id='formName' className='form-input' name='name' type='text' required onChange={this.handleChange} value={this.state.name} />
+         <input placeholder="Jonh Doe" id='formName' className='form-input' name='name' type='text' required onChange={this.handleChange} value={this.state.name} />
        </fieldset>
 
        <fieldset className='form-group'>
          <ReactFormLabel htmlFor='formEmail' title='Email:' />
-         <input id='formEmail' className='form-input' name='email' type='email' required onChange={this.handleChange} value={this.state.email} />
+         <input placeholder="john@doe.com" id='formEmail' className='form-input' name='email' type='email' required onChange={this.handleChange} value={this.state.email} />
        </fieldset>
 
        <fieldset className='form-group'>
          <ReactFormLabel htmlFor='formSubject' title='Subject:'/>
-         <input id='formSubject' className='form-input' name='subject' type='text' required onChange={this.handleChange} value={this.state.subject} />
+         <input placeholder="Front-End Developer needed asap" id='formSubject' className='form-input' name='subject' type='text' required onChange={this.handleChange} value={this.state.subject} />
        </fieldset>
 
        <fieldset className='form-group'>
          <ReactFormLabel htmlFor='formMessage' title='Message:' />
-         <textarea id='formMessage' className='form-textarea' name='message' required onChange={this.handleChange}></textarea>
+         <textarea placeholder="I I'm John Doe and I work for this company. We are looking for a Front-End Developer in React, Javascript, Jquery asap in Paris center for 3 months. Would you be interested ?" id='formMessage' className='form-textarea' name='message' required onChange={this.handleChange}></textarea>
        </fieldset>
 
        <div className='form-group'>
