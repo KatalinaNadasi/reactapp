@@ -12,7 +12,7 @@ export const Circle = styled.div`
 
 export const CircleTop = styled.div`
 	margin-top: 460px;
-	height: 920px;
+	height: 720px;
 	width: auto;
 	background: ${pink};
 	border-radius: 1399px 1399px 0 0;
@@ -82,7 +82,7 @@ export const CircleTop = styled.div`
  /* The typing effect */
  export const typing = keyframes`
    from { width: 0;}
-   to { width: 28%;}
+   to { width: 40%;}
  `
  /* The typewriter cursor effect */
  export const blinkCaret = keyframes`
@@ -122,7 +122,7 @@ export const CircleTop = styled.div`
 	 }
  `
  export const CircleBottom = styled.div`
-   height: 920px;
+   height: 720px;
    width: auto;
    background: rgba(165, 26, 65, 0.1);
    border-radius: 0 0 1399px 1399px;

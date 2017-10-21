@@ -43,7 +43,7 @@ componentDidMount() {
           <CircleTop>
             <CircleTitle>Katal<Black>i</Black>na</CircleTitle>
             <CircleTitle2>Na<Black>d</Black>asi</CircleTitle2>
-            <CircleSub>Front-End Developer</CircleSub>
+            <CircleSub>Front-End Developer Freelance</CircleSub>
           </CircleTop>
           <CircleBottom>
           <div className="bubbles">

@@ -34,13 +34,13 @@ import React from 'react';
     text-align: center;
     z-index: 10;
     position: absolute;
-    top: 831px;
+    top: 531px;
 
     @media (max-width: 376px) {
-      top: 1338px;
+      top: 540px;
     }
     @media (min-width: 377px) and (max-width: 768px) {
-      top: 1225px;
+      top: 540px;
     }
   `
 

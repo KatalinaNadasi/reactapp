@@ -8,7 +8,7 @@ export const Wrapper = styled.div `
 	width: 100%;
 	text-align: center;
 	position: relative;
-	margin-top: 200px;
+	margin-top: 80px;
 
 	@media(max-width: 768px){
 		margin-top: 0px;
@@ -21,7 +21,7 @@ export const CircleTopBlue = CircleTop.extend `
   margin-top: 90px;
 
 	@media(max-width: 768px){
-		margin-top: 120px;
+		margin-top: 80px;
 	}
 `
 export const CircleBottomBlue = CircleBottom.extend `
@@ -35,7 +35,7 @@ export const Intro = styled.p `
 
 	@media(max-width: 451px){
 		font-size: 1.3rem;
-		margin-top: 150px;
+		margin-top: 100px;
 	}
 	@media (min-width: 452px) and (max-width: 768px){
 		margin-top: 150px;

@@ -132,7 +132,7 @@ export const Mask = styled.div `
         margin: 0;
         padding-top: 20px;
         padding: ${props => props.eavest ? '15px' : '30px'};
-        font-size: 14px;
+        font-size: 11px;
         line-height: 20px;
       }
       @media (min-width: 769px) and (max-width: 1170px){
@@ -169,7 +169,7 @@ export const MaskSmallImg = styled.div `
 
     &:hover {
       opacity: 0.9;
-      animation: 0.1s ${hoverAnim};
+      background: rgba(135, 182, 183, 1.0);
 
       > div {
         opacity: 1;
@@ -220,7 +220,7 @@ export const MaskSmallImg = styled.div `
       @media (max-width: 768px){
         margin: 0;
         padding: 20px 30px;
-        font-size: 14px;
+        font-size: 11px;
         line-height: 20px;
       }
       @media(min-width: 769px) and (max-width: 992px){
@@ -257,7 +257,7 @@ export const ImageContainer1 = styled.div`
     width: 90%;
     margin: 0 auto;
     float: none;
-    height: 270px;
+    height: 205px;
   }
   @media (min-width: 501px) and (max-width: 650px) {
     margin: 20px 80px 0px 80px;
@@ -351,7 +351,7 @@ export const ImageContainer4 = styled.div`
     width: 90%;
     margin: 20px auto;
     float: none;
-    height: 315px;
+    height: 215px;
     overflow: hidden;
   }
   @media (min-width: 501px) and (max-width: 650px) {
