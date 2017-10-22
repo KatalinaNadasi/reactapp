@@ -27,7 +27,7 @@ export const BackgroundImage = styled.div`
 
   @media (max-width: 500px){
     margin-top: 53px;
-    height: 30vh;
+    height: 33vh;
   }
   @media (min-width: 500px) and (max-width: 768px){
     height: 45vh;
@@ -46,11 +46,8 @@ export const AboutTitle = CircleTitle.extend`
   left: -193px;
   color: crimson;
 
-  @media (max-width: 376px){
-    font-size: 3rem;
-    padding: 100px 0 0 267px;
-  }
-  @media (min-width: 376px) and (max-width: 768px){
+
+  @media (max-width: 768px){
     font-size: 4rem;
     padding: 100px 0 0 267px;
   }
@@ -70,10 +67,10 @@ export const ScrollPosition = styled.div`
   transform: translateY(-25px);
 
   @media (max-width: 376px){
-    bottom: 66px;
+    bottom: 60px;
   }
-  @media (min-width: 376px) and (max-width: 768px){
-    bottom: 111px;
+  @media (min-width: 377px) and (max-width: 768px){
+    bottom: 60px;
   }
 
 `
@@ -130,11 +127,8 @@ export const BlueBgd = styled.div`
   margin-top: -8px;
   transform: translateY(-16px);
 
-  @media (max-width: 376px){
+  @media (max-width: 768px){
     height: 100px;
-  }
-  @media (min-width: 376px) and (max-width: 768px){
-    height: 150px;
   }
 `
 
@@ -144,13 +138,10 @@ export const SectionTitle = styled.h1`
   font-size: 4rem;
   line-height: 3;
 
-  @media (max-width: 376px){
-    font-size: 2rem;
-    line-height: 3;
-  }
-  @media (min-width: 376px) and (max-width: 768px){
-    font-size: 3rem;
-    line-height: 3;
+
+  @media (max-width: 768px){
+    font-size: 1.8rem;
+    line-height: 4;
   }
   @media (min-width: 768px) and (max-width: 992px){
     font-size: 4rem;

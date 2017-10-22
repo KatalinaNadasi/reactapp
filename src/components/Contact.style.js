@@ -69,12 +69,13 @@ export const ContactP = styled.p `
 	line-height: 24px;
 	padding: 10px 80px;
 
-
+  
 	@media (max-width: 600px){
-		margin: 10px auto;
-		line-height: 11px;
-		width: 100%;
-		font-size: 0.7rem;
+		width: 86%;
+    font-size: 0.7rem;
+    padding: 0;
+    line-height: 15px;
+    margin: 10px 0px 0 20px;
 	}
 	@media (min-width: 600px) and (max-width: 768px){
 		margin: 8px 20px;

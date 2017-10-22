@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Wrapper from './Wrapper';
-import { Close, Background, ScrollContainer, ScrollDownContainer, Title, BrandContainer, BrandText, ImgEav, ImgChop, ImgAda, ImgLBP, ImgSneakr, ImgKat, TextWrap, TextWrapChop, TextWrapAda, TextWrapLBP, TextWrapSneakr, Vignet, VignetLarge, Brand, Detail } from './Projects.style';
-import { SvgContainer, ArrowAnimation, BottomArrow } from './About.style';
+import { Close, Background, Title, BrandContainer, BrandText, ImgEav, ImgChop, ImgAda, ImgLBP, ImgSneakr, ImgKat, TextWrap, TextWrapChop, TextWrapAda, TextWrapLBP, TextWrapSneakr, Vignet, VignetLarge, Brand, Detail } from './Projects.style';
+import { SvgContainer } from './About.style';
 import { Carousel } from 'react-responsive-carousel';
 import ReactModal from 'react-modal';
 import '../index.css';
@@ -98,15 +98,6 @@ export default class Projects extends Component {
         <Background>
           <Title>Projects</Title>
         </Background>
-        <ScrollContainer>
-          <ScrollDownContainer>
-            <SvgContainer>
-              <ArrowAnimation>
-                <BottomArrow />
-              </ArrowAnimation>
-            </SvgContainer>
-          </ScrollDownContainer>
-          </ScrollContainer>
             <Carousel autoPlay interval={3000} transitionTime={1000} showThumbs={false} showStatus={false} showIndicators={false} dynamicHeight>
               <div>
                 <img src={require('../img/projects/chopard-banner.jpg')} alt="Chopard"/>

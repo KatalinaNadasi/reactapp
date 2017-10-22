@@ -57,11 +57,11 @@ export const ImgDiv = styled.div `
   overflow: hidden;
 `
 
-export const hoverAnim = keyframes `
-  0% 	{transform: translate(265px, 145px) rotate(45deg);}
-  50% { transform: translate(-80px, -125px) rotate(45deg);}
-  100% {transform: translate(265px, 145px) rotate(45deg);}
-`
+// export const hoverAnim = keyframes `
+//   0% 	{transform: translate(265px, 145px) rotate(45deg);}
+//   50% { transform: translate(-80px, -125px) rotate(45deg);}
+//   100% {transform: translate(265px, 145px) rotate(45deg);}
+// `
 
 export const Mask = styled.div `
     opacity: 0;
@@ -71,7 +71,6 @@ export const Mask = styled.div `
     top: 0;
     width: 100%;
     height: 100%;
-  	background: rgba(135, 182, 183, 1.0);
     overflow: hidden;
 
     > div {
@@ -132,8 +131,8 @@ export const Mask = styled.div `
         margin: 0;
         padding-top: 20px;
         padding: ${props => props.eavest ? '15px' : '30px'};
-        font-size: 11px;
-        line-height: 20px;
+        font-size: 9px;
+        line-height: 13px;
       }
       @media (min-width: 769px) and (max-width: 1170px){
         padding: 20px 20px;
@@ -160,7 +159,6 @@ export const MaskSmallImg = styled.div `
     top: 0;
     width: 100%;
     height: 100%;
-  	background-color: rgba(135, 182, 183, 1.0);
     overflow: hidden;
 
     > div {
@@ -220,8 +218,8 @@ export const MaskSmallImg = styled.div `
       @media (max-width: 768px){
         margin: 0;
         padding: 20px 30px;
-        font-size: 11px;
-        line-height: 20px;
+        font-size: 9px;
+        line-height: 13px;
       }
       @media(min-width: 769px) and (max-width: 992px){
         font-size: 14px;

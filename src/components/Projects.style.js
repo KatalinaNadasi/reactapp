@@ -1,7 +1,6 @@
 import React from 'react';
  import styled from 'styled-components';
  import {orange, pink} from  '../variables';
- import {ScrollDown} from './About.style';
 
 
 
@@ -29,24 +28,29 @@ import React from 'react';
  	}
  `
 
- export const ScrollContainer = styled.div `
-   width: 100%;
-    text-align: center;
-    z-index: 10;
-    position: absolute;
-    top: 531px;
-
-    @media (max-width: 376px) {
-      top: 540px;
-    }
-    @media (min-width: 377px) and (max-width: 768px) {
-      top: 540px;
-    }
-  `
-
- export const ScrollDownContainer = ScrollDown.extend `
-   box-shadow: 8px 8px 12px #555;
- `
+ // export const ScrollContainer = styled.div `
+ //    width: 100%;
+ //    text-align: center;
+ //    z-index: 10;
+ //    position: absolute;
+ //    top: 673px;
+ //    -moz-top: 531px;
+ //
+ //      @media (-moz-max-width: 376px){
+ //        -moz-top: 190px;
+ //      }
+ //
+ //    @media (max-width: 376px) {
+ //      top: 245px;
+ //    }
+ //    @media (min-width: 377px) and (max-width: 768px) {
+ //      top: 683px;
+ //    }
+ //  `
+ //
+ // export const ScrollDownContainer = ScrollDown.extend `
+ //   box-shadow: 8px 8px 12px #555;
+ // `
 
 
  export const Title = styled.h1 `
@@ -160,7 +164,7 @@ import React from 'react';
    margin-top: 40px;
 
    @media(max-width: 376px){
-     height: 18vh;
+     height: 20vh;
      width: 100%;
      margin-top: 0;
    }
@@ -191,14 +195,14 @@ import React from 'react';
 
    @media (max-width: 376px) {
     width: 93%;
-    height: 33vh;
+    height: 35vh;
     margin: 0;
     float: none;
    }
    @media (min-width: 377px) and (max-width: 768px) {
-     width: 62%;
+     width: 90%;
      height: 33vh;
-     margin: 0 auto;
+     margin: 0;
      float: none;
    }
    @media (min-width: 769px) and (max-width: 992px) {
@@ -248,9 +252,15 @@ import React from 'react';
    margin: 25px 30px;
 
 
-     @media(max-width: 500px){
+    @media(max-width: 200px){
+      width: 92%;
+      height: 172px;
+      margin: 0;
+      float: none;
+    }
+     @media (min-width: 200px) and (max-width: 500px){
        width: 92%;
-       height: 26vh;
+       height: 28vh;
        margin: 0;
        float: none;
      }
@@ -274,7 +284,7 @@ import React from 'react';
 
    @media (max-width: 500px) {
      width: 92%;
-     height: 33vh;
+     height: 35vh;
      margin: 0;
      float: none;
    }
@@ -308,13 +318,13 @@ import React from 'react';
 
    @media (max-width: 500px) {
      width: 92%;
-     height: 33vh;
+     height: 35vh;
      margin: 0;
      float: none;
    }
    @media (min-width: 501px) and (max-width: 768px) {
      width: 62%;
-     height: 33vh;
+     height: 35vh;
      margin: 0 auto;
      float: none;
    }
@@ -430,13 +440,8 @@ import React from 'react';
  export const VignetLarge = Vignet.extend `
    width: 40%;
 
-   @media (max-width: 376px){
-     width: 33%;
-     margin: 30px 10px 0 10px;
-   }
-   @media (min-width: 376px) and (max-width: 768px){
+   @media (max-width: 768px){
      width: 34%;
-     margin: 30px 10px 0 60px;
    }
    @media (min-width: 769px) and (max-width: 992px){
      margin: 30px 30px 0 25px;

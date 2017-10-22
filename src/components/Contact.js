@@ -11,7 +11,7 @@ export default class Contact extends Component {
           <CircleTopBlue>
             <Title>Contact me</Title>
             <ContactP>The form has been desactivated because of spams. <br/>
-            Feel free to send me a message to katalinanadasi@gmail.com
+            Feel free to send me a message to <a href="mailto:katalinanadasi@gmail.com">katalinanadasi@gmail.com </a>
             and I would be enjoyed to answer you asap. <br/>
             That would be more than appreciated if you could specify the type of mission, skills needed, the date your required somebody and where. <br/>
             Thank you !

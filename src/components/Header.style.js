@@ -12,7 +12,7 @@ export const Circle = styled.div`
 
 export const CircleTop = styled.div`
 	margin-top: 460px;
-	height: 720px;
+	height: 920px;
 	width: auto;
 	background: ${pink};
 	border-radius: 1399px 1399px 0 0;
@@ -122,7 +122,7 @@ export const CircleTop = styled.div`
 	 }
  `
  export const CircleBottom = styled.div`
-   height: 720px;
+   height: 920px;
    width: auto;
    background: rgba(165, 26, 65, 0.1);
    border-radius: 0 0 1399px 1399px;
