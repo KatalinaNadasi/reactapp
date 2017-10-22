@@ -49,7 +49,7 @@ export const AboutTitle = CircleTitle.extend`
 
   @media (max-width: 768px){
     font-size: 3rem;
-    padding: 100px 0 0 200px;
+    padding: 100px 0 0 250px;
   }
   @media (min-width: 768px) and (max-width: 992px){
     font-size: 6rem;
