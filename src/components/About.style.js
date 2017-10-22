@@ -48,8 +48,8 @@ export const AboutTitle = CircleTitle.extend`
 
 
   @media (max-width: 768px){
-    font-size: 4rem;
-    padding: 100px 0 0 267px;
+    font-size: 3rem;
+    padding: 100px 0 0 200px;
   }
   @media (min-width: 768px) and (max-width: 992px){
     font-size: 6rem;
@@ -127,7 +127,11 @@ export const BlueBgd = styled.div`
   margin-top: -8px;
   transform: translateY(-16px);
 
-  @media (max-width: 768px){
+  @media (max-width: 376px){
+    margin-top: 10px;
+    height: 100px;
+  }
+  @media (min-width: 377px) and (max-width: 768px){
     height: 100px;
   }
 `
