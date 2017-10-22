@@ -26,11 +26,12 @@ export const BackgroundImage = styled.div`
   position: relative;
 
   @media (max-width: 500px){
-    margin-top: 53px;
+    margin-top: 71px;
     height: 33vh;
   }
   @media (min-width: 500px) and (max-width: 768px){
     height: 45vh;
+    margin-top: 50px;
   }
   @media (min-width: 768px) and (max-width: 992px){
     height: 70vh;
@@ -128,12 +129,10 @@ export const BlueBgd = styled.div`
   transform: translateY(-16px);
 
   @media (max-width: 376px){
-    margin-top: 60px;
     height: 100px;
   }
   @media (min-width: 377px) and (max-width: 768px){
     height: 100px;
-    margin-top: 30px;
   }
 `
 
