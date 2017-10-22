@@ -128,11 +128,12 @@ export const BlueBgd = styled.div`
   transform: translateY(-16px);
 
   @media (max-width: 376px){
-    margin-top: 10px;
+    margin-top: 60px;
     height: 100px;
   }
   @media (min-width: 377px) and (max-width: 768px){
     height: 100px;
+    margin-top: 30px;
   }
 `
 
