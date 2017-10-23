@@ -61,7 +61,7 @@ export const Title = Retro.extend `
 
 export const ContactP = styled.p `
 	font-family: 'Lato';
-	color: #e96e66;
+	color: ${darkcreme};
 	font-size: 1.3rem;
 	width: 81%;
 	margin: 26px 160px;
@@ -69,7 +69,7 @@ export const ContactP = styled.p `
 	line-height: 24px;
 	padding: 10px 80px;
 
-  
+
 	@media (max-width: 600px){
 		width: 86%;
     font-size: 0.7rem;

@@ -133,6 +133,7 @@ export const BlueBgd = styled.div`
   }
   @media (min-width: 377px) and (max-width: 768px){
     height: 100px;
+    margin-top: 16px;
   }
 `
 
