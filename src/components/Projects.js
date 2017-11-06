@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import Wrapper from './Wrapper';
 import { Close, Background, Title, BrandContainer, BrandText, ImgEav, ImgChop, ImgAda, ImgLBP, ImgSneakr, ImgKat, TextWrap, TextWrapChop, TextWrapAda, TextWrapLBP, TextWrapSneakr, Vignet, VignetLarge, Brand, Detail } from './Projects.style';
-import { SvgContainer } from './About.style';
 import { Carousel } from 'react-responsive-carousel';
 import ReactModal from 'react-modal';
 import '../index.css';

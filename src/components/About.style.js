@@ -288,9 +288,12 @@ export const Img = styled.div`
       width: 100%;
       height: 240px;
     }
-    @media (min-width: 992px){
+    @media (min-width: 992px) and (max-width: 1190px){
       width: 100%;
       height: 260px;
+    }
+    @media (min-width: 1190px){
+      height: 300px;
     }
   }
 

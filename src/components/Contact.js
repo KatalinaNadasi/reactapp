@@ -16,6 +16,9 @@ export default class Contact extends Component {
             That would be more than appreciated if you could specify the type of mission, skills needed, the date your required somebody and where. <br/>
             Thank you !
             </ContactP>
+            <ContactP><a href="https://termsfeed.com/privacy-policy/34eaae2aae6cbdae06bbfa11bdb8da45" target="_blank">Privacy Policy</a></ContactP>
+            <ContactP><a href="https://termsfeed.com/terms-use/286016599cf209349fe6366d7c5755b5" target="_blank">Terms of Use</a></ContactP>
+
           </CircleTopBlue>
           <CircleBottomBlue>
             <ReactForm />
