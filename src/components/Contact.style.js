@@ -57,6 +57,9 @@ export const Title = Retro.extend `
 		font-size: 5rem;
 		padding-top: 85px;
 	}
+	@media (min-width: 768px) and (max-width: 1090px){
+ 		padding-top: 150px;
+	}
 `
 
 export const ContactP = styled.p `
@@ -64,19 +67,19 @@ export const ContactP = styled.p `
 	color: ${darkcreme};
 	font-size: 1.3rem;
 	width: 81%;
-	margin: 26px 160px;
+	margin: 0 160px;
 	text-align: justify;
 	line-height: 24px;
 	padding: 10px 80px;
 
-
 	@media (max-width: 600px){
-		width: 86%;
+		width: 80%;
     font-size: 0.7rem;
     padding: 0;
     line-height: 15px;
-    margin: 10px 0px 0 20px;
+    margin: 10px 0px 20px 40px;
 	}
+
 	@media (min-width: 600px) and (max-width: 768px){
 		margin: 8px 20px;
 		width: 95%;
@@ -84,13 +87,33 @@ export const ContactP = styled.p `
 		line-height: 22px;
 	}
 	@media (min-width: 768px) and (max-width: 1120px){
-		margin: 26px 80px;
+		margin: 0 135px;
+		font-size: 1.1rem;
+		width: 76%;
+		line-height: 21px;
+		padding: 10px 80px;
 	}
 	@media (min-width: 1120px) and (max-width: 1200){
 		padding: 10px 140px;
 	}
 	@media (min-width: 1200px){
 		padding: 10px 255px;
+	}
+`
+
+export const Terms = styled.span `
+	display: inline;
+	color: black;
+	padding: 5px;
+	text-align: center;
+	width: 100%;
+	font-size: 1rem;
+
+	@media (max-width: 600px){
+    font-size: 0.7rem;
+	}
+	@media (min-width: 600px) and (max-width: 768px){
+		font-size: 0.9rem;
 	}
 `
 
